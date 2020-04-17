@@ -134,6 +134,47 @@ We provide windows batch scripts for convenience, you could modify them to linux
 | CoSQL | No | concat.none.jsonnet | 33.5 | 32.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.concat/model.tar.gz)|
 | CoSQL | Yes | concat.none.jsonnet | 41.0 | 40.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.concat/model.tar.gz)|
 
+# Predict
+
+You could predict SQLs using trained model checkpoint file using the following command:
+
+- Under Linux
+```bash
+export model_file=checkpoints_sparc/sparc_concat_model
+export validation_file=dataset_sparc/dev.json
+export validation_out_file=dataset_sparc/dev.jsonl
+export prediction_out_file=predict.jsonl
+python postprocess.py --valid_file $validation_file --valid_out_file $validation_out_file
+allennlp predict \
+--include-package dataset_reader.sparc_reader \
+--include-package models.sparc_parser \
+--include-package predictor.sparc_predictor \
+--predictor sparc \
+--dataset-reader-choice validation \
+--batch-size 1 \
+--cuda-device 0 \
+--output-file $model_file/$prediction_out_file \
+$model_file/model.tar.gz $validation_out_file
+```
+- Under Windows
+```cmd
+set model_file=checkpoints_sparc/sparc_concat_model
+set validation_file=dataset_sparc/dev.json
+set validation_out_file=dataset_sparc/dev.jsonl
+set prediction_out_file=predict.jsonl
+python postprocess.py --valid_file %validation_file% --valid_out_file %validation_out_file%
+allennlp predict ^
+--include-package dataset_reader.sparc_reader ^
+--include-package models.sparc_parser ^
+--include-package predictor.sparc_predictor ^
+--predictor sparc ^
+--dataset-reader-choice validation ^
+--batch-size 1 ^
+--cuda-device 0 ^
+--output-file %model_file%/%prediction_out_file% ^
+%model_file%/model.tar.gz %validation_out_file
+```
+
 # Demo
 
 You could also host a demo page using the following command:
@@ -165,7 +206,7 @@ python -m allennlp.service.server_simple ^
     --field-name database_id
 ```
 
-The question field accepts an interaction of questions splitted by `;`. See the demo page below:
+The question field accepts an interaction of questions splitted by `;`. See the demo page below (only accepts database_id appeared in `database` folder):
 
 ![demo](misc/demo.png)
 
