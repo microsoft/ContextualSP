@@ -1,6 +1,6 @@
-# ContextualSP
+# Contextual Semantic Parsing
 
-The official pytorch implmentation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf).
+The official pytorch implmentation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
 ## Task
 
@@ -134,7 +134,7 @@ We provide windows batch scripts for convenience, you could modify them to linux
 | CoSQL | No | concat.none.jsonnet | 33.5 | 32.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.concat/model.tar.gz)|
 | CoSQL | Yes | concat.none.jsonnet | 41.0 | 40.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.concat/model.tar.gz)|
 
-# Predict
+## Predict
 
 You could predict SQLs using trained model checkpoint file using the following command:
 
@@ -175,7 +175,7 @@ allennlp predict ^
 %model_file%/model.tar.gz %validation_out_file
 ```
 
-# Demo
+## Demo
 
 You could also host a demo page using the following command:
 
@@ -211,7 +211,7 @@ The question field accepts an interaction of questions splitted by `;`. See the 
 ![demo](misc/demo.png)
 
 
-# Acknowledgement
+## Acknowledgement
 
 We will thank the following repos which are very helpful to us.
 
@@ -220,7 +220,7 @@ We will thank the following repos which are very helpful to us.
 - [spider-schema-gnn](https://github.com/benbogin/spider-schema-gnn)
 - [sparc official github repo](https://github.com/taoyds/sparc)
 
-# Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
