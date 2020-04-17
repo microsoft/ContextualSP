@@ -210,6 +210,25 @@ Once running, you could open the demo page in [http://localhost:8000](http://loc
 
 ![demo](misc/demo.png)
 
+## Question
+
+If you have any question or find any bug, please go ahead and [open an issue](https://github.com/microsoft/EMNLP2019-Split-And-Recombine/issues). Issues are an acceptable discussion forum as well.
+
+If you want to concat the author, please email: qian DOT liu AT buaa.edu.cn 
+
+## Cite
+
+If you find our code useful, please consider citing our paper:
+
+```
+@inproceedings{qian2020how,
+  title={How Far are We from Effective Context Modeling? An Exploratory Study on Semantic Parsing in Context twitter},
+  author={Qian, Liu and Bei, Chen and Jiaqi, Guo and Jian-Guang, Lou and Bin, Zhou and Dongmei, Zhang},
+  booktitle={IJCAI},
+  year={2020}
+}
+```
+
 
 ## Acknowledgement
 
