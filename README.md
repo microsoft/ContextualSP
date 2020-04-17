@@ -206,7 +206,7 @@ python -m allennlp.service.server_simple ^
     --field-name database_id
 ```
 
-Once running, you could open the demo page in [http://localhost:8000](http://localhost:8000). The question field accepts an interaction of questions splitted by `;`. See the demo page below (only accepts database_id appeared in `database` folder):
+Once running, you could open the demo page in [http://localhost:8000](http://localhost:8000). The question field accepts an interaction of questions splitted by `;`. See the demo page below (only accepts database_id appeared in `tables.json`):
 
 ![demo](misc/demo.png)
 
