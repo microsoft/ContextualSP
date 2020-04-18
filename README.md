@@ -5,13 +5,13 @@ The official pytorch implmentation of our paper [How Far are We from Effective C
 
 ## Task
 
-<img src="https://github.com/microsoft/ContextualSP/tree/master/misc/task.svg" height="100" align=center/>
+<img src="misc/task.svg" height="100" align=center/>
 
 Semantic parsing, which translates a natural language sentence into its corresponding executable logic form (e.g. Structured Query Language, SQL), relieves users from the burden of learning techniques behind the logic form. The majority of previous studies on semantic parsing assume that queries are context-independent and analyze them in isolation. However, in reality, users prefer to interact with systems in a dialogue, where users are allowed to ask context-dependent incomplete questions. That arises the task of **Semantic Parsing in Context**, which is quite challenging as there are complex contextual phenomena. 
 
 ## Model Framework
 
-<img src="https://github.com/microsoft/ContextualSP/tree/master/misc/semantic_framework.svg" height="150" align=center/>
+<img src="misc/semantic_framework.svg" height="150" align=center/>
 
 Our backbone is the Sequence to Sequence model with a Grammar-Based Decoder, especially using the IRNet grammar (SemQL).
 
