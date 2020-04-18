@@ -1,4 +1,5 @@
-# Contextual Semantic Parsing
+# Contextual Semantic Parsing <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "25" align=center />
+
 
 The official pytorch implmentation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
