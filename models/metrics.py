@@ -143,8 +143,7 @@ class SQLEvaluator(Evaluator):
         super().__init__()
         self.evaluate_func = partial(evaluate,
                                      db_dir=os.path.join(dataset_path, 'database'),
-                                     table=os.path.join(dataset_path, 'tables.json'),
-                                     check_valid=False)
+                                     table=os.path.join(dataset_path, 'tables.json'))
 
     @overrides
     def is_equal(self, predict_sql, gold_sql, db_id) -> int:
