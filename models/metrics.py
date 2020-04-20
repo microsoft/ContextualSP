@@ -14,7 +14,7 @@ from allennlp.training.metrics.metric import Metric
 from overrides import overrides
 from context.converter import ActionConverter
 from context.db_context import SparcDBContext
-from scripts.eval.sparc_evaluate import evaluate
+from scripts.sparc_evaluate import evaluate
 
 
 class MetricUtil:
