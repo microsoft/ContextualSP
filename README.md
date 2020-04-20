@@ -199,7 +199,7 @@ allennlp predict ^
 
 ## Demo
 
-You could also host a demo page using the following command:
+You could also host a demo page using the following command using a well-trained archived model (e.g. `checkpoints_sparc/sparc_concat_model/model.tar.gz`):
 
 - Under Linux
 ```bash
