@@ -45,6 +45,23 @@ The most important requirements of our code base are as following:
 
 You should install them at first.
 
+### Inject a SQL evaluator
+
+Now our code saves the best model checkpoint based on SQL based comparsion, which is the performance indicator on the Spider, SParC and CoSQL benchmarks. Here we adopt the evaluation script which is suited for python3 from [EditSQL](https://github.com/ryanzhumich/editsql). 
+
+Concretely, you should download `evaluation_sqa.py` and `process_sql.py` from [https://github.com/ryanzhumich/editsql/tree/master/eval_scripts](https://github.com/ryanzhumich/editsql/tree/master/eval_scripts). And then place them under the `script/eval` folder as:
+
+```
+|- scripts
+    |- eval
+        |- evaluation_sqa.py (downloaded from EditSQL)
+        |- process_sql.py (downloaded from EditSQL)
+    |- sparc_evaluate.py (released within this repo)
+```
+
+Then, fix the import issue in `evaluation_sqa.py` by converting `from process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql` to `from .process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql`.
+
+
 ## Prepare Dataset
 
 You could download the two datasets [SParC](https://yale-lily.github.io/sparc) and [CoSQL](https://yale-lily.github.io/cosql). And then rename the dataset top folder as `dataset_sparc` and `dataset_cosql` respectively. An example structure for dataset `SParC` is as following:
@@ -239,6 +256,7 @@ We will thank the following repos which are very helpful to us.
 - [IRNet](https://github.com/microsoft/IRNet)
 - [spider-schema-gnn](https://github.com/benbogin/spider-schema-gnn)
 - [sparc](https://github.com/taoyds/sparc)
+- [editsql](https://github.com/ryanzhumich/editsql)
 
 ## Contributing
 
