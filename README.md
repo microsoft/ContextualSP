@@ -62,7 +62,9 @@ Concretely, you should download `evaluation_sqa.py` and `process_sql.py` from [h
 Then, fix the import issue in `evaluation_sqa.py` by converting `from process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql` to `from .process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql`.
 
 
-## Prepare Dataset
+## Data
+
+### Prepare Dataset
 
 You could download the two datasets [SParC](https://yale-lily.github.io/sparc) and [CoSQL](https://yale-lily.github.io/cosql). And then rename the dataset top folder as `dataset_sparc` and `dataset_cosql` respectively. An example structure for dataset `SParC` is as following:
 
@@ -80,7 +82,9 @@ You could download the two datasets [SParC](https://yale-lily.github.io/sparc) a
 |- ...
 ```
 
-If you want to train models using pretrained files, please download [Glove Twitter](http://nlp.stanford.edu/data/glove.twitter.27B.zip). Unzip and rename the folder into `glove`.
+### Prepare Glove
+
+If you want to train models without BERT, please download [Glove Twitter](http://nlp.stanford.edu/data/glove.twitter.27B.zip). Unzip and rename the folder into `glove`.
 
 ## Training
 
