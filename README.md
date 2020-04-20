@@ -1,17 +1,17 @@
 # Contextual Semantic Parsing <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "25" align=center />
 
 
-The official pytorch implmentation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
+The official pytorch implementation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
 ## Task
 
-<img src="misc/task.svg" height="200" align=center/>
+![Task Figure](misc/task.png)
 
 Semantic parsing, which translates a natural language sentence into its corresponding executable logic form (e.g. Structured Query Language, SQL), relieves users from the burden of learning techniques behind the logic form. The majority of previous studies on semantic parsing assume that queries are context-independent and analyze them in isolation. However, in reality, users prefer to interact with systems in a dialogue, where users are allowed to ask context-dependent incomplete questions. That arises the task of **Semantic Parsing in Context**, which is quite challenging as there are complex contextual phenomena. 
 
 ## Model Framework
 
-<img src="misc/semantic_framework.svg" height="450" align=center/>
+![Model Figure](misc/semantic_framework.png)
 
 Our backbone is the Sequence to Sequence model with a Grammar-Based Decoder, especially using the IRNet grammar (SemQL).
 
@@ -67,7 +67,7 @@ If you want to train models using pretrained files, please download [Glove Twitt
 
 ## Training
 
-![task](misc/settings.svg)
+![task](misc/settings.png)
 
 We use the command `allennlp` to train our models, and all the hyper-parameters for different settings are stored in configs listed under `train_configs` and `train_configs_bert`. The config and model architectures in our paper are as following:
 
@@ -207,7 +207,7 @@ python -m allennlp.service.server_simple ^
     --field-name database_id
 ```
 
-Once running, you could open the demo page in [http://localhost:8000](http://localhost:8000). The question field accepts an interaction of questions splitted by `;`. See the demo page below (only accepts database_id appeared in `tables.json`):
+Once running, you could open the demo page in [http://localhost:8000](http://localhost:8000). The question field accepts an interaction of questions separated by `;`. See the demo page below (only accepts database_id appeared in `tables.json`):
 
 ![demo](misc/demo.png)
 
@@ -238,7 +238,7 @@ We will thank the following repos which are very helpful to us.
 - [allennlp](https://github.com/allenai/allennlp)
 - [IRNet](https://github.com/microsoft/IRNet)
 - [spider-schema-gnn](https://github.com/benbogin/spider-schema-gnn)
-- [sparc official github repo](https://github.com/taoyds/sparc)
+- [sparc](https://github.com/taoyds/sparc)
 
 ## Contributing
 
