@@ -234,7 +234,7 @@ Once running, you could open the demo page in [http://localhost:8000](http://loc
 
 ## Question
 
-If you have any question or find any bug, please go ahead and [open an issue](https://github.com/microsoft/EMNLP2019-Split-And-Recombine/issues). Issues are an acceptable discussion forum as well.
+If you have any question or find any bug, please go ahead and [open an issue](https://github.com/microsoft/ContextualSP/issues). Issues are an acceptable discussion forum as well.
 
 If you want to concat the author, please email: qian DOT liu AT buaa.edu.cn 
 
