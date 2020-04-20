@@ -1,16 +1,17 @@
-# ContextualSP
+# Contextual Semantic Parsing <img src="https://pytorch.org/assets/images/logo-dark.svg" height = "25" align=center />
 
-The official pytorch implmentation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf).
+
+The official pytorch implmentation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
 ## Task
 
-![task](misc/task.svg)
+<img src="misc/task.svg" height="200" align=center/>
 
 Semantic parsing, which translates a natural language sentence into its corresponding executable logic form (e.g. Structured Query Language, SQL), relieves users from the burden of learning techniques behind the logic form. The majority of previous studies on semantic parsing assume that queries are context-independent and analyze them in isolation. However, in reality, users prefer to interact with systems in a dialogue, where users are allowed to ask context-dependent incomplete questions. That arises the task of **Semantic Parsing in Context**, which is quite challenging as there are complex contextual phenomena. 
 
 ## Model Framework
 
-![model](misc/semantic_framework.svg)
+<img src="misc/semantic_framework.svg" height="450" align=center/>
 
 Our backbone is the Sequence to Sequence model with a Grammar-Based Decoder, especially using the IRNet grammar (SemQL).
 
@@ -134,7 +135,7 @@ We provide windows batch scripts for convenience, you could modify them to linux
 | CoSQL | No | concat.none.jsonnet | 33.5 | 32.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.concat/model.tar.gz)|
 | CoSQL | Yes | concat.none.jsonnet | 41.0 | 40.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.concat/model.tar.gz)|
 
-# Predict
+## Predict
 
 You could predict SQLs using trained model checkpoint file using the following command:
 
@@ -175,7 +176,7 @@ allennlp predict ^
 %model_file%/model.tar.gz %validation_out_file
 ```
 
-# Demo
+## Demo
 
 You could also host a demo page using the following command:
 
@@ -206,12 +207,31 @@ python -m allennlp.service.server_simple ^
     --field-name database_id
 ```
 
-The question field accepts an interaction of questions splitted by `;`. See the demo page below (only accepts database_id appeared in `database` folder):
+Once running, you could open the demo page in [http://localhost:8000](http://localhost:8000). The question field accepts an interaction of questions splitted by `;`. See the demo page below (only accepts database_id appeared in `tables.json`):
 
 ![demo](misc/demo.png)
 
+## Question
 
-# Acknowledgement
+If you have any question or find any bug, please go ahead and [open an issue](https://github.com/microsoft/EMNLP2019-Split-And-Recombine/issues). Issues are an acceptable discussion forum as well.
+
+If you want to concat the author, please email: qian DOT liu AT buaa.edu.cn 
+
+## Cite
+
+If you find our code useful, please consider citing our paper:
+
+```
+@inproceedings{qian2020how,
+  title={How Far are We from Effective Context Modeling? An Exploratory Study on Semantic Parsing in Context twitter},
+  author={Qian, Liu and Bei, Chen and Jiaqi, Guo and Jian-Guang, Lou and Bin, Zhou and Dongmei, Zhang},
+  booktitle={IJCAI},
+  year={2020}
+}
+```
+
+
+## Acknowledgement
 
 We will thank the following repos which are very helpful to us.
 
@@ -220,7 +240,7 @@ We will thank the following repos which are very helpful to us.
 - [spider-schema-gnn](https://github.com/benbogin/spider-schema-gnn)
 - [sparc official github repo](https://github.com/taoyds/sparc)
 
-# Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
