@@ -10,4 +10,4 @@ export validation_data_path=dataset_cosql/dev.json
 allennlp train -s ${model_file} ${config_file} \
 --include-package dataset_reader.sparc_reader \
 --include-package models.sparc_parser \
--o '{"model.serialization_dir":"${model_file}","random_seed":"${seed}","numpy_seed":"${seed}","pytorch_seed":"${seed}","dataset_reader.tables_file":"${tables_file}","dataset_reader.database_path":"${database_path}","train_data_path":"${train_data_path}","validation_data_path":"${validation_data_path}","model.dataset_path":"${dataset_path}"}'
+-o "{\"model.serialization_dir\":\"${model_file}\",\"random_seed\":\"${seed}\",\"numpy_seed\":\"${seed}\",\"pytorch_seed\":\"${seed}\",\"dataset_reader.tables_file\":\"${tables_file}\",\"dataset_reader.database_path\":\"${database_path}\",\"train_data_path\":\"${train_data_path}\",\"validation_data_path\":\"${validation_data_path}\",\"model.dataset_path\":\"${dataset_path}\"}"
