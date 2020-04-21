@@ -280,37 +280,37 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 116	1	world_1	which of those have a population between 160000 and 900000 ?	Demonstrative Pronoun	Whole				
 117	0	world_1	what are the different languages ?						
 117	1	world_1	which one is spoken in the most countries ?	One Anaphora	Whole				
-118	0	tvshow	tell me﻿ the director of the cartoon named " day of the dark knight ! " .						
+118	0	tvshow	tell me﻿ the director of the cartoon named ' day of the dark knight ! ' .						
 118	1	tvshow	what is the channel of this cartoon ?	Definite NPs	Part				
-118	2	tvshow	give me the titles of all cartoon directed by " ben jones " or " brandon vietti " ?			Context Independent			
+118	2	tvshow	give me the titles of all cartoon directed by ' ben jones ' or ' brandon vietti ' ?			Context Independent			
 119	0	tvshow	show me all the information about the italian tv channels .						
 119	1	tvshow	how about the polish tv channels ?			Explicit Schema Modification	Explict	Schema	Modification
 119	2	tvshow	which country has the most of tv channels ? list the country and number of tv channels it has .			Context Independent			
-120	0	tvshow	tell me the tv channel of the cartoon titled " the eyes of despero ! " .						
+120	0	tvshow	tell me the tv channel of the cartoon titled ' the eyes of despero ! ' .						
 120	1	tvshow	how about this channel 's series name ?	Definite NPs	Whole	Implicit Schema Continuation	Implicit	Schema	Continuation
 120	2	tvshow	tell me the number of different series names and contents in the tv channel table .			Context Independent			
-121	0	tvshow	tell me the package option for the series named " rock tv " .						
+121	0	tvshow	tell me the package option for the series named ' rock tv ' .						
 121	1	tvshow	tell me the language of this series .	Definite NPs	Part				
 121	2	tvshow	list the language used least number of tv channel . list language and number of tv channel .			Context Independent			
-122	0	tvshow	tell me the author of the cartoon " the rise of the blue beetle ! "						
+122	0	tvshow	tell me the author of the cartoon ' the rise of the blue beetle ! '						
 122	1	tvshow	how about its director ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
 122	2	tvshow	what is its tv channel ?	Possessive Determiner	Part				
-123	0	tvshow	tell me the country of the tv channel for the series named " sky radio " .						
+123	0	tvshow	tell me the country of the tv channel for the series named ' sky radio ' .						
 123	1	tvshow	how about its content ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
-123	2	tvshow	i want to know the title of all cartoons showed on tv channel with series name " sky radio " .			Context Independent			
-124	0	tvshow	tell me the rating of the episode named " double down " .						
-124	1	tvshow	how about the rating of the episode named " keepers " .			Explicit Schema Modification	Explict	Schema	Modification
+123	2	tvshow	i want to know the title of all cartoons showed on tv channel with series name ' sky radio ' .			Context Independent			
+124	0	tvshow	tell me the rating of the episode named ' double down ' .						
+124	1	tvshow	how about the rating of the episode named ' keepers ' .			Explicit Schema Modification	Explict	Schema	Modification
 124	2	tvshow	okay , i want to know the top 3 highest rating tv series . list the tv series 's episode and rating .			Context Independent			
-125	0	tvshow	tell me the weekly rank of the episode named " emily " .						
+125	0	tvshow	tell me the weekly rank of the episode named ' emily ' .						
 125	1	tvshow	how about its share ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
 125	2	tvshow	tell me the minimum and maximum share of tv series .			Context Independent			
-126	0	tvshow	tell me the rating of the episode titled " a love of a lifetime " .						
+126	0	tvshow	tell me the rating of the episode titled ' a love of a lifetime ' .						
 126	1	tvshow	how about its weekly rank ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
 126	2	tvshow	and what is its tv channel ?	Possessive Determiner	Part	Explicit Clause Continuation	Explict	Clause	Continuation
-127	0	tvshow	tell me the content of tv channel with the series named " sky radio " .						
+127	0	tvshow	tell me the content of tv channel with the series named ' sky radio ' .						
 127	1	tvshow	how about its language ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
-127	2	tvshow	okay , now i want to know the episode of all tv series showed on tv channel with series name " sky radio " .			Context Independent			
-128	0	tvshow	tell me the air date of the cartoon titled " fall of the blue beetle ! " .						
+127	2	tvshow	okay , now i want to know the episode of all tv series showed on tv channel with series name ' sky radio ' .			Context Independent			
+128	0	tvshow	tell me the air date of the cartoon titled ' fall of the blue beetle ! ' .						
 128	1	tvshow	what is its production code ?	Possessive Determiner	Part				
 128	2	tvshow	tell me the production code and channel of the most recently aired cartoon .			Context Independent			
 129	0	tvshow	tell me the cartoons directed by ben jone .						
@@ -318,13 +318,13 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 129	2	tvshow	which countries ' tv channels are playing some cartoon written by todd casey ?			Context Independent			
 130	0	tvshow	which countries ' tv channels are playing some cartoon written by steven melching ?						
 130	1	tvshow	which countries ' tv channels are not playing any cartoon written by todd casey ?			Context Independent			
-131	0	tvshow	tell me the director of the cartoon titled " deep cover for batman ! " .						
+131	0	tvshow	tell me the director of the cartoon titled ' deep cover for batman ! ' .						
 131	1	tvshow	i want to know this cartoon 's production code .	Definite NPs	Part				
 131	2	tvshow	tell me the series name and country of the tv channel that is playing some cartoons directed by ben jones and michael chang .			Context Independent			
-132	0	tvshow	tell me the country of the tv channel with series named " mtv music "						
+132	0	tvshow	tell me the country of the tv channel with series named ' mtv music '						
 132	1	tvshow	tell me the number of italian channels .			Context Independent			
 132	2	tvshow	find id of the tv channels that from the countries where have more than two tv channels .			Context Independent			
-133	0	tvshow	who is the director of the cartoon titled " return of the fearsome fangs ! " ?						
+133	0	tvshow	who is the director of the cartoon titled ' return of the fearsome fangs ! ' ?						
 133	1	tvshow	tell me the cartoons directed by ben jones .			Context Independent			
 133	2	tvshow	find the id of tv channels that do not play any cartoon directed by ben jones .			Context Independent			
 134	0	poker_player	show all the poker players .						
@@ -369,7 +369,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 150	0	poker_player	what are the names and birth dates of people ?						
 150	1	poker_player	sort the results in ascending alphabetical order of name .	Bridging Anaphora	Whole				
 151	0	poker_player	what are the names of all people ?						
-151	1	poker_player	what about people whose nationality is not " russia " ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+151	1	poker_player	what about people whose nationality is not ' russia ' ?			Implicit Clause Continuation	Implicit	Clause	Continuation
 152	0	poker_player	show all the poker players .						
 152	1	poker_player	show all people who are not poker players .			Context Independent			
 152	2	poker_player	give me their names .	Possessive Determiner	Whole				
@@ -607,7 +607,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 218	0	orchestra	what is the attendance of each show ?						
 218	1	orchestra	what is the average attendance ?			Implicit Operator Continuation	Implicit	Operator	Continuation
 219	0	orchestra	what are the shares of performances ?						
-219	1	orchestra	what are the shares of performances whose type is not " live final " ?			Context Independent			
+219	1	orchestra	what are the shares of performances whose type is not ' live final ' ?			Context Independent			
 219	2	orchestra	what are the maximum and the minimum of these values ?	Bridging Anaphora	Whole				
 220	0	orchestra	list the nationalities of conductors .						
 220	1	orchestra	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
@@ -637,7 +637,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 231	1	orchestra	which of them are shared by orchestras founded before 2003 ?	Demonstrative Pronoun	Whole				
 231	2	orchestra	which of them are shared by orchestras founded after 2003 ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
 231	3	orchestra	which of them are shared by orchestras founded before 2003 and after 2003 ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
-232	0	orchestra	list the orchestras whose record format is " cd " or " dvd " .						
+232	0	orchestra	list the orchestras whose record format is ' cd ' or ' dvd ' .						
 232	1	orchestra	how many of these orchestras are there ?	Definite NPs	Whole				
 233	0	cre_Doc_Template_Mgt	show information for all documents .						
 233	1	cre_Doc_Template_Mgt	show their ids .	Possessive Determiner	Whole				
@@ -647,7 +647,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 234	2	cre_Doc_Template_Mgt	which one has description with the letter ' w ' in it ?	One Anaphora	Part				
 234	3	cre_Doc_Template_Mgt	show its name and template id .	Possessive Determiner	Part				
 235	0	cre_Doc_Template_Mgt	show the the document name for all documents .						
-235	1	cre_Doc_Template_Mgt	show the document id for the one named " robbin cv " ?			Context Independent			
+235	1	cre_Doc_Template_Mgt	show the document id for the one named ' robbin cv ' ?			Context Independent			
 235	2	cre_Doc_Template_Mgt	also show its template id and description .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
 236	0	cre_Doc_Template_Mgt	show the template id for all documents .						
 236	1	cre_Doc_Template_Mgt	show all distinct results .	Bridging Anaphora	Whole				
@@ -694,7 +694,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 251	2	cre_Doc_Template_Mgt	also show its template type code .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
 252	0	cre_Doc_Template_Mgt	what is the template type code of the template .						
 252	1	cre_Doc_Template_Mgt	also show the names of all documents using each template .			Explicit Schema Continuation	Explict	Schema	Continuation
-252	2	cre_Doc_Template_Mgt	which of the template type codes is used by document with the name " data base " ?			Context Independent			
+252	2	cre_Doc_Template_Mgt	which of the template type codes is used by document with the name ' data base ' ?			Context Independent			
 253	0	cre_Doc_Template_Mgt	show all document names .						
 253	1	cre_Doc_Template_Mgt	also show their template type codes .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
 253	2	cre_Doc_Template_Mgt	which of the documents are using templates with template type code bk ?			Context Independent			
@@ -711,17 +711,17 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 257	0	cre_Doc_Template_Mgt	show all template type codes .						
 257	1	cre_Doc_Template_Mgt	also show their descriptions .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
 258	0	cre_Doc_Template_Mgt	show all template type codes and descriptions .						
-258	1	cre_Doc_Template_Mgt	what is the description for template type code " ad " ?			Context Independent			
+258	1	cre_Doc_Template_Mgt	what is the description for template type code ' ad ' ?			Context Independent			
 259	0	cre_Doc_Template_Mgt	show all template type codes .						
 259	1	cre_Doc_Template_Mgt	also show descriptions .			Explicit Schema Continuation	Explict	Schema	Continuation
-259	2	cre_Doc_Template_Mgt	which code has template type description " book " ?			Context Independent			
+259	2	cre_Doc_Template_Mgt	which code has template type description ' book ' ?			Context Independent			
 260	0	cre_Doc_Template_Mgt	show the template ids used by any document .						
 260	1	cre_Doc_Template_Mgt	also show the template type code for those ids .	Definite NPs	Whole				
 260	2	cre_Doc_Template_Mgt	how about their template type descriptions ?	Possessive Determiner	Whole	Implicit Schema Modification	Implicit	Schema	Modification
 260	3	cre_Doc_Template_Mgt	show the distinct values among them .	Bridging Anaphora	Whole				
 261	0	cre_Doc_Template_Mgt	show the template id for all templates .						
 261	1	cre_Doc_Template_Mgt	also show their template type description .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
-261	2	cre_Doc_Template_Mgt	what are the template ids with description " presentation " ?			Context Independent			
+261	2	cre_Doc_Template_Mgt	what are the template ids with description ' presentation ' ?			Context Independent			
 262	0	cre_Doc_Template_Mgt	show the info for all paragraphs .						
 262	1	cre_Doc_Template_Mgt	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
 263	0	cre_Doc_Template_Mgt	show the id for all paragraphs .						
@@ -736,7 +736,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 265	2	cre_Doc_Template_Mgt	what are the ids and texts for the paragraph in the document with name ' welcome to ny ' ?			Context Independent			
 266	0	cre_Doc_Template_Mgt	show all paragraph text .						
 266	1	cre_Doc_Template_Mgt	for each of them , also show the document name .	Demonstrative Pronoun	Whole				
-266	2	cre_Doc_Template_Mgt	what is the text for the document " customer reviews " ?			Context Independent			
+266	2	cre_Doc_Template_Mgt	what is the text for the document ' customer reviews ' ?			Context Independent			
 267	0	cre_Doc_Template_Mgt	show the document id for all paragraphs .						
 267	1	cre_Doc_Template_Mgt	for each id , show the number of paragraphs .			Context Independent			
 267	2	cre_Doc_Template_Mgt	order by document id .			Implicit Clause Continuation	Implicit	Clause	Continuation
@@ -927,7 +927,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 330	0	network_1	how many highschoolers have more than 5 ?						
 330	1	network_1	at least 3 ?			Implicit Operator Modification	Implicit	Operator	Modification
 330	2	network_1	what are their names ?	Possessive Determiner	Whole				
-331	0	network_1	show me information on the high schooler named " kyle . "						
+331	0	network_1	show me information on the high schooler named ' kyle . '						
 331	1	network_1	how many friends does he have ?	Demonstrative Pronoun	Whole				
 331	2	network_1	what are their names ?	Possessive Determiner	Whole				
 332	0	network_1	is there a highschooler named kyle ?						
@@ -979,7 +979,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 345	0	course_teach	what is the age of each teacher ?						
 345	1	course_teach	also show the hometown for each .			Explicit Schema Continuation	Explict	Schema	Continuation
 346	0	course_teach	what is the hometown of each teacher ?						
-346	1	course_teach	which teacher 's hometown is not " little lever urban district " ?			Context Independent			
+346	1	course_teach	which teacher 's hometown is not ' little lever urban district ' ?			Context Independent			
 346	2	course_teach	give me their names .	Possessive Determiner	Whole				
 347	0	course_teach	what are the ages of all the teachers ?						
 347	1	course_teach	which teachers are age 32 ?			Context Independent			
@@ -1012,7 +1012,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 356	2	course_teach	show the names of teachers who teach at least two courses .			Context Independent			
 357	0	real_estate_properties	show all the available features .						
 357	1	real_estate_properties	how many available features are there ?			Context Independent			
-358	0	real_estate_properties	find the available features with feature name " aircon " .						
+358	0	real_estate_properties	find the available features with feature name ' aircon ' .						
 358	1	real_estate_properties	what is the feature type name ?			Implicit Schema Modification	Implicit	Schema	Modification
 359	0	real_estate_properties	what is the property type description of each property ?						
 359	1	real_estate_properties	show the property type descriptions of properties for each property type code .			Context Independent			
@@ -1070,7 +1070,7 @@ InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Impli
 376	1	student_transcripts_tracking	show me names and ids for courses that have at most 2 sections .			Context Independent			
 377	0	student_transcripts_tracking	which semester did the least number of students register ? give me its name and id .						
 377	1	student_transcripts_tracking	how about the semester that most number of students registered ?			Explicit Operator Modification	Explict	Operator	Modification
-378	0	student_transcripts_tracking	show me all department names that contain the word " computer "						
+378	0	student_transcripts_tracking	show me all department names that contain the word ' computer '						
 378	1	student_transcripts_tracking	show me their descriptions .	Possessive Determiner	Whole				
 379	0	student_transcripts_tracking	how many people are enrolled in 2 degree programs in one semester ?						
 379	1	student_transcripts_tracking	show me their first , middle , and last names .	Possessive Determiner	Whole	Implicit Schema Modification	Implicit	Schema	Modification
