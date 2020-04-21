@@ -135,7 +135,7 @@ export dataset_path=dataset_sparc
 export train_data_path=dataset_sparc/train.json
 export validation_data_path=dataset_sparc/dev.json
 export pretrained_file=glove/glove.twitter.27B.100d.txt
-allennlp train -s $model_file $config_file \
+allennlp train -s ${model_file} ${config_file} \
 --include-package dataset_reader.sparc_reader \
 --include-package models.sparc_parser \
 -o '{"model.serialization_dir":"$model_file","random_seed":"$seed","numpy_seed":"$seed","pytorch_seed":"$seed","dataset_reader.tables_file":"$tables_file","dataset_reader.database_path":"$database_path","train_data_path":"$train_data_path","validation_data_path":"$validation_data_path","model.text_embedder.tokens.pretrained_file":"$pretrained_file","model.dataset_path":"$dataset_path"}'
@@ -169,7 +169,7 @@ export model_file=checkpoints_sparc/sparc_concat_model
 export validation_file=dataset_sparc/dev.json
 export validation_out_file=dataset_sparc/dev.jsonl
 export prediction_out_file=predict.jsonl
-python postprocess.py --valid_file $validation_file --valid_out_file $validation_out_file
+python postprocess.py --valid_file ${validation_file} --valid_out_file ${validation_out_file}
 allennlp predict \
 --include-package dataset_reader.sparc_reader \
 --include-package models.sparc_parser \
@@ -178,8 +178,8 @@ allennlp predict \
 --dataset-reader-choice validation \
 --batch-size 1 \
 --cuda-device 0 \
---output-file $model_file/$prediction_out_file \
-$model_file/model.tar.gz $validation_out_file
+--output-file ${model_file}/${prediction_out_file} \
+${model_file}/model.tar.gz ${validation_out_file}
 ```
 - Under Windows
 ```cmd
@@ -208,7 +208,7 @@ You could also host a demo page using the following command using a well-trained
 ```bash
 export model_file=checkpoints_sparc/sparc_concat_model
 python -m allennlp.service.server_simple \
-    --archive-path $model_file/model.tar.gz \
+    --archive-path ${model_file}/model.tar.gz \
     --predictor sparc \
     --include-package predictor.sparc_predictor \
     --include-package dataset_reader.sparc_reader \

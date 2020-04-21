@@ -1,4 +1,4 @@
-set model_file=checkpoints_sparc/sparc_bert_concat_none_model_1
+set model_file=checkpoints_sparc/sparc_concat_none_model
 python -m allennlp.service.server_simple ^
     --archive-path %model_file%/model.tar.gz ^
     --predictor sparc ^

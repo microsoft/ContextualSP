@@ -1,7 +1,6 @@
-set CUDA_VISIBLE_DEVICES=7
-set seed=3
-set config_file=train_configs_bert/none.token.jsonnet
-set model_file=checkpoints_cosql/cosql_bert_none_token_model_3
+set seed=1
+set config_file=train_configs_bert/concat.none.jsonnet
+set model_file=checkpoints_cosql/cosql_bert_concat_none_model
 set tables_file=dataset_cosql/tables.json
 set database_path=dataset_cosql/database
 set dataset_path=dataset_cosql

@@ -1,12 +1,11 @@
-set CUDA_VISIBLE_DEVICES=6
-set seed=5
-set config_file=train_configs/none.token.jsonnet
-set model_file=checkpoints_sparc/sparc_none_token_model_5
-set tables_file=dataset_sparc/tables.json
-set database_path=dataset_sparc/database
-set dataset_path=dataset_sparc
-set train_data_path=dataset_sparc/train.json
-set validation_data_path=dataset_sparc/dev.json
+set seed=1
+set config_file=train_configs/concat.none.jsonnet
+set model_file=checkpoints_cosql/cosql_concat_none_model
+set tables_file=dataset_cosql/tables.json
+set database_path=dataset_cosql/database
+set dataset_path=dataset_cosql
+set train_data_path=dataset_cosql/train.json
+set validation_data_path=dataset_cosql/dev.json
 set pretrained_file=glove/glove.twitter.27B.100d.txt
 allennlp train -s %model_file% %config_file% ^
 --include-package dataset_reader.sparc_reader ^

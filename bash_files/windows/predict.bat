@@ -1,5 +1,4 @@
-set CUDA_VISIBLE_DEVICES=1
-set model_file=checkpoints_sparc/sparc_bert_concat_none_model_1
+set model_file=checkpoints_sparc/sparc_concat_none_model
 set validation_file=dataset_sparc/dev.json
 set validation_out_file=dataset_sparc/dev.jsonl
 set prediction_out_file=predict.jsonl

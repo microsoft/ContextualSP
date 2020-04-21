@@ -1,7 +1,6 @@
-set CUDA_VISIBLE_DEVICES=5
-set seed=4
-set config_file=train_configs_bert/turn.none.jsonnet
-set model_file=checkpoints_sparc/sparc_bert_turn_none_model_4
+set seed=1
+set config_file=train_configs_bert/concat.none.jsonnet
+set model_file=checkpoints_sparc/sparc_bert_concat_none_model
 set tables_file=dataset_sparc/tables.json
 set database_path=dataset_sparc/database
 set dataset_path=dataset_sparc
