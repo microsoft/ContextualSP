@@ -144,7 +144,7 @@ export pretrained_file=glove/glove.twitter.27B.100d.txt
 allennlp train -s ${model_file} ${config_file} \
 --include-package dataset_reader.sparc_reader \
 --include-package models.sparc_parser \
--o '{"model.serialization_dir":"$model_file","random_seed":"$seed","numpy_seed":"$seed","pytorch_seed":"$seed","dataset_reader.tables_file":"$tables_file","dataset_reader.database_path":"$database_path","train_data_path":"$train_data_path","validation_data_path":"$validation_data_path","model.text_embedder.tokens.pretrained_file":"$pretrained_file","model.dataset_path":"$dataset_path"}'
+-o "{\"model.serialization_dir\":\"${model_file}\",\"random_seed\":\"${seed}\",\"numpy_seed\":\"${seed}\",\"pytorch_seed\":\"${seed}\",\"dataset_reader.tables_file\":\"${tables_file}\",\"dataset_reader.database_path\":\"${database_path}\",\"train_data_path\":\"${train_data_path}\",\"validation_data_path\":\"${validation_data_path}\",\"model.text_embedder.tokens.pretrained_file\":\"${pretrained_file}\",\"model.dataset_path\":\"${dataset_path}\"}"
 ```
 - Under Windows (`"""` is to escape the double quotation mark, equalivant to `"`):
 ```cmd
