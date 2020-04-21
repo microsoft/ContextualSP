@@ -3,20 +3,34 @@
 
 The official pytorch implementation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
+## Content
+
+- [Task Introduction](#task)
+- [Model Framework](#model)
+- [Install Dependencies](#requirement)
+- [Prepare Dataset](#data)
+- [Train Model](#train)
+- [Predict Model](#predict)
+- [Demo on Web](#demo)
+- [Pretrained Weights](#experiment)
+- [Fine-grained Analysis](#analysis)
+- [Question](#question)
+- [Cite Our Paper](#cite)
+
 ## Task
 
 <img src="misc/task.png" height=150>
 
 Semantic parsing, which translates a natural language sentence into its corresponding executable logic form (e.g. Structured Query Language, SQL), relieves users from the burden of learning techniques behind the logic form. The majority of previous studies on semantic parsing assume that queries are context-independent and analyze them in isolation. However, in reality, users prefer to interact with systems in a dialogue, where users are allowed to ask context-dependent incomplete questions. That arises the task of **Semantic Parsing in Context**, which is quite challenging as there are complex contextual phenomena. 
 
-## Model Framework
+## Model
 
 <img src="misc/semantic_framework.png" height=400>
 
 Our backbone is the Sequence to Sequence model with a Grammar-Based Decoder, especially using the IRNet grammar (SemQL).
 
 
-## Install Dependencies
+## Requirement
 
 ### Python Environment
 
@@ -86,7 +100,7 @@ You could download the two datasets [SParC](https://yale-lily.github.io/sparc) a
 
 If you want to train models without BERT, please download [Glove Twitter](http://nlp.stanford.edu/data/glove.twitter.27B.zip). Unzip and rename the folder into `glove`.
 
-## Training
+## Train
 
 ![task](misc/settings.png)
 
@@ -144,17 +158,6 @@ allennlp train -s %model_file% %config_file% ^
 ```
 
 We provide windows batch scripts for convenience, you could modify them to linux according the above examples.
-
-## Experimental Results
-
-*Note: We will release pretrained weights under other settings later.*
-
-| Dataset | BERT | Config | Best | Avg | Pretrained_Weights |
-| :---: | :---: |:--- | :---: | :---: | :---: |
-| SParC | No | concat.none.jsonnet | 41.8 | 40.0 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.concat/model.tar.gz)|
-| SParC | Yes | concat.none.jsonnet | 52.6 | 51.0 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.bert.concat/model.tar.gz)|
-| CoSQL | No | concat.none.jsonnet | 33.5 | 32.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.concat/model.tar.gz)|
-| CoSQL | Yes | concat.none.jsonnet | 41.0 | 40.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.concat/model.tar.gz)|
 
 ## Predict
 
@@ -231,6 +234,21 @@ python -m allennlp.service.server_simple ^
 Once running, you could open the demo page in [http://localhost:8000](http://localhost:8000). The question field accepts an interaction of questions separated by `;`. See the demo page below (only accepts database_id appeared in `tables.json`):
 
 ![demo](misc/demo.png)
+
+## Experiment
+
+*Note: We will release pretrained weights under other settings later.*
+
+| Dataset | BERT | Config | Best | Avg | Pretrained_Weights |
+| :---: | :---: |:--- | :---: | :---: | :---: |
+| SParC | No | concat.none.jsonnet | 41.8 | 40.0 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.concat/model.tar.gz)|
+| SParC | Yes | concat.none.jsonnet | 52.6 | 51.0 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.bert.concat/model.tar.gz)|
+| CoSQL | No | concat.none.jsonnet | 33.5 | 32.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.concat/model.tar.gz)|
+| CoSQL | Yes | concat.none.jsonnet | 41.0 | 40.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.concat/model.tar.gz)|
+
+## Analysis
+
+We also provide the fine-grained analysis results [here](https://github.com/microsoft/ContextualSP/misc/https://github.com/microsoft/ContextualSP/blob/master/misc/dev_annotaed.tsv) annotated on the SParC validation set. You could either use it in your research work or debug your model in a fine-grained level.
 
 ## Question
 
