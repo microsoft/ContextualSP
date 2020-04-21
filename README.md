@@ -163,7 +163,7 @@ allennlp train -s %model_file% %config_file% ^
 -o {"""model.serialization_dir""":"""%model_file%""","""random_seed""":"""%seed%""","""numpy_seed""":"""%seed%""","""pytorch_seed""":"""%seed%""","""dataset_reader.tables_file""":"""%tables_file%""","""dataset_reader.database_path""":"""%database_path%""","""train_data_path""":"""%train_data_path%""","""validation_data_path""":"""%validation_data_path%""","""model.text_embedder.tokens.pretrained_file""":"""%pretrained_file%""","""model.dataset_path""":"""%dataset_path%"""}
 ```
 
-We provide `windows` and `linux` batch scripts in the folder `batch_files` for your convenience. NOTICE: please run them under the root directory './'.
+We provide [`windows`](https://github.com/microsoft/ContextualSP/tree/master/bash_files/windows) and [`linux`](https://github.com/microsoft/ContextualSP/tree/master/bash_files/linux) batch script in the folder [`batch_files`](https://github.com/microsoft/ContextualSP/tree/master/bash_files) for your convenience. NOTICE: please run them under the root directory `./`.
 
 ## Predict
 
