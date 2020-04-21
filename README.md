@@ -248,7 +248,7 @@ Once running, you could open the demo page in [http://localhost:8000](http://loc
 
 ## Analysis
 
-We also provide the fine-grained analysis results [here](https://github.com/microsoft/ContextualSP/misc/https://github.com/microsoft/ContextualSP/blob/master/misc/dev_annotaed.tsv) annotated on the SParC validation set. You could either use it in your research work or debug your model in a fine-grained level.
+We also provide the fine-grained analysis results [here](https://github.com/microsoft/ContextualSP/blob/master/misc/dev_annotaed.tsv) annotated on the SParC validation set. You could either use it in your research work or debug your model in a fine-grained level.
 
 ## Question
 
