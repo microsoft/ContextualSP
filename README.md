@@ -16,6 +16,7 @@ The official pytorch implementation of our paper [How Far are We from Effective 
 - [Fine-grained Analysis](#analysis)
 - [Question](#question)
 - [Cite Our Paper](#cite)
+- [Frequent Asked Questions](#faq)
 
 ## Task
 
@@ -56,6 +57,11 @@ source $ENV_FOLDER/bin/activate (Linux)
 The most important requirements of our code base are as following:
 - pytorch >= 1.2.0 (not tested on other versions, but 1.0.0 may work though)
 - allennlp >= 0.9.0
+
+Then you should install following packages: 
+- dill
+- ordered_set
+- edit_distance
 
 You should install them at first.
 
@@ -157,7 +163,7 @@ allennlp train -s %model_file% %config_file% ^
 -o {"""model.serialization_dir""":"""%model_file%""","""random_seed""":"""%seed%""","""numpy_seed""":"""%seed%""","""pytorch_seed""":"""%seed%""","""dataset_reader.tables_file""":"""%tables_file%""","""dataset_reader.database_path""":"""%database_path%""","""train_data_path""":"""%train_data_path%""","""validation_data_path""":"""%validation_data_path%""","""model.text_embedder.tokens.pretrained_file""":"""%pretrained_file%""","""model.dataset_path""":"""%dataset_path%"""}
 ```
 
-We provide windows batch scripts for convenience, you could modify them to linux according the above examples.
+We provide `windows` and `linux` batch scripts in the folder `batch_files` for your convenience. NOTICE: please run them under the root directory './'.
 
 ## Predict
 
@@ -293,3 +299,13 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## FAQ
+
+**1. ModuleNotFoundError: No module named 'scripts.eval.evaluation_sqa'**
+
+*Ans*: Please see `Inject a SQL evaluator` above to solve it. If you do not need a SQL evalutor, you could remove the evalutor usage in `sparc_parse.py`.
+
+
+
+
