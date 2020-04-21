@@ -307,6 +307,6 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 *Ans*: Please see `Inject a SQL evaluator` above to solve it. If you do not need a SQL evalutor, you could remove the evalutor usage in `sparc_parse.py`.
 
 
-**2. allennlp.common.checks.ConfigurationError: 'Serialization directory (checkpoints_sparc/sparc_concat_none_model) already exists and is not empty. Specify --recover to recover training from existing output.' **
+**2. allennlp.common.checks.ConfigurationError: 'Serialization directory (checkpoints_sparc/sparc_concat_none_model) already exists and is not empty. Specify --recover to recover training from existing output.'**
 
 *Ans*: It means that there is already a checkpoint model named `checkpoints_sparc/sparc_concat_none_model`. Please add `--recover` option after the train commnd (if you want to resume the model to continue training) or delete the checkpoint model.
