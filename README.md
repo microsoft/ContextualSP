@@ -79,7 +79,14 @@ Concretely, you should download `evaluation_sqa.py` and `process_sql.py` from [h
     |- sparc_evaluate.py (released within this repo)
 ```
 
-Then, fix the import issue in `evaluation_sqa.py` by converting `from process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql` to `from .process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql`.
+Then, fix the import issue in `evaluation_sqa.py` by converting 
+```python
+from process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql
+```
+to 
+```python
+from .process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql
+```
 
 
 ## Data
