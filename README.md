@@ -56,7 +56,7 @@ source $ENV_FOLDER/bin/activate (Linux)
 
 The most important requirements of our code base are as following:
 - pytorch >= 1.2.0 (not tested on other versions, but 1.0.0 may work though)
-- allennlp >= 0.9.0
+- allennlp == 0.9.0
 
 Then you should install following packages: 
 - dill
