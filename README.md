@@ -313,4 +313,9 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 Considering this, we provide a memory friendly config file `concat.none.mem.jsonnet`. In such a config, data batching is based on natural language sentences rather than interactions. It only needs at least nearly `2GB` when using `batch_size` as `1`.
 
-To reduce memory consumed, you could also consider decreasing `maximum_history_len` hyper-parameter in #L 57 in sparc_reader.py (the default value is `5`). In practise, it also works well under `3` or `4`.
+To reduce memory consumed, you could also consider decreasing `maximum_history_len` hyper-parameter in #57 in sparc_reader.py (the default value is `5`). In practise, it also works well under `3` or `4`.
+
+
+**4. How to debug my custom model**
+
+*Ans*: We provide `debug.py` for debugging your custom model. Please change `config_file`(#9) into your custom one and debug by running `debug.py`.

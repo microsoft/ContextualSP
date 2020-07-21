@@ -8,7 +8,6 @@ if __name__ == '__main__':
     serialization_dir = "checkpoints/debug_model"
     config_file = "train_configs_bert/concat.none.mem.jsonnet"
 
-    # Use overrides to train on CPU.
     overrides = json.dumps({
         "dataset_reader.tables_file": "dataset_sparc/tables.json",
         "dataset_reader.database_path": "dataset_sparc/database",
