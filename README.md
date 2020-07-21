@@ -62,7 +62,7 @@ source $ENV_FOLDER/bin/activate (Linux)
 
 The most important requirements of our code base are as following:
 - pytorch >= 1.2.0 (not tested on other versions, but 1.0.0 may work though)
-- allennlp >= 0.9.0
+- allennlp == 0.9.0
 
 Then you should install following packages: 
 - dill
@@ -234,14 +234,20 @@ Once running, you could open the demo page in [http://localhost:8000](http://loc
 
 ## Experiment
 
-*Note: We will release pretrained weights under other settings later.*
-
 | Dataset | BERT | Config | Best | Avg | Pretrained_Weights |
 | :---: | :---: |:--- | :---: | :---: | :---: |
 | SParC | No | concat.none.jsonnet | 41.8 | 40.0 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.concat/model.tar.gz)|
+| SParC | No | turn.none.jsonnet | 43.6 | 42.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.turn/model.tar.gz)|
+| SParC | No | none.token.jsonnet | 38.9 | 38.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.token/model.tar.gz)|
 | SParC | Yes | concat.none.jsonnet | 52.6 | 51.0 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.bert.concat/model.tar.gz)|
+| SParC | Yes | turn.none.jsonnet | 47.0 | 43.0 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.bert.turn/model.tar.gz)|
+| SParC | Yes | none.token.jsonnet | 46.1 | 45.4 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/sparc.bert.token/model.tar.gz)|
 | CoSQL | No | concat.none.jsonnet | 33.5 | 32.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.concat/model.tar.gz)|
+| CoSQL | No | turn.none.jsonnet | 31.9 | 31.3 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.turn/model.tar.gz)|
+| CoSQL | No | none.token.jsonnet | 32.8 | 31.9 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.token/model.tar.gz)|
 | CoSQL | Yes | concat.none.jsonnet | 41.0 | 40.4 | [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.concat/model.tar.gz)|
+| CoSQL | Yes | turn.none.jsonnet | 39.2 | 38.9 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.turn/model.tar.gz)|
+| CoSQL | Yes | none.token.jsonnet | 42.1 | 41.6 |  [model.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/cosql.bert.token/model.tar.gz)|
 
 ## Analysis
 
