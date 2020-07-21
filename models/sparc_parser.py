@@ -571,7 +571,7 @@ class SparcParser(Model):
                     world_flatten[i].clear_precedent_state(copy_action_ids)
                 # to easily handle it, we assume batch_size = 1
                 for i in range(inter_size):
-                    # TODO: if we use both discourse encoder & segment copy, the discourse encoder
+                    # WARNING: if we use both discourse encoder & segment copy, the discourse encoder
                     #  assumes the input & mask are batchwise-interaction, however, here we pass by
                     #  the only turn itself. Therefore, for discourse encoder scenario, we should
                     #  pass by the encoder[:i + 1]

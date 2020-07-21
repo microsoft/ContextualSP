@@ -3,6 +3,12 @@
 
 The official pytorch implementation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
+
+## News
+
+We have supported the non-interaction based training (for BERT-based model) and multi-gpu training! 
+
+
 ## Content
 
 - [Task Introduction](#task)
@@ -65,22 +71,9 @@ Then you should install following packages:
 
 You should install them at first.
 
-### Inject a SQL evaluator
+### SQL-based evaluation
 
-Now our code saves the best model checkpoint based on SQL based comparsion, which is the performance indicator on the Spider, SParC and CoSQL benchmarks. Here we adopt the evaluation script which is suited for python3 from [EditSQL](https://github.com/ryanzhumich/editsql). 
-
-Concretely, you should download `evaluation_sqa.py` and `process_sql.py` from [https://github.com/ryanzhumich/editsql/tree/master/eval_scripts](https://github.com/ryanzhumich/editsql/tree/master/eval_scripts). And then place them under the `script/eval` folder as:
-
-```
-|- scripts
-    |- eval
-        |- evaluation_sqa.py (downloaded from EditSQL)
-        |- process_sql.py (downloaded from EditSQL)
-    |- sparc_evaluate.py (released within this repo)
-```
-
-Then, fix the import issue in `evaluation_sqa.py` by converting `from process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql` to `from .process_sql import tokenize, get_schema, get_tables_with_alias, Schema, get_sql`.
-
+Now our code saves the best model checkpoint based on SQL based comparison, which is the performance indicator on the Spider, SParC and CoSQL benchmarks. Here we adopt the evaluation script which is suited for python3 from [EditSQL](https://github.com/ryanzhumich/editsql). 
 
 ## Data
 
@@ -112,18 +105,18 @@ If you want to train models without BERT, please download [Glove Twitter](http:/
 
 We use the command `allennlp` to train our models, and all the hyper-parameters for different settings are stored in configs listed under `train_configs` and `train_configs_bert`. The config and model architectures in our paper are as following:
 
-| Config | Model in Paper |
-| :--- | :---: |
+| Config | Model in Paper | 
+| :--- | :---: 
 | concat.none.jsonnet | Concat History |
-| turn.none.jsonnet | Turn-level Encoder|
-| none.attn.jsonnet | SQL Attention|
-| none.gate.jsonnet | Gate Mechanism |
+| turn.none.jsonnet | Turn-level Encoder| 
+| none.attn.jsonnet | SQL Attention|  
+| none.gate.jsonnet | Gate Mechanism | 
 | none.token.jsonnet | Action Copy |
 | none.tree.jsonnet | Tree Copy |
 | concat.attn.jsonnet | Concat + Attention |
 | concat.token.jsonnet | Concat + Token Copy |
 | concat.tree.jsonnet | Concat + Tree Copy |
-| turn.attn.jsonnet | Turn + SQL Attention|
+| turn.attn.jsonnet | Turn + SQL Attention| 
 | turn.token.jsonnet | Turn + Action Copy|
 | turn.tree.jsonnet | Turn + Tree Copy|
 | turn.token.attn.jsonnet | Turn + Action Copy + SQL Attention|
@@ -300,11 +293,18 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ## FAQ
 
-**1. ModuleNotFoundError: No module named 'scripts.eval.evaluation_sqa'**
-
-*Ans*: Please see `Inject a SQL evaluator` above to solve it. If you do not need a SQL evalutor, you could remove the evalutor usage in `sparc_parse.py`.
-
-
-**2. allennlp.common.checks.ConfigurationError: 'Serialization directory (checkpoints_sparc/sparc_concat_none_model) already exists and is not empty. Specify --recover to recover training from existing output.'**
+**1. allennlp.common.checks.ConfigurationError: 'Serialization directory (checkpoints_sparc/sparc_concat_none_model) already exists and is not empty. Specify --recover to recover training from existing output.'**
 
 *Ans*: It means that there is already a checkpoint model named `checkpoints_sparc/sparc_concat_none_model`. Please add `--recover` option after the train commnd (if you want to resume the model to continue training) or delete the checkpoint model.
+
+**2. FileNotFoundError: [Errno 2] No such file or directory: 'dataset_sparc/train.json'**
+
+*Ans*: Please firstly download datasets and rename them as `dataset_sparc` and `dataset_cosql` following the above instructions.
+
+**3. The GPU Memory is not enough for running experiments under BERT**
+
+*Ans*: The training of this repo is based on batching `interactions` rather than `single sentences`. It means that, even when `batch_size` is set as `1`, one batch contains ~5 NL-SQL pairs (one interaction/dialogue). Therefore, the minimal memory requirement is nearly `17GB` in all settings under BERT.
+
+Considering this, we provide a memory friendly config file `concat.none.mem.jsonnet`. In such a config, data batching is based on natural language sentences rather than interactions. It only needs at least nearly `2GB` when using `batch_size` as `1`.
+
+To reduce memory consumed, you could also consider decreasing `maximum_history_len` hyper-parameter in #L 57 in sparc_reader.py (the default value is `5`). In practise, it also works well under `3` or `4`.

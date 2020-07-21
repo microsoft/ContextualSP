@@ -52,7 +52,10 @@ class SparcDatasetReader(DatasetReader):
                  cache_mode: str = 'all',
                  load_cache: bool = True,
                  save_cache: bool = True,
-                 loading_limit: int = -1):
+                 loading_limit: int = -1,
+                 # utilize how many context
+                 maximum_history_len: int = 5,
+                 memory_friend: bool = False):
         super().__init__(lazy=lazy)
 
         # we use spacy tokenizer as the default tokenizer
@@ -92,7 +95,18 @@ class SparcDatasetReader(DatasetReader):
         # overall, single
         self._cache_mode = cache_mode
         # maximum_context
-        self._maximum_history_len = 5
+        self._maximum_history_len = maximum_history_len
+
+        # if enable memory friend, use sentence rather than interaction as a basic unit of batch
+        self._memory_friend = memory_friend
+
+        if memory_friend:
+            assert self._context_mode == "concat", "We only support to use less memory in concat mode since others" \
+                                                   "depend on dynamic context such as context representations" \
+                                                   "and generated SQLs, which assumes batching on interactions."
+            assert self._copy_mode == "none", "We only support to use less memory in concat mode since others" \
+                                              "depend on dynamic context such as context representations" \
+                                              "and generated SQLs, which assumes batching on interactions."
 
     def build_instance(self, parameter) -> Iterable[Instance]:
         # loading some examples
@@ -159,7 +173,10 @@ class SparcDatasetReader(DatasetReader):
                                        "]_cache[" + str(self._cache_mode) + "]")
 
         if self._copy_mode != CopyMode.no_copy:
-            self._cache_dir += "_copy." + str(self._copy_mode)
+            self._cache_dir += "_copy[" + str(self._copy_mode) + "]"
+
+        if self._memory_friend:
+            self._cache_dir += "_memory[true]"
 
         extension = 'bin' if self._cache_method == CacheMethod.dil else 'pkl'
         cache_all_file = os.path.join(self._cache_dir, f"cache_all.{extension}")
@@ -191,7 +208,10 @@ class SparcDatasetReader(DatasetReader):
                 # FIXME: we do not use multiprocessing in caching all
                 for json_ins in tqdm(enumerate(json_obj)):
                     ins = self.build_instance(json_ins)
-                    if ins: instances.append(ins)
+                    if isinstance(ins, List):
+                        instances.extend(ins)
+                    else:
+                        instances.append(ins)
 
                 if self._save_cache:
                     with open(cache_all_file, 'wb') as cache:  # Use highest protocol for speed.
@@ -218,7 +238,7 @@ class SparcDatasetReader(DatasetReader):
                          utter_list: List[str],
                          db_id: str,
                          sql_list: Optional[List[Dict]] = None,
-                         sql_query_list: Optional[List[Dict]] = None) -> Instance:
+                         sql_query_list: Optional[List[Dict]] = None) -> Optional[Instance]:
 
         # return invalid instances
         if len(utter_list) == 0:
@@ -303,6 +323,10 @@ class SparcDatasetReader(DatasetReader):
         precedent_action_seq = None
 
         index = 0
+
+        # allocate memory instances
+        memory_instances = []
+
         for fol_utter, sql_clause, sql_query in zip(utter_list, new_sql_list, new_sql_query_list):
 
             # tokenize history and so on
@@ -347,7 +371,6 @@ class SparcDatasetReader(DatasetReader):
                 past_segments = []
 
             db_context = cached_db_contexts[index]
-            index += 1
             assert len(past_segments) == len(past_utters)
 
             table_field = SparcKnowledgeGraphField(db_context.knowledge_graph,
@@ -503,6 +526,40 @@ class SparcDatasetReader(DatasetReader):
                 past_segments = past_segments[pop_seq_len:]
                 past_utters = past_utters[pop_seq_len:]
                 past_segments = [segment_id - 1 for segment_id in past_segments]
+
+            # yield multiple instances by sentences
+            if self._memory_friend:
+                if self._bert_mode == "v3":
+                    fields['schema_position'] = ListField(schema_position_fields)
+                fields['inter_utterance'] = ListField(utter_fields)
+                fields['inter_schema'] = ListField(knowledge_fields)
+                fields['inter_nonterminal'] = ListField(nonterminal_fields)
+                fields['inter_segment'] = ListField(segment_fields)
+                fields['valid_actions_list'] = ListField(valid_rules_fields)
+                fields['action_sequence'] = ListField(index_fields)
+                fields['action_sequence_with_copy'] = ListField(index_with_copy_fields)
+                fields['worlds'] = ListField(world_fields)
+                fields['entity_type'] = ListField(entity_type_fields)
+                # clear fields
+                schema_position_fields = []
+                utter_fields = []
+                knowledge_fields = []
+                nonterminal_fields = []
+                segment_fields = []
+                valid_rules_fields = []
+                index_fields = []
+                index_with_copy_fields = []
+                world_fields = []
+                entity_type_fields = []
+                # entity mask is prepared already
+                fields['entity_mask'] = ListField([entity_mask_fields[index]])
+                memory_instances.append(Instance(fields))
+
+            # update index
+            index += 1
+
+        if self._memory_friend:
+            return memory_instances
 
         if self._bert_mode == "v3":
             fields['schema_position'] = ListField(schema_position_fields)
