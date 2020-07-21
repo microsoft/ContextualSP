@@ -306,7 +306,7 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 *Ans*: The training of this repo is based on batching `interactions` rather than `single sentences`. It means that, even when `batch_size` is set as `1`, one batch contains ~5 NL-SQL pairs (one interaction/dialogue). Therefore, the minimal memory requirement is nearly `17GB` in all settings under BERT.
 
-Considering this, we provide a memory friendly config file `concat.none.mem.jsonnet`. In such a config, data batching is based on natural language sentences rather than interactions. It only needs at least nearly `2GB` when using `batch_size` as `1`.
+Considering this, we provide a memory friendly config file `concat.none.mem.jsonnet`. In such a config, data batching is based on natural language sentences rather than interactions. It only needs at least nearly `5GB` when using `batch_size` as `1`.
 
 To reduce memory consumed, you could also consider decreasing `maximum_history_len` hyper-parameter in #57 in sparc_reader.py (the default value is `5`). In practise, it also works well under `3` or `4`.
 
