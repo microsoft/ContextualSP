@@ -1,9 +1,14 @@
-# A Collection of Open-Source Code (Microsoft DKI Group)
+# Paper Code Collection (MSRA DKI Group)
 
-This repo hosts multiple open-source codes of Microsoft DKI group. You could find the corresponding code as below:
+This repo hosts multiple open-source codes of the Microsoft Research Asia DKI group. You could find the corresponding code as below:
 
-- [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](semantic_parsing_in_context)
-- [Incomplete Utterance Rewriting as Semantic Segmentation](incomplete_utterance_rewriting)
+1. [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](semantic_parsing_in_context)
+
+    Semantic parsing in context is challenging since there are complex contextual phenomena. Previous works verified their proposed methods in limited scenarios, which motivates us to conduct an exploratory study on context modeling methods under real-world semantic parsing in context. We present a grammar-based decoding semantic parser and adapt typical context modeling methods on top of it. We evaluate 13 context modeling methods on two large complex cross-domain datasets, and our best model achieves state-of-the-art performances on both datasets with significant improvements. Furthermore, we summarize the most frequent contextual phenomena, with a fine-grained analysis on representative models, which may shed light on potential research directions. Our code provides a strong and reproducible baseline for future reserach on semantic parsing in context tasks.
+
+1. [Incomplete Utterance Rewriting as Semantic Segmentation](incomplete_utterance_rewriting)
+
+    Recent years the task of incomplete utterance rewriting has raised a large attention. Previous works usually shape it as a machine translation task and employ sequence to sequence based architecture with copy mechanism. In this paper, we present a novel and extensive approach, which formulates it as a semantic segmentation task. Instead of generating from scratch, such a formulation introduces edit operations and shapes the problem as prediction of a word-level edit matrix. Benefiting from being able to capture both local and global information, our approach achieves state-ofthe-art performance on several public datasets. Furthermore, our approach is four times faster than the standard approach in inference.
 
 ## Contributing
 
