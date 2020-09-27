@@ -1,8 +1,9 @@
 # A Collection of Open-Source Code (Microsoft DKI Group)
 
-This repo hosts multiple open-source codes of Microsoft DKI group. Please find them below:
+This repo hosts multiple open-source codes of Microsoft DKI group. You could find the corresponding code as below:
 
-> [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context]()
+- [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](semantic_parsing_in_context)
+- [Incomplete Utterance Rewriting as Semantic Segmentation](incomplete_utterance_rewriting)
 
 ## Contributing
 
