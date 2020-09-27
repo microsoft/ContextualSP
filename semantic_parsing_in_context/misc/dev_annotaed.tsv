@@ -1,0 +1,1204 @@
+InterID	Turn	Database_ID	Utterance	Coreference	Part/Whole	Ellipsis	Explict/Implict	Operator/Schema	Modification/Continutation
+0	0	flight_2	what are all the airlines ?						
+0	1	flight_2	of these , which is jetblue airways ?	Demonstrative Pronoun	Whole				
+0	2	flight_2	what is the country corresponding it ?	Demonstrative Pronoun	Part				
+1	0	flight_2	what are all the abbreviations ?						
+1	1	flight_2	what is the abbreviation for jetblue airways ?			Context Independent			
+2	0	flight_2	list all airline names and their abbreviations .						
+2	1	flight_2	of these , list only those in the usa .	Demonstrative Pronoun	Whole				
+3	0	flight_2	find all information about the airport in the city anthony .						
+3	1	flight_2	what is the airport code and airport name ?			Implicit Schema Continuation	Implicit	Operator	Continuation
+4	0	flight_2	what are all the airlines ?						
+4	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+5	0	flight_2	what are all the airports ?						
+5	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+6	0	flight_2	what are all the flights ?						
+6	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+7	0	flight_2	what are all the airline names ?						
+7	1	flight_2	of this , which has the abbreviation ' ual ' ?	Demonstrative Pronoun	Whole				
+8	0	flight_2	what are the names of the airlines in the usa ?						
+8	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+9	0	flight_2	what are the city and country for all airports ?						
+9	1	flight_2	of these , what are the city and country for alton airport ?			Context Independent			
+10	0	flight_2	what are all the airport names ?						
+10	1	flight_2	of these , which has code ' ako ' ?	Demonstrative Pronoun	Whole				
+11	0	flight_2	what are all the airport names ?						
+11	1	flight_2	which is in aberdeen ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+12	0	flight_2	what are all the flights departing from ' apg ' ?						
+12	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+13	0	flight_2	what flights land in ato ?						
+13	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+14	0	flight_2	what are all the flights derparting from aberdeen ?						
+14	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+15	0	flight_2	what are all the flights arriving in aberdeen .						
+15	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+16	0	flight_2	what are all the flights that leave from aberdeen ?						
+16	1	flight_2	of those , which land in ashley ?	Demonstrative Pronoun	Whole				
+16	2	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+17	0	flight_2	what are all the flights on jetblue airways ?						
+17	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+18	0	flight_2	what are the united airlines flights ?						
+18	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+18	2	flight_2	how many land in asy airport ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+19	0	flight_2	what are the united airlines flights ?						
+19	1	flight_2	which ones leave from ahd ?	One Anaphora	Whole				
+19	2	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+20	0	flight_2	which united airlines flights fly into aberdeen ?						
+20	1	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+21	0	flight_2	name all cities that have destination airports .						
+21	1	flight_2	order them by number of arriving flights .	Demonstrative Pronoun	Whole				
+21	2	flight_2	which one has the most ?	One Anaphora	Part				
+22	0	flight_2	name all cities that have source airports .						
+22	1	flight_2	order them by number of departing flights .	Demonstrative Pronoun	Whole				
+22	2	flight_2	which one has the most ?	One Anaphora	Part				
+23	0	flight_2	what are airport codes of any airport with a arriving flight ?						
+23	1	flight_2	also include codes of airports with departure flights .			Explicit Clause Continuation	Explict	Clause	Continuation
+23	2	flight_2	which one has the highest number of flights ?	One Anaphora	Whole				
+24	0	flight_2	what are airport codes of any airport with a arriving flight ?						
+24	1	flight_2	also include codes of airports with departure flights .			Explicit Clause Continuation	Explict	Clause	Continuation
+24	2	flight_2	which one has the least number of flights ?	One Anaphora	Whole				
+25	0	flight_2	count the number of flights by airline .						
+25	1	flight_2	which airline has the most ?			Other			
+26	0	flight_2	what are all the airline abbreviations and what countries are they in ?						
+26	1	flight_2	order them by the number of flights that they have .	Demonstrative Pronoun	Whole				
+26	2	flight_2	which one has the fewest ?	One Anaphora	Part				
+27	0	flight_2	which flights leave from ahd ?						
+27	1	flight_2	what are their airlines ?	Possessive Determiner	Whole				
+28	0	flight_2	which flights arrive in ahd ?						
+28	1	flight_2	what are their airlines ?	Possessive Determiner	Whole				
+29	0	flight_2	which airlines have flights departing from apg ?						
+29	1	flight_2	of those , which also have flights from cvo ?	Demonstrative Pronoun	Whole				
+30	0	flight_2	which airlines have flights from cvo ?						
+30	1	flight_2	of these , which do not have flights from apg ?	Demonstrative Pronoun	Whole				
+31	0	flight_2	what are all the airlines ?						
+31	1	flight_2	which ones have more than 10 flights ?	One Anaphora	Whole				
+32	0	flight_2	what are all the airlines ?						
+32	1	flight_2	which ones have less than 200 flights ?	One Anaphora	Whole				
+33	0	flight_2	what are all the flight numbers ?						
+33	1	flight_2	which belong to united airlines ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+34	0	flight_2	what are all the flight numbers ?						
+34	1	flight_2	of these , which correspond to flights leaving from apg ?	Demonstrative Pronoun	Whole				
+35	0	flight_2	what are all the flight numbers ?						
+35	1	flight_2	also , which numbers are for flights that land in apg ?			Context Independent			
+36	0	flight_2	what are all the flight numbers ?						
+36	1	flight_2	of these , which are departure flights ?	Demonstrative Pronoun	Whole				
+36	2	flight_2	which leave from aberdeen ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+37	0	flight_2	what are all the flight numbers ?						
+37	1	flight_2	of these , which are arrival flights ?	Demonstrative Pronoun	Whole				
+37	2	flight_2	which land in aberdeen ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+38	0	flight_2	what flights land in aberdeen ?						
+38	1	flight_2	also include flights that land in abilene .			Explicit Clause Continuation	Explict	Clause	Continuation
+38	2	flight_2	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+39	0	flight_2	what are the source airports ?						
+39	1	flight_2	also include the destination airports .			Explicit Schema Continuation	Explict	Schema	Continuation
+39	2	flight_2	which airports are not included ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+40	0	pets_1	what information is there on pets ?						
+40	1	pets_1	which pets weigh more than 10 ?			Context Independent			
+40	2	pets_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+41	0	pets_1	order the pets by age .						
+41	1	pets_1	how much does each one weigh ?	One Anaphora	Part				
+41	2	pets_1	what about the first one ?	One Anaphora	Part				
+42	0	pets_1	what are the different types of pets ?						
+42	1	pets_1	for each of those types , what is the maximum weight ?	Definite NPs	Whole				
+43	0	pets_1	which pets are owned by students older than 20 ?						
+43	1	pets_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+44	0	pets_1	who are the female students ?						
+44	1	pets_1	of those , who has a pet ?	Demonstrative Pronoun	Whole				
+44	2	pets_1	how many of those have dogs ?	Demonstrative Pronoun	Whole				
+45	0	pets_1	what are the different pet types ?						
+45	1	pets_1	how many exist ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+46	0	pets_1	what is the first name of every student ?						
+46	1	pets_1	of those names , which ones correspond to somebody who has a cat ?	Definite NPs	Whole				
+46	2	pets_1	also , combine those names with those who have a dog .	Definite NPs	Whole				
+47	0	pets_1	which students have a dog as their type of pet ?						
+47	1	pets_1	who also has a cat ?			Explicit Clause Continuation	Explict	Clause	Continuation
+47	2	pets_1	what are their first names ?	Possessive Determiner	Whole				
+48	0	pets_1	which students have a cat as their pets ?						
+48	1	pets_1	what are they majoring in ?	Demonstrative Pronoun	Whole				
+48	2	pets_1	also , how old are they ?	Demonstrative Pronoun	Part	Explicit Clause Continuation	Explict	Clause	Continuation
+49	0	pets_1	what is every student 's id ?						
+49	1	pets_1	of those ids , which correspond to those who own cats as pets ?	Definite NPs	Whole				
+49	2	pets_1	list all the other ids .	Definite NPs	Whole				
+50	0	pets_1	which students have dogs ?						
+50	1	pets_1	of those , who does not own a cat ?	Demonstrative Pronoun	Whole				
+50	2	pets_1	what are their first names and ages ?	Possessive Determiner	Whole				
+51	0	pets_1	who is the youngest pet ?						
+51	1	pets_1	what type are they ?	Demonstrative Pronoun	Whole				
+51	2	pets_1	also , how much do they weigh ?	Demonstrative Pronoun	Part	Explicit Clause Continuation	Explict	Clause	Continuation
+52	0	pets_1	what are ids of every pet ?						
+52	1	pets_1	for those , which refer to pets older than 1 ?	Demonstrative Pronoun	Whole				
+52	2	pets_1	also , how much do they weigh ?	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+53	0	pets_1	what are the different pet types ?						
+53	1	pets_1	for each of those , what is the maximum age ?	Demonstrative Pronoun	Whole				
+53	2	pets_1	what about the average age ?			Implicit Operator Modification	Implicit	Operator	Modification
+54	0	pets_1	what information is there on pets ?						
+54	1	pets_1	for each pet type , what is the average weight ?			Context Independent			
+55	0	pets_1	which students have pets ?						
+55	1	pets_1	what are the different first names ?			Implicit Schema Continuation	Implicit	Schema	Continuation
+55	2	pets_1	also , what are their ages ?	Possessive Determiner	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+56	0	pets_1	which students have pets ?						
+56	1	pets_1	of those , whose last name is smith ?	Demonstrative Pronoun	Whole				
+56	2	pets_1	what is their pet 's id ?	Possessive Determiner	Whole				
+57	0	pets_1	which of the students have pets ?						
+57	1	pets_1	how many pets does each of them have ?	Demonstrative Pronoun	Whole				
+58	0	pets_1	what is the first name and sex of each student ?						
+58	1	pets_1	which of those belong to somebody who has more than one pet ?	Demonstrative Pronoun	Whole				
+59	0	pets_1	what is the id of the three - year old cat ?						
+59	1	pets_1	who is the owner of that cat ?	Definite NPs	Part				
+59	2	pets_1	what is their last name ?	Possessive Determiner	Whole				
+60	0	pets_1	which students do not own any pets ?						
+60	1	pets_1	what is their average age ?	Possessive Determiner	Whole				
+61	0	world_1	what are the names of all the countries ?						
+61	1	world_1	give the names of the ones that became independent after 1950 .	One Anaphora	Part				
+62	0	world_1	how many countries are there ?						
+62	1	world_1	out of those , how many have a republic as their form of government ?	Demonstrative Pronoun	Part				
+63	0	world_1	what are the countries in the carribean region ?						
+63	1	world_1	what is the surface area of each of those countries ?	Definite NPs	Whole				
+63	2	world_1	find the total surface area of the above .	Bridging Anaphora	Whole				
+64	0	world_1	what continent does each country belong to ?						
+64	1	world_1	which one does anguila belong to ?	One Anaphora	Part				
+65	0	world_1	what are the names of all the regions ?						
+65	1	world_1	which of those is the city kabul located in ?	Demonstrative Pronoun	Whole				
+66	0	world_1	what are all the languages ?						
+66	1	world_1	what are the languages spoken in aruba ?			Context Independent			
+66	2	world_1	which one is the most popular ?	One Anaphora	Part				
+67	0	world_1	what are the population and life expectancies for all countries ?						
+67	1	world_1	of those , which ones are for the country brazil ?	Demonstrative Pronoun	Whole				
+68	0	world_1	which region is angola in ?						
+68	1	world_1	for that country , what is its population ?	Definite NPs	Part				
+69	0	world_1	what are the life expectancies for all the countries ?						
+69	1	world_1	what are the life expectancies for the countries in the region of central africa ?			Context Independent			
+69	2	world_1	what is the average of those ?	Demonstrative Pronoun	Whole				
+70	0	world_1	what are the names of the countries in asia ?						
+70	1	world_1	which one has the shortest life expectancy ?	One Anaphora	Whole				
+71	0	world_1	how many people live in asia ?						
+71	1	world_1	what about the largest gnp among them ?	Demonstrative Pronoun	Part				
+72	0	world_1	which countries are in africa ?						
+72	1	world_1	which countries are also republics ?			Explicit Clause Continuation	Explict	Clause	Continuation
+72	2	world_1	what is the average of their life expectancies ?	Possessive Determiner	Whole				
+73	0	world_1	what are the countries in the continents of asia or europe ?						
+73	1	world_1	what is the surface area of each country ?			Context Independent			
+73	2	world_1	what is the total surface area summed up ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+74	0	world_1	what are the populations of each city in the district of gelderland ?						
+74	1	world_1	what is the total population in that district ?	Definite NPs	Part				
+75	0	world_1	what are all the nations ?						
+75	1	world_1	which of those have a government that is a us territory ?	Demonstrative Pronoun	Whole				
+75	2	world_1	for those , what is the average gnp and total population ?	Demonstrative Pronoun	Whole				
+76	0	world_1	what are all the distinct languages used around the world ?						
+76	1	world_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+77	0	world_1	what are the distinct forms of government in the continent of africa ?						
+77	1	world_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+78	0	world_1	what is the information about the country aruba ?						
+78	1	world_1	what are the languages used in aruba ?			Context Independent			
+78	2	world_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+79	0	world_1	what are the languages used in afghanistan ?						
+79	1	world_1	of those , how many are the official languages ?	Demonstrative Pronoun	Whole				
+80	0	world_1	how many languages are spoken in each country ?						
+80	1	world_1	which country speaks the most ?			Other			
+81	0	world_1	how many languages are spoken on each continent ?						
+81	1	world_1	which one speaks the most languages ?	One Anaphora	Part				
+82	0	world_1	what are the countries that speak english ?						
+82	1	world_1	which of those also speak dutch ?	Demonstrative Pronoun	Whole				
+82	2	world_1	how many of them are there ?	Demonstrative Pronoun	Whole				
+83	0	world_1	what are the names of countries which speak english ?						
+83	1	world_1	of those countries , what are the names of the nations that speak french as well ?	Definite NPs	Whole				
+84	0	world_1	what are the official languages of each country ?						
+84	1	world_1	of those countries , give the names of the ones that have english as one of the official languages .	Definite NPs	None				
+84	2	world_1	of those , which also have french as another official language ?	Demonstrative Pronoun	Whole				
+85	0	world_1	in which countries is chinese spoken ?						
+85	1	world_1	which distinct continents are they in ?	Demonstrative Pronoun	Whole				
+85	2	world_1	how many of them are there ?	Demonstrative Pronoun	Whole				
+86	0	world_1	what are all the different regions ?						
+86	1	world_1	which of those speak dutch or english ?	Demonstrative Pronoun	Whole				
+87	0	world_1	what are the official languages for each country ?						
+87	1	world_1	which of these countries have english or dutch ?	Definite NPs	None				
+88	0	world_1	what are all the different languages used in the continent of asia ?						
+88	1	world_1	which one is used by the largest number of asian countries ?	One Anaphora	Part				
+89	0	world_1	which countries have republics as their form of government ?						
+89	1	world_1	which language is spoken by only one of those countries ?	Definite NPs	Whole				
+90	0	world_1	what are the names of all the cities that use english ?						
+90	1	world_1	which of those has the largest population ?	Demonstrative Pronoun	Whole				
+91	0	world_1	what are the names , population , and life expectancy for all the countries in asia ?						
+91	1	world_1	of those , which belong to the country with the largest surface area ?	Demonstrative Pronoun	Whole				
+92	0	world_1	what are the official languages of each country ?						
+92	1	world_1	which countries do not have english as the official language ?			Context Independent			
+92	2	world_1	in those countries , what is the average life expectancy ?	Definite NPs	Whole				
+93	0	world_1	what are the names of each country that does not speak english ?						
+93	1	world_1	how many people live in those countries ?	Definite NPs	Part				
+94	0	world_1	which country has a head of state named beatrix ?						
+94	1	world_1	what languages are spoken in that country ?	Definite NPs	Whole				
+94	2	world_1	which of those languages is the official one ?	Definite NPs	Whole				
+95	0	world_1	what are the names of all the countries ?						
+95	1	world_1	what are the names of those countries that were founded after 1930 ?	Definite NPs	Part				
+95	2	world_1	for those countries , how many unique official languages are spoken in total ?	Definite NPs	Whole				
+96	0	world_1	what are all the information about european countries ?						
+96	1	world_1	of those countries , what is the minimum surface area ?	Definite NPs	Whole				
+96	2	world_1	what are the countries that have a greater surface area than that ?	Demonstrative Pronoun	Part				
+97	0	world_1	what is the maximum population of a country in asia ?						
+97	1	world_1	which countries in africa have a population smaller than that ?	Demonstrative Pronoun	Whole				
+98	0	world_1	what is the smallest population of a country in africa ?						
+98	1	world_1	which asian countries have a greater population than that ?	Demonstrative Pronoun	Whole				
+99	0	world_1	what are the country codes of all the countries ?						
+99	1	world_1	of those countries , give the country codes for those which do not speak english .	Definite NPs	None				
+100	0	world_1	what are the country codes of all the countries ?						
+100	1	world_1	of those , which do not speak english ?	Demonstrative Pronoun	Part				
+101	0	world_1	what are the country codes for countries which are not republics ?						
+101	1	world_1	of those , which do not speak english ?	Demonstrative Pronoun	Part				
+102	0	world_1	what are the names of the countries where english is the official language ?						
+102	1	world_1	what are the names of the countries in europe that are not one of those ?	One Anaphora	Whole				
+102	2	world_1	what are the names of the cities in those countries ?	Definite NPs	Whole				
+103	0	world_1	what are the countries in asia where chinese is spoken ?						
+103	1	world_1	of those , which have chinese as the official language ?	Demonstrative Pronoun	Part				
+103	2	world_1	what are the different cities in those countries ?	Definite NPs	Part				
+104	0	world_1	which country has the smallest population ?						
+104	1	world_1	what is its name , independence year , and surface area ?	Possessive Determiner	Whole				
+105	0	world_1	what is the country with the largest surface area ?						
+105	1	world_1	what is its population , name and leader ?	Possessive Determiner	Whole				
+106	0	world_1	what are the names of the countries ?						
+106	1	world_1	which of them speak at least three languages ?	Demonstrative Pronoun	Whole				
+106	2	world_1	also , how many languages are spoken in each of those countries ?	Definite NPs	Whole				
+107	0	world_1	what is the average city population for each city ?						
+107	1	world_1	for each district , count how many cities have a population greater than the average .			Context Independent			
+108	0	world_1	the countries with which government form have an average life expectancy greater than age 72 ?						
+108	1	world_1	for those , list the total population and government form name .	Demonstrative Pronoun	Whole				
+109	0	world_1	which continents have an average life expectancy less than age 72 ?						
+109	1	world_1	give their average life expectancy and total population .	Possessive Determiner	Whole				
+110	0	world_1	what are the countries with the top 5 largest surface areas ?						
+110	1	world_1	what are the surface areas and names of those countries ?	Definite NPs	Whole				
+111	0	world_1	order the countries by descending population size .						
+111	1	world_1	give the names of the 3 countries which have the most .			Other			
+112	0	world_1	order the countries by increasing population .						
+112	1	world_1	give the names of the 3 countries with the lowest .			Other			
+113	0	world_1	what are the countries in the continent of asia ?						
+113	1	world_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+114	0	world_1	which countries are in the continent of europe ?						
+114	1	world_1	of those , what are the names of those that have a population of 80000 ?	Demonstrative Pronoun	Whole				
+115	0	world_1	what countries are in north america ?						
+115	1	world_1	of those , which have surface area greater than 3000 ?	Demonstrative Pronoun	Whole				
+115	2	world_1	what is the total population and average surface area of those countries ?	Definite NPs	Whole				
+116	0	world_1	what are the names of all the cities ?						
+116	1	world_1	which of those have a population between 160000 and 900000 ?	Demonstrative Pronoun	Whole				
+117	0	world_1	what are the different languages ?						
+117	1	world_1	which one is spoken in the most countries ?	One Anaphora	Whole				
+118	0	tvshow	tell me﻿ the director of the cartoon named ' day of the dark knight ! ' .						
+118	1	tvshow	what is the channel of this cartoon ?	Definite NPs	Part				
+118	2	tvshow	give me the titles of all cartoon directed by ' ben jones ' or ' brandon vietti ' ?			Context Independent			
+119	0	tvshow	show me all the information about the italian tv channels .						
+119	1	tvshow	how about the polish tv channels ?			Explicit Schema Modification	Explict	Schema	Modification
+119	2	tvshow	which country has the most of tv channels ? list the country and number of tv channels it has .			Context Independent			
+120	0	tvshow	tell me the tv channel of the cartoon titled ' the eyes of despero ! ' .						
+120	1	tvshow	how about this channel 's series name ?	Definite NPs	Whole	Implicit Schema Continuation	Implicit	Schema	Continuation
+120	2	tvshow	tell me the number of different series names and contents in the tv channel table .			Context Independent			
+121	0	tvshow	tell me the package option for the series named ' rock tv ' .						
+121	1	tvshow	tell me the language of this series .	Definite NPs	Part				
+121	2	tvshow	list the language used least number of tv channel . list language and number of tv channel .			Context Independent			
+122	0	tvshow	tell me the author of the cartoon ' the rise of the blue beetle ! '						
+122	1	tvshow	how about its director ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+122	2	tvshow	what is its tv channel ?	Possessive Determiner	Part				
+123	0	tvshow	tell me the country of the tv channel for the series named ' sky radio ' .						
+123	1	tvshow	how about its content ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+123	2	tvshow	i want to know the title of all cartoons showed on tv channel with series name ' sky radio ' .			Context Independent			
+124	0	tvshow	tell me the rating of the episode named ' double down ' .						
+124	1	tvshow	how about the rating of the episode named ' keepers ' .			Explicit Schema Modification	Explict	Schema	Modification
+124	2	tvshow	okay , i want to know the top 3 highest rating tv series . list the tv series 's episode and rating .			Context Independent			
+125	0	tvshow	tell me the weekly rank of the episode named ' emily ' .						
+125	1	tvshow	how about its share ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+125	2	tvshow	tell me the minimum and maximum share of tv series .			Context Independent			
+126	0	tvshow	tell me the rating of the episode titled ' a love of a lifetime ' .						
+126	1	tvshow	how about its weekly rank ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+126	2	tvshow	and what is its tv channel ?	Possessive Determiner	Part	Explicit Clause Continuation	Explict	Clause	Continuation
+127	0	tvshow	tell me the content of tv channel with the series named ' sky radio ' .						
+127	1	tvshow	how about its language ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+127	2	tvshow	okay , now i want to know the episode of all tv series showed on tv channel with series name ' sky radio ' .			Context Independent			
+128	0	tvshow	tell me the air date of the cartoon titled ' fall of the blue beetle ! ' .						
+128	1	tvshow	what is its production code ?	Possessive Determiner	Part				
+128	2	tvshow	tell me the production code and channel of the most recently aired cartoon .			Context Independent			
+129	0	tvshow	tell me the cartoons directed by ben jone .						
+129	1	tvshow	tell me the cartoons written by todd casey .			Context Independent			
+129	2	tvshow	which countries ' tv channels are playing some cartoon written by todd casey ?			Context Independent			
+130	0	tvshow	which countries ' tv channels are playing some cartoon written by steven melching ?						
+130	1	tvshow	which countries ' tv channels are not playing any cartoon written by todd casey ?			Context Independent			
+131	0	tvshow	tell me the director of the cartoon titled ' deep cover for batman ! ' .						
+131	1	tvshow	i want to know this cartoon 's production code .	Definite NPs	Part				
+131	2	tvshow	tell me the series name and country of the tv channel that is playing some cartoons directed by ben jones and michael chang .			Context Independent			
+132	0	tvshow	tell me the country of the tv channel with series named ' mtv music '						
+132	1	tvshow	tell me the number of italian channels .			Context Independent			
+132	2	tvshow	find id of the tv channels that from the countries where have more than two tv channels .			Context Independent			
+133	0	tvshow	who is the director of the cartoon titled ' return of the fearsome fangs ! ' ?						
+133	1	tvshow	tell me the cartoons directed by ben jones .			Context Independent			
+133	2	tvshow	find the id of tv channels that do not play any cartoon directed by ben jones .			Context Independent			
+134	0	poker_player	show all the poker players .						
+134	1	poker_player	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+135	0	poker_player	what is the earnings of each poker player ?						
+135	1	poker_player	sort them in descending order .	Demonstrative Pronoun	Whole				
+136	0	poker_player	show all the information about each poker player .						
+136	1	poker_player	what are their final table mades ?	Possessive Determiner	Part				
+136	2	poker_player	what are their final table mades and best finishes ?	Possessive Determiner	Part	Explicit Schema Modification	Explict	Schema	Modification
+137	0	poker_player	what is the earnings of each poker player ?						
+137	1	poker_player	give me the average .			Implicit Operator Continuation	Implicit	Operator	Continuation
+138	0	poker_player	what is the money rank of each poker player ?						
+138	1	poker_player	sort them in the decreasing order .	Demonstrative Pronoun	Whole				
+138	2	poker_player	return the top one .	One Anaphora	Part				
+139	0	poker_player	which poker player has earnings less than 200000 ?						
+139	1	poker_player	among them , what is the maximum number of final tables made ?	Demonstrative Pronoun	Whole				
+140	0	poker_player	show all the poker players .						
+140	1	poker_player	what are their names ?	Possessive Determiner	Whole				
+141	0	poker_player	which poker players have earnings higher than 300000 ?						
+141	1	poker_player	what are their names ?	Possessive Determiner	Whole				
+142	0	poker_player	what are the names of all poker players ?						
+142	1	poker_player	sort them in the ascending order of the final tables made .	Demonstrative Pronoun	Whole				
+143	0	poker_player	what is the birth date of each poker player ?						
+143	1	poker_player	sort the list by the poker player 's earnings .	Bridging Anaphora	Whole				
+143	2	poker_player	give me the result for the player with the lowest earnings .	Bridging Anaphora	Whole				
+144	0	poker_player	what is the height of each poker player ?						
+144	1	poker_player	who has the largest height ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+144	2	poker_player	what is his or her money rank ?	Possessive Determiner	Whole				
+145	0	poker_player	what is the height of each poker player ?						
+145	1	poker_player	who all have heights greater than 200 ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+145	2	poker_player	what is the average earnings among them ?	Demonstrative Pronoun	Whole				
+146	0	poker_player	sort all the poker players in descending order of earnings .						
+146	1	poker_player	what are the names of poker players in descending order of earnings ?			Context Independent			
+147	0	poker_player	show the nationality of each person .						
+147	1	poker_player	group people by their nationality .			Context Independent			
+147	2	poker_player	for each of the result , show the corresponding number of people of that nationality ?	Bridging Anaphora	Whole				
+148	0	poker_player	show the nationality of each person .						
+148	1	poker_player	count the number of people for each nationality .			Context Independent			
+148	2	poker_player	what is the most common nationality of people ?			Context Independent			
+149	0	poker_player	count the number of people for each nationality .						
+149	1	poker_player	which nationalities are held by at least two people ?			Context Independent			
+150	0	poker_player	what are the names and birth dates of people ?						
+150	1	poker_player	sort the results in ascending alphabetical order of name .	Bridging Anaphora	Whole				
+151	0	poker_player	what are the names of all people ?						
+151	1	poker_player	what about people whose nationality is not ' russia ' ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+152	0	poker_player	show all the poker players .						
+152	1	poker_player	show all people who are not poker players .			Context Independent			
+152	2	poker_player	give me their names .	Possessive Determiner	Whole				
+153	0	battle_death	what are the death tolls each time ?						
+153	1	battle_death	what is the maximum number of deaths in any one time ?			Context Independent			
+153	2	battle_death	what about the minimum ?			Implicit Operator Modification	Implicit	Operator	Modification
+153	3	battle_death	give me the maximum and also the minimum .			Implicit Operator Modification	Implicit	Operator	Modification
+154	0	battle_death	show me information about deaths caused by ships .						
+154	1	battle_death	only ships with tonnage ' t ' .			Implicit Clause Continuation	Implicit	Clause	Continuation
+154	2	battle_death	only return the death and injury information for those ships .	Definite NPs	Part				
+155	0	battle_death	what are the ids and names of the battles ?						
+155	1	battle_death	only show those that ships were lost in .	Demonstrative Pronoun	Whole				
+155	2	battle_death	please , just the ones with ' brig ' ship type .	One Anaphora	Part				
+156	0	battle_death	how many people were killed or injured in each battle ?						
+156	1	battle_death	only show the deaths for those battles that produced at least ten deaths .	Definite NPs	None				
+157	0	battle_death	list the injuries caused by each ship ( give ship id and name please ) .						
+157	1	battle_death	sort it by decreasing number of injuries .	Demonstrative Pronoun	Whole				
+157	2	battle_death	only show the ship id and name that caused the most total injuries .			Context Independent			
+158	0	battle_death	which battles did the bulgarian commander ' kaloyan ' fight in ?						
+158	1	battle_death	how about the latin commander ' baldwin i ' ?			Explicit Schema Modification	Explict	Schema	Modification
+158	2	battle_death	just the ones where they were fighting one another , please .	One Anaphora	Whole				
+159	0	battle_death	which battle ids lost ships with tonnage ' 225 ' ?						
+159	1	battle_death	give the names of these battles , too .	Definite NPs	Whole				
+159	2	battle_death	which battle ids and names did not lose any ship with tonnage ' 225 ' ?			Context Independent			
+159	3	battle_death	how many is that ?	Demonstrative Pronoun	Whole				
+160	0	battle_death	list the name and date of the battle that has lost the ship named ' lettice '						
+160	1	battle_death	same for ' hms atlanta ' , please .			Explicit Schema Modification	Explict	Schema	Modification
+160	2	battle_death	can you intersect those ?	Demonstrative Pronoun	Cross				
+161	0	battle_death	which battle ids and names lost ships in the ' english channel ' ?						
+161	1	battle_death	which did not ?			Implicit Operator Modification	Implicit	Operator	Modification
+161	2	battle_death	for these ones , show their names , results , and bulgarian commanders .	Demonstrative Pronoun	Whole				
+162	0	car_1	how many continents are there ?						
+162	1	car_1	show all their ids and names !	Possessive Determiner	Part				
+162	2	car_1	what countries do they each have ?	Demonstrative Pronoun	Whole				
+162	3	car_1	count how many there are for each continent name and id !			Context Independent			
+163	0	car_1	what are the names and ids of the different car makers ?						
+163	1	car_1	what countries are they each from ?	Demonstrative Pronoun	Part				
+163	2	car_1	for each , how many models do they each produce ?	Demonstrative Pronoun	Part				
+163	3	car_1	can actually just show the name , id and the number of models ?			Context Independent			
+164	0	car_1	what is the average horsepower of all cars ?						
+164	1	car_1	how about the maximum ?			Implicit Operator Modification	Implicit	Operator	Modification
+164	2	car_1	what about the minimum ?			Implicit Operator Modification	Implicit	Operator	Modification
+164	3	car_1	what is the model of the car with this horsepower ?	Definite NPs	Part				
+165	0	car_1	what is the average weight of all the cars ?						
+165	1	car_1	list all the car information with weights above this ?	Demonstrative Pronoun	Whole				
+165	2	car_1	how about below this ?	Demonstrative Pronoun	Part	Implicit Operator Modification	Implicit	Operator	Modification
+165	3	car_1	please , show just their model names !	Possessive Determiner	Whole				
+166	0	car_1	what are the ids , and models of the cars were made in 1970 ?						
+166	1	car_1	show their horsepower and mpg as well ?	Possessive Determiner	Part				
+166	2	car_1	also provide the names of their makers !	Possessive Determiner	Part	Explicit Clause Continuation	Explict	Clause	Continuation
+166	3	car_1	just show a unique list of all these different makers .	Definite NPs	Part				
+167	0	car_1	show me the makes and models of each car !						
+167	1	car_1	also provide which the year they were produced ?	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+167	2	car_1	which ones been produce in the earliest year ?	One Anaphora	Part				
+167	3	car_1	show just the make and year !			Explicit Schema Modification	Explict	Schema	Modification
+168	0	car_1	what are all the different car models ?						
+168	1	car_1	show also all the car makes and the years that they were produced !	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+168	2	car_1	show only those that were made after 1980 !	Demonstrative Pronoun	Whole				
+168	3	car_1	what are the distinct car models for these ?	Demonstrative Pronoun	Whole				
+169	0	car_1	what are the names and country name of each car maker ?						
+169	1	car_1	also provide the continent name for each !			Explicit Clause Continuation	Explict	Clause	Continuation
+169	2	car_1	how many car makers are there per continent ?			Context Independent			
+170	0	car_1	how many countries are there ?						
+170	1	car_1	how many car makers belong to each one ?	One Anaphora	Part				
+170	2	car_1	what is the name of the country that has the least number ?			Context Independent			
+170	3	car_1	how about the most ?			Implicit Operator Modification	Implicit	Operator	Modification
+171	0	car_1	how many makers are there ?						
+171	1	car_1	what are their full names and ids ?	Possessive Determiner	Part				
+171	2	car_1	what models have they each produced ?	Demonstrative Pronoun	Whole				
+171	3	car_1	count how many modes there are per maker .			Context Independent			
+172	0	car_1	show all the car ids with the make amc hornet sporabout ( sw ) ?						
+172	1	car_1	what is its horsepower ?	Possessive Determiner	Part				
+172	2	car_1	how about its mpg ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+172	3	car_1	how about its accelerate ?	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+173	0	car_1	show all the different car makers ?						
+173	1	car_1	what are the names of the countries they belong to ?	Demonstrative Pronoun	Whole				
+173	2	car_1	show just the car makers from france !			Context Independent			
+173	3	car_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+174	0	car_1	how many car models are produced in total ?						
+174	1	car_1	how many in germany ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+174	2	car_1	how about in japan ?			Explicit Schema Modification	Explict	Schema	Modification
+174	3	car_1	how about the usa ?			Implicit Schema Modification	Implicit	Schema	Modification
+175	0	car_1	what is all the car information for cars produced in 1974 ?						
+175	1	car_1	now , show me just the weight and cylinders of these cars .	Definite NPs	Whole				
+175	2	car_1	list just those with 8 cylinders !	Demonstrative Pronoun	Whole				
+175	3	car_1	what is the smallest weight ?	Definite NPs	Part				
+176	0	car_1	what are all the different country names ?						
+176	1	car_1	which ones have no car makers ?	One Anaphora	Whole				
+176	2	car_1	which ones have at least one ?	One Anaphora	Part	Explicit Operator Modification	Explict	Operator	Modification
+176	3	car_1	also provide the country id !			Explicit Clause Continuation	Explict	Clause	Continuation
+177	0	car_1	show all the car makers and their country name ?						
+177	1	car_1	count how many there are per country name ?			Context Independent			
+177	2	car_1	show just those from countries in the continent europe .	Demonstrative Pronoun	Part				
+177	3	car_1	list the country names of those with at least 3 manufacturers !	Demonstrative Pronoun	Part				
+178	0	car_1	what is the horsepower , make for each car !						
+178	1	car_1	show those with 8 cylinders !	Demonstrative Pronoun	Whole				
+178	2	car_1	how about 3 ?			Implicit Schema Modification	Implicit	Schema	Modification
+178	3	car_1	show the one with the maximum horsepower .	One Anaphora	Whole				
+179	0	car_1	what is id of the car with the max horsepower ?						
+179	1	car_1	how about with the max mpg ?			Explicit Schema Modification	Explict	Schema	Modification
+179	2	car_1	show its make !	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+179	3	car_1	now show its model !	Possessive Determiner	Part	Implicit Schema Modification	Implicit	Schema	Modification
+180	0	car_1	what is the average edispl of all cars ?						
+180	1	car_1	can you show the average per car make ?			Implicit Schema Modification	Implicit	Schema	Modification
+180	2	car_1	how about per car model ?			Explicit Schema Modification	Explict	Schema	Modification
+180	3	car_1	show the average for the model volvo !			Implicit Schema Modification	Implicit	Schema	Modification
+181	0	car_1	what are all the different models for each car ?						
+181	1	car_1	what are the makes for each ?			Explicit Schema Modification	Explict	Schema	Modification
+181	2	car_1	how many makes are there for each ?						
+181	3	car_1	what is the model name with the most makes ?			Context Independent			
+182	0	car_1	show the full names of all the different car makers ?						
+182	1	car_1	also include the car models produced by each !			Explicit Clause Continuation	Explict	Clause	Continuation
+182	2	car_1	show me just those produced by the maker with full name american motor company !	Demonstrative Pronoun	Whole				
+182	3	car_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+183	0	car_1	what is all the information for the makers that have designed at least 1 car model !						
+183	1	car_1	which ones have designed more than 1 ?			Explicit Operator Modification	Explict	Operator	Modification
+183	2	car_1	how about more than 3 ?			Explicit Schema Modification	Explict	Schema	Modification
+183	3	car_1	list just the full name and id !			Explicit Schema Modification	Explict	Schema	Modification
+184	0	car_1	how many different models has maker with full name general motors produced ?						
+184	1	car_1	how many different models weigh over 3500 pounds ?			Context Independent			
+184	2	car_1	how many models have either of these features ?	Bridging Anaphora	Whole				
+184	3	car_1	show me the distinct list of their model names !	Possessive Determiner	Whole				
+185	0	car_1	show the years and weight of all the cars !						
+185	1	car_1	show distinct years that the cars that weigh more than 3000 were produced !			Context Independent			
+185	2	car_1	how about the different years for those that weight less than 4000 .	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
+185	3	car_1	what are the distinct years , for the cars that are both ?	Bridging Anaphora	Cross				
+186	0	car_1	what is the lowest accelerate for any car ?						
+186	1	car_1	how about the highest ?			Implicit Operator Modification	Implicit	Operator	Modification
+186	2	car_1	what is the id , make and model of this car ?	Definite NPs	Whole				
+186	3	car_1	show just its horsepower .	Possessive Determiner	Part				
+187	0	car_1	show all the car information for any car of the model volvo !						
+187	1	car_1	what is the car with the least accelerate ?			Context Independent			
+187	2	car_1	what is its horsepower ?	Possessive Determiner	Whole				
+187	3	car_1	what about its number of cylinders ?	Possessive Determiner	Part	Explicit Schema Modification	Explict	Schema	Modification
+188	0	car_1	what is largest horsepower of all cars ?						
+188	1	car_1	what is the accelerate of the car with this horsepower ?	Definite NPs	Whole				
+188	2	car_1	what are the car ids of the cars with a greater accelerate than this ?	Demonstrative Pronoun	Whole				
+188	3	car_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+189	0	car_1	what are the names of the countries that have no car makers ?						
+189	1	car_1	show me all the names of all the different countries outside of those !	Demonstrative Pronoun	Whole				
+189	2	car_1	how many of these have more than 1 car maker ?	Demonstrative Pronoun	Whole				
+189	3	car_1	how about more than 2 ?			Explicit Schema Modification	Explict	Schema	Modification
+190	0	car_1	show all models and horsepowers of all cars !						
+190	1	car_1	now show just the ones with 4 cylinders .	One Anaphora	Whole				
+190	2	car_1	what is the model of that with the lowest horsepower ?	Demonstrative Pronoun	Part				
+190	3	car_1	how about the greatest horsepower ?			Explicit Schema Modification	Explict	Schema	Modification
+191	0	car_1	what is the lowest horsepower of all cars ?						
+191	1	car_1	show all the ids and makes of those with a horsepower greater than this !	Demonstrative Pronoun	Whole				
+191	2	car_1	which ones have 5 cylinders or less ?	One Anaphora	Whole				
+191	3	car_1	how about 3 or less ?			Implicit Clause Modification	Implicit	Clause	Modification
+192	0	car_1	show me the mpg , horsepower and accelerate for all the cars that were produced before 1980 !						
+192	1	car_1	also include the cars that have 8 cylinders !			Explicit Clause Continuation	Explict	Clause	Continuation
+192	2	car_1	what is the max horsepower for this group ?	Bridging Anaphora	Whole				
+192	3	car_1	how about the max mpg ?			Explicit Schema Modification	Explict	Schema	Modification
+193	0	car_1	show all the models that were built by the ford motor company .						
+193	1	car_1	what are all the models except those !	Demonstrative Pronoun	Whole				
+193	2	car_1	also provide the weights for all different makes for each of these models .	Definite NPs	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+193	3	car_1	list all the different models from these that have makes that are lighter than 3500 !	Demonstrative Pronoun	Whole				
+194	0	car_1	what are all the names of countries ?						
+194	1	car_1	which ones have at least one car maker ?	One Anaphora	Whole				
+194	2	car_1	show me all of car names other than these !	Demonstrative Pronoun	Whole				
+195	0	car_1	show all the car maker id , names , the models and makes they produce !						
+195	1	car_1	how many model does each car maker produce ? list the id and maker !			Context Independent			
+195	2	car_1	show me those that produce at least 2 !	Demonstrative Pronoun	Whole				
+195	3	car_1	for each of these , only show those that have more than 3 car makes !	Demonstrative Pronoun	Whole				
+196	0	wta_1	how many matches are there ?						
+196	1	wta_1	what was the maximum length in minutes for the matches ?	Definite NPs	None				
+196	2	wta_1	average ?			Implicit Operator Modification	Implicit	Operator	Modification
+196	3	wta_1	how about for the age of losers and winners ?			Explicit Schema Modification	Explict	Schema	Modification
+197	0	wta_1	how many distinct tourney names are there ?						
+197	1	wta_1	which ones have more than 20 matches ?	One Anaphora	Whole				
+197	2	wta_1	more than 10 ?			Explicit Schema Modification	Explict	Schema	Modification
+198	0	wta_1	how many distinct winners played in 2013 ?						
+198	1	wta_1	of those , how many also played in 2016 .	Demonstrative Pronoun	Whole				
+198	2	wta_1	what are their names ?	Possessive Determiner	Whole				
+199	0	wta_1	how many matches were played ?						
+199	1	wta_1	how many where the loser hand is l ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+199	2	wta_1	how many played in year 2013 or 2016 ?			Explicit Schema Modification	Explict	Schema	Modification
+200	0	wta_1	how many players are there ?						
+200	1	wta_1	which ones won in the tourney wta championships ? give their last name and birth date .	One Anaphora	Whole				
+200	2	wta_1	give first name and country code instead .			Explicit Schema Modification	Explict	Schema	Modification
+200	3	wta_1	which ones also won in the australian open ?	One Anaphora	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+201	0	wta_1	what is the birth date of the oldest player ?						
+201	1	wta_1	give the player id and last name instead .			Implicit Schema Modification	Implicit	Schema	Modification
+201	2	wta_1	give the first name and country code instead .			Explicit Schema Modification	Explict	Schema	Modification
+202	0	wta_1	how many players have right / r hand ?						
+202	1	wta_1	left / l hand ?			Implicit Schema Modification	Implicit	Schema	Modification
+202	2	wta_1	give their country code and birth date .	Possessive Determiner	Whole				
+202	3	wta_1	order by their birth date , and give the first and last name instead .			Implicit Schema Modification	Implicit	Schema	Modification
+203	0	wta_1	how many players are there ?						
+203	1	wta_1	how many tours did the player who did the least number of tours do ?			Context Independent			
+203	2	wta_1	most number of tours ?			Explicit Schema Modification	Explict	Schema	Modification
+203	3	wta_1	give the first name and country code instead .			Implicit Schema Modification	Implicit	Schema	Modification
+204	0	wta_1	how many matches are there ?						
+204	1	wta_1	find the surface that has the most number .	Bridging Anaphora	Whole				
+204	2	wta_1	what about the year ?			Implicit Schema Modification	Implicit	Schema	Modification
+205	0	wta_1	find the name of the loser who lost the most times .						
+205	1	wta_1	give the rank points as well .			Explicit Schema Continuation	Explict	Schema	Continuation
+205	2	wta_1	give the same , but for the winner who won the most times .			Explicit Schema Modification	Explict	Schema	Modification
+206	0	wta_1	give the name of the loser who has the highest rank points .						
+206	1	wta_1	do the same but for the australian open tourney .			Implicit Schema Modification	Implicit	Schema	Modification
+206	2	wta_1	give the winner name instead .			Implicit Schema Modification	Implicit	Schema	Modification
+207	0	wta_1	give the length of the match in minutes of the shortest match .						
+207	1	wta_1	longest match ?			Explicit Schema Modification	Explict	Schema	Modification
+207	2	wta_1	give the winner and loser name instead .			Explicit Schema Modification	Explict	Schema	Modification
+208	0	wta_1	find the birth dates of each of the players .						
+208	1	wta_1	find tours and first name instead .			Explicit Schema Modification	Explict	Schema	Modification
+208	2	wta_1	give the average ranking instead of the tours .			Explicit Schema Modification	Explict	Schema	Modification
+209	0	wta_1	give the number of tours for each player .						
+209	1	wta_1	give the average rank points and first name .			Explicit Schema Modification	Explict	Schema	Modification
+209	2	wta_1	find the total ranking points instead .			Implicit Schema Modification	Implicit	Schema	Modification
+210	0	wta_1	find the number of players for each country .						
+210	1	wta_1	which country has the least number of players ? give the country code .			Context Independent			
+210	2	wta_1	greatest number ?			Implicit Operator Modification	Implicit	Operator	Modification
+211	0	wta_1	what is the number of players for each hand type ? give the hand type as well .						
+211	1	wta_1	for each country ?			Explicit Schema Modification	Explict	Schema	Modification
+211	2	wta_1	give the ones that have more than 50 players .	One Anaphora	Whole				
+211	3	wta_1	give the country code only .			Implicit Schema Modification	Implicit	Schema	Modification
+212	0	wta_1	give the name of the 3 oldest losers across all matches .						
+212	1	wta_1	how about the 3 oldest winners .			Explicit Schema Modification	Explict	Schema	Modification
+212	2	wta_1	youngest ? give the rank as well .			Implicit Operator Modification	Implicit	Operator	Modification
+213	0	wta_1	how many different losers participated in the australian open ?						
+213	1	wta_1	winners ?			Implicit Schema Modification	Implicit	Schema	Modification
+213	2	wta_1	how about in the wta championships , and were also left handed ?			Implicit Clause Modification	Implicit	Clause	Modification
+214	0	orchestra	list all conductor information .						
+214	1	orchestra	how many conductors are there ?			Context Independent			
+215	0	orchestra	what are the names of the conductors ?						
+215	1	orchestra	what are the ages of the conductors ?			Context Independent			
+215	2	orchestra	list the names of conductors in ascending order of age .			Context Independent			
+216	0	orchestra	list the names of conductors .						
+216	1	orchestra	among these conductors , which of them are not from the usa ?	Definite NPs	Whole				
+217	0	orchestra	list the information of record companies .						
+217	1	orchestra	when were they founded ?	Demonstrative Pronoun	Whole				
+217	2	orchestra	please list the record companies of orchestras in descending order of years in which they were founded .			Context Independent			
+218	0	orchestra	what is the attendance of each show ?						
+218	1	orchestra	what is the average attendance ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+219	0	orchestra	what are the shares of performances ?						
+219	1	orchestra	what are the shares of performances whose type is not ' live final ' ?			Context Independent			
+219	2	orchestra	what are the maximum and the minimum of these values ?	Bridging Anaphora	Whole				
+220	0	orchestra	list the nationalities of conductors .						
+220	1	orchestra	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+221	0	orchestra	list the names of conductors .						
+221	1	orchestra	list years of work of conductors .			Context Independent			
+221	2	orchestra	list names of conductors in descending order of years of work .			Context Independent			
+222	0	orchestra	list the names of the conductors .						
+222	1	orchestra	list years of work of conductors .			Context Independent			
+222	2	orchestra	list the name of the conductor with the most years of work .			Context Independent			
+223	0	orchestra	show the names of conductors .						
+223	1	orchestra	please list these names with the orchestras they have conducted .			Context Independent			
+224	0	orchestra	please show the names of the conductors .						
+224	1	orchestra	which of them have conducted more than one orchestras ?	Demonstrative Pronoun	Whole				
+225	0	orchestra	please show the names of the conductors .						
+225	1	orchestra	who has conducted the most orchestras ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+226	0	orchestra	please show the names of the conductors .						
+226	1	orchestra	who has conducted orchestras founded after 2008 ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+227	0	orchestra	please show the record companies without duplicates .						
+227	1	orchestra	please also show their corresponding number of orchestras .	Possessive Determiner	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+228	0	orchestra	please show the record formats of orchestras .						
+228	1	orchestra	please list them in ascending order of count .	Demonstrative Pronoun	Whole				
+229	0	orchestra	list the information of all record companies .						
+229	1	orchestra	which one is shared by the most orchestras ?	One Anaphora	Whole				
+230	0	orchestra	list the names of orchestras .						
+230	1	orchestra	which of them have had no performances ?	Demonstrative Pronoun	Whole				
+231	0	orchestra	please list the record companies .						
+231	1	orchestra	which of them are shared by orchestras founded before 2003 ?	Demonstrative Pronoun	Whole				
+231	2	orchestra	which of them are shared by orchestras founded after 2003 ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
+231	3	orchestra	which of them are shared by orchestras founded before 2003 and after 2003 ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
+232	0	orchestra	list the orchestras whose record format is ' cd ' or ' dvd ' .						
+232	1	orchestra	how many of these orchestras are there ?	Definite NPs	Whole				
+233	0	cre_Doc_Template_Mgt	show information for all documents .						
+233	1	cre_Doc_Template_Mgt	show their ids .	Possessive Determiner	Whole				
+233	2	cre_Doc_Template_Mgt	also show their document names and document descriptions .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
+234	0	cre_Doc_Template_Mgt	show the document name for all documents .						
+234	1	cre_Doc_Template_Mgt	also show their description .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
+234	2	cre_Doc_Template_Mgt	which one has description with the letter ' w ' in it ?	One Anaphora	Part				
+234	3	cre_Doc_Template_Mgt	show its name and template id .	Possessive Determiner	Part				
+235	0	cre_Doc_Template_Mgt	show the the document name for all documents .						
+235	1	cre_Doc_Template_Mgt	show the document id for the one named ' robbin cv ' ?			Context Independent			
+235	2	cre_Doc_Template_Mgt	also show its template id and description .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
+236	0	cre_Doc_Template_Mgt	show the template id for all documents .						
+236	1	cre_Doc_Template_Mgt	show all distinct results .	Bridging Anaphora	Whole				
+236	2	cre_Doc_Template_Mgt	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+237	0	cre_Doc_Template_Mgt	show the document ids .						
+237	1	cre_Doc_Template_Mgt	also show their template id and template type code .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+237	2	cre_Doc_Template_Mgt	which documents are using the template with type code ' ppt ' ?			Context Independent			
+237	3	cre_Doc_Template_Mgt	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+238	0	cre_Doc_Template_Mgt	show the template id for all documents .						
+238	1	cre_Doc_Template_Mgt	for each of them , show the number of documents using it .	Demonstrative Pronoun	Part				
+239	0	cre_Doc_Template_Mgt	show the template id for all documents .						
+239	1	cre_Doc_Template_Mgt	also show its template type code .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
+239	2	cre_Doc_Template_Mgt	for each of them , show the number of documents using it .	Demonstrative Pronoun	Whole				
+239	3	cre_Doc_Template_Mgt	which one has the most ?	One Anaphora	Whole	Other			
+240	0	cre_Doc_Template_Mgt	show the template id for all documents .						
+240	1	cre_Doc_Template_Mgt	for each of them , show the number of documents .	Demonstrative Pronoun	Part				
+240	2	cre_Doc_Template_Mgt	which of them are used by more than one document ?	Demonstrative Pronoun	Part				
+241	0	cre_Doc_Template_Mgt	show template ids used by some document .						
+241	1	cre_Doc_Template_Mgt	show all template ids .			Context Independent			
+241	2	cre_Doc_Template_Mgt	which of them are not used by any document ?	Demonstrative Pronoun	Whole				
+242	0	cre_Doc_Template_Mgt	show info for all templates .						
+242	1	cre_Doc_Template_Mgt	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+243	0	cre_Doc_Template_Mgt	show template ids for all templates .						
+243	1	cre_Doc_Template_Mgt	also show their version numbers and template type codes .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
+244	0	cre_Doc_Template_Mgt	show all template type codes for all templates .						
+244	1	cre_Doc_Template_Mgt	filter out duplicates .			Explicit Operator Continuation	Explict	Operator	Continuation
+245	0	cre_Doc_Template_Mgt	show the template ids for all templates .						
+245	1	cre_Doc_Template_Mgt	how about the ids with template type code pp or ppt ?			Implicit Clause Modification	Implicit	Clause	Modification
+246	0	cre_Doc_Template_Mgt	show the template type codes for all templates .						
+246	1	cre_Doc_Template_Mgt	how many of them have template type code cv ?	Demonstrative Pronoun	Part				
+247	0	cre_Doc_Template_Mgt	what is the version number for all template ?						
+247	1	cre_Doc_Template_Mgt	only show those with version number later than 5 .	Demonstrative Pronoun	Part				
+247	2	cre_Doc_Template_Mgt	also show their template type code .	Possessive Determiner	Part	Explicit Schema Continuation	Explict	Schema	Continuation
+248	0	cre_Doc_Template_Mgt	show the template type code for all templates .						
+248	1	cre_Doc_Template_Mgt	for each of them , count the number of templates .	Demonstrative Pronoun	Part				
+249	0	cre_Doc_Template_Mgt	show all type codes for templates .						
+249	1	cre_Doc_Template_Mgt	for each of them , how many templates do they contain ?	Demonstrative Pronoun	Part				
+249	2	cre_Doc_Template_Mgt	which of them contains the most templates ?	Demonstrative Pronoun	Part				
+250	0	cre_Doc_Template_Mgt	show all template type codes .						
+250	1	cre_Doc_Template_Mgt	for each of them , show the count of templates .	Demonstrative Pronoun	Whole				
+250	2	cre_Doc_Template_Mgt	which of them have fewer than three templates ?	Demonstrative Pronoun	Part				
+251	0	cre_Doc_Template_Mgt	show the version number for all templates .						
+251	1	cre_Doc_Template_Mgt	what is the smallest value ?	Bridging Anaphora	Whole				
+251	2	cre_Doc_Template_Mgt	also show its template type code .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+252	0	cre_Doc_Template_Mgt	what is the template type code of the template .						
+252	1	cre_Doc_Template_Mgt	also show the names of all documents using each template .			Explicit Schema Continuation	Explict	Schema	Continuation
+252	2	cre_Doc_Template_Mgt	which of the template type codes is used by document with the name ' data base ' ?			Context Independent			
+253	0	cre_Doc_Template_Mgt	show all document names .						
+253	1	cre_Doc_Template_Mgt	also show their template type codes .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+253	2	cre_Doc_Template_Mgt	which of the documents are using templates with template type code bk ?			Context Independent			
+254	0	cre_Doc_Template_Mgt	show all template type codes .						
+254	1	cre_Doc_Template_Mgt	also show the document ids using each template .			Explicit Schema Continuation	Explict	Schema	Continuation
+254	2	cre_Doc_Template_Mgt	for each type code , how many documents are using that template ?	Definite NPs	Whole				
+255	0	cre_Doc_Template_Mgt	show the type codes for all templates .						
+255	1	cre_Doc_Template_Mgt	for each , how many documents are using this template ?	Definite NPs	None	Other			
+255	2	cre_Doc_Template_Mgt	order the template type codes in descending order by this number .	Bridging Anaphora	Whole				
+255	3	cre_Doc_Template_Mgt	which of them has the most ?	Demonstrative Pronoun	Whole	Other			
+256	0	cre_Doc_Template_Mgt	show all template type codes .						
+256	1	cre_Doc_Template_Mgt	show all template type codes that are used by some document .			Context Independent			
+256	2	cre_Doc_Template_Mgt	how about those that are not used by any document ?	Demonstrative Pronoun	Part	Explicit Operator Modification	Explict	Operator	Modification
+257	0	cre_Doc_Template_Mgt	show all template type codes .						
+257	1	cre_Doc_Template_Mgt	also show their descriptions .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+258	0	cre_Doc_Template_Mgt	show all template type codes and descriptions .						
+258	1	cre_Doc_Template_Mgt	what is the description for template type code ' ad ' ?			Context Independent			
+259	0	cre_Doc_Template_Mgt	show all template type codes .						
+259	1	cre_Doc_Template_Mgt	also show descriptions .			Explicit Schema Continuation	Explict	Schema	Continuation
+259	2	cre_Doc_Template_Mgt	which code has template type description ' book ' ?			Context Independent			
+260	0	cre_Doc_Template_Mgt	show the template ids used by any document .						
+260	1	cre_Doc_Template_Mgt	also show the template type code for those ids .	Definite NPs	Whole				
+260	2	cre_Doc_Template_Mgt	how about their template type descriptions ?	Possessive Determiner	Whole	Implicit Schema Modification	Implicit	Schema	Modification
+260	3	cre_Doc_Template_Mgt	show the distinct values among them .	Bridging Anaphora	Whole				
+261	0	cre_Doc_Template_Mgt	show the template id for all templates .						
+261	1	cre_Doc_Template_Mgt	also show their template type description .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+261	2	cre_Doc_Template_Mgt	what are the template ids with description ' presentation ' ?			Context Independent			
+262	0	cre_Doc_Template_Mgt	show the info for all paragraphs .						
+262	1	cre_Doc_Template_Mgt	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+263	0	cre_Doc_Template_Mgt	show the id for all paragraphs .						
+263	1	cre_Doc_Template_Mgt	also show their document names .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+263	2	cre_Doc_Template_Mgt	only show the id for all paragraphs in the document named ' summer show ' .			Context Independent			
+263	3	cre_Doc_Template_Mgt	how many such paragraphs are there ?	Definite NPs	Part				
+264	0	cre_Doc_Template_Mgt	show the parapraph text for all paragraphs .						
+264	1	cre_Doc_Template_Mgt	also show their paragraph details .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+264	2	cre_Doc_Template_Mgt	what are the details for the paragraph containing ' korea ' ?			Context Independent			
+265	0	cre_Doc_Template_Mgt	show all paragraph ids and texts .						
+265	1	cre_Doc_Template_Mgt	for each of them , also show their document name .	Demonstrative Pronoun	Whole				
+265	2	cre_Doc_Template_Mgt	what are the ids and texts for the paragraph in the document with name ' welcome to ny ' ?			Context Independent			
+266	0	cre_Doc_Template_Mgt	show all paragraph text .						
+266	1	cre_Doc_Template_Mgt	for each of them , also show the document name .	Demonstrative Pronoun	Whole				
+266	2	cre_Doc_Template_Mgt	what is the text for the document ' customer reviews ' ?			Context Independent			
+267	0	cre_Doc_Template_Mgt	show the document id for all paragraphs .						
+267	1	cre_Doc_Template_Mgt	for each id , show the number of paragraphs .			Context Independent			
+267	2	cre_Doc_Template_Mgt	order by document id .			Implicit Clause Continuation	Implicit	Clause	Continuation
+268	0	cre_Doc_Template_Mgt	show all document ids and names .						
+268	1	cre_Doc_Template_Mgt	for each of them , count the number of paragraphs in each document .	Demonstrative Pronoun	Whole				
+269	0	cre_Doc_Template_Mgt	show the document id for all paragraphs .						
+269	1	cre_Doc_Template_Mgt	for each of these document ids , count the number of paragraphs .	Definite NPs	Whole				
+269	2	cre_Doc_Template_Mgt	which of them have at least two paragraphs ?	Demonstrative Pronoun	Part				
+270	0	cre_Doc_Template_Mgt	show the id number and name for all documents .						
+270	1	cre_Doc_Template_Mgt	also show the paragraph id for those documents .	Definite NPs	None	Explicit Clause Continuation	Explict	Clause	Continuation
+270	2	cre_Doc_Template_Mgt	for each of these results , count the number of paragraphs .	Bridging Anaphora	Whole				
+270	3	cre_Doc_Template_Mgt	which of them is the longest ?	Demonstrative Pronoun	Whole				
+271	0	cre_Doc_Template_Mgt	show the document id for all paragraphs .						
+271	1	cre_Doc_Template_Mgt	for each of them , count the number of paragraphs .	Demonstrative Pronoun	Whole				
+271	2	cre_Doc_Template_Mgt	sort them by these counts .	Bridging Anaphora	Whole				
+271	3	cre_Doc_Template_Mgt	which has the fewest ?			Other			
+272	0	cre_Doc_Template_Mgt	show the document id for all paragraphs .						
+272	1	cre_Doc_Template_Mgt	for each of these ids , show the number of paragraphs .	Definite NPs	Whole				
+272	2	cre_Doc_Template_Mgt	which of them have between 1 and 2 paragraphs ?	Demonstrative Pronoun	Part				
+273	0	concert_singer	show information for all singers .						
+273	1	concert_singer	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+274	0	concert_singer	show names of all singers .						
+274	1	concert_singer	for each of them , also show country and age .	Demonstrative Pronoun	Whole				
+274	2	concert_singer	list the results in descending order of their age .	Bridging Anaphora	Whole				
+275	0	concert_singer	show age for all singers .						
+275	1	concert_singer	what about age for those from france ?	Definite NPs	Part	Implicit Clause Continuation	Implicit	Clause	Continuation
+275	2	concert_singer	what is the average , minimum , and maximum age for those ?	Demonstrative Pronoun	Whole				
+276	0	concert_singer	show the names of all songs .						
+276	1	concert_singer	also show the release year for each of them .	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+276	2	concert_singer	order the result by the age of their singers .	Bridging Anaphora	Whole				
+276	3	concert_singer	what is the result for the song by the yongest ?	Bridging Anaphora	Whole				
+277	0	concert_singer	show country for all singers .						
+277	1	concert_singer	only show the results for those above 20 .	Bridging Anaphora	Whole				
+277	2	concert_singer	what are all distinct countries for them ?	Demonstrative Pronoun	Whole				
+278	0	concert_singer	show the country for all singers .						
+278	1	concert_singer	for each of them , what is the number of singers ?	Demonstrative Pronoun	Whole				
+279	0	concert_singer	what is the average age for all singers ?						
+279	1	concert_singer	show the name for songs by singers older than that .	Demonstrative Pronoun	Whole				
+280	0	concert_singer	show the name for all stadiums .						
+280	1	concert_singer	what about those with a capacity between 5000 and 10000 ?	Demonstrative Pronoun	Whole				
+280	2	concert_singer	also list the location for them .	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+281	0	concert_singer	show the capacity for all stadiums .						
+281	1	concert_singer	what is the average of them ?	Demonstrative Pronoun	Whole				
+281	2	concert_singer	also show the maximum .			Explicit Operator Continuation	Explict	Operator	Continuation
+282	0	concert_singer	show the name and capacity for all stadiums .						
+282	1	concert_singer	show the result in descending order of their average attendance .	Bridging Anaphora	Whole				
+282	2	concert_singer	which one has the highest ?	One Anaphora	Whole				
+283	0	concert_singer	show the concert information in year 2014 .						
+283	1	concert_singer	also show those in year 2015 .	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+283	2	concert_singer	how many are there in total ?			Other			
+284	0	concert_singer	show the names of stadiums .						
+284	1	concert_singer	for each of them , also show the number of concerts .	Demonstrative Pronoun	Whole				
+285	0	concert_singer	show all stadium names and their capacities .						
+285	1	concert_singer	order the results in descending order of the number of concerts in year 2014 or after .	Bridging Anaphora	Whole				
+285	2	concert_singer	which one has the most ?	One Anaphora	Part	Other			
+286	0	concert_singer	show the year for all concerts .						
+286	1	concert_singer	order them in descending order of the number of concerts ?	Demonstrative Pronoun	Part				
+286	2	concert_singer	which year has the most ?			Other			
+287	0	concert_singer	show all stadium ids of concerts .						
+287	1	concert_singer	show the stadium names without any concert .			Context Independent			
+288	0	concert_singer	show the country for all singers .						
+288	1	concert_singer	how about those for singers above age 40 ?	Demonstrative Pronoun	Whole	Explict Clause Modification	Explict	Clause	Modification
+288	2	concert_singer	how about those for singers below 30 ?	Demonstrative Pronoun	Whole	Explict Clause Modification	Explict	Clause	Modification
+288	3	concert_singer	how about countries with both ?	Bridging Anaphora	Cross				
+289	0	concert_singer	show name for stadiums that had a concert in year 2014 .						
+289	1	concert_singer	show names for all stadiums except for those .	Demonstrative Pronoun	Part				
+290	0	concert_singer	show the name and theme for all concerts .						
+290	1	concert_singer	for each of those , also show the number of singers .	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+291	0	concert_singer	show the name for all singers .						
+291	1	concert_singer	for each of them , also show the number of concerts ?	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+292	0	concert_singer	list all singer names .						
+292	1	concert_singer	how about those performing concerts in year 2014 ?	Demonstrative Pronoun	Whole				
+293	0	concert_singer	what are the names of all singers ?						
+293	1	concert_singer	show the names for those having a song having ' hey ' in its name .	Demonstrative Pronoun	Whole				
+293	2	concert_singer	also show the nation for those singers .	Definite NPs	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+294	0	concert_singer	show the name and location for the stadiums .						
+294	1	concert_singer	how about those with some concerts happened in the year 2014 ?	Demonstrative Pronoun	Whole	Implicit Clause Continuation	Implicit	Clause	Continuation
+294	2	concert_singer	among those , what are stadiums also holding some concerts in the year 2015 ?	Demonstrative Pronoun	Whole				
+295	0	singer	show the names and birth years of singers ?						
+295	1	singer	only for the ones born in 1948 .			Implicit Clause Continuation	Implicit	Clause	Continuation
+295	2	singer	show the name of singers whose birth year is either 1948 or 1949 ?			Context Independent			
+296	0	singer	show the name and net worth of the singers .						
+296	1	singer	order by richest first .			Implicit Clause Continuation	Implicit	Clause	Continuation
+296	2	singer	what is the name of the singer with the largest net worth ?			Context Independent			
+297	0	singer	show the names and citizenships of singers .						
+297	1	singer	show citizenship counts .			Context Independent			
+297	2	singer	sort that by most common first .	Demonstrative Pronoun	Whole				
+297	3	singer	limit it to one .	Demonstrative Pronoun	Part	Implicit Operator Continuation	Implicit	Operator	Continuation
+298	0	singer	join singer names with their song titles .						
+298	1	singer	limit the entries to where song sales exceed 300000 .	Bridging Anaphora	Whole				
+298	2	singer	which are the distinct names in that list ?	Bridging Anaphora	Whole				
+299	0	singer	show the names and song counts of singers .						
+299	1	singer	show the names of singers that have more than one song .			Context Independent			
+300	0	singer	show the songs and sale amounts .						
+300	1	singer	show the names of singers and the total sales of their songs .			Context Independent			
+301	0	singer	which singer ids have at least one song ?						
+301	1	singer	which singer names do not ?			Implicit Operator Modification	Implicit	Operator	Modification
+302	0	employee_hire_evaluation	find all employees who are under age 30 .						
+302	1	employee_hire_evaluation	which cities did they come from ?	Demonstrative Pronoun	Whole				
+302	2	employee_hire_evaluation	show the cities from which more than one employee originated .			Context Independent			
+303	0	employee_hire_evaluation	show all shops .						
+303	1	employee_hire_evaluation	what is the total number of products they are selling ?	Demonstrative Pronoun	Whole				
+303	2	employee_hire_evaluation	find the name of the shop with the greatest number of products .			Context Independent			
+303	3	employee_hire_evaluation	what are its manager name and district ?	Possessive Determiner	Whole				
+304	0	employee_hire_evaluation	find the average number of products of all stores .						
+304	1	employee_hire_evaluation	how about the minimum and maximum ?			Implicit Operator Modification	Implicit	Operator	Modification
+305	0	employee_hire_evaluation	show the name and number of product for all shops .						
+305	1	employee_hire_evaluation	what is the average number of products ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+305	2	employee_hire_evaluation	find the names of stores whose number products is less than the average .			Context Independent			
+305	3	employee_hire_evaluation	how about more than ?			Implicit Operator Modification	Implicit	Operator	Modification
+306	0	employee_hire_evaluation	how many evaluations are there ?						
+306	1	employee_hire_evaluation	what years were they given ?	Demonstrative Pronoun	Whole				
+306	2	employee_hire_evaluation	find the name of the employee who received the most evaluation awards .			Context Independent			
+307	0	employee_hire_evaluation	find the name of the employees who received past evaluation awards .						
+307	1	employee_hire_evaluation	who won the most times ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+307	2	employee_hire_evaluation	ok , which one received the award with the highest bonus ?	One Anaphora	Part				
+308	0	employee_hire_evaluation	find the number of different employees who were awarded in the past evaluations .						
+308	1	employee_hire_evaluation	what are their names ?	Possessive Determiner	Whole				
+308	2	employee_hire_evaluation	show the names of the employees who never won .			Context Independent			
+309	0	employee_hire_evaluation	how many shops are hiring ?						
+309	1	employee_hire_evaluation	what are the shops ' names ? '			Implicit Schema Modification	Implicit	Schema	Modification
+309	2	employee_hire_evaluation	which one is hiring the largest number of employees ?	One Anaphora	Whole				
+310	0	employee_hire_evaluation	show all hiring info .						
+310	1	employee_hire_evaluation	find the names of any shops not hiring .			Context Independent			
+311	0	employee_hire_evaluation	how many employees are being hired in all shops ?			Context Independent			
+311	1	employee_hire_evaluation	show the number for each shop . show the shop name as well .			Context Independent			
+312	0	museum_visit	show all visitors .						
+312	1	museum_visit	order them by their membership level from high to low .	Demonstrative Pronoun	Whole				
+312	2	museum_visit	just show their names .	Possessive Determiner	Whole				
+312	3	museum_visit	do not list those whose membership level is lower than or equal to 4 .			Implicit Clause Continuation	Implicit	Clause	Continuation
+313	0	museum_visit	find the number of visitors with a membership level higher than 4 .						
+313	1	museum_visit	what are their names and membership levels ?	Possessive Determiner	Part				
+313	2	museum_visit	sort by their age from old to young .	Possessive Determiner	Part				
+314	0	museum_visit	how many museums are in the table ?						
+314	1	museum_visit	what is the average number of staff working in these museums ?	Definite NPs	Whole				
+314	2	museum_visit	find the name of the museum that has the most staff members .			Context Independent			
+314	3	museum_visit	what is its id ?	Possessive Determiner	Whole	Implicit Schema Modification	Implicit	Schema	Modification
+315	0	museum_visit	find the names of museums opened before 2010 .						
+315	1	museum_visit	how about after ?			Implicit Operator Modification	Implicit	Operator	Modification
+315	2	museum_visit	find the minimum number of staff of those museums .	Definite NPs	Whole				
+315	3	museum_visit	find the names of museums which have more staff than that .	Demonstrative Pronoun	Whole				
+316	0	museum_visit	find the names of visitors who visited and who have some museum visit records .						
+316	1	museum_visit	which of them visited some museums more than once ?	Demonstrative Pronoun	Whole				
+316	2	museum_visit	also show their ids and ages .	Possessive Determiner	Whole	Explicit Schema Continuation	Explict	Schema	Continuation
+317	0	museum_visit	what is the total spent on all visits ?						
+317	1	museum_visit	find the name of the visitor who has spent the most money for his or her visits .			Context Independent			
+317	2	museum_visit	what are his id and membership level ?	Possessive Determiner	Whole				
+318	0	museum_visit	show the id and name of all museums .						
+318	1	museum_visit	show the number of tickets sold for each of them .	Demonstrative Pronoun	Whole				
+318	2	museum_visit	which one was visited the most times ?	One Anaphora	Whole				
+319	0	museum_visit	how many museums are there ?						
+319	1	museum_visit	how many of them have not had any visitors yet ?	Demonstrative Pronoun	Whole				
+319	2	museum_visit	what are their names ?	Possessive Determiner	Whole				
+320	0	museum_visit	how many tickets were sold from all of the museums ?						
+320	1	museum_visit	find the id of the visitor who bought the most tickets at once .			Context Independent			
+320	2	museum_visit	find the name and age of this visitor .	Definite NPs	Whole				
+321	0	museum_visit	find the total cost of all visits .						
+321	1	museum_visit	what was the amount of the largest one time purchase of tickets out of all visits ?	One Anaphora	Whole				
+321	2	museum_visit	how about the average and maximum number of tickets purchased ?			Implicit Clause Modification	Implicit	Clause	Modification
+322	0	museum_visit	what is the lowest level of membership ?						
+322	1	museum_visit	find the number of visitors whose membership level is 1 .			Context Independent			
+322	2	museum_visit	show the ticket expenses of all of their museum visits .	Possessive Determiner	Whole				
+322	3	museum_visit	what is the total amount of money spent ?			Context Independent			
+323	0	museum_visit	find the names of museums opened before 2009 .						
+323	1	museum_visit	what about those opened after 2011 ?	Demonstrative Pronoun	Whole	Explicit Schema Modification	Explict	Schema	Modification
+323	2	museum_visit	what is the name of the visitor who visited both groups of museums ?			Context Independent			
+324	0	museum_visit	find the names of museums opened after 2010 ?						
+324	1	museum_visit	find the number of visits to these museums ?	Definite NPs	Whole				
+324	2	museum_visit	find the number of visitors who did not visit these museums .	Definite NPs	Whole				
+325	0	network_1	how many high schoolers are there ?						
+325	1	network_1	how many in each grade 11 or 12 ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+325	2	network_1	how many in grade 9 or 10 ?			Explicit Schema Modification	Explict	Schema	Modification
+326	0	network_1	how many distinct grades are there ?						
+326	1	network_1	what are they ?	Demonstrative Pronoun	Whole				
+326	2	network_1	which one has the least number of highschoolers ?	One Anaphora	Whole				
+326	3	network_1	which one has the most ?	One Anaphora	Part	Explicit Operator Modification	Explict	Operator	Modification
+327	0	network_1	how many highschoolers are there in total ?						
+327	1	network_1	how many per grade ?			Implicit Schema Continuation	Implicit	Schema	Continuation
+327	2	network_1	what grades have at least 10 students ?			Context Independent			
+327	3	network_1	how about at least 4 ?			Explicit Schema Modification	Explict	Schema	Modification
+328	0	network_1	what are the names of all the high school students ?						
+328	1	network_1	show the names of the friends for each one .	One Anaphora	Whole				
+328	2	network_1	how many friends does each student each have ?			Context Independent			
+329	0	network_1	what are the names of all the high schoolers ?						
+329	1	network_1	show me the number of friends for each one .	One Anaphora	Whole				
+329	2	network_1	which one has the least number of friends ?	One Anaphora	Whole				
+329	3	network_1	how about the greatest ?			Implicit Operator Modification	Implicit	Operator	Modification
+330	0	network_1	how many highschoolers have more than 5 ?						
+330	1	network_1	at least 3 ?			Implicit Operator Modification	Implicit	Operator	Modification
+330	2	network_1	what are their names ?	Possessive Determiner	Whole				
+331	0	network_1	show me information on the high schooler named ' kyle . '						
+331	1	network_1	how many friends does he have ?	Demonstrative Pronoun	Whole				
+331	2	network_1	what are their names ?	Possessive Determiner	Whole				
+332	0	network_1	is there a highschooler named kyle ?						
+332	1	network_1	who does he like ?	Demonstrative Pronoun	Part				
+332	2	network_1	what are the names of his friends ?	Possessive Determiner	Part				
+332	3	network_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+333	0	network_1	show me all the high school student ids .						
+333	1	network_1	how many friends do each of them have ?	Demonstrative Pronoun	Whole				
+333	2	network_1	which ones have at least 1 ?	One Anaphora	Whole	Other			
+333	3	network_1	which ones have none ?	One Anaphora	Part	Explicit Schema Modification	Explict	Schema	Modification
+334	0	network_1	what are the names of all the highshcool students ?						
+334	1	network_1	which ones have at least 5 friends ?	One Anaphora	Whole				
+334	2	network_1	how about at least 1 ?			Explicit Schema Modification	Explict	Schema	Modification
+334	3	network_1	how about 0 ?			Implicit Operator Modification	Implicit	Operator	Modification
+335	0	network_1	show me the ids of all highschoolers who have friends ?						
+335	1	network_1	also show , for each , the ids of the people they like ?	Demonstrative Pronoun	Part	Explicit Clause Continuation	Explict	Clause	Continuation
+335	2	network_1	now only show those who are liked by someone else !	Demonstrative Pronoun	Whole				
+335	3	network_1	show me just their ids !	Possessive Determiner	Part				
+336	0	network_1	how many high schoolers are liked by someone else ?						
+336	1	network_1	what are their names ?	Possessive Determiner	Whole				
+336	2	network_1	how many of them have friends ?	Demonstrative Pronoun	Whole				
+336	3	network_1	who are they ?	Demonstrative Pronoun	Whole				
+337	0	network_1	what are the names of the highschoolers who do n't like anyone ?						
+337	1	network_1	how about those who like others ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
+337	2	network_1	how many people do they each like ?	Demonstrative Pronoun	Whole				
+338	0	network_1	how many high schoolers like somebody else ?						
+338	1	network_1	what are their names ?	Possessive Determiner	Whole				
+338	2	network_1	what is the greatest number of likes anyone has ?			Context Independent			
+338	3	network_1	who has the greatest number of likes ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+339	0	network_1	show me the names of all students ?						
+339	1	network_1	how about those who like at least one other person !	Demonstrative Pronoun	Whole	Implicit Clause Continuation	Implicit	Clause	Continuation
+339	2	network_1	how about those who like at least two other students !	Demonstrative Pronoun	Whole	Explicit Schema Modification	Explict	Schema	Modification
+340	0	network_1	what are the names of the students who have some friends ?						
+340	1	network_1	how about those have at least 2 friends ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
+340	2	network_1	what grades are they each in ?	Demonstrative Pronoun	Whole				
+340	3	network_1	show me the names of only those who are in a grade higher than 5 !	Demonstrative Pronoun	Part				
+341	0	network_1	what grade is the student named kyle in ?						
+341	1	network_1	how many other students like him ?	Demonstrative Pronoun	Part				
+341	2	network_1	what are their names ?	Possessive Determiner	Whole				
+341	3	network_1	how many other students does he like ?	Demonstrative Pronoun	Part				
+342	0	network_1	show me the student_id and the grade for all students .						
+342	1	network_1	what is the average grade ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+342	2	network_1	how about for students who have no friends ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+342	3	network_1	how about for those who have some friends ?	Demonstrative Pronoun	Whole	Explicit Operator Modification	Explict	Operator	Modification
+343	0	course_teach	show all the teachers .						
+343	1	course_teach	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+344	0	course_teach	what is the name of each teacher ?						
+344	1	course_teach	sort them in ascending order of age .	Demonstrative Pronoun	Whole				
+345	0	course_teach	what is the age of each teacher ?						
+345	1	course_teach	also show the hometown for each .			Explicit Schema Continuation	Explict	Schema	Continuation
+346	0	course_teach	what is the hometown of each teacher ?						
+346	1	course_teach	which teacher 's hometown is not ' little lever urban district ' ?			Context Independent			
+346	2	course_teach	give me their names .	Possessive Determiner	Whole				
+347	0	course_teach	what are the ages of all the teachers ?						
+347	1	course_teach	which teachers are age 32 ?			Context Independent			
+347	2	course_teach	which teachers are age 32 or 33 ?			Context Independent			
+347	3	course_teach	what are their names ?	Possessive Determiner	Whole				
+348	0	course_teach	sort all the teachers by their age .						
+348	1	course_teach	which teacher is the youngest ?			Context Independent			
+348	2	course_teach	what is his or her hometown ?	Possessive Determiner	Whole				
+349	0	course_teach	what is the hometown of each teacher ?						
+349	1	course_teach	can you order teachers by their hometowns ?			Context Independent			
+349	2	course_teach	show the number of teachers from each hometown .			Context Independent			
+350	0	course_teach	how many teachers are there ?						
+350	1	course_teach	how many are there for each hometown ?			Implicit Clause Continuation	Implicit	Clause	Continuation
+350	2	course_teach	find the most common hometown of teachers .			Context Independent			
+351	0	course_teach	how many teachers are there ?						
+351	1	course_teach	how many teachers are there for each hometown ?			Context Independent			
+351	2	course_teach	which hometowns are shared by at least two teachers ?			Context Independent			
+352	0	course_teach	find all the course arrangements .						
+352	1	course_teach	for each of the courses , show the teacher who teaches it .			Context Independent			
+353	0	course_teach	find all the course arrangements .						
+353	1	course_teach	show names of teachers and the courses they are arranged to teach .			Context Independent			
+353	2	course_teach	sort the results by teacher 's name ?	Bridging Anaphora	Whole				
+354	0	course_teach	find all the course arrangements .						
+354	1	course_teach	show names of teachers and the courses they are arranged to teach .			Context Independent			
+354	2	course_teach	which teachers teach the math course ? give me their names .			Context Independent			
+355	0	course_teach	show all the teacher names .						
+355	1	course_teach	show names of teachers and the number of courses they teach .			Context Independent			
+356	0	course_teach	show all the teacher names .						
+356	1	course_teach	show names of teachers and the number of courses they teach .			Context Independent			
+356	2	course_teach	show the names of teachers who teach at least two courses .			Context Independent			
+357	0	real_estate_properties	show all the available features .						
+357	1	real_estate_properties	how many available features are there ?			Context Independent			
+358	0	real_estate_properties	find the available features with feature name ' aircon ' .						
+358	1	real_estate_properties	what is the feature type name ?			Implicit Schema Modification	Implicit	Schema	Modification
+359	0	real_estate_properties	what is the property type description of each property ?						
+359	1	real_estate_properties	show the property type descriptions of properties for each property type code .			Context Independent			
+360	0	voter_1	show all area codes and states .						
+360	1	voter_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+361	0	voter_1	show all info about contestants .						
+361	1	voter_1	what are their names ?	Possessive Determiner	Whole				
+361	2	voter_1	can you also show contestant numbers ?			Explicit Clause Continuation	Explict	Clause	Continuation
+361	3	voter_1	can you sort them ordered in descending order of contestant name ?	Demonstrative Pronoun	Whole				
+362	0	voter_1	show all info about votes .						
+362	1	voter_1	also provide vote ids .			Explicit Schema Continuation	Explict	Schema	Continuation
+362	2	voter_1	also show phone numbers .			Explicit Schema Continuation	Explict	Schema	Continuation
+363	0	voter_1	show all area codes .						
+363	1	voter_1	what is the largest one ?	One Anaphora	Whole				
+363	2	voter_1	how about smallest one ?	One Anaphora	Whole	Explicit Operator Modification	Explict	Operator	Modification
+363	3	voter_1	give me both .	Demonstrative Pronoun	Cross				
+364	0	voter_1	show all votes .						
+364	1	voter_1	which ones are from the state ' ca ' ?	One Anaphora	Whole				
+364	2	voter_1	among those , can you give me the last date created ?	Demonstrative Pronoun	Whole				
+365	0	voter_1	show all contestants .						
+365	1	voter_1	what are their names ?	Possessive Determiner	Whole				
+365	2	voter_1	can you not include the name ' jessie alloway ' ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+366	0	voter_1	show all votes ?						
+366	1	voter_1	among these , what is the list of states ?	Demonstrative Pronoun	Whole				
+366	2	voter_1	what are the distinct states and create time ?			Context Independent			
+367	0	voter_1	show all the contestants .						
+367	1	voter_1	show all the votes .			Context Independent			
+367	2	voter_1	can you show contestants with at least two votes ?			Context Independent			
+367	3	voter_1	what are their contestant numbers and names ?	Possessive Determiner	Whole				
+368	0	voter_1	show all the contestants .						
+368	1	voter_1	show all the votes .			Context Independent			
+368	2	voter_1	can you show the contestant with the least votes ?			Context Independent			
+368	3	voter_1	what is his or her contestant number and contestant name ?	Possessive Determiner	Whole				
+369	0	voter_1	show all votes .						
+369	1	voter_1	what about those from state ' ny ' or ' ca ' ?	Demonstrative Pronoun	Whole				
+369	2	voter_1	give me the count of these votes .	Definite NPs	Whole				
+370	0	voter_1	show all contestants ?						
+370	1	voter_1	which contestants did not get any votes ?			Context Independent			
+370	2	voter_1	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+371	0	voter_1	show all area codes and states .						
+371	1	voter_1	show all votes .			Context Independent			
+371	2	voter_1	get the count of votes for each area code .			Context Independent			
+371	3	voter_1	what is the area code in which the most voters voted ?			Context Independent			
+372	0	voter_1	show all votes .						
+372	1	voter_1	show those that were for the contestant named ' tabatha gehling ' .	Demonstrative Pronoun	Whole				
+372	2	voter_1	what are the create dates , states , and phone numbers of these votes ?	Definite NPs	Whole				
+373	0	voter_1	show all area codes .						
+373	1	voter_1	can you tell me area codes in which voters voted for the contestant ' tabatha gehling ' ?			Context Independent			
+373	2	voter_1	how about both the contestant ' tabatha gehling ' and the contestant ' kelly clauss ' ?			Explicit Schema Modification	Explict	Schema	Modification
+374	0	student_transcripts_tracking	give me the description of the department that offers the most number of degrees .						
+374	1	student_transcripts_tracking	what 's the name and id of that department ?	Definite NPs	Part				
+375	0	student_transcripts_tracking	show me all the degrees offered by the engineering department .						
+375	1	student_transcripts_tracking	how many are there ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+376	0	student_transcripts_tracking	show me courses that have exactly 2 sections .						
+376	1	student_transcripts_tracking	show me names and ids for courses that have at most 2 sections .			Context Independent			
+377	0	student_transcripts_tracking	which semester did the least number of students register ? give me its name and id .						
+377	1	student_transcripts_tracking	how about the semester that most number of students registered ?			Explicit Operator Modification	Explict	Operator	Modification
+378	0	student_transcripts_tracking	show me all department names that contain the word ' computer '						
+378	1	student_transcripts_tracking	show me their descriptions .	Possessive Determiner	Whole				
+379	0	student_transcripts_tracking	how many people are enrolled in 2 degree programs in one semester ?						
+379	1	student_transcripts_tracking	show me their first , middle , and last names .	Possessive Determiner	Whole	Implicit Schema Modification	Implicit	Schema	Modification
+380	0	student_transcripts_tracking	how many people are enrolled in the bachelor degree program ?						
+380	1	student_transcripts_tracking	what are their first , middle , and last names ?	Possessive Determiner	Whole	Implicit Schema Modification	Implicit	Schema	Modification
+381	0	student_transcripts_tracking	show me the descriptions of programs with 3 highest number of enrolled students .						
+381	1	student_transcripts_tracking	show me the name of program with the most enrolled students .			Context Independent			
+382	0	student_transcripts_tracking	what is the description of the program that has the least number of enrolled students ?						
+382	1	student_transcripts_tracking	how about the program that has the most number of enrolled students ?			Explicit Schema Modification	Explict	Schema	Modification
+382	2	student_transcripts_tracking	show me the id and summary .			Implicit Schema Modification	Implicit	Schema	Modification
+383	0	student_transcripts_tracking	show me the id , first and last names of top 3 students who have enrolled for the most times in any program .						
+383	1	student_transcripts_tracking	show me just the top 1 .			Explicit Schema Modification	Explict	Schema	Modification
+384	0	student_transcripts_tracking	give me the description of a semester with no enrolled students .						
+384	1	student_transcripts_tracking	what 's the name of that semester ?	Definite NPs	Part				
+385	0	student_transcripts_tracking	what 's the name of the course with the least number of enrollments ?						
+385	1	student_transcripts_tracking	how many enrollments does the course with most enrollments have ?			Context Independent			
+385	2	student_transcripts_tracking	what 's the name of that course ?	Definite NPs	Part				
+386	0	student_transcripts_tracking	how many students currently live in north carolina ?						
+386	1	student_transcripts_tracking	how many of those students have not registered in any degree program ?	Definite NPs	Whole				
+386	2	student_transcripts_tracking	what are their last names ?	Possessive Determiner	Part				
+387	0	student_transcripts_tracking	show me date and id of transcripts with exactly 2 course results .						
+387	1	student_transcripts_tracking	how about transcripts with at least 2 course results ?			Explicit Schema Modification	Explict	Schema	Modification
+388	0	student_transcripts_tracking	what is the address of the student with first name timothy and last name ward ?						
+388	1	student_transcripts_tracking	what 's his phone number ?	Possessive Determiner	Part				
+389	0	student_transcripts_tracking	who was the last student to register ? show me the first , middle , and last names of that student .						
+389	1	student_transcripts_tracking	who was the first to register ?			Explicit Operator Modification	Explict	Operator	Modification
+390	0	student_transcripts_tracking	who is the least recent graduate of the school ? list the first , middle , and last names .						
+390	1	student_transcripts_tracking	who is the earliest graduate of the school ?			Explicit Operator Modification	Explict	Operator	Modification
+391	0	student_transcripts_tracking	give me the id of the address that holds the most number of students ?						
+391	1	student_transcripts_tracking	how many students live there ?	Bridging Anaphora	Whole				
+391	2	student_transcripts_tracking	give me all the lines as well as the id of that address .	Definite NPs	Part				
+392	0	student_transcripts_tracking	give me details of the first transcript released .						
+392	1	student_transcripts_tracking	tell me when it was released as well , along with its details .	Demonstrative Pronoun	Part				
+393	0	student_transcripts_tracking	what is the oldest transcript release date ?						
+393	1	student_transcripts_tracking	how about the latest ?			Implicit Operator Modification	Implicit	Operator	Modification
+394	0	student_transcripts_tracking	how many times , at minimum , can a course enrollment result show in different transcript ? show me the course enrollment id .						
+394	1	student_transcripts_tracking	how many times at most ?			Explicit Operator Modification	Explict	Operator	Modification
+395	0	student_transcripts_tracking	show other details of the transcript with least number of results .						
+395	1	student_transcripts_tracking	show me the date and id of that transcript .	Definite NPs	Part				
+396	0	student_transcripts_tracking	find a semester when there was a master student enrolled .						
+396	1	student_transcripts_tracking	how about a semester when there was a bachelor student enrolled ?			Context Independent			
+396	2	student_transcripts_tracking	find a semester that both types of students were enrolled in .	Definite NPs	Cross				
+397	0	dog_kennels	list all the information about the owners .						
+397	1	dog_kennels	what about the professionals ?			Implicit Schema Modification	Implicit	Schema	Modification
+397	2	dog_kennels	now show the states of them .	Demonstrative Pronoun	Whole				
+397	3	dog_kennels	which of them have both owners and professionals living there ?	Demonstrative Pronoun	Part				
+398	0	dog_kennels	show all the dog ages .						
+398	1	dog_kennels	what is the maximum and minimum value ?	Bridging Anaphora	Whole				
+398	2	dog_kennels	which of the dogs have gone through treatments ?			Context Independent			
+398	3	dog_kennels	what about the average age of them ?	Demonstrative Pronoun	Whole	Explicit Clause Continuation	Explict	Clause	Continuation
+399	0	dog_kennels	list all the professionals who are employees .						
+399	1	dog_kennels	how many of them live in connecticut ?	Demonstrative Pronoun	Whole				
+399	2	dog_kennels	what about in indiana ?			Implicit Schema Modification	Implicit	Schema	Modification
+399	3	dog_kennels	among all the professionals , which have done treatment only 1 treatments ?			Context Independent			
+399	4	dog_kennels	list the id , last name and cell phone of the professionals who live in the state of indiana or have done treatment on more than 2 treatments ?			Context Independent			
+400	0	dog_kennels	show the dog name and total cost of each dog .						
+400	1	dog_kennels	which of them cost over 500 ?	Demonstrative Pronoun	Part				
+400	2	dog_kennels	what about more than 1000 ?			Implicit Operator Modification	Implicit	Operator	Modification
+401	0	dog_kennels	list all the names of both professionals and owners .						
+401	1	dog_kennels	what about the dog names ?			Implicit Schema Modification	Implicit	Schema	Modification
+401	2	dog_kennels	which human names are not used as dog names .			Context Independent			
+402	0	dog_kennels	show the professional first names and the corresponding treatment type codes for the treatment .						
+402	1	dog_kennels	what about each professional 's id , role , email and the treatment type code ?			Implicit Schema Modification	Implicit	Schema	Modification
+402	2	dog_kennels	which professional did not provide any treatment ? keep the id , role and email .			Context Independent			
+403	0	dog_kennels	show the number of dogs for each owner , keep the owner id .						
+403	1	dog_kennels	which one has 2 dogs ?	One Anaphora	Whole				
+403	2	dog_kennels	what about the one with the most dogs ?	One Anaphora	Part	Implicit Clause Modification	Implicit	Clause	Modification
+404	0	dog_kennels	how many treatment does each professional finished ?						
+404	1	dog_kennels	show the first name of the professionals who did only 1 treatment .			Context Independent			
+404	2	dog_kennels	what about at least two treatments ?			Implicit Operator Modification	Implicit	Operator	Modification
+404	3	dog_kennels	show the id , role , and first name of each from the above .	Bridging Anaphora	Whole				
+405	0	dog_kennels	how many dogs for each breed code ?						
+405	1	dog_kennels	which breed codes are the most popular two ?			Context Independent			
+405	2	dog_kennels	what about the most common 1 ?			Explicit Schema Modification	Explict	Schema	Modification
+405	3	dog_kennels	what name is the breed ?	Definite NPs	Whole				
+406	0	dog_kennels	show the dog name and total cost of each dog .						
+406	1	dog_kennels	what are the owner names and the cost from their dogs .			Context Independent			
+406	2	dog_kennels	who has paid for the most treatments on the dogs ? keep owner ids and last names .			Context Independent			
+407	0	dog_kennels	list the treatment type code and the description .						
+407	1	dog_kennels	for each treatment type , calculate the sum of costs , and order them in descending order .			Context Independent			
+407	2	dog_kennels	show the treatment type description also .			Explicit Schema Continuation	Explict	Schema	Continuation
+407	3	dog_kennels	so what is the description of the treatment type that costs the least money in total ?			Context Independent			
+408	0	dog_kennels	show the dog name and total cost of each dog .						
+408	1	dog_kennels	how many of them cost over 700 ?	Demonstrative Pronoun	Part				
+408	2	dog_kennels	which owner paid the cost larger than 400 , show the owner id and the zip code ?			Context Independent			
+408	3	dog_kennels	what about the owner who spent the largest cost ?			Implicit Operator Modification	Implicit	Operator	Modification
+409	0	dog_kennels	list the professional first names and their types of treatments .						
+409	1	dog_kennels	add the counts of them also .	Demonstrative Pronoun	Whole	Explicit Operator Continuation	Explict	Operator	Continuation
+409	2	dog_kennels	among the results , who did only 1 type of treatment ? list the professional ids and cell phone numbers of them .	Bridging Anaphora	Whole				
+409	3	dog_kennels	what about at least two types of treatments ?			Explicit Schema Modification	Explict	Schema	Modification
+410	0	dog_kennels	what is the minimum , maximum and average value of the treatment costs ?						
+410	1	dog_kennels	which professionals who did the minimum value of the treatment cost ? provide the first name and last name .			Context Independent			
+410	2	dog_kennels	what about the maximum cost ?			Implicit Schema Modification	Implicit	Schema	Modification
+410	3	dog_kennels	how about below the average of the cost ?			Implicit Operator Modification	Implicit	Operator	Modification
+411	0	dog_kennels	how many dogs for each breed code ?						
+411	1	dog_kennels	which one is the most popular one ?	One Anaphora	Part				
+411	2	dog_kennels	what about the least popular one ?	One Anaphora	Whole	Explicit Schema Modification	Explict	Schema	Modification
+411	3	dog_kennels	so which dogs are having the breed code ? and the treatment dates ?			Context Independent			
+412	0	dog_kennels	show the name of dogs whose owners are from the city ' lake tia ' .						
+412	1	dog_kennels	add the owner 's first names also .			Explicit Schema Continuation	Explict	Schema	Continuation
+412	2	dog_kennels	what about when the owner is from the state of ' virginia ' ?			Explicit Schema Modification	Explict	Schema	Modification
+413	0	dog_kennels	which one is the oldest dog ? list the information of it .						
+413	1	dog_kennels	what are the last names of the oldest dogs ?			Context Independent			
+413	2	dog_kennels	what about the owner last name of the youngest dog ?			Context Independent			
+414	0	dog_kennels	show the cities and states of the professionals .						
+414	1	dog_kennels	how many of them are from ' hawaii ' ?	Demonstrative Pronoun	Whole				
+414	2	dog_kennels	list the emails of the professionals who live in the state of hawaii or the state of wisconsin .	Demonstrative Pronoun	Whole				
+415	0	dog_kennels	show the states of the professionals .						
+415	1	dog_kennels	how many of them are from ' wisconsin ' ?	Demonstrative Pronoun	Whole				
+415	2	dog_kennels	list the role code , street , city , state from the above results .	Bridging Anaphora	Whole				
+415	3	dog_kennels	what about those professionals who live in a city containing the substring ' west ' ?			Context Independent			
+416	0	dog_kennels	show the states of the owners .						
+416	1	dog_kennels	how many of them are from ' vermont ' ?	Demonstrative Pronoun	Whole				
+416	2	dog_kennels	list the first name , last name and email of the owners who lives in the states that has the substring ' north ' .			Context Independent			
+417	0	dog_kennels	order the dog ages in descending order .						
+417	1	dog_kennels	how many of them are below 4 ?	Demonstrative Pronoun	Part				
+417	2	dog_kennels	what about the ones that are below the average ?	One Anaphora	Whole	Explicit Operator Modification	Explict	Operator	Modification
+418	0	dog_kennels	show the treatment details .						
+418	1	dog_kennels	order the cost in ascending order .			Context Independent			
+418	2	dog_kennels	what about in descending order ?			Explicit Operator Modification	Explict	Operator	Modification
+418	3	dog_kennels	which one is the most recent cost ?	One Anaphora	Whole				
+419	0	dog_kennels	show all the owner information .						
+419	1	dog_kennels	what about the dogs ?			Implicit Schema Modification	Implicit	Schema	Modification
+419	2	dog_kennels	among those , how many of them have been sent to receive treatment ?	Demonstrative Pronoun	Whole				
+419	3	dog_kennels	what about those who did not ?			Implicit Operator Continuation	Implicit	Operator	Continuation
+420	0	dog_kennels	show all the owner information .						
+420	1	dog_kennels	how many of them come from the state of ' arizona ' ?	Demonstrative Pronoun	Whole				
+420	2	dog_kennels	what about those who do not have any dogs temporarily ?	Demonstrative Pronoun	Whole				
+421	0	dog_kennels	how many professionals are there ?						
+421	1	dog_kennels	how many of them come from ' west heidi ? '	Demonstrative Pronoun	Whole				
+421	2	dog_kennels	what about those who did not operate any treatment on dogs ?	Demonstrative Pronoun	Part				
