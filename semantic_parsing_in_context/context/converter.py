@@ -256,7 +256,7 @@ class SQLConverter(object):
                 None
             ]         
             """
-            if isinstance(condition, list):
+            if isinstance(condition, list) and isinstance(condition[2], list) and isinstance(condition[3], list):
                 from_cond_col_inds = [condition[2][1][1], condition[3][1]]
                 for col_ind in from_cond_col_inds:
                     if self.col_names[col_ind].refer_table.name == join_tab_name:
