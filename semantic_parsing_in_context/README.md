@@ -290,7 +290,14 @@ Considering this, we provide a memory friendly config file `concat.none.mem.json
 
 To reduce memory consumed, you could also consider decreasing `maximum_history_len` hyper-parameter in #57 in sparc_reader.py (the default value is `5`). In practise, it also works well under `3` or `4`.
 
-
 **4. How to debug my custom model**
 
 *Ans*: We provide `debug.py` for debugging your custom model. Please change `config_file`(#9) into your custom one and debug by running `debug.py`.
+
+**5. How to validate the correctness of generated SemQL**
+
+*Ans*: We provide a **test script** for validating when translating SQL into SemQL. You could copy & modify the following script to achieve your testing goal:
+
+https://github.com/microsoft/ContextualSP/blob/2b59163b3cca9922098c19895943b2c9e57c3447/semantic_parsing_in_context/test_sql_to_semql.py#L23-L65
+
+> `db_id`, `sql_plain` and `sql_clause` can be found in the dataset, and `expected_action_str` could be set as empty at first until you obtain the correct expected action sequence output.
