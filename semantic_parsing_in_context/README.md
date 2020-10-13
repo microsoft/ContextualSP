@@ -298,6 +298,52 @@ To reduce memory consumed, you could also consider decreasing `maximum_history_l
 
 *Ans*: We provide a **test script** for validating when translating SQL into SemQL. You could copy & modify the following script to achieve your testing goal:
 
-https://github.com/microsoft/ContextualSP/blob/2b59163b3cca9922098c19895943b2c9e57c3447/semantic_parsing_in_context/test_sql_to_semql.py#L23-L65
+[link](https://github.com/microsoft/ContextualSP/blob/2b59163b3cca9922098c19895943b2c9e57c3447/semantic_parsing_in_context/test_sql_to_semql.py)
+
+```python
+def test_example(self):
+    db_id = "flight_2"
+    sql_plain = "SELECT * FROM AIRLINES"
+    sql_clause = """
+    {
+        "orderBy": [], 
+        "from": {
+            "table_units": [
+                [
+                    "table_unit", 
+                    0
+                ]
+            ], 
+            "conds": []
+        }, 
+        "union": null, 
+        "except": null, 
+        "groupBy": [], 
+        "limit": null, 
+        "intersect": null, 
+        "where": [], 
+        "having": [], 
+        "select": [
+            false, 
+            [
+                [
+                    0, 
+                    [
+                        0, 
+                        [
+                            0, 
+                            0, 
+                            false
+                        ], 
+                        null
+                    ]
+                ]
+            ]
+        ]
+    }
+    """
+    expected_action_str = "[Statement -> Root, Root -> Select, Select -> A, A -> none C T, C -> *, T -> airlines]"
+    self.template(sql_plain, sql_clause, db_id, expected_action_str)
+```
 
 > `db_id`, `sql_plain` and `sql_clause` can be found in the dataset, and `expected_action_str` could be set as empty at first until you obtain the correct expected action sequence output.
