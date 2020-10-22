@@ -1,0 +1,4 @@
+torch==1.2.0
+tqdm
+tensorboardX==2.0
+numpy==1.18.1
