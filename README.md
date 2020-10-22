@@ -4,6 +4,8 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 
 1. (:hourglass_flowing_sand: To be Released on Oct. 2020) **[Compositional Generalization by Learning Analytical Expressions](compositional_generalization)**
 
+    ![](misc/compositional_generalization_demo.png)
+
     *Compositional generalization is a basic but essential intellective capability of human beings, which allows us to recombine known parts readily. However, existing neural network based models have been proven to be extremely deficient in such a capability. Inspired by work in cognition which argues compositionality can be captured by variable slots with symbolic functions, we present a refreshing view that connects a memory-augmented neural model with analytical expressions, to achieve compositional generalization. Our model consists of two cooperative neural modules Composer and Solver, fitting well with the cognitive argument while still being trained in an end-to-end manner via a hierarchical reinforcement learning algorithm. Experiments on a well-known benchmark SCAN demonstrate that our model seizes a great ability of compositional generalization, solving all challenges addressed by previous works with 100% accuracies.*
 
 1. (:hourglass_flowing_sand: To be Released on Oct. 2020) **[Incomplete Utterance Rewriting as Semantic Segmentation](incomplete_utterance_rewriting)**
