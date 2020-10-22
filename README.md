@@ -2,7 +2,7 @@
 
 This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI Group](https://www.microsoft.com/en-us/research/opportunity/data-analytics-intern-msra-dki/). You could find the corresponding code as below:
 
-1. (:hourglass_flowing_sand: To be Released on Oct. 2020) **[Compositional Generalization by Learning Analytical Expressions](compositional_generalization)**
+1. (:coffee: Released on Oct. 2020) **[Compositional Generalization by Learning Analytical Expressions](compositional_generalization)**
 
     ![](misc/compositional_generalization_demo.png)
 
