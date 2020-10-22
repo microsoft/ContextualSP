@@ -296,9 +296,7 @@ To reduce memory consumed, you could also consider decreasing `maximum_history_l
 
 **5. How to validate the correctness of generated SemQL**
 
-*Ans*: We provide a **test script** for validating when translating SQL into SemQL. You could copy & modify the following script to achieve your testing goal:
-
-[link](https://github.com/microsoft/ContextualSP/blob/2b59163b3cca9922098c19895943b2c9e57c3447/semantic_parsing_in_context/test_sql_to_semql.py)
+*Ans*: We provide a [test script](https://github.com/microsoft/ContextualSP/blob/2b59163b3cca9922098c19895943b2c9e57c3447/semantic_parsing_in_context/test_sql_to_semql.py) for validating when translating SQL into SemQL. You could copy & modify the following script to achieve your testing goal as below:
 
 ```python
 def test_example(self):
