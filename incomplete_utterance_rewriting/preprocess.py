@@ -50,17 +50,10 @@ def unified_dataset_format(dataset_id):
         with open(origin_file, "r", encoding="utf8") as f:
             total_lines = [line.strip() for line in f.readlines()]
             total_len = len(total_lines)
-            # random shuffle
-            # shuffle(total_lines)
+
             border = int(0.9 * total_len)
             train_data = total_lines[:border]
             dev_data = total_lines[border:]
-            for dev_ind in range(len(dev_data)):
-                dev_line = dev_data[dev_ind]
-                sentences = dev_line.split('\t\t')
-                # construct negative example 1:1
-                sentences[-2] = sentences[-1]
-                dev_data.append('\t\t'.join(sentences))
 
             for train_ind in range(len(train_data)):
                 sentences = train_data[train_ind].split('\t\t')
