@@ -207,12 +207,12 @@ class UnifiedFollowUp(Model):
             context_embedding = pad_sequence(context_embeddings, batch_first=True)
             cur_embedding = pad_sequence(cur_embeddings, batch_first=True)
 
+        # padding feature map matrix to satisfy the minimum height/width of UNet model
         if context_repr.shape[1] < self.min_height:
             _, cur_height, hidden_size = context_repr.shape
             out_tensor = context_repr.data.new(batch_size, self.min_height, hidden_size).fill_(0)
             out_tensor[:, :cur_height, :] = context_repr
             context_repr = out_tensor
-            # padding matrix map
 
         if cur_repr.shape[1] < self.min_width:
             _, cur_width, hidden_size = cur_repr.shape
@@ -273,7 +273,7 @@ class UnifiedFollowUp(Model):
                                                                     cur_str[i],
                                                                     context_str[i])
                 if sample_predict_str.strip() == '':
-                    # TODO: in default we have two words because rouge-1/2/l require 2-grams
+                    # To avoid error when evaluating on ROUGE
                     sample_predict_str = 'hello'
                 predict_str.append(sample_predict_str)
 

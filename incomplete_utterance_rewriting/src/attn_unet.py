@@ -14,7 +14,6 @@ class AttentionUNet(torch.nn.Module):
     def __init__(self, input_channels, class_number, **kwargs):
         super(AttentionUNet, self).__init__()
 
-        '''@nni.variable(nni.choice(16, 32, 64, 128, 256), name=down_channel)'''
         down_channel = kwargs['down_channel']
 
         down_channel_2 = down_channel * 2
