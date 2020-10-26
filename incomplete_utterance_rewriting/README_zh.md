@@ -68,7 +68,7 @@ pip install -r requirement.txt
 
 如果你想在英文数据集（即`Task`和`CANARD`）上训练模型，需要下载[Glove 6B 词向量](http://nlp.stanford.edu/data/glove.6B.zip)。解压该文件，并将`glove.6B.100d.txt`文件移动到`glove`文件夹中。
 
-## Train
+## 训练模型
 
 你可以使用`src`文件夹下的`*.sh`文件在不同的数据集上训练模型。例如，你可以在`src`文件夹下运行以下命令，以在`Multi`数据集上训练`RUN + BERT`模型。
 
@@ -80,10 +80,10 @@ pip install -r requirement.txt
 > - 如果读者并不依赖`BLEU`度量来得到开发集上表现最佳的权重文件，你可以禁用它来实现更快的评测速度。
 > - 默认情况下，我们不会在训练集上计算任何指标以节省训练时间，但你可以通过在`*.jsonnet`中设置`enable_training_log`为`True`来启用它（请读者参考`task.jsonnet`）。
 
-## Evaluate
+## 评测模型
 
 [TODO]
 
-## Pre-trained Models
+## 预训练模型权重
 
 [TODO]
