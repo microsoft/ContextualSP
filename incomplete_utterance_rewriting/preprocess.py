@@ -3,9 +3,9 @@
 
 import argparse
 import json
-import os
 import random
 import re
+
 import jieba
 import spacy
 from tqdm import tqdm

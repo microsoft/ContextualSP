@@ -1,0 +1,10 @@
+overrides==2.8.0
+allennlp==0.9.0
+simplediff==1.0
+numpy==1.18.1
+torch==1.2.0
+rouge==0.3.2
+nltk==3.4.5
+tqdm==4.42.1
+jieba
+spacy
