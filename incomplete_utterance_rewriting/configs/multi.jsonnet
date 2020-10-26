@@ -32,15 +32,16 @@
 		"out_drop_rate": 0.2,
 		"feature_sel": 83,
 		"loss_weights": [0.2, 0.2, 0.6],
-		"super_mode": "before"
+		"super_mode": "before",
+		"unet_down_channel": 64
 	},
 	"iterator": {
 		"type": "basic",
-		"batch_size": 24
+		"batch_size": 16
 	},
 	"validation_iterator": {
 		"type": "basic",
-		"batch_size": 24
+		"batch_size": 16
 	},
 	"trainer": {
 		"num_epochs": 100,

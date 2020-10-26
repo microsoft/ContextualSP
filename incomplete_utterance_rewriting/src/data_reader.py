@@ -79,9 +79,11 @@ class RewriteDatasetReader(DatasetReader):
         if self._joint_encoding:
             self._cache_dir += '.joint'
 
+        if self._use_bert:
+            self._cache_dir += '.bert'
+
         extension = 'pkl'
-        cache_all_file = os.path.join(self._cache_dir, f'cache_all.{extension}'
-                                      )
+        cache_all_file = os.path.join(self._cache_dir, f'cache_all.{extension}')
         if self._load_cache:
             if not os.path.exists(self._cache_dir):
                 os.makedirs(self._cache_dir)

@@ -42,7 +42,7 @@ class UnifiedFollowUp(Model):
                  loss_weights: List = (0.2, 0.4, 0.4),
                  super_mode: str = 'before',
                  backbone: str = 'unet',
-                 unet_down_channel: int = 32,
+                 unet_down_channel: int = 256,
                  feature_sel: int = 127):
         super(UnifiedFollowUp, self).__init__(vocab)
         self.text_encoder = text_encoder

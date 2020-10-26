@@ -54,7 +54,7 @@
 		"num_epochs": 100,
 		"cuda_device": 0,
 		"patience": 10,
-		"validation_metric": "+F3",
+		"validation_metric": "+EM",
 		"optimizer": {
 			"type": "adam",
 			"parameter_groups": [
