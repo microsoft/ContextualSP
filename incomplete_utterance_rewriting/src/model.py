@@ -1,5 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT license.
+# Author: Qian Liu (SivilTaram)
+# Original Repo: https://github.com/microsoft/ContextualSP
 
 from typing import Dict
 from typing import List
@@ -125,6 +127,8 @@ class UnifiedFollowUp(Model):
         self.metrics = {'ROUGE': BatchAverage(),
                         '_ROUGE1': BatchAverage(),
                         '_ROUGE2': BatchAverage(),
+                        # TODO: You can speed up the code by disable BLEU since
+                        #  the corpus-based BLEU metric is much time-consuming.
                         'BLEU': CorpusBLEUMetric(),
                         'EM': BatchAverage(),
                         'F1': FScoreMetric(prefix="1"),

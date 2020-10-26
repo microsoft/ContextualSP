@@ -1,5 +1,7 @@
 # Copyright (c) Microsoft Corporation.
 # Licensed under the MIT license.
+# Author: Qian Liu (SivilTaram)
+# Original Repo: https://github.com/microsoft/ContextualSP
 
 import torch.nn as nn
 import torch.nn.functional as F

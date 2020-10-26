@@ -1,3 +1,8 @@
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+# Author: Qian Liu (SivilTaram)
+# Original Repo: https://github.com/microsoft/ContextualSP
+
 from overrides import overrides
 
 from allennlp.common.util import JsonDict

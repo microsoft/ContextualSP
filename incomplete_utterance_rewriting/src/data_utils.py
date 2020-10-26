@@ -1,13 +1,17 @@
-from simplediff import diff
-import nltk
-from rouge import Rouge
+# Copyright (c) Microsoft Corporation.
+# Licensed under the MIT license.
+# Author: Qian Liu (SivilTaram)
+# Original Repo: https://github.com/microsoft/ContextualSP
+
 from typing import List
-from overrides import overrides
-from allennlp.training.metrics.metric import Metric
 from typing import Tuple
+
+import nltk
+from allennlp.training.metrics.metric import Metric
 from nltk.translate.bleu_score import corpus_bleu
-import simplediff
-from collections import Counter
+from overrides import overrides
+from rouge import Rouge
+from simplediff import diff
 
 
 class SpecialSymbol:
@@ -376,13 +380,6 @@ def export_word_edit_matrix(context: List,
     return ret_ops
 
 
-def evaluate_bleu_score(predict_restate: str, ground_restate: str):
-    predict = [ele for ele in list(predict_restate)]
-    target = [ele for ele in list(ground_restate)]
-    cur_bleu_score = corpus_bleu([target], predict)
-    return cur_bleu_score
-
-
 def transmit_seq(cur_str: str, context_str: str,
                  op_seq: List[Tuple[str, Tuple, Tuple]]) -> str:
     """
@@ -410,52 +407,6 @@ def transmit_seq(cur_str: str, context_str: str,
     return ret_str
 
 
-def assert_utt_convert_correct(utterance, insert_multi=True, extra_words=()):
-    sentences = utterance.split('\t\t')
-    sentences = [' '.join(extra_words)] + sentences
-    context = ' '.join(sentences[:-2])
-    current = sentences[-2]
-    label = sentences[-1]
-    conflict_map = export_word_edit_matrix(context.split(' '),
-                                           current.split(' '),
-                                           label.split(' '),
-                                           only_one_insert=not insert_multi)
-    conflict_map = [op for op in conflict_map if op[0] != 'remove']
-    op_seq = sorted(conflict_map, key=lambda x: x[2][1], reverse=True)
-    predict_str = transmit_seq(current, context, op_seq)
-    return predict_str, label
-
-
-def obtain_stop_words(predict, label):
-    predict_tokens = predict.split(' ')
-    label_tokens = label.split(' ')
-    diff_content = simplediff.diff(predict_tokens, label_tokens)
-    extra_tokens = []
-    for diff_op in diff_content:
-        if diff_op[0] == '+':
-            extra_tokens.extend(diff_op[1])
-    return extra_tokens
-
-
-def evaluate_dataset_upper_bound(dataset_path):
-    with open(dataset_path, 'r', encoding='utf8') as f:
-        lines = f.readlines()
-        total = len(lines)
-        score = 0
-        predicts, references, extra_words = [], [], []
-        for line in lines:
-            predict_str, label_str = assert_utt_convert_correct(line.strip(), insert_multi=True)
-            score += 1 if predict_str == label_str else 0
-            predicts.append(predict_str.split(' '))
-            references.append([label_str.split(' ')])
-            extra_words.extend(obtain_stop_words(predict_str, label_str))
-        bleu_score_t = corpus_bleu(references, predicts)
-        print('Dataset:{}\nExact/Total : {}/{}    BLEU: {}'.format(
-            dataset_path, score, total, bleu_score_t))
-        counter = Counter(extra_words)
-        print(counter.most_common(1000))
-
-
 def get_class_mapping(super_mode: str):
     """
     Mapping mode into integer
@@ -468,7 +419,3 @@ def get_class_mapping(super_mode: str):
     else:
         class_mapping.append(super_mode)
     return {k: v for v, k in enumerate(class_mapping)}
-
-
-if __name__ == '__main__':
-    evaluate_dataset_upper_bound("..\\dataset\\MultiDialogue\\train.txt")
