@@ -10,7 +10,8 @@ If you find our code useful, please consider citing our paper:
   author={Yinuo Guo and Zeqi Lin and Jian-Guang Lou and Dongmei Zhang},
   booktitle={Advances in Neural Information Processing Systems},
   year={2020}
-}```
+}
+```
 
 
 #### Dependency
