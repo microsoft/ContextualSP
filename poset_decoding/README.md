@@ -35,7 +35,7 @@ cd sketch_prediction/
 bash ./train.sh
 ```
 
-## 	Traversal Path Prediction 
+### Traversal Path Prediction 
 
 > The module is based on the open-source project Matchzoo-py <https://github.com/NTMC-Community/MatchZoo-py>
 
