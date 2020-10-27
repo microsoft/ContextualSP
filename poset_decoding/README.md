@@ -56,6 +56,6 @@ bash evaluate.sh
 We will thank the following repos which are very helpful to us.
 - [Fairseq](https://github.com/pytorch/fairseq)
 
-## CONCAT
+## Contact
 
-Any question please concat `zeqi DOT lin AT microsoft DOT com`
+Any question please contact `zeqi DOT lin AT microsoft DOT com`
