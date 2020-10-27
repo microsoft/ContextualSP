@@ -137,9 +137,11 @@ python evaluate.py --model_file ../pretrianed_weights/rewrite.tar.gz --test_file
 
 ## Pre-trained Models
 
-Note that provided BERT-based pre-trained models **perform better than** the results reported in our paper.
 
 | Dataset | BERT | Config | EM | Rewriting F1 | BLEU4 | Pretrained_Weights |
 | :---: | :---: |:--- | :---: | :---: | :---: | :---: |
 | Rewrite | No | rewrite.jsonnet | 53.6 | 81.3 | 79.6 | [rewrite.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/rewrite/rewrite.tar.gz)|
 | Rewrite | Yes | rewrite_bert.jsonnet | 68.8 | 90.4 | 86.9 | [rewrite_bert.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/rewrite.bert/rewrite_bert.tar.gz)|
+| CANARD | No | canard.jsonnet | 18.3 | 44.2 | 49.8 | [canard.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/canard/canard.tar.gz) |
+| Multi | No | multi.jsonnet | 43.3 | 60.7 | 81.1 | [multi.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/multi/multi.tar.gz) |
+| Multi | Yes | multi_bert.jsonnet | 49.2 | 70.3 | 82.5 | [multi_bert.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/multi.bert/multi_bert.tar.gz) |
