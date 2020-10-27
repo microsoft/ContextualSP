@@ -74,7 +74,7 @@ class RewriteDatasetReader(DatasetReader):
             raise ConfigurationError(
                 f'The file path is not designed for Rewrite dataset {file_path}'
             )
-        self._cache_dir = os.path.join('../cache', '_'.join(file_path.split('\\')[-2:]))
+        self._cache_dir = os.path.join('../cache', '_'.join(os.path.normpath(file_path).split(os.sep)[-2:]))
         # add a suffix
         if self._joint_encoding:
             self._cache_dir += '.joint'
