@@ -45,11 +45,11 @@
 	},
 	"iterator": {
 		"type": "basic",
-		"batch_size": 16
+		"batch_size": 12
 	},
 	"validation_iterator": {
 		"type": "basic",
-		"batch_size": 16
+		"batch_size": 12
 	},
 	"trainer": {
 		"num_epochs": 100,

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export model_file=../checkpoints/run_canard
 export config_file=../configs/canard.jsonnet
 export train_data_path=../dataset/CANARD/train.txt
