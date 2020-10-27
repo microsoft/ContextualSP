@@ -1,0 +1,17 @@
+absl-py==0.9.0
+dill==0.3.1.1
+editdistance==0.5.3
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
+nltk==3.5
+numpy==1.18.1
+pandas==1.0.3
+sentencepiece==0.1.86
+tensorboard==2.2.1
+tensorboard-plugin-wit==1.6.0.post3
+tensorflow==2.2.0rc4
+tensorflow-estimator==2.2.0
+torch==1.5.0
+torchtext==0.6.0
+tqdm==4.46.0
