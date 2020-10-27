@@ -76,14 +76,69 @@ pip install -r requirement.txt
 ./train_multi_bert.sh
 ```
 
-> 训练时的一些提示。
-> - 如果读者并不依赖`BLEU`度量来得到开发集上表现最佳的权重文件，你可以禁用它来实现更快的评测速度。
-> - 默认情况下，我们不会在训练集上计算任何指标以节省训练时间，但你可以通过在`*.jsonnet`中设置`enable_training_log`为`True`来启用它（请读者参考`task.jsonnet`）。
+### 配置表
+
+| 配置文件名 | 论文中对应设置 | 
+| :--- | :---: |
+| canard.jsonnet | RUN on CANARD (Elgohary et al. 2019) |
+| multi.jsonnet | RUN on Multi (Pan et al. 2019) |
+| multi_bert.jsonnet | RUN + BERT on Multi (Pan et al. 2019) |
+| rewrite.jsonnet | RUN on Rewrite (Su et al. 2019) |
+| rewrite_bert.jsonnet | RUN + BERT on Rewrite (Su et al. 2019) |
+| task.jsonnet | RUN on Task (Quan et al. 2019) |
+
+
+### 训练小提示
+
+1. 如果读者并不依赖`BLEU`度量来得到开发集上表现最佳的权重文件，你可以禁用它来实现更快的评测速度。
+2. 默认情况下，我们不会在训练集上计算任何指标以节省训练时间，但你可以通过在`*.jsonnet`中设置`enable_training_log`为`True`来启用它（请读者参考`task.jsonnet`）。
+3. 所有模型的训练和评测均在`Tesla M40 (24GB)`下测试通过，如果在读者本机中出现诸如`CUDA Out Of Memory`之类的错误，读者可通过降低 `*.jsonnet` 中的超参数 `batch_size` 来解决。 根据我们的经验，这将不会对性能造成很大的影响。
 
 ## 评测模型
 
-[TODO]
+当模型的训练正常结束时，`allennlp`将保存一个压缩的模型文件，该文件通常以checkpoint文件夹下的`model.tar.gz`命名，我们后续的评估就基于该压缩文件。
+
+我们在src文件夹下提供了一个用于模型评测的脚本`evaluate.py`，读者可以通过运行以下命令来评估模型文件：
+
+```concolse
+python evaluate.py --model_file model.tar.gz --test_file ../dataset/Multi/test.txt
+```
+
+上面的脚本将生成一个文件`model.tar.gz.json`，其中记录了模型详细的指标。 例如，`RUN + BERT`在`Rewrite`的性能为：
+```json
+{
+    "ROUGE": 0.9394040084189113,
+    "_ROUGE1": 0.961865057419486,
+    "_ROUGE2": 0.9113051224617216,
+    "EM": 0.688,
+    "_P1": 0.9451903332806824,
+    "_R1": 0.8668694770389685,
+    "F1": 0.9043373129817137,
+    "_P2": 0.8648273949812838,
+    "_R2": 0.7989241803278688,
+    "F2": 0.8305705345849144,
+    "_P3": 0.8075098814229249,
+    "_R3": 0.7449860216360763,
+    "F3": 0.774988935954985,
+    "_BLEU1": 0.9405510823944796,
+    "_BLEU2": 0.9172718486250105,
+    "_BLEU3": 0.8932687251641028,
+    "BLEU4": 0.8691863201601382,
+    "loss": 0.2084200546145439
+}
+```
+
+接下来，我们将提供所有预训练好的模型文件，以重现论文中报告的结果。 我们建议读者下载它们并将其放入`pretrained_weights`文件夹中，然后运行以下命令：
+```concolse
+python evaluate.py --model_file ../pretrianed_weights/rewrite.tar.gz --test_file ../dataset/Multi/test.txt
+```
+
 
 ## 预训练模型权重
 
-[TODO]
+请注意，提供的基于BERT的预训练模型**明显优于**论文报告的结果。
+
+| Dataset | BERT | Config | EM | Rewriting F1 | BLEU4 | Pretrained_Weights |
+| :---: | :---: |:--- | :---: | :---: | :---: | :---: |
+| Rewrite | No | rewrite.jsonnet | 53.6 | 81.3 | 79.6 | [rewrite.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/rewrite/rewrite.tar.gz)|
+| Rewrite | Yes | rewrite_bert.jsonnet | 68.8 | 90.4 | 86.9 | [rewrite_bert.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/rewrite.bert/rewrite_bert.tar.gz)|
