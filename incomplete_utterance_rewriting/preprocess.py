@@ -86,6 +86,13 @@ def unified_dataset_format(dataset_id):
             tgt_f = open(tgt_file, "r", encoding="utf8")
             src_lines = src_f.readlines()
             tgt_lines = tgt_f.readlines()
+
+            # WARNING: there is an annotation bug in test.sr 3224
+            if 'test' in src_file:
+                actual_line = src_lines[3222].split("\t")[0]
+                src_lines[3222] = actual_line + ' 已 经 玩 过 了 |\n'
+                del src_lines[3223]
+
             dataset = []
             for src_line, tgt_line in zip(src_lines, tgt_lines):
                 src_line = src_line.strip('\n')
@@ -181,9 +188,10 @@ def unified_dataset_format(dataset_id):
 
 
 if __name__ == '__main__':
-    arg_parser = argparse.ArgumentParser()
-    arg_parser.add_argument("--dataset", required=True,
-                            choices=['Task', 'Rewrite', 'Multi', "CANARD"], type=str,
-                            help="Please specify a dataset you want to process")
-    parsed_args = arg_parser.parse_args()
-    unified_dataset_format(parsed_args.dataset)
+    # arg_parser = argparse.ArgumentParser()
+    # arg_parser.add_argument("--dataset", required=True,
+    #                         choices=['Task', 'Rewrite', 'Multi', "CANARD"], type=str,
+    #                         help="Please specify a dataset you want to process")
+    # parsed_args = arg_parser.parse_args()
+    # unified_dataset_format(parsed_args.dataset)
+    unified_dataset_format("Multi")
