@@ -144,4 +144,4 @@ python evaluate.py --model_file ../pretrianed_weights/rewrite.tar.gz --test_file
 | Rewrite | Yes | rewrite_bert.jsonnet | 68.8 | 90.4 | 86.9 | [rewrite_bert.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/rewrite.bert/rewrite_bert.tar.gz)|
 | CANARD | No | canard.jsonnet | 18.3 | 44.2 | 49.8 | [canard.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/canard/canard.tar.gz) |
 | Multi | No | multi.jsonnet | 43.3 | 60.7 | 81.1 | [multi.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/multi/multi.tar.gz) |
-| Multi | Yes | multi_bert.jsonnet | 49.3 69.5 | 83.7 | [multi_bert.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/multi.bert/multi_bert.tar.gz) |
+| Multi | Yes | multi_bert.jsonnet | 49.3 | 69.5 | 83.7 | [multi_bert.tar.gz](https://github.com/microsoft/ContextualSP/releases/download/multi.bert/multi_bert.tar.gz) |
