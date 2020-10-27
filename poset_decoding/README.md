@@ -14,11 +14,11 @@ If you find our code useful, please consider citing our paper:
 ```
 
 
-#### Dependency
+## Dependency
 
 pip install -r requirements.txt
 
-#### Data preprocess
+## Data preprocess
 
 get CFQ data : Download dataset from [link](https://storage.cloud.google.com/cfq_dataset/cfq1.1.tar.gz)
 
@@ -26,28 +26,36 @@ get CFQ data : Download dataset from [link](https://storage.cloud.google.com/cfq
 bash preprocess.sh
 ```
 
-#### Training
+## Training
 
-##### 	Sketch Prediction
+###	Sketch Prediction
 
-​		cd sketch_prediction/
+```bash
+cd sketch_prediction/
+bash ./train.sh
+```
 
-​		bash ./train.sh
+## 	Traversal Path Prediction 
 
-##### 	Traversal Path Prediction (The module is  based on the open-source project Matchzoo-py <https://github.com/NTMC-Community/MatchZoo-py>)
+> The module is based on the open-source project Matchzoo-py <https://github.com/NTMC-Community/MatchZoo-py>
 
-​		cd  ./traversal_path_prediction/
+```bash
+cd  ./traversal_path_prediction/
+python ./traversal_path_prediction/train_esim.py
+```
 
-​		python ./traversal_path_prediction/train_esim.py
+## Evaluation
 
-#### Evaluation
+```bash
+bash evaluate.sh
+```
 
-​	bash evaluate.sh
 
-
-####  Acknowledgement
+##  Acknowledgement
 
 We will thank the following repos which are very helpful to us.
 - [Fairseq](https://github.com/pytorch/fairseq)
 
-zeqi.lin@microsoft.com
+## CONCAT
+
+Any question please concat `zeqi DOT lin AT microsoft DOT com`
