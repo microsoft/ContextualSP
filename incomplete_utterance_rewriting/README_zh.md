@@ -21,6 +21,7 @@
 - [数据集下载与预处理](#数据集下载与预处理)
 - [训练模型](#训练模型)
 - [评测模型](#评测模型)
+- [预测模型](#预测模型)
 - [预训练模型权重](#预训练模型权重)
 
 ## 依赖安装
@@ -132,6 +133,10 @@ python evaluate.py --model_file model.tar.gz --test_file ../dataset/Multi/test.t
 ```concolse
 python evaluate.py --model_file ../pretrianed_weights/rewrite.tar.gz --test_file ../dataset/Multi/test.txt
 ```
+
+## 预测模型
+
+我们在`src/predict.py`中提供了一个简单的函数调用，来实现在python code中为一个给定的对话上下文生成改写句。读者可根据实际项目需要进行改造。
 
 
 ## 预训练模型权重

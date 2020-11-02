@@ -21,6 +21,7 @@ If you find our code useful for you, please consider citing our paper:
 - [Download and Preprocess Dataset](#data)
 - [Train Model](#train)
 - [Evaluate Model](#evaluate)
+- [Predict Model](#predict)
 - [Pre-trained Models](#pre-trained-models)
 
 ## Requirement
@@ -134,6 +135,10 @@ Next, we will provide all pre-trained models to reproduce results reported in ou
 ```concolse
 python evaluate.py --model_file ../pretrianed_weights/rewrite.tar.gz --test_file ../dataset/Multi/test.txt
 ```
+
+## Predict
+
+We provide an easy function call to predict a rewriting sentence given a specific dialogue context in `src/predict.py`. You could follow it to customize your self.
 
 ## Pre-trained Models
 
