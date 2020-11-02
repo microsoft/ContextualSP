@@ -1,0 +1,10 @@
+[submodule "parsers/irnet"]
+	path = parsers/irnet
+	url = https://github.com/li-yuntao/irnet.git
+	branch = spider
+[submodule "parsers/sqlova"]
+	path = parsers/sqlova
+	url = https://github.com/naver/sqlova.git
+[submodule "parsers/sqlnet"]
+	path = parsers/sqlnet
+	url = https://github.com/xiaojunxu/SQLNet.git
