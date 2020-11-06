@@ -19,14 +19,13 @@ If you find our code useful, please consider citing our paper:
 
 - [Task Introduction](#task)
 - [Model Framework](#model)
-- [Install Dependencies](#requirement)
+- [Install Requirements](#requirements)
 - [Prepare Dataset](#data)
 - [Train Model](#train)
 - [Predict Model](#predict)
 - [Demo on Web](#demo)
 - [Pretrained Weights](#experiment)
 - [Fine-grained Analysis](#analysis)
-- [Question](#question)
 - [Frequent Asked Questions](#faq)
 
 ## Task
@@ -42,7 +41,7 @@ Semantic parsing, which translates a natural language sentence into its correspo
 Our backbone is the Sequence to Sequence model with a Grammar-Based Decoder, especially using the IRNet grammar (SemQL).
 
 
-## Requirement
+## Requirements
 
 ### Python Environment
 
