@@ -6,7 +6,7 @@ The official pytorch implementation of our paper [How Far are We from Effective 
 
 If you find our code useful, please consider citing our paper:
 
-```tex
+```bib
 @inproceedings{qian2020how,
   title={How Far are We from Effective Context Modeling? An Exploratory Study on Semantic Parsing in Context twitter},
   author={Liu, Qian and Chen, Bei and Guo, Jiaqi and Lou, Jian-Guang and Zhou, Bin and Zhang, Dongmei},

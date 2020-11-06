@@ -4,7 +4,7 @@ This repository is the official implementation of our paper [Compositional Gener
 
 If you find our code useful for you, please consider citing our paper
 
-```tex
+```bib
 @inproceedings{qian2020compositional,
   title={Compositional Generalization by Learning Analytical Expressions},
   author={Liu, Qian and An, Shengnan and Lou, Jian-Guang and Chen, Bei and Lin, Zeqi and Gao, Yan and Zhou, Bin and Zheng, Nanning and Zhang, Dongmei},
