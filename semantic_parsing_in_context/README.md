@@ -4,6 +4,17 @@
 The official pytorch implementation of our paper [How Far are We from Effective Context Modeling ? An Exploratory Study on Semantic Parsing in Context](https://arxiv.org/pdf/2002.00652.pdf). This code contains multiple context modeling techniques on modeling context in semantic parsing. It provides `readable`, `fast` and `strong` baselines for the community.
 
 
+If you find our code useful, please consider citing our paper:
+
+```tex
+@inproceedings{qian2020how,
+  title={How Far are We from Effective Context Modeling? An Exploratory Study on Semantic Parsing in Context twitter},
+  author={Liu, Qian and Chen, Bei and Guo, Jiaqi and Lou, Jian-Guang and Zhou, Bin and Zhang, Dongmei},
+  booktitle={IJCAI},
+  year={2020}
+}
+```
+
 ## Content
 
 - [Task Introduction](#task)
@@ -16,7 +27,6 @@ The official pytorch implementation of our paper [How Far are We from Effective 
 - [Pretrained Weights](#experiment)
 - [Fine-grained Analysis](#analysis)
 - [Question](#question)
-- [Cite Our Paper](#cite)
 - [Frequent Asked Questions](#faq)
 
 ## Task
@@ -247,19 +257,6 @@ Once running, you could open the demo page in [http://localhost:8000](http://loc
 ## Analysis
 
 We also provide the fine-grained analysis results [here](https://github.com/microsoft/ContextualSP/blob/master/misc/dev_annotaed.tsv) annotated on the SParC validation set. You could either use it in your research work or debug your model in a fine-grained level.
-
-## Cite
-
-If you find our code useful, please consider citing our paper:
-
-```
-@inproceedings{qian2020how,
-  title={How Far are We from Effective Context Modeling? An Exploratory Study on Semantic Parsing in Context twitter},
-  author={Qian, Liu and Bei, Chen and Jiaqi, Guo and Jian-Guang, Lou and Bin, Zhou and Dongmei, Zhang},
-  booktitle={IJCAI},
-  year={2020}
-}
-```
 
 
 ## Acknowledgement
