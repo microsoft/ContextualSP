@@ -7,6 +7,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 
 ## News
 
+- September, 2020: Our paper ["What Do You Mean by That?" A Parser-Independent Interactive Approach for Enhancing Text-to-SQL](https://arxiv.org/abs/2011.04151) was accepted by EMNLP 2020.
 - September, 2020: Our paper [Incomplete Utterance Rewriting as Semantic Segmentation](https://arxiv.org/abs/2009.13166) was accepted by EMNLP 2020.
 - September, 2020: Our paper [Hierarchical Poset Decoding for Compositional Generalization in Language](https://arxiv.org/abs/2010.07792) was accepted by NeurIPS 2020.
 - September, 2020: Our paper [Compositional Generalization by Learning Analytical Expressions](https://arxiv.org/abs/2006.10627) was accepted by NeurIPS 2020 as *Spotlight*.
