@@ -40,8 +40,8 @@ bash ./train.sh
 > The module is based on the open-source project Matchzoo-py <https://github.com/NTMC-Community/MatchZoo-py>
 
 ```bash
-cd  ./traversal_path_prediction/
-python ./traversal_path_prediction/train_esim.py
+cd  ./traversal_path_prediction/MatchZoo-py/
+python ./traversal_path_prediction/MatchZoo-py/train_esim.py
 ```
 
 ## Evaluation
@@ -50,11 +50,24 @@ python ./traversal_path_prediction/train_esim.py
 bash evaluate.sh
 ```
 
+## MCD2 and MCD3
+
+In the aforementioned Training and Evaluation sections, we train and evaluate HPD on the MCD1 split.
+
+To train and evaluate on MCD2/MCD3 split, please replace ``mcd1'' to ``mcd2'' or ``mcd3'' in the following files:
+
+- sketch_prediction/train.sh
+- sketch_prediction/evaluate.sh
+- traversal_path_prediction/MatchZoo-py/train_esim.py
+- traversal_path_prediction/MatchZoo-py/evaluate_esim.py
+- traversal_path_prediction/MatchZoo-py/datasets/cfq/load_data.py
+- evaluate.sh
+
 
 ##  Acknowledgement
 
 We will thank the following repos which are very helpful to us.
-- [Fairseq](https://github.com/pytorch/fairseq)
+- [Matchzoo-py](https://github.com/NTMC-Community/MatchZoo-py)
 
 ## Contact
 

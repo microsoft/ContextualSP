@@ -1,9 +1,6 @@
 import json
 from collections import defaultdict
 import re
-##0521
-##加上了fix的版本限制嘻嘻
-##需要把本来为True的三元组预测为False
 
 FILTER_PRED = ["people.person.spouse_s/ns:people.marriage.spouse|ns:fictional_universe.fictional_character.married_to/ns:fictional_universe.marriage_of_fictional_characters.spouses",
 "people.person.sibling_s/ns:people.sibling_relationship.sibling|ns:fictional_universe.fictional_character.siblings/ns:fictional_universe.sibling_relationship_of_fictional_characters.siblings"]
