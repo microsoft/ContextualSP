@@ -22,7 +22,8 @@ If you find our code useful, please consider citing our paper:
 - [Install Requirements](#requirements)
 - [Prepare Dataset](#data)
 - [Train Model](#train)
-- [Predict Model](#predict)
+- [Evaluate Model](#evaluate)
+- [Predict on Custom Data](#predict-on-custom-data)
 - [Demo on Web](#demo)
 - [Pretrained Weights](#experiment)
 - [Fine-grained Analysis](#analysis)
@@ -160,9 +161,9 @@ allennlp train -s %model_file% %config_file% ^
 -o {"""model.serialization_dir""":"""%model_file%""","""random_seed""":"""%seed%""","""numpy_seed""":"""%seed%""","""pytorch_seed""":"""%seed%""","""dataset_reader.tables_file""":"""%tables_file%""","""dataset_reader.database_path""":"""%database_path%""","""train_data_path""":"""%train_data_path%""","""validation_data_path""":"""%validation_data_path%""","""model.text_embedder.tokens.pretrained_file""":"""%pretrained_file%""","""model.dataset_path""":"""%dataset_path%"""}
 ```
 
-## Predict
+## Evaluate
 
-You could predict SQLs using trained model checkpoint file (e.g. `checkpoints_sparc/sparc_concat_model/model.tar.gz`) using the following command:
+You could predict and evaluate SQLs using trained model checkpoint file (e.g. `checkpoints_sparc/sparc_concat_model/model.tar.gz`) using the following command:
 
 - Under Linux
 ```bash
@@ -200,6 +201,10 @@ allennlp predict ^
 --output-file %model_file%/%prediction_out_file% ^
 %model_file%/model.tar.gz %validation_out_file
 ```
+
+## Predict On Custom Data
+
+Our code also supports function call to predict SQls on custom data. You could find it in `predict.py`. Before running it, you should firstly store your own database into paths corresponding to the arguments of `PredictManager` with the same format as SParC/CoSQL. 
 
 ## Demo
 
