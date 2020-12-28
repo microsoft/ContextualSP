@@ -54,7 +54,7 @@ bash evaluate.sh
 
 In the aforementioned Training and Evaluation sections, we train and evaluate HPD on the MCD1 split.
 
-To train and evaluate on MCD2/MCD3 split, please replace ``mcd1'' to ``mcd2'' or ``mcd3'' in the following files:
+To train and evaluate on MCD2/MCD3 split, please replace `mcd1` to `mcd2` or `mcd3` in the following files:
 
 - sketch_prediction/train.sh
 - sketch_prediction/evaluate.sh
