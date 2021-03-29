@@ -53,6 +53,12 @@ For example, you could train a model on `addjump` task by the following command:
 
 📋 Meanwhile, please note that the model training is sensitive to the value of the hyper-parameter coefficient of the **simplicity-based reward** (i.e. `--simplicity-ratio` in args). When it is higher (i.e. 0.5 or 1.0), the model is harder to converge, which indicates that the training accuracy may not arrive at 100%. We're still investigating in the reason behind it. If you cannot obtain good results after trying several random seed, you could try to reproduce other results (not suitable for `around_right` and `mcd3`, as stated in the paper) using a `0` simplicity-ratio (default setting now). We will update the code when we find a better training strategy.
 
+Therefore, please use the following command for `around_right` and `mcd3` task:
+
+```console
+❱❱❱ python main.py --mode train --checkpoint addjump_model --task around_right --simplicity-ratio 0.5
+```
+
 The corresponding log and model weights will be stored in the path `checkpoint/logs/addjump_model.log` and `checkpoint/models/addjump_model/*.mdl` respectively
 
 ## Evaluation
