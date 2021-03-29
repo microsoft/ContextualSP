@@ -4,17 +4,15 @@ import random
 import time
 import unicodedata
 from functools import partial
-
 import torch
 from torch import nn
-from torch.autograd import Variable
-from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from model import HRLModel, PAD_token, EOS_token
 from utils import AverageMeter
 from utils import VisualizeLogger
 from utils import get_logger
+import numpy as np
 
 USE_CUDA = torch.cuda.is_available()
 global_step = 0
@@ -172,8 +170,8 @@ def pad_seq(seq, max_length):
 def make_path_preparations(args, run_mode):
     seed = args.random_seed
     torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
     random.seed(seed)
+    np.random.seed(seed)
 
     if run_mode == 'train':
         log_dir = os.path.split(args.logs_path)[0]
@@ -262,7 +260,7 @@ def visualize_tree(seq, tree_actions_batch, sr_actions_batch, swr_actions_batch)
     return seq_list[0]
 
 
-def test(test_data, model, device):
+def evaluate(test_data, model, device):
     loading_time_meter = AverageMeter()
     ce_loss_meter = AverageMeter()
     accuracy_meter = AverageMeter()
@@ -276,8 +274,8 @@ def test(test_data, model, device):
         for idx in progress_bar:
             test_data_example = test_data[idx]
             tokens, tokens_length, mask, labels, labels_length = random_batch(test_data_example)
-            tokens = tokens.to(device=device, non_blocking=True)
-            mask = mask.to(device=device, non_blocking=True)
+            tokens = tokens.to(device=device)
+            mask = mask.to(device=device)
             loading_time_meter.update(time.time() - start)
 
             pred_labels, tree_sr_log_prob, tree_sr_rewards, decoder_log_probs, decode_rewards, tree_actions, sr_actions, swr_actions, normalized_entropy = \
@@ -317,8 +315,8 @@ def validate(valid_data, model, epoch, device, logger):
         for idx, valid_data_example in enumerate(valid_data):
             tokens, tokens_length, mask, labels, labels_length = random_batch(valid_data_example)
 
-            tokens = tokens.to(device=device, non_blocking=True)
-            mask = mask.to(device=device, non_blocking=True)
+            tokens = tokens.to(device=device)
+            mask = mask.to(device=device)
             loading_time_meter.update(time.time() - start)
 
             pred_labels, tree_sr_log_prob, tree_sr_rewards, decoder_log_probs, decode_rewards, tree_actions, sr_actions, swr_actions, normalized_entropy = \
@@ -411,8 +409,8 @@ def train(train_data, valid_data, model, optimizer, epoch, args, logger,
             for sample_idx in range(sample_num):
                 train_pair = train_pairs[example_idx]
                 tokens, tokens_length, mask, labels, labels_length = random_batch(train_pair)
-                tokens = tokens.to(device=device, non_blocking=True)
-                mask = mask.to(device=device, non_blocking=True)
+                tokens = tokens.to(device=device)
+                mask = mask.to(device=device)
 
                 pred_labels, tree_sr_log_prob, tree_sr_rewards, decoder_log_probs, decode_rewards, tree_actions, sr_actions, swr_actions, normalized_entropy = \
                     model(train_pair, tokens, mask, is_test=False, epoch=epoch)
@@ -548,7 +546,7 @@ def train_model(args, task_name, logger):
     args.vocab_size = input_lang.n_words
     args.label_size = output_lang.n_words
 
-    model = HRLModel(x_ratio_rate=args.x_ratio_rate,
+    model = HRLModel(x_ratio_rate=args.simplicity_ratio,
                      encode_mode=args.encode_mode,
                      decay_r=args.decay_r,
                      vocab_size=args.vocab_size,
@@ -569,10 +567,10 @@ def train_model(args, task_name, logger):
     # default is 1 lesson
     cir_epoch_dict = {
         3: 30,
-        4: 20,
-        5: 10,
-        6: 5,
-        7: 3
+        4: 30,
+        5: 20,
+        6: 10,
+        7: 5
     }
 
     regular_weight = args.init_regular_weight
@@ -605,8 +603,7 @@ def train_model(args, task_name, logger):
                 if val_accuracy_all >= 0.99:
                     print("Early Stopped. Training Succeed :)")
                     break
-
-            elif data_len < maximum_lesson:
+            if data_len < maximum_lesson:
                 print('Lesson ', data_len, 'completed at', epoch)
                 data_len += 1
                 regular_weight = max(args.regular_decay_rate * regular_weight, args.regular_weight)
@@ -614,7 +611,7 @@ def train_model(args, task_name, logger):
                 print('Start lesson:', data_len)
 
 
-def test_model(args, task_name, logger):
+def evaluate_model(args, task_name, logger):
     global input_lang
     global output_lang
 
@@ -626,7 +623,7 @@ def test_model(args, task_name, logger):
     args.vocab_size = input_lang.n_words
     args.label_size = output_lang.n_words
 
-    model = HRLModel(x_ratio_rate=args.x_ratio_rate,
+    model = HRLModel(x_ratio_rate=args.simplicity_ratio,
                      encode_mode=args.encode_mode,
                      decay_r=args.decay_r,
                      vocab_size=args.vocab_size,
@@ -644,7 +641,7 @@ def test_model(args, task_name, logger):
     model.load_state_dict(checkpoint["state_dict"])
     print("loading finished...")
     print("Start testing ..")
-    test_acc = test(test_data, model, args.gpu_id)
+    test_acc = evaluate(test_data, model, args.gpu_id)
     print("Test Acc: {} %".format(test_acc * 100))
 
 
@@ -654,7 +651,6 @@ def prepare_arguments(checkpoint_folder, parser):
     accumulate_batch_size = 4
     regular_weight = 1e-4
     regular_decay_rate = 0.5
-    simplicity_reward_rate = 0.5
     hidden_size = 128
     encode_mode = 'seq'
 
@@ -679,8 +675,7 @@ def prepare_arguments(checkpoint_folder, parser):
             "model-dir": "checkpoint/models/" + checkpoint_folder,
             "logs-path": "checkpoint/logs/" + checkpoint_folder,
             "encode-mode": encode_mode,
-            "regular-decay-rate": regular_decay_rate,
-            "x-ratio-rate": simplicity_reward_rate}
+            "regular-decay-rate": regular_decay_rate}
 
     parser.add_argument("--word-dim", required=False, default=args["word-dim"], type=int)
     parser.add_argument("--hidden-dim", required=False, default=args["hidden-dim"], type=int)
@@ -713,7 +708,6 @@ def prepare_arguments(checkpoint_folder, parser):
     parser.add_argument("--init-regular-weight", required=False, default=1e-1, type=float)
     # default no reward decay
     parser.add_argument("--decay-r", required=False, default=1.0, type=str)
-    parser.add_argument("--x-ratio-rate", required=False, default=args["x-ratio-rate"], type=float)
 
     return parser.parse_args()
 
@@ -731,6 +725,7 @@ if __name__ == "__main__":
                                      "extend", "mcd1", "mcd2", "mcd3"],
                             help="All tasks on SCAN, the task name is used to load train or test file")
     arg_parser.add_argument("--random-seed", required=False, default=1, type=int)
+    arg_parser.add_argument("--simplicity-ratio", required=False, default=0.0, type=float)
 
     parsed_args = arg_parser.parse_args()
     if parsed_args.mode == 'train':
@@ -740,4 +735,4 @@ if __name__ == "__main__":
     else:
         args = prepare_arguments(parsed_args.checkpoint, arg_parser)
         logger, visualizer = make_path_preparations(args, parsed_args.mode)
-        test_model(args, parsed_args.task, logger)
+        evaluate_model(args, parsed_args.task, logger)
