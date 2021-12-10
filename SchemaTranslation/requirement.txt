@@ -1,0 +1,12 @@
+sacrebleu==1.5.0
+dataclasses
+sacrebleu
+transformers
+sentencepiece
+datasets
+entmax
+sklearn
+pandas
+xlrd==1.0.0
+openpyxl
+protobuf
