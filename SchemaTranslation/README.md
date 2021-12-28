@@ -1,8 +1,8 @@
 # Schema Translation 
 
-This repository is the official implementation of our paper [Translating Headers of Tabular Data: A Pilot Study of Schema Translation](https://aclanthology.org/2021.emnlp-main.5.pdf).
+This repository contains code and data from our paper [Translating Headers of Tabular Data: A Pilot Study of Schema Translation](https://aclanthology.org/2021.emnlp-main.5.pdf).
 
-If you find our code useful for you, please consider citing our paper.
+If you find our code or data useful for you, please consider citing our paper.
 
 ```bib
 @inproceedings{zhu-etal-2021-translating,
@@ -29,11 +29,11 @@ If you find our code useful for you, please consider citing our paper.
 - [Pre-trained Models](#pre-trained-models)
 
 ## Dataset
-In this work, we a parallel dataset for schema translation, which consists of 3,158 tables with 11,979 headers written in 6 different languages, including English, Chinese, French, German, Spanish, and Japanese.
+In this work, we construct a parallel dataset for schema translation, which consists of 3,158 tables with 11,979 headers written in 6 different languages, including English, Chinese, French, German, Spanish, and Japanese.
 Our tables are collected from three resources. Firstly, we use all 2,108 tables from the [WikiTableQuestion](https://github.com/ppasupat/WikiTableQuestions) dataset. Secondly, we manually collect 176 English tables from the search engine covering multiple domains like retail, education, and government. At last, we select all the tables from the [Spider](https://github.com/taoyds/spider) dataset. Finally, we obtained 3,158 tables with 11,979 headers in total.
 
 The dataset/ directory contains the orignal English schema and their translation results in Chinese, French, German, Spanish, and Japanese. 
-The following jsonl format is an example from the validation set
+The following jsonl format is an example from the validation set.
 ```
 {"table_name": "203-csv\\43.tsv", "en": "Polling Firm", "zh": "民意调查公司", "de": "Abfrage Firma", "fr": "Société d'enquête", "ja": "世論調査会社", "es": "Empresa encuestadora"}
 {"table_name": "203-csv\\43.tsv", "en": "Link", "zh": "附件", "de": "Anhang", "fr": "Lien", "ja": "リンク", "es": "Enlace"}
