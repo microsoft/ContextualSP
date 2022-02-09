@@ -7,8 +7,8 @@ If you find our code useful for you, please consider citing our paper
 ```bib
 @inproceedings{qian2020compositional,
   title={Compositional Generalization by Learning Analytical Expressions},
-  author={Liu, Qian and An, Shengnan and Lou, Jian-Guang and Chen, Bei and Lin, Zeqi and Gao, Yan and Zhou, Bin and Zheng, Nanning and Zhang, Dongmei},
-  booktitle={Advances in Neural Information Processing Systems},
+  author={Qian Liu and Shengnan An and Jian{-}Guang Lou and Bei Chen and Zeqi Lin and Yan Gao and Bin Zhou and Nanning Zheng and Dongmei Zhang},
+  booktitle={Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual},
   year={2020}
 }
 ```
