@@ -7,6 +7,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 
 ## News
 
+- March, 2022: Our paper *Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation* was accepted by ACL 2022.
 - August, 2021: Our paper [Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](https://aclanthology.org/2021.findings-acl.100.pdf) was accepted by ACL 2021 Findings.
 - August, 2021: Our paper [Learning Algebraic Recombination for Compositional Generalization](https://arxiv.org/abs/2107.06516) was accepted by ACL 2021 Findings.
 - September, 2020: Our paper ["What Do You Mean by That?" A Parser-Independent Interactive Approach for Enhancing Text-to-SQL](https://arxiv.org/abs/2011.04151) was accepted by EMNLP 2020.
