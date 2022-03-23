@@ -1,0 +1,17 @@
+# python 3.8
+# cuda 10.1
+# torch 1.7.1
+# Ubuntu 18.04 LTS
+# conda install pytorch==1.7.1  cudatoolkit=10.1 -c pytorch -y
+# python -m spacy download en_core_web_sm
+transformers==4.15.0
+pyenchant==3.2.1
+torch-scatter==2.0.8
+torch-geometric==2.0.3
+torch-sparse==0.6.12
+torch-struct==0.5
+sklearn
+nltk
+spacy
+inflect
+pandas
