@@ -1,12 +1,11 @@
 # Robustness of Text-to-SQL Models
 
-We will release our data and code soon.
 
 ## ADVETA data
 
 We release our ADVETA data to `adveta_1.0.zip` file.
 
-## Environment
+## CTA Environment
 
 - python 3.8
 - cuda 10.1
