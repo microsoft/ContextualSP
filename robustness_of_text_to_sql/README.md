@@ -2,6 +2,10 @@
 
 We will release our data and code soon.
 
+## ADVETA data
+
+We release our ADVETA data to `adveta_1.0.zip` file.
+
 ## Environment
 
 - python 3.8
