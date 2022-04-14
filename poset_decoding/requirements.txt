@@ -4,7 +4,7 @@ editdistance==0.5.3
 Keras==2.3.1
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
-nltk==3.5
+nltk==3.6.6
 numpy==1.18.1
 pandas==1.0.3
 sentencepiece==0.1.86
