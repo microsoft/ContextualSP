@@ -1,0 +1,11 @@
+dataclasses
+tqdm
+pydantic
+sqlparse
+unidecode
+networkx
+stanza
+nltk
+vocab
+sentencepiece
+torch
