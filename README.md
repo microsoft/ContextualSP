@@ -21,7 +21,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 ### Text-to-SQL
 
 > **[UniSAr: A Unified Structure-Aware Autoregressive Language Model for Text-to-SQL](unified_parser_text_to_sql)**
-> Longxu Dou, Yan Gao, Mingyang Pan, Dingzirui Wang, Jian-Guang Lou, Wanxiang Che, Dechen Zhan, arxiv 2022.
+> Longxu Dou, Yan Gao, Mingyang Pan, Dingzirui Wang, Wanxiang Che, Dechen Zhan, Jian-Guang Lou, arxiv 2022.
 
 > **[Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation](robustness_of_text_to_sql)**
 > Xinyu Pi*, Bing Wang*, Yan Gao, Jiaqi Guo, Zhoujun Li, Jian-Guang Lou, ACL 2022.
