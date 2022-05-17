@@ -1,5 +1,11 @@
 # Robustness of Text-to-SQL Models
 
+This repository contains the data and code in the following paper:
+
+> [**Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation**](https://aclanthology.org/2022.acl-long.142.pdf) <br/>
+> Xinyu Pi*, Bing Wang*, Yan Gao, Jiaqi Guo, Zhoujun Li, Jian-Guang Lou<br/>
+> ACL 2022 Long Papers
+
 
 ## Introduction
 
@@ -43,3 +49,18 @@ notes:
 
 ### Run
 Just run the `pipeline.ipynb` and have fun.
+
+
+## Cite
+```
+@inproceedings{pi-etal-2022-towards,
+    title = "Towards Robustness of Text-to-{SQL} Models Against Natural and Realistic Adversarial Table Perturbation",
+    author = "Pi, Xinyu  and Wang, Bing  and Gao, Yan  and Guo, Jiaqi  and Li, Zhoujun  and Lou, Jian-Guang",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.acl-long.142",
+    pages = "2007--2022"
+}
+```
