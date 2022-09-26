@@ -21,8 +21,6 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 ### Reasoning
 > **[LogiGAN: Learning Logical Reasoning via Adversarial Pre-training](logic_gan)**
 Xinyu Pi*, Wanjun Zhong*, Yan Gao, Nan Duan, Jian-Guang Lou, NeurIPS 2022.
-<<<<<<< HEAD
- 
 =======
 
 >>>>>>> origin/logigan
