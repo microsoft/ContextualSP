@@ -6,7 +6,7 @@
 This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI Group](https://www.microsoft.com/en-us/research/opportunity/data-analytics-intern-msra-dki/). You could find the corresponding code as below:
 
 ## News
-
+- Septempter, 2022 our paper [LogiGAN: Learning Logical Reasoning via Adversarial Pre-training](https://arxiv.org/abs/2205.08794) was accepted by NeurIPS 2022.
 - March, 2022: Our paper [Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation](https://aclanthology.org/2022.acl-long.142.pdf) was accepted by ACL 2022.
 - August, 2021: Our paper [Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](https://aclanthology.org/2021.findings-acl.100.pdf) was accepted by ACL 2021 Findings.
 - August, 2021: Our paper [Learning Algebraic Recombination for Compositional Generalization](https://arxiv.org/abs/2107.06516) was accepted by ACL 2021 Findings.
@@ -18,6 +18,10 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 
 ## Code Release (Click Title to Locate the Code)
 
+### Reasoning
+> **[LogiGAN: Learning Logical Reasoning via Adversarial Pre-training](logic_gan)**
+Xinyu Pi*, Wanjun Zhong*, Yan Gao, Nan Duan, Jian-Guang Lou, NeurIPS 2022.
+ 
 ### Text-to-SQL
 
 > **[UniSAr: A Unified Structure-Aware Autoregressive Language Model for Text-to-SQL](unified_parser_text_to_sql)**
