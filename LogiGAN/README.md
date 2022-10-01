@@ -24,7 +24,7 @@ python launcher_es.py
 (The parameters are adjusted in parameters16g_es_corpusb.py)
 ```
 # Citation
-If you find this resource useful, please cite the paper introducing CARP:
+If you find this resource useful, please cite the paper introducing LogiGAN:
 
 ```
 @article{pi2022logigan,
