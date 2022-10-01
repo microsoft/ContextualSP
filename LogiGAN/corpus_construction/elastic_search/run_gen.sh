@@ -1,0 +1,25 @@
+python build_gen_train.py --num_examples 40000 --local_rank 1 --start_index 0 &
+python build_gen_train.py --num_examples 40000 --local_rank 2 --start_index 40000 &
+python build_gen_train.py --num_examples 40000 --local_rank 3 --start_index 80000 &
+python build_gen_train.py --num_examples 40000 --local_rank 4 --start_index 120000 &
+python build_gen_train.py --num_examples 40000 --local_rank 5 --start_index 160000 &
+python build_gen_train.py --num_examples 40000 --local_rank 6 --start_index 200000 &
+python build_gen_train.py --num_examples 40000 --local_rank 7 --start_index 240000 &
+python build_gen_train.py --num_examples 40000 --local_rank 8 --start_index 280000 &
+python build_gen_train.py --num_examples 40000 --local_rank 9 --start_index 320000 &
+python build_gen_train.py --num_examples 40000 --local_rank 10 --start_index 360000 &
+python build_gen_train.py --num_examples 40000 --local_rank 11 --start_index 400000 &
+python build_gen_train.py --num_examples 40000 --local_rank 12 --start_index 440000 &
+python build_gen_train.py --num_examples 40000 --local_rank 13 --start_index 480000 &
+python build_gen_train.py --num_examples 40000 --local_rank 14 --start_index 520000 &
+python build_gen_train.py --num_examples 40000 --local_rank 15 --start_index 560000 &
+python build_gen_train.py --num_examples 40000 --local_rank 16 --start_index 600000 &
+python build_gen_train.py --num_examples 40000 --local_rank 17 --start_index 640000 &
+python build_gen_train.py --num_examples 40000 --local_rank 18 --start_index 680000 &
+python build_gen_train.py --num_examples 40000 --local_rank 19 --start_index 720000 &
+python build_gen_train.py --num_examples 40000 --local_rank 20 --start_index 760000 &
+python build_gen_train.py --num_examples 40000 --local_rank 21 --start_index 800000 &
+python build_gen_train.py --num_examples 40000 --local_rank 22 --start_index 840000 &
+python build_gen_train.py --num_examples 40000 --local_rank 23 --start_index 880000 &
+python build_gen_train.py --num_examples 40000 --local_rank 24 --start_index 920000 &
+python build_gen_train.py --num_examples 40000 --local_rank 25 --start_index 960000
