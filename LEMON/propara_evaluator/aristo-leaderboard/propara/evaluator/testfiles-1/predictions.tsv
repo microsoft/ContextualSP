@@ -1,0 +1,1674 @@
+37	1	plant; animal	NONE	?	?
+37	1	soft tissues	NONE	?	?
+37	1	bones	NONE	?	?
+37	1	mineral	NONE	?	?
+37	1	fossils	NONE	?	?
+37	2	plant; animal	NONE	?	?
+37	2	soft tissues	NONE	?	?
+37	2	bones	NONE	?	?
+37	2	mineral	NONE	?	?
+37	2	fossils	NONE	?	?
+37	3	plant; animal	NONE	?	?
+37	3	soft tissues	NONE	?	?
+37	3	bones	NONE	?	?
+37	3	mineral	NONE	?	?
+37	3	fossils	NONE	?	?
+37	4	plant; animal	NONE	?	?
+37	4	soft tissues	NONE	?	?
+37	4	bones	NONE	?	?
+37	4	mineral	NONE	?	?
+37	4	fossils	NONE	?	?
+37	5	plant; animal	NONE	?	?
+37	5	soft tissues	NONE	?	?
+37	5	bones	NONE	?	?
+37	5	mineral	NONE	?	?
+37	5	fossils	NONE	?	?
+37	6	plant; animal	DESTROY	?	-
+37	6	soft tissues	DESTROY	?	-
+37	6	bones	DESTROY	?	-
+37	6	mineral	DESTROY	?	-
+37	6	fossils	CREATE	-	?
+38	1	animal; body	DESTROY	?	-
+38	1	soil	DESTROY	?	-
+38	1	rock	DESTROY	?	-
+38	1	fossil	DESTROY	?	-
+38	2	animal; body	NONE	?	?
+38	2	soil	NONE	?	?
+38	2	rock	NONE	?	?
+38	2	fossil	NONE	?	?
+38	3	animal; body	NONE	?	?
+38	3	soil	NONE	?	?
+38	3	rock	NONE	?	?
+38	3	fossil	NONE	?	?
+38	4	animal; body	NONE	?	?
+38	4	soil	NONE	?	?
+38	4	rock	NONE	?	?
+38	4	fossil	NONE	?	?
+38	5	animal; body	NONE	?	?
+38	5	soil	NONE	?	?
+38	5	rock	NONE	?	?
+38	5	fossil	NONE	?	?
+38	6	animal; body	NONE	?	?
+38	6	soil	NONE	?	?
+38	6	rock	NONE	?	?
+38	6	fossil	NONE	?	?
+38	7	animal; body	NONE	?	?
+38	7	soil	NONE	?	?
+38	7	rock	NONE	?	?
+38	7	fossil	NONE	?	?
+67	1	plants; dead plants	DESTROY	?	-
+67	1	peat	NONE	?	?
+67	1	coal	NONE	?	?
+67	2	plants; dead plants	NONE	?	?
+67	2	peat	NONE	?	?
+67	2	coal	NONE	?	?
+67	3	plants; dead plants	NONE	?	?
+67	3	peat	NONE	?	?
+67	3	coal	NONE	?	?
+67	4	plants; dead plants	NONE	?	?
+67	4	peat	NONE	?	?
+67	4	coal	NONE	?	?
+67	5	plants; dead plants	NONE	?	?
+67	5	peat	CREATE	-	?
+67	5	coal	NONE	?	?
+67	6	plants; dead plants	NONE	?	?
+67	6	peat	NONE	?	?
+67	6	coal	NONE	?	?
+67	7	plants; dead plants	NONE	?	?
+67	7	peat	NONE	?	?
+67	7	coal	NONE	?	?
+67	8	plants; dead plants	NONE	?	?
+67	8	peat	NONE	?	?
+67	8	coal	NONE	?	?
+67	9	plants; dead plants	NONE	?	?
+67	9	peat	DESTROY	?	-
+67	9	coal	DESTROY	?	-
+68	1	plants; trees	NONE	?	?
+68	1	plant and tree remains	NONE	?	?
+68	1	peat; burial peat	NONE	?	?
+68	1	water	NONE	?	?
+68	1	heat	NONE	?	?
+68	1	coal	NONE	?	?
+68	2	plants; trees	NONE	?	?
+68	2	plant and tree remains	NONE	?	?
+68	2	peat; burial peat	NONE	?	?
+68	2	water	NONE	?	?
+68	2	heat	NONE	?	?
+68	2	coal	NONE	?	?
+68	3	plants; trees	NONE	?	?
+68	3	plant and tree remains	NONE	?	?
+68	3	peat; burial peat	NONE	?	?
+68	3	water	NONE	?	?
+68	3	heat	NONE	?	?
+68	3	coal	NONE	?	?
+68	4	plants; trees	NONE	?	?
+68	4	plant and tree remains	NONE	?	?
+68	4	peat; burial peat	CREATE	-	?
+68	4	water	NONE	?	?
+68	4	heat	NONE	?	?
+68	4	coal	NONE	?	?
+68	5	plants; trees	NONE	?	?
+68	5	plant and tree remains	NONE	?	?
+68	5	peat; burial peat	NONE	?	?
+68	5	water	NONE	?	?
+68	5	heat	NONE	?	?
+68	5	coal	NONE	?	?
+68	6	plants; trees	NONE	?	?
+68	6	plant and tree remains	NONE	?	?
+68	6	peat; burial peat	NONE	?	?
+68	6	water	NONE	?	?
+68	6	heat	NONE	?	?
+68	6	coal	NONE	?	?
+68	7	plants; trees	NONE	?	?
+68	7	plant and tree remains	NONE	?	?
+68	7	peat; burial peat	DESTROY	?	-
+68	7	water	NONE	?	?
+68	7	heat	DESTROY	?	-
+68	7	coal	CREATE	-	?
+69	1	plants;trees	CREATE	-	?
+69	1	peat	NONE	?	?
+69	1	sand	DESTROY	?	-
+69	1	clay	NONE	?	?
+69	1	sedimentary rocks	NONE	?	?
+69	1	pressure	NONE	?	?
+69	1	water	NONE	?	?
+69	1	coal	NONE	?	?
+69	2	plants;trees	NONE	?	?
+69	2	peat	NONE	?	?
+69	2	sand	NONE	?	?
+69	2	clay	NONE	?	?
+69	2	sedimentary rocks	NONE	?	?
+69	2	pressure	NONE	?	?
+69	2	water	NONE	?	?
+69	2	coal	NONE	?	?
+69	3	plants;trees	NONE	?	?
+69	3	peat	CREATE	-	?
+69	3	sand	NONE	?	?
+69	3	clay	NONE	?	?
+69	3	sedimentary rocks	NONE	?	?
+69	3	pressure	NONE	?	?
+69	3	water	NONE	?	?
+69	3	coal	NONE	?	?
+69	4	plants;trees	NONE	?	?
+69	4	peat	NONE	?	?
+69	4	sand	NONE	?	?
+69	4	clay	NONE	?	?
+69	4	sedimentary rocks	NONE	?	?
+69	4	pressure	NONE	?	?
+69	4	water	NONE	?	?
+69	4	coal	NONE	?	?
+69	5	plants;trees	NONE	?	?
+69	5	peat	NONE	?	?
+69	5	sand	NONE	?	?
+69	5	clay	NONE	?	?
+69	5	sedimentary rocks	NONE	?	?
+69	5	pressure	NONE	?	?
+69	5	water	NONE	?	?
+69	5	coal	NONE	?	?
+69	6	plants;trees	NONE	?	?
+69	6	peat	NONE	?	?
+69	6	sand	NONE	?	?
+69	6	clay	NONE	?	?
+69	6	sedimentary rocks	NONE	?	?
+69	6	pressure	NONE	?	?
+69	6	water	NONE	?	?
+69	6	coal	NONE	?	?
+69	7	plants;trees	NONE	?	?
+69	7	peat	NONE	?	?
+69	7	sand	NONE	?	?
+69	7	clay	NONE	?	?
+69	7	sedimentary rocks	NONE	?	?
+69	7	pressure	NONE	?	?
+69	7	water	NONE	?	?
+69	7	coal	NONE	?	?
+70	1	rain	NONE	?	?
+70	1	water	NONE	?	?
+70	1	streams	NONE	?	?
+70	1	water levels	NONE	?	?
+70	2	rain	NONE	?	?
+70	2	water	NONE	?	?
+70	2	streams	NONE	?	?
+70	2	water levels	NONE	?	?
+70	3	rain	NONE	?	?
+70	3	water	NONE	?	?
+70	3	streams	NONE	?	?
+70	3	water levels	NONE	?	?
+70	4	rain	NONE	?	?
+70	4	water	NONE	?	?
+70	4	streams	NONE	?	?
+70	4	water levels	NONE	?	?
+70	5	rain	NONE	?	?
+70	5	water	MOVE	?	houses
+70	5	streams	NONE	?	?
+70	5	water levels	NONE	?	?
+70	6	rain	NONE	?	?
+70	6	water	NONE	?	?
+70	6	streams	NONE	?	?
+70	6	water levels	NONE	?	?
+70	7	rain	NONE	?	?
+70	7	water	MOVE	?	streams
+70	7	streams	CREATE	-	?
+70	7	water levels	NONE	?	?
+70	8	rain	NONE	?	?
+70	8	water	NONE	?	?
+70	8	streams	NONE	?	?
+70	8	water levels	NONE	?	?
+99	1	rain clouds	MOVE	?	sky
+99	1	rain	NONE	?	?
+99	1	clouds	MOVE	?	sky
+99	1	a very different ecosystem	NONE	?	?
+99	1	desert	NONE	?	?
+99	2	rain clouds	NONE	?	?
+99	2	rain	NONE	?	?
+99	2	clouds	NONE	?	?
+99	2	a very different ecosystem	NONE	?	?
+99	2	desert	NONE	?	?
+99	3	rain clouds	NONE	?	?
+99	3	rain	NONE	?	?
+99	3	clouds	NONE	?	?
+99	3	a very different ecosystem	NONE	?	?
+99	3	desert	NONE	?	?
+99	4	rain clouds	NONE	?	?
+99	4	rain	NONE	?	?
+99	4	clouds	NONE	?	?
+99	4	a very different ecosystem	NONE	?	?
+99	4	desert	NONE	?	?
+99	5	rain clouds	NONE	?	?
+99	5	rain	NONE	?	?
+99	5	clouds	NONE	?	?
+99	5	a very different ecosystem	NONE	?	?
+99	5	desert	NONE	?	?
+99	6	rain clouds	NONE	?	?
+99	6	rain	NONE	?	?
+99	6	clouds	NONE	?	?
+99	6	a very different ecosystem	CREATE	-	?
+99	6	desert	NONE	?	?
+99	7	rain clouds	NONE	?	?
+99	7	rain	CREATE	-	?
+99	7	clouds	NONE	?	?
+99	7	a very different ecosystem	NONE	?	?
+99	7	desert	CREATE	-	?
+152	1	water vapor ; lifted vapor ; vapor	NONE	?	?
+152	1	solid ; cloud droplets	NONE	?	?
+152	2	water vapor ; lifted vapor ; vapor	NONE	?	?
+152	2	solid ; cloud droplets	NONE	?	?
+152	3	water vapor ; lifted vapor ; vapor	NONE	?	?
+152	3	solid ; cloud droplets	NONE	?	?
+152	4	water vapor ; lifted vapor ; vapor	DESTROY	?	-
+152	4	solid ; cloud droplets	CREATE	-	?
+152	5	water vapor ; lifted vapor ; vapor	NONE	?	?
+152	5	solid ; cloud droplets	NONE	?	?
+152	6	water vapor ; lifted vapor ; vapor	NONE	?	?
+152	6	solid ; cloud droplets	MOVE	?	sky
+249	1	rocks ; smaller pieces	NONE	?	?
+249	1	oxygen	NONE	?	?
+249	1	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+249	2	rocks ; smaller pieces	NONE	?	?
+249	2	oxygen	NONE	?	?
+249	2	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+249	3	rocks ; smaller pieces	NONE	?	?
+249	3	oxygen	NONE	?	?
+249	3	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+249	4	rocks ; smaller pieces	NONE	?	?
+249	4	oxygen	NONE	?	?
+249	4	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+249	5	rocks ; smaller pieces	NONE	?	?
+249	5	oxygen	NONE	?	?
+249	5	new types of rocks ; new substance ; certain types of rocks	CREATE	-	?
+249	6	rocks ; smaller pieces	NONE	?	?
+249	6	oxygen	NONE	?	?
+249	6	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+249	7	rocks ; smaller pieces	NONE	?	?
+249	7	oxygen	NONE	?	?
+249	7	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+249	8	rocks ; smaller pieces	NONE	?	?
+249	8	oxygen	NONE	?	?
+249	8	new types of rocks ; new substance ; certain types of rocks	NONE	?	?
+310	1	blood	MOVE	?	heart
+310	1	carbon dioxide	NONE	?	?
+310	1	oxygen	NONE	?	?
+310	2	blood	MOVE	heart	lungs
+310	2	carbon dioxide	NONE	?	?
+310	2	oxygen	NONE	?	?
+310	3	blood	NONE	?	?
+310	3	carbon dioxide	MOVE	?	blood
+310	3	oxygen	NONE	?	?
+310	4	blood	NONE	?	?
+310	4	carbon dioxide	NONE	?	?
+310	4	oxygen	MOVE	?	blood
+310	5	blood	MOVE	?	heart
+310	5	carbon dioxide	NONE	?	?
+310	5	oxygen	NONE	?	?
+310	6	blood	MOVE	heart	body
+310	6	carbon dioxide	NONE	?	?
+310	6	oxygen	NONE	?	?
+400	1	energy	NONE	?	?
+400	1	electricity	NONE	?	?
+400	2	energy	NONE	?	?
+400	2	electricity	NONE	?	?
+400	3	energy	NONE	?	?
+400	3	electricity	NONE	?	?
+400	4	energy	CREATE	-	?
+400	4	electricity	NONE	?	?
+400	5	energy	DESTROY	?	-
+400	5	electricity	CREATE	-	?
+401	1	sunlight	NONE	?	?
+401	1	direct current	NONE	?	?
+401	1	alternating current	CREATE	-	?
+401	2	sunlight	NONE	?	?
+401	2	direct current	NONE	?	?
+401	2	alternating current	NONE	?	?
+401	3	sunlight	MOVE	?	solar
+401	3	direct current	NONE	?	?
+401	3	alternating current	NONE	?	?
+401	4	sunlight	MOVE	solar	solar
+401	4	direct current	NONE	?	?
+401	4	alternating current	NONE	?	?
+401	5	sunlight	NONE	?	?
+401	5	direct current	NONE	?	?
+401	5	alternating current	NONE	?	?
+401	6	sunlight	NONE	?	?
+401	6	direct current	CREATE	-	?
+401	6	alternating current	NONE	?	?
+401	7	sunlight	NONE	?	?
+401	7	direct current	NONE	?	?
+401	7	alternating current	NONE	?	?
+409	1	image	NONE	?	?
+409	1	electrical impulses	NONE	?	?
+409	2	image	NONE	?	?
+409	2	electrical impulses	NONE	?	?
+409	3	image	NONE	?	?
+409	3	electrical impulses	NONE	?	?
+409	4	image	NONE	?	?
+409	4	electrical impulses	NONE	?	?
+409	5	image	DESTROY	?	-
+409	5	electrical impulses	CREATE	-	?
+409	6	image	NONE	?	?
+409	6	electrical impulses	NONE	?	?
+409	7	image	NONE	?	?
+409	7	electrical impulses	NONE	?	?
+410	1	electric signal	NONE	?	?
+410	1	light	NONE	?	?
+410	2	electric signal	NONE	?	?
+410	2	light	MOVE	?	iris
+410	3	electric signal	NONE	?	?
+410	3	light	NONE	?	?
+410	4	electric signal	CREATE	-	?
+410	4	light	NONE	?	?
+410	5	electric signal	NONE	?	?
+410	5	light	NONE	?	?
+410	6	electric signal	NONE	?	?
+410	6	light	NONE	?	?
+411	1	electrochemical signals	NONE	?	?
+411	1	light	NONE	?	?
+411	2	electrochemical signals	DESTROY	?	-
+411	2	light	DESTROY	?	-
+411	3	electrochemical signals	NONE	?	?
+411	3	light	NONE	?	?
+411	4	electrochemical signals	NONE	?	?
+411	4	light	NONE	?	?
+411	5	electrochemical signals	NONE	?	?
+411	5	light	NONE	?	?
+411	6	electrochemical signals	NONE	?	?
+411	6	light	NONE	?	?
+411	7	electrochemical signals	NONE	?	?
+411	7	light	NONE	?	?
+411	8	electrochemical signals	NONE	?	?
+411	8	light	NONE	?	?
+429	1	nitrogen	NONE	?	?
+429	1	fixed nitrogen; usable nitrogen	NONE	?	?
+429	1	plants	NONE	?	?
+429	1	waste	NONE	?	?
+429	1	gas-based form	CREATE	-	?
+429	2	nitrogen	NONE	?	?
+429	2	fixed nitrogen; usable nitrogen	NONE	?	?
+429	2	plants	NONE	?	?
+429	2	waste	NONE	?	?
+429	2	gas-based form	NONE	?	?
+429	3	nitrogen	NONE	?	?
+429	3	fixed nitrogen; usable nitrogen	NONE	?	?
+429	3	plants	NONE	?	?
+429	3	waste	NONE	?	?
+429	3	gas-based form	NONE	?	?
+429	4	nitrogen	MOVE	?	roots
+429	4	fixed nitrogen; usable nitrogen	MOVE	?	roots
+429	4	plants	NONE	?	?
+429	4	waste	NONE	?	?
+429	4	gas-based form	NONE	?	?
+429	5	nitrogen	NONE	?	?
+429	5	fixed nitrogen; usable nitrogen	NONE	?	?
+429	5	plants	NONE	?	?
+429	5	waste	NONE	?	?
+429	5	gas-based form	NONE	?	?
+429	6	nitrogen	NONE	?	?
+429	6	fixed nitrogen; usable nitrogen	NONE	?	?
+429	6	plants	NONE	?	?
+429	6	waste	DESTROY	?	-
+429	6	gas-based form	NONE	?	?
+429	7	nitrogen	NONE	?	?
+429	7	fixed nitrogen; usable nitrogen	NONE	?	?
+429	7	plants	DESTROY	?	-
+429	7	waste	NONE	?	?
+429	7	gas-based form	NONE	?	?
+429	8	nitrogen	MOVE	?	soil
+429	8	fixed nitrogen; usable nitrogen	NONE	?	?
+429	8	plants	NONE	?	?
+429	8	waste	NONE	?	?
+429	8	gas-based form	NONE	?	?
+429	9	nitrogen	MOVE	soil	bacteria
+429	9	fixed nitrogen; usable nitrogen	NONE	?	?
+429	9	plants	NONE	?	?
+429	9	waste	NONE	?	?
+429	9	gas-based form	NONE	?	?
+429	10	nitrogen	MOVE	bacteria	atmosphere
+429	10	fixed nitrogen; usable nitrogen	NONE	?	?
+429	10	plants	NONE	?	?
+429	10	waste	NONE	?	?
+429	10	gas-based form	NONE	?	?
+460	1	living things ; remains of living things	CREATE	-	?
+460	1	carbon	NONE	?	?
+460	1	carbon-based mixture	CREATE	-	?
+460	1	fossil fuel	NONE	?	?
+460	1	energy	NONE	?	?
+460	1	power	NONE	?	?
+460	2	living things ; remains of living things	NONE	?	?
+460	2	carbon	NONE	?	?
+460	2	carbon-based mixture	NONE	?	?
+460	2	fossil fuel	NONE	?	?
+460	2	energy	NONE	?	?
+460	2	power	NONE	?	?
+460	3	living things ; remains of living things	NONE	?	?
+460	3	carbon	NONE	?	?
+460	3	carbon-based mixture	NONE	?	?
+460	3	fossil fuel	NONE	?	?
+460	3	energy	NONE	?	?
+460	3	power	NONE	?	?
+460	4	living things ; remains of living things	NONE	?	?
+460	4	carbon	NONE	?	?
+460	4	carbon-based mixture	NONE	?	?
+460	4	fossil fuel	NONE	?	?
+460	4	energy	NONE	?	?
+460	4	power	NONE	?	?
+460	5	living things ; remains of living things	NONE	?	?
+460	5	carbon	NONE	?	?
+460	5	carbon-based mixture	NONE	?	?
+460	5	fossil fuel	NONE	?	?
+460	5	energy	NONE	?	?
+460	5	power	NONE	?	?
+460	6	living things ; remains of living things	NONE	?	?
+460	6	carbon	NONE	?	?
+460	6	carbon-based mixture	NONE	?	?
+460	6	fossil fuel	NONE	?	?
+460	6	energy	NONE	?	?
+460	6	power	NONE	?	?
+460	7	living things ; remains of living things	NONE	?	?
+460	7	carbon	MOVE	?	surface
+460	7	carbon-based mixture	NONE	?	?
+460	7	fossil fuel	NONE	?	?
+460	7	energy	NONE	?	?
+460	7	power	NONE	?	?
+460	8	living things ; remains of living things	NONE	?	?
+460	8	carbon	NONE	?	?
+460	8	carbon-based mixture	NONE	?	?
+460	8	fossil fuel	NONE	?	?
+460	8	energy	NONE	?	?
+460	8	power	NONE	?	?
+460	9	living things ; remains of living things	NONE	?	?
+460	9	carbon	NONE	?	?
+460	9	carbon-based mixture	NONE	?	?
+460	9	fossil fuel	NONE	?	?
+460	9	energy	NONE	?	?
+460	9	power	NONE	?	?
+460	10	living things ; remains of living things	NONE	?	?
+460	10	carbon	NONE	?	?
+460	10	carbon-based mixture	NONE	?	?
+460	10	fossil fuel	NONE	?	?
+460	10	energy	NONE	?	?
+460	10	power	CREATE	-	?
+463	1	raindrops	CREATE	-	?
+463	1	ice particle	NONE	?	?
+463	1	hailstone	NONE	?	?
+463	2	raindrops	NONE	?	?
+463	2	ice particle	NONE	?	?
+463	2	hailstone	NONE	?	?
+463	3	raindrops	NONE	?	?
+463	3	ice particle	NONE	?	?
+463	3	hailstone	NONE	?	?
+463	4	raindrops	NONE	?	?
+463	4	ice particle	NONE	?	?
+463	4	hailstone	NONE	?	?
+463	5	raindrops	NONE	?	?
+463	5	ice particle	NONE	?	?
+463	5	hailstone	NONE	?	?
+465	1	water	NONE	?	?
+465	1	hail	NONE	?	?
+465	2	water	NONE	?	?
+465	2	hail	NONE	?	?
+465	3	water	NONE	?	?
+465	3	hail	NONE	?	?
+465	4	water	NONE	?	?
+465	4	hail	NONE	?	?
+465	5	water	NONE	?	?
+465	5	hail	NONE	?	?
+465	6	water	NONE	?	?
+465	6	hail	NONE	?	?
+465	7	water	NONE	?	?
+465	7	hail	MOVE	?	ground
+502	1	diesel	DESTROY	?	-
+502	1	petrol	CREATE	-	?
+502	1	energy	DESTROY	?	-
+502	1	pistons	NONE	?	?
+502	1	piston motion	NONE	?	?
+502	1	rotary motion	NONE	?	?
+502	1	car	NONE	?	?
+502	2	diesel	NONE	?	?
+502	2	petrol	NONE	?	?
+502	2	energy	NONE	?	?
+502	2	pistons	NONE	?	?
+502	2	piston motion	NONE	?	?
+502	2	rotary motion	NONE	?	?
+502	2	car	NONE	?	?
+502	3	diesel	NONE	?	?
+502	3	petrol	NONE	?	?
+502	3	energy	NONE	?	?
+502	3	pistons	MOVE	?	rotary
+502	3	piston motion	MOVE	?	rotary
+502	3	rotary motion	MOVE	?	rotary
+502	3	car	NONE	?	?
+502	4	diesel	NONE	?	?
+502	4	petrol	NONE	?	?
+502	4	energy	NONE	?	?
+502	4	pistons	NONE	?	?
+502	4	piston motion	NONE	?	?
+502	4	rotary motion	NONE	?	?
+502	4	car	NONE	?	?
+502	5	diesel	NONE	?	?
+502	5	petrol	NONE	?	?
+502	5	energy	NONE	?	?
+502	5	pistons	NONE	?	?
+502	5	piston motion	NONE	?	?
+502	5	rotary motion	NONE	?	?
+502	5	car	NONE	?	?
+503	1	car	NONE	?	?
+503	1	gasoline;gas	CREATE	-	?
+503	1	battery	NONE	?	?
+503	1	spark	NONE	?	?
+503	1	piston	NONE	?	?
+503	1	crankshaft	NONE	?	?
+503	1	wheel	NONE	?	?
+503	2	car	NONE	?	?
+503	2	gasoline;gas	NONE	?	?
+503	2	battery	NONE	?	?
+503	2	spark	NONE	?	?
+503	2	piston	NONE	?	?
+503	2	crankshaft	NONE	?	?
+503	2	wheel	NONE	?	?
+503	3	car	NONE	?	?
+503	3	gasoline;gas	NONE	?	?
+503	3	battery	DESTROY	?	-
+503	3	spark	CREATE	-	?
+503	3	piston	NONE	?	?
+503	3	crankshaft	NONE	?	?
+503	3	wheel	NONE	?	?
+503	4	car	NONE	?	?
+503	4	gasoline;gas	NONE	?	?
+503	4	battery	NONE	?	?
+503	4	spark	NONE	?	?
+503	4	piston	NONE	?	?
+503	4	crankshaft	NONE	?	?
+503	4	wheel	NONE	?	?
+503	5	car	NONE	?	?
+503	5	gasoline;gas	NONE	?	?
+503	5	battery	NONE	?	?
+503	5	spark	NONE	?	?
+503	5	piston	NONE	?	?
+503	5	crankshaft	NONE	?	?
+503	5	wheel	NONE	?	?
+503	6	car	NONE	?	?
+503	6	gasoline;gas	NONE	?	?
+503	6	battery	NONE	?	?
+503	6	spark	NONE	?	?
+503	6	piston	MOVE	?	piston
+503	6	crankshaft	NONE	?	?
+503	6	wheel	NONE	?	?
+503	7	car	NONE	?	?
+503	7	gasoline;gas	NONE	?	?
+503	7	battery	NONE	?	?
+503	7	spark	NONE	?	?
+503	7	piston	NONE	?	?
+503	7	crankshaft	NONE	?	?
+503	7	wheel	NONE	?	?
+503	8	car	NONE	?	?
+503	8	gasoline;gas	NONE	?	?
+503	8	battery	NONE	?	?
+503	8	spark	NONE	?	?
+503	8	piston	NONE	?	?
+503	8	crankshaft	NONE	?	?
+503	8	wheel	NONE	?	?
+503	9	car	NONE	?	?
+503	9	gasoline;gas	NONE	?	?
+503	9	battery	NONE	?	?
+503	9	spark	NONE	?	?
+503	9	piston	NONE	?	?
+503	9	crankshaft	NONE	?	?
+503	9	wheel	NONE	?	?
+533	1	seed	NONE	?	?
+533	1	sprouts	NONE	?	?
+533	1	seedling	NONE	?	?
+533	1	sapling	NONE	?	?
+533	1	tree	NONE	?	?
+533	2	seed	NONE	?	?
+533	2	sprouts	MOVE	?	soil
+533	2	seedling	NONE	?	?
+533	2	sapling	NONE	?	?
+533	2	tree	NONE	?	?
+533	3	seed	NONE	?	?
+533	3	sprouts	NONE	?	?
+533	3	seedling	CREATE	-	?
+533	3	sapling	NONE	?	?
+533	3	tree	NONE	?	?
+533	4	seed	NONE	?	?
+533	4	sprouts	NONE	?	?
+533	4	seedling	NONE	?	?
+533	4	sapling	CREATE	-	?
+533	4	tree	NONE	?	?
+533	5	seed	NONE	?	?
+533	5	sprouts	NONE	?	?
+533	5	seedling	NONE	?	?
+533	5	sapling	NONE	?	?
+533	5	tree	NONE	?	?
+533	6	seed	NONE	?	?
+533	6	sprouts	NONE	?	?
+533	6	seedling	NONE	?	?
+533	6	sapling	NONE	?	?
+533	6	tree	NONE	?	?
+533	7	seed	NONE	?	?
+533	7	sprouts	NONE	?	?
+533	7	seedling	NONE	?	?
+533	7	sapling	NONE	?	?
+533	7	tree	NONE	?	?
+534	1	seed	NONE	?	?
+534	1	small tree ; tree	NONE	?	?
+534	1	fruit	NONE	?	?
+534	1	flowers	NONE	?	?
+534	2	seed	DESTROY	?	-
+534	2	small tree ; tree	CREATE	-	?
+534	2	fruit	NONE	?	?
+534	2	flowers	NONE	?	?
+534	3	seed	NONE	?	?
+534	3	small tree ; tree	NONE	?	?
+534	3	fruit	NONE	?	?
+534	3	flowers	NONE	?	?
+534	4	seed	NONE	?	?
+534	4	small tree ; tree	NONE	?	?
+534	4	fruit	CREATE	-	?
+534	4	flowers	NONE	?	?
+534	5	seed	NONE	?	?
+534	5	small tree ; tree	NONE	?	?
+534	5	fruit	NONE	?	?
+534	5	flowers	NONE	?	?
+534	6	seed	NONE	?	?
+534	6	small tree ; tree	NONE	?	?
+534	6	fruit	NONE	?	?
+534	6	flowers	NONE	?	?
+534	7	seed	NONE	?	?
+534	7	small tree ; tree	NONE	?	?
+534	7	fruit	NONE	?	?
+534	7	flowers	NONE	?	?
+582	1	warm, moist air	MOVE	?	moist
+582	1	cool, dry air	NONE	?	?
+582	1	air masses ; masses	NONE	?	?
+582	1	wind	NONE	?	?
+582	1	updraft	NONE	?	?
+582	1	circular patterns	NONE	?	?
+582	1	tornado	NONE	?	?
+582	2	warm, moist air	NONE	?	?
+582	2	cool, dry air	MOVE	?	Cool
+582	2	air masses ; masses	NONE	?	?
+582	2	wind	NONE	?	?
+582	2	updraft	NONE	?	?
+582	2	circular patterns	NONE	?	?
+582	2	tornado	NONE	?	?
+582	3	warm, moist air	NONE	?	?
+582	3	cool, dry air	NONE	?	?
+582	3	air masses ; masses	NONE	?	?
+582	3	wind	NONE	?	?
+582	3	updraft	NONE	?	?
+582	3	circular patterns	NONE	?	?
+582	3	tornado	NONE	?	?
+582	4	warm, moist air	NONE	?	?
+582	4	cool, dry air	NONE	?	?
+582	4	air masses ; masses	NONE	?	?
+582	4	wind	NONE	?	?
+582	4	updraft	NONE	?	?
+582	4	circular patterns	NONE	?	?
+582	4	tornado	NONE	?	?
+582	5	warm, moist air	NONE	?	?
+582	5	cool, dry air	NONE	?	?
+582	5	air masses ; masses	NONE	?	?
+582	5	wind	NONE	?	?
+582	5	updraft	NONE	?	?
+582	5	circular patterns	NONE	?	?
+582	5	tornado	NONE	?	?
+582	6	warm, moist air	NONE	?	?
+582	6	cool, dry air	NONE	?	?
+582	6	air masses ; masses	NONE	?	?
+582	6	wind	NONE	?	?
+582	6	updraft	NONE	?	?
+582	6	circular patterns	NONE	?	?
+582	6	tornado	NONE	?	?
+582	7	warm, moist air	NONE	?	?
+582	7	cool, dry air	NONE	?	?
+582	7	air masses ; masses	NONE	?	?
+582	7	wind	NONE	?	?
+582	7	updraft	NONE	?	?
+582	7	circular patterns	NONE	?	?
+582	7	tornado	NONE	?	?
+582	8	warm, moist air	NONE	?	?
+582	8	cool, dry air	NONE	?	?
+582	8	air masses ; masses	NONE	?	?
+582	8	wind	NONE	?	?
+582	8	updraft	NONE	?	?
+582	8	circular patterns	NONE	?	?
+582	8	tornado	CREATE	-	?
+583	1	warm, humd low-presure air	CREATE	-	?
+583	1	updraft	NONE	?	?
+583	1	dry, cold high-pressure air	NONE	?	?
+583	1	rotation	NONE	?	?
+583	1	funnel; tornado	NONE	?	?
+583	2	warm, humd low-presure air	NONE	?	?
+583	2	updraft	CREATE	-	?
+583	2	dry, cold high-pressure air	NONE	?	?
+583	2	rotation	NONE	?	?
+583	2	funnel; tornado	NONE	?	?
+583	3	warm, humd low-presure air	NONE	?	?
+583	3	updraft	NONE	?	?
+583	3	dry, cold high-pressure air	MOVE	?	punched
+583	3	rotation	NONE	?	?
+583	3	funnel; tornado	NONE	?	?
+583	4	warm, humd low-presure air	NONE	?	?
+583	4	updraft	NONE	?	?
+583	4	dry, cold high-pressure air	NONE	?	?
+583	4	rotation	CREATE	-	?
+583	4	funnel; tornado	NONE	?	?
+583	5	warm, humd low-presure air	NONE	?	?
+583	5	updraft	NONE	?	?
+583	5	dry, cold high-pressure air	NONE	?	?
+583	5	rotation	NONE	?	?
+583	5	funnel; tornado	CREATE	-	?
+583	6	warm, humd low-presure air	NONE	?	?
+583	6	updraft	NONE	?	?
+583	6	dry, cold high-pressure air	NONE	?	?
+583	6	rotation	NONE	?	?
+583	6	funnel; tornado	NONE	?	?
+600	1	air	DESTROY	?	-
+600	1	petrol; fuel	DESTROY	?	-
+600	1	energy	DESTROY	?	-
+600	1	hot gas	DESTROY	?	-
+600	2	air	NONE	?	?
+600	2	petrol; fuel	NONE	?	?
+600	2	energy	NONE	?	?
+600	2	hot gas	NONE	?	?
+600	3	air	NONE	?	?
+600	3	petrol; fuel	NONE	?	?
+600	3	energy	NONE	?	?
+600	3	hot gas	NONE	?	?
+600	4	air	NONE	?	?
+600	4	petrol; fuel	NONE	?	?
+600	4	energy	CREATE	-	?
+600	4	hot gas	NONE	?	?
+600	5	air	NONE	?	?
+600	5	petrol; fuel	NONE	?	?
+600	5	energy	NONE	?	?
+600	5	hot gas	NONE	?	?
+600	6	air	NONE	?	?
+600	6	petrol; fuel	NONE	?	?
+600	6	energy	NONE	?	?
+600	6	hot gas	NONE	?	?
+653	1	seed	NONE	?	?
+653	1	seedling	NONE	?	?
+653	1	tree	NONE	?	?
+653	1	flower	NONE	?	?
+653	1	fruit	NONE	?	?
+653	2	seed	NONE	?	?
+653	2	seedling	CREATE	-	?
+653	2	tree	NONE	?	?
+653	2	flower	NONE	?	?
+653	2	fruit	NONE	?	?
+653	3	seed	NONE	?	?
+653	3	seedling	NONE	?	?
+653	3	tree	CREATE	-	?
+653	3	flower	NONE	?	?
+653	3	fruit	NONE	?	?
+653	4	seed	NONE	?	?
+653	4	seedling	NONE	?	?
+653	4	tree	NONE	?	?
+653	4	flower	CREATE	-	?
+653	4	fruit	NONE	?	?
+653	5	seed	NONE	?	?
+653	5	seedling	NONE	?	?
+653	5	tree	NONE	?	?
+653	5	flower	NONE	?	?
+653	5	fruit	CREATE	-	?
+653	6	seed	NONE	?	?
+653	6	seedling	NONE	?	?
+653	6	tree	NONE	?	?
+653	6	flower	NONE	?	?
+653	6	fruit	NONE	?	?
+654	1	seedling	NONE	?	?
+654	1	root system	NONE	?	?
+654	1	tree	NONE	?	?
+654	1	material for new growth	NONE	?	?
+654	2	seedling	NONE	?	?
+654	2	root system	CREATE	-	?
+654	2	tree	NONE	?	?
+654	2	material for new growth	NONE	?	?
+654	3	seedling	NONE	?	?
+654	3	root system	NONE	?	?
+654	3	tree	NONE	?	?
+654	3	material for new growth	NONE	?	?
+654	4	seedling	NONE	?	?
+654	4	root system	NONE	?	?
+654	4	tree	NONE	?	?
+654	4	material for new growth	NONE	?	?
+654	5	seedling	NONE	?	?
+654	5	root system	NONE	?	?
+654	5	tree	NONE	?	?
+654	5	material for new growth	NONE	?	?
+654	6	seedling	NONE	?	?
+654	6	root system	NONE	?	?
+654	6	tree	NONE	?	?
+654	6	material for new growth	CREATE	-	?
+659	1	nitrogen; nitrates	MOVE	?	fixation
+659	1	ammonium	CREATE	-	?
+659	1	plant	NONE	?	?
+659	1	extra nitrogen	NONE	?	?
+659	2	nitrogen; nitrates	NONE	?	?
+659	2	ammonium	NONE	?	?
+659	2	plant	NONE	?	?
+659	2	extra nitrogen	NONE	?	?
+659	3	nitrogen; nitrates	MOVE	?	soil
+659	3	ammonium	NONE	?	?
+659	3	plant	MOVE	?	soil
+659	3	extra nitrogen	NONE	?	?
+659	4	nitrogen; nitrates	DESTROY	?	-
+659	4	ammonium	DESTROY	?	-
+659	4	plant	DESTROY	?	-
+659	4	extra nitrogen	NONE	?	?
+659	5	nitrogen; nitrates	NONE	?	?
+659	5	ammonium	NONE	?	?
+659	5	plant	NONE	?	?
+659	5	extra nitrogen	MOVE	?	air
+659	6	nitrogen; nitrates	NONE	?	?
+659	6	ammonium	NONE	?	?
+659	6	plant	NONE	?	?
+659	6	extra nitrogen	NONE	?	?
+660	1	atmospheric nitrogen	NONE	?	?
+660	1	organic nitrogen	CREATE	-	?
+660	1	animals	NONE	?	?
+660	1	plants	NONE	?	?
+660	1	wastes	NONE	?	?
+660	1	ammonium	NONE	?	?
+660	1	nitrate	NONE	?	?
+660	1	nitrogen gas	NONE	?	?
+660	2	atmospheric nitrogen	NONE	?	?
+660	2	organic nitrogen	MOVE	bacteria	soil
+660	2	animals	NONE	?	?
+660	2	plants	NONE	?	?
+660	2	wastes	NONE	?	?
+660	2	ammonium	NONE	?	?
+660	2	nitrate	NONE	?	?
+660	2	nitrogen gas	NONE	?	?
+660	3	atmospheric nitrogen	NONE	?	?
+660	3	organic nitrogen	NONE	?	?
+660	3	animals	NONE	?	?
+660	3	plants	NONE	?	?
+660	3	wastes	NONE	?	?
+660	3	ammonium	NONE	?	?
+660	3	nitrate	NONE	?	?
+660	3	nitrogen gas	NONE	?	?
+660	4	atmospheric nitrogen	DESTROY	?	-
+660	4	organic nitrogen	NONE	?	?
+660	4	animals	DESTROY	?	-
+660	4	plants	DESTROY	?	-
+660	4	wastes	NONE	?	?
+660	4	ammonium	NONE	?	?
+660	4	nitrate	NONE	?	?
+660	4	nitrogen gas	NONE	?	?
+660	5	atmospheric nitrogen	NONE	?	?
+660	5	organic nitrogen	NONE	?	?
+660	5	animals	NONE	?	?
+660	5	plants	NONE	?	?
+660	5	wastes	MOVE	?	Animals
+660	5	ammonium	NONE	?	?
+660	5	nitrate	NONE	?	?
+660	5	nitrogen gas	NONE	?	?
+660	6	atmospheric nitrogen	NONE	?	?
+660	6	organic nitrogen	MOVE	?	Fungi
+660	6	animals	NONE	?	?
+660	6	plants	NONE	?	?
+660	6	wastes	NONE	?	?
+660	6	ammonium	CREATE	-	?
+660	6	nitrate	NONE	?	?
+660	6	nitrogen gas	NONE	?	?
+660	7	atmospheric nitrogen	NONE	?	?
+660	7	organic nitrogen	NONE	?	?
+660	7	animals	NONE	?	?
+660	7	plants	NONE	?	?
+660	7	wastes	NONE	?	?
+660	7	ammonium	DESTROY	?	-
+660	7	nitrate	CREATE	-	?
+660	7	nitrogen gas	NONE	?	?
+660	8	atmospheric nitrogen	NONE	?	?
+660	8	organic nitrogen	NONE	?	?
+660	8	animals	NONE	?	?
+660	8	plants	NONE	?	?
+660	8	wastes	NONE	?	?
+660	8	ammonium	NONE	?	?
+660	8	nitrate	MOVE	bacteria	Bacteria
+660	8	nitrogen gas	MOVE	?	Bacteria
+660	9	atmospheric nitrogen	NONE	?	?
+660	9	organic nitrogen	MOVE	?	atmosphere
+660	9	animals	NONE	?	?
+660	9	plants	NONE	?	?
+660	9	wastes	MOVE	?	atmosphere
+660	9	ammonium	NONE	?	?
+660	9	nitrate	MOVE	Bacteria	atmosphere
+660	9	nitrogen gas	MOVE	Bacteria	atmosphere
+661	1	nitrogen	NONE	?	?
+661	1	ammonium	NONE	?	?
+661	1	nitrates	NONE	?	?
+661	1	plant	NONE	?	?
+661	1	animal	NONE	?	?
+661	2	nitrogen	NONE	?	?
+661	2	ammonium	NONE	?	?
+661	2	nitrates	NONE	?	?
+661	2	plant	NONE	?	?
+661	2	animal	NONE	?	?
+661	3	nitrogen	NONE	?	?
+661	3	ammonium	NONE	?	?
+661	3	nitrates	NONE	?	?
+661	3	plant	NONE	?	?
+661	3	animal	NONE	?	?
+661	4	nitrogen	NONE	?	?
+661	4	ammonium	NONE	?	?
+661	4	nitrates	NONE	?	?
+661	4	plant	NONE	?	?
+661	4	animal	NONE	?	?
+661	5	nitrogen	NONE	?	?
+661	5	ammonium	NONE	?	?
+661	5	nitrates	MOVE	?	soil into their roots
+661	5	plant	NONE	?	?
+661	5	animal	NONE	?	?
+661	6	nitrogen	NONE	?	?
+661	6	ammonium	NONE	?	?
+661	6	nitrates	NONE	?	?
+661	6	plant	NONE	?	?
+661	6	animal	NONE	?	?
+661	7	nitrogen	DESTROY	?	-
+661	7	ammonium	DESTROY	?	-
+661	7	nitrates	NONE	?	?
+661	7	plant	DESTROY	?	-
+661	7	animal	DESTROY	?	-
+661	8	nitrogen	NONE	?	?
+661	8	ammonium	NONE	?	?
+661	8	nitrates	NONE	?	?
+661	8	plant	NONE	?	?
+661	8	animal	NONE	?	?
+661	9	nitrogen	NONE	?	?
+661	9	ammonium	NONE	?	?
+661	9	nitrates	NONE	?	?
+661	9	plant	NONE	?	?
+661	9	animal	NONE	?	?
+695	1	water	DESTROY	?	-
+695	1	vapor; steam; water vapor	CREATE	-	?
+695	1	clouds	NONE	?	?
+695	1	rain	NONE	?	?
+695	1	hail	NONE	?	?
+695	1	sleet	NONE	?	?
+695	1	snow	NONE	?	?
+695	2	water	NONE	?	?
+695	2	vapor; steam; water vapor	MOVE	lakes or the ocean	air
+695	2	clouds	NONE	?	?
+695	2	rain	NONE	?	?
+695	2	hail	NONE	?	?
+695	2	sleet	NONE	?	?
+695	2	snow	NONE	?	?
+695	3	water	NONE	?	?
+695	3	vapor; steam; water vapor	DESTROY	?	-
+695	3	clouds	CREATE	-	?
+695	3	rain	NONE	?	?
+695	3	hail	NONE	?	?
+695	3	sleet	NONE	?	?
+695	3	snow	NONE	?	?
+695	4	water	NONE	?	?
+695	4	vapor; steam; water vapor	NONE	?	?
+695	4	clouds	NONE	?	?
+695	4	rain	NONE	?	?
+695	4	hail	NONE	?	?
+695	4	sleet	NONE	?	?
+695	4	snow	NONE	?	?
+695	5	water	NONE	?	?
+695	5	vapor; steam; water vapor	NONE	?	?
+695	5	clouds	NONE	?	?
+695	5	rain	MOVE	?	earth
+695	5	hail	MOVE	?	earth
+695	5	sleet	MOVE	?	earth
+695	5	snow	MOVE	?	earth
+695	6	water	NONE	?	?
+695	6	vapor; steam; water vapor	NONE	?	?
+695	6	clouds	NONE	?	?
+695	6	rain	NONE	?	?
+695	6	hail	NONE	?	?
+695	6	sleet	NONE	?	?
+695	6	snow	NONE	?	?
+695	7	water	NONE	?	?
+695	7	vapor; steam; water vapor	NONE	?	?
+695	7	clouds	NONE	?	?
+695	7	rain	NONE	?	?
+695	7	hail	NONE	?	?
+695	7	sleet	NONE	?	?
+695	7	snow	NONE	?	?
+696	1	water vapor	CREATE	-	?
+696	1	water droplets	NONE	?	?
+696	1	cloud	NONE	?	?
+696	1	rain	NONE	?	?
+696	2	water vapor	NONE	?	?
+696	2	water droplets	NONE	?	?
+696	2	cloud	NONE	?	?
+696	2	rain	NONE	?	?
+696	3	water vapor	NONE	?	?
+696	3	water droplets	MOVE	?	clouds
+696	3	cloud	NONE	?	?
+696	3	rain	NONE	?	?
+696	4	water vapor	NONE	?	?
+696	4	water droplets	NONE	?	?
+696	4	cloud	NONE	?	?
+696	4	rain	NONE	?	?
+696	5	water vapor	NONE	?	?
+696	5	water droplets	NONE	?	?
+696	5	cloud	NONE	?	?
+696	5	rain	NONE	?	?
+696	6	water vapor	NONE	?	?
+696	6	water droplets	NONE	?	?
+696	6	cloud	NONE	?	?
+696	6	rain	CREATE	-	?
+697	1	water	NONE	?	?
+697	1	clouds	NONE	?	?
+697	1	rain	NONE	?	?
+697	2	water	DESTROY	?	-
+697	2	clouds	CREATE	-	?
+697	2	rain	NONE	?	?
+697	3	water	NONE	?	?
+697	3	clouds	NONE	?	?
+697	3	rain	NONE	?	?
+697	4	water	NONE	?	?
+697	4	clouds	NONE	?	?
+697	4	rain	NONE	?	?
+697	5	water	NONE	?	?
+697	5	clouds	NONE	?	?
+697	5	rain	MOVE	?	clouds
+1031	1	plant or animal	DESTROY	?	-
+1031	1	bones	NONE	?	?
+1031	1	sediment	NONE	?	?
+1031	1	rock	NONE	?	?
+1031	1	fossil	NONE	?	?
+1031	2	plant or animal	NONE	?	?
+1031	2	bones	NONE	?	?
+1031	2	sediment	NONE	?	?
+1031	2	rock	NONE	?	?
+1031	2	fossil	NONE	?	?
+1031	3	plant or animal	NONE	?	?
+1031	3	bones	NONE	?	?
+1031	3	sediment	NONE	?	?
+1031	3	rock	NONE	?	?
+1031	3	fossil	NONE	?	?
+1031	4	plant or animal	NONE	?	?
+1031	4	bones	NONE	?	?
+1031	4	sediment	DESTROY	?	-
+1031	4	rock	CREATE	-	?
+1031	4	fossil	NONE	?	?
+1031	5	plant or animal	NONE	?	?
+1031	5	bones	NONE	?	?
+1031	5	sediment	NONE	?	?
+1031	5	rock	DESTROY	?	-
+1031	5	fossil	CREATE	-	?
+1032	1	animals	DESTROY	?	-
+1032	1	plants	DESTROY	?	-
+1032	1	bones and hard tissues ; remains	NONE	?	?
+1032	1	sediment	NONE	?	?
+1032	1	rock	NONE	?	?
+1032	2	animals	NONE	?	?
+1032	2	plants	NONE	?	?
+1032	2	bones and hard tissues ; remains	NONE	?	?
+1032	2	sediment	NONE	?	?
+1032	2	rock	NONE	?	?
+1032	3	animals	NONE	?	?
+1032	3	plants	NONE	?	?
+1032	3	bones and hard tissues ; remains	NONE	?	?
+1032	3	sediment	NONE	?	?
+1032	3	rock	NONE	?	?
+1032	4	animals	NONE	?	?
+1032	4	plants	NONE	?	?
+1032	4	bones and hard tissues ; remains	DESTROY	?	-
+1032	4	sediment	NONE	?	?
+1032	4	rock	NONE	?	?
+1032	5	animals	NONE	?	?
+1032	5	plants	NONE	?	?
+1032	5	bones and hard tissues ; remains	NONE	?	?
+1032	5	sediment	NONE	?	?
+1032	5	rock	NONE	?	?
+1032	6	animals	NONE	?	?
+1032	6	plants	NONE	?	?
+1032	6	bones and hard tissues ; remains	NONE	?	?
+1032	6	sediment	DESTROY	?	-
+1032	6	rock	CREATE	-	?
+1033	1	animal	DESTROY	?	-
+1033	1	skeleton	NONE	?	?
+1033	1	rock	NONE	?	?
+1033	1	mold	NONE	?	?
+1033	2	animal	NONE	?	?
+1033	2	skeleton	NONE	?	?
+1033	2	rock	NONE	?	?
+1033	2	mold	NONE	?	?
+1033	3	animal	NONE	?	?
+1033	3	skeleton	NONE	?	?
+1033	3	rock	NONE	?	?
+1033	3	mold	NONE	?	?
+1033	4	animal	NONE	?	?
+1033	4	skeleton	DESTROY	?	-
+1033	4	rock	CREATE	-	?
+1033	4	mold	NONE	?	?
+1033	5	animal	NONE	?	?
+1033	5	skeleton	NONE	?	?
+1033	5	rock	NONE	?	?
+1033	5	mold	NONE	?	?
+1033	6	animal	NONE	?	?
+1033	6	skeleton	NONE	?	?
+1033	6	rock	NONE	?	?
+1033	6	mold	NONE	?	?
+1145	1	hydrogen fuel	NONE	?	?
+1145	1	hydrogen atoms	NONE	?	?
+1145	1	helium atoms	NONE	?	?
+1145	1	red giant star	CREATE	-	?
+1145	2	hydrogen fuel	NONE	?	?
+1145	2	hydrogen atoms	NONE	?	?
+1145	2	helium atoms	NONE	?	?
+1145	2	red giant star	NONE	?	?
+1145	3	hydrogen fuel	NONE	?	?
+1145	3	hydrogen atoms	DESTROY	?	-
+1145	3	helium atoms	CREATE	-	?
+1145	3	red giant star	NONE	?	?
+1145	4	hydrogen fuel	NONE	?	?
+1145	4	hydrogen atoms	NONE	?	?
+1145	4	helium atoms	NONE	?	?
+1145	4	red giant star	NONE	?	?
+1145	5	hydrogen fuel	NONE	?	?
+1145	5	hydrogen atoms	NONE	?	?
+1145	5	helium atoms	NONE	?	?
+1145	5	red giant star	NONE	?	?
+1146	1	star	NONE	?	?
+1146	1	hydrogen fuel	NONE	?	?
+1146	1	hydrogen	NONE	?	?
+1146	1	helium	NONE	?	?
+1146	1	energy	NONE	?	?
+1146	1	carbon atoms	NONE	?	?
+1146	1	red giant star	CREATE	-	?
+1146	2	star	NONE	?	?
+1146	2	hydrogen fuel	NONE	?	?
+1146	2	hydrogen	NONE	?	?
+1146	2	helium	NONE	?	?
+1146	2	energy	NONE	?	?
+1146	2	carbon atoms	NONE	?	?
+1146	2	red giant star	NONE	?	?
+1146	3	star	DESTROY	?	-
+1146	3	hydrogen fuel	NONE	?	?
+1146	3	hydrogen	DESTROY	?	-
+1146	3	helium	CREATE	-	?
+1146	3	energy	NONE	?	?
+1146	3	carbon atoms	NONE	?	?
+1146	3	red giant star	NONE	?	?
+1146	4	star	NONE	?	?
+1146	4	hydrogen fuel	NONE	?	?
+1146	4	hydrogen	NONE	?	?
+1146	4	helium	NONE	?	?
+1146	4	energy	CREATE	-	?
+1146	4	carbon atoms	NONE	?	?
+1146	4	red giant star	NONE	?	?
+1146	5	star	NONE	?	?
+1146	5	hydrogen fuel	NONE	?	?
+1146	5	hydrogen	NONE	?	?
+1146	5	helium	NONE	?	?
+1146	5	energy	NONE	?	?
+1146	5	carbon atoms	NONE	?	?
+1146	5	red giant star	NONE	?	?
+1146	6	star	NONE	?	?
+1146	6	hydrogen fuel	NONE	?	?
+1146	6	hydrogen	NONE	?	?
+1146	6	helium	NONE	?	?
+1146	6	energy	NONE	?	?
+1146	6	carbon atoms	NONE	?	?
+1146	6	red giant star	NONE	?	?
+1146	7	star	NONE	?	?
+1146	7	hydrogen fuel	NONE	?	?
+1146	7	hydrogen	NONE	?	?
+1146	7	helium	NONE	?	?
+1146	7	energy	NONE	?	?
+1146	7	carbon atoms	CREATE	-	?
+1146	7	red giant star	NONE	?	?
+1146	8	star	NONE	?	?
+1146	8	hydrogen fuel	NONE	?	?
+1146	8	hydrogen	NONE	?	?
+1146	8	helium	NONE	?	?
+1146	8	energy	NONE	?	?
+1146	8	carbon atoms	NONE	?	?
+1146	8	red giant star	NONE	?	?
+1146	9	star	NONE	?	?
+1146	9	hydrogen fuel	NONE	?	?
+1146	9	hydrogen	NONE	?	?
+1146	9	helium	NONE	?	?
+1146	9	energy	NONE	?	?
+1146	9	carbon atoms	NONE	?	?
+1146	9	red giant star	NONE	?	?
+1146	10	star	NONE	?	?
+1146	10	hydrogen fuel	NONE	?	?
+1146	10	hydrogen	NONE	?	?
+1146	10	helium	NONE	?	?
+1146	10	energy	NONE	?	?
+1146	10	carbon atoms	NONE	?	?
+1146	10	red giant star	NONE	?	?
+1147	1	hydrogen atoms	DESTROY	?	-
+1147	1	helium atoms	CREATE	-	?
+1147	1	hydrogen	NONE	?	?
+1147	1	helium	CREATE	-	?
+1147	1	star	NONE	?	?
+1147	1	carbon atoms	NONE	?	?
+1147	1	red giant star	CREATE	-	?
+1147	2	hydrogen atoms	NONE	?	?
+1147	2	helium atoms	NONE	?	?
+1147	2	hydrogen	DESTROY	?	-
+1147	2	helium	MOVE	star	All of the hydrogen
+1147	2	star	DESTROY	?	-
+1147	2	carbon atoms	NONE	?	?
+1147	2	red giant star	NONE	?	?
+1147	3	hydrogen atoms	NONE	?	?
+1147	3	helium atoms	NONE	?	?
+1147	3	hydrogen	NONE	?	?
+1147	3	helium	NONE	?	?
+1147	3	star	NONE	?	?
+1147	3	carbon atoms	NONE	?	?
+1147	3	red giant star	NONE	?	?
+1147	4	hydrogen atoms	NONE	?	?
+1147	4	helium atoms	NONE	?	?
+1147	4	hydrogen	NONE	?	?
+1147	4	helium	NONE	?	?
+1147	4	star	NONE	?	?
+1147	4	carbon atoms	CREATE	-	?
+1147	4	red giant star	NONE	?	?
+1147	5	hydrogen atoms	NONE	?	?
+1147	5	helium atoms	NONE	?	?
+1147	5	hydrogen	NONE	?	?
+1147	5	helium	NONE	?	?
+1147	5	star	NONE	?	?
+1147	5	carbon atoms	NONE	?	?
+1147	5	red giant star	NONE	?	?
+1147	6	hydrogen atoms	NONE	?	?
+1147	6	helium atoms	NONE	?	?
+1147	6	hydrogen	NONE	?	?
+1147	6	helium	NONE	?	?
+1147	6	star	NONE	?	?
+1147	6	carbon atoms	NONE	?	?
+1147	6	red giant star	NONE	?	?
+1188	1	comet	MOVE	?	outer
+1188	1	hole; crater	NONE	?	?
+1188	2	comet	NONE	?	?
+1188	2	hole; crater	NONE	?	?
+1188	3	comet	NONE	?	?
+1188	3	hole; crater	NONE	?	?
+1188	4	comet	NONE	?	?
+1188	4	hole; crater	NONE	?	?
+1188	5	comet	NONE	?	?
+1188	5	hole; crater	MOVE	?	planet
+1189	1	chunks of rock	NONE	?	?
+1189	1	crater	NONE	?	?
+1189	2	chunks of rock	NONE	?	?
+1189	2	crater	NONE	?	?
+1189	3	chunks of rock	NONE	?	?
+1189	3	crater	NONE	?	?
+1189	4	chunks of rock	NONE	?	?
+1189	4	crater	NONE	?	?
+1189	5	chunks of rock	NONE	?	?
+1189	5	crater	NONE	?	?
+1189	6	chunks of rock	NONE	?	?
+1189	6	crater	NONE	?	?
+1190	1	oxygenated blood	NONE	?	?
+1190	1	deoxygenated blood	NONE	?	?
+1190	1	oxygen	NONE	?	?
+1190	2	oxygenated blood	NONE	?	?
+1190	2	deoxygenated blood	NONE	?	?
+1190	2	oxygen	NONE	?	?
+1190	3	oxygenated blood	NONE	?	?
+1190	3	deoxygenated blood	NONE	?	?
+1190	3	oxygen	NONE	?	?
+1190	4	oxygenated blood	NONE	?	?
+1190	4	deoxygenated blood	NONE	?	?
+1190	4	oxygen	NONE	?	?
+1190	5	oxygenated blood	NONE	?	?
+1190	5	deoxygenated blood	NONE	?	?
+1190	5	oxygen	NONE	?	?
+1190	6	oxygenated blood	NONE	?	?
+1190	6	deoxygenated blood	NONE	?	?
+1190	6	oxygen	MOVE	?	lungs
+1190	7	oxygenated blood	MOVE	?	atrium
+1190	7	deoxygenated blood	NONE	?	?
+1190	7	oxygen	NONE	?	?
+1190	8	oxygenated blood	NONE	?	?
+1190	8	deoxygenated blood	NONE	?	?
+1190	8	oxygen	NONE	?	?
+1190	9	oxygenated blood	NONE	?	?
+1190	9	deoxygenated blood	NONE	?	?
+1190	9	oxygen	NONE	?	?
+1190	10	oxygenated blood	NONE	?	?
+1190	10	deoxygenated blood	MOVE	?	heart
+1190	10	oxygen	NONE	?	?
+1240	1	Air	MOVE	?	evaporator
+1240	1	Heat	NONE	?	?
+1240	1	Refrigerent Liquid	CREATE	-	?
+1240	1	Refrigerent Gas	CREATE	-	?
+1240	1	Liquid	NONE	?	?
+1240	2	Air	NONE	?	?
+1240	2	Heat	NONE	?	?
+1240	2	Refrigerent Liquid	NONE	?	?
+1240	2	Refrigerent Gas	NONE	?	?
+1240	2	Liquid	NONE	?	?
+1240	3	Air	MOVE	?	refrigerant
+1240	3	Heat	MOVE	?	refrigerant
+1240	3	Refrigerent Liquid	NONE	?	?
+1240	3	Refrigerent Gas	NONE	?	?
+1240	3	Liquid	MOVE	?	refrigerant
+1240	4	Air	NONE	?	?
+1240	4	Heat	NONE	?	?
+1240	4	Refrigerent Liquid	NONE	?	?
+1240	4	Refrigerent Gas	NONE	?	?
+1240	4	Liquid	NONE	?	?
+1240	5	Air	NONE	?	?
+1240	5	Heat	NONE	?	?
+1240	5	Refrigerent Liquid	NONE	?	?
+1240	5	Refrigerent Gas	NONE	?	?
+1240	5	Liquid	NONE	?	?
+1240	6	Air	NONE	?	?
+1240	6	Heat	NONE	?	?
+1240	6	Refrigerent Liquid	NONE	?	?
+1240	6	Refrigerent Gas	NONE	?	?
+1240	6	Liquid	MOVE	?	condenser
+1240	7	Air	NONE	?	?
+1240	7	Heat	MOVE	?	condenser
+1240	7	Refrigerent Liquid	NONE	?	?
+1240	7	Refrigerent Gas	NONE	?	?
+1240	7	Liquid	NONE	?	?
+1240	8	Air	NONE	?	?
+1240	8	Heat	NONE	?	?
+1240	8	Refrigerent Liquid	NONE	?	?
+1240	8	Refrigerent Gas	NONE	?	?
+1240	8	Liquid	MOVE	?	evaporator
+725	1	plant; animal	DESTROY	?	-
+725	1	soft tissues	NONE	?	?
+725	1	sediment	NONE	?	?
+725	1	rock	NONE	?	?
+725	1	bones	NONE	?	?
+725	1	minerals	NONE	?	?
+725	1	stone replica; fossil	NONE	?	?
+725	2	plant; animal	NONE	?	?
+725	2	soft tissues	NONE	?	?
+725	2	sediment	NONE	?	?
+725	2	rock	NONE	?	?
+725	2	bones	NONE	?	?
+725	2	minerals	NONE	?	?
+725	2	stone replica; fossil	NONE	?	?
+725	3	plant; animal	NONE	?	?
+725	3	soft tissues	NONE	?	?
+725	3	sediment	NONE	?	?
+725	3	rock	NONE	?	?
+725	3	bones	NONE	?	?
+725	3	minerals	NONE	?	?
+725	3	stone replica; fossil	NONE	?	?
+725	4	plant; animal	NONE	?	?
+725	4	soft tissues	NONE	?	?
+725	4	sediment	NONE	?	?
+725	4	rock	NONE	?	?
+725	4	bones	NONE	?	?
+725	4	minerals	NONE	?	?
+725	4	stone replica; fossil	NONE	?	?
+725	5	plant; animal	NONE	?	?
+725	5	soft tissues	NONE	?	?
+725	5	sediment	NONE	?	?
+725	5	rock	NONE	?	?
+725	5	bones	NONE	?	?
+725	5	minerals	NONE	?	?
+725	5	stone replica; fossil	NONE	?	?
+725	6	plant; animal	NONE	?	?
+725	6	soft tissues	NONE	?	?
+725	6	sediment	NONE	?	?
+725	6	rock	NONE	?	?
+725	6	bones	NONE	?	?
+725	6	minerals	NONE	?	?
+725	6	stone replica; fossil	NONE	?	?
+726	1	animal	NONE	?	?
+726	1	animal's skeleton	CREATE	-	?
+726	1	mud; sand	NONE	?	?
+726	1	rock	NONE	?	?
+726	1	hole	NONE	?	?
+726	2	animal	NONE	?	?
+726	2	animal's skeleton	NONE	?	?
+726	2	mud; sand	NONE	?	?
+726	2	rock	NONE	?	?
+726	2	hole	NONE	?	?
+726	3	animal	DESTROY	?	-
+726	3	animal's skeleton	NONE	?	?
+726	3	mud; sand	NONE	?	?
+726	3	rock	NONE	?	?
+726	3	hole	NONE	?	?
+726	4	animal	NONE	?	?
+726	4	animal's skeleton	NONE	?	?
+726	4	mud; sand	NONE	?	?
+726	4	rock	NONE	?	?
+726	4	hole	NONE	?	?
+726	5	animal	NONE	?	?
+726	5	animal's skeleton	NONE	?	?
+726	5	mud; sand	NONE	?	?
+726	5	rock	NONE	?	?
+726	5	hole	NONE	?	?
+726	6	animal	NONE	?	?
+726	6	animal's skeleton	NONE	?	?
+726	6	mud; sand	NONE	?	?
+726	6	rock	NONE	?	?
+726	6	hole	NONE	?	?
+726	7	animal	NONE	?	?
+726	7	animal's skeleton	NONE	?	?
+726	7	mud; sand	NONE	?	?
+726	7	rock	NONE	?	?
+726	7	hole	NONE	?	?
+726	8	animal	NONE	?	?
+726	8	animal's skeleton	NONE	?	?
+726	8	mud; sand	DESTROY	?	-
+726	8	rock	CREATE	-	?
+726	8	hole	NONE	?	?
+726	9	animal	NONE	?	?
+726	9	animal's skeleton	NONE	?	?
+726	9	mud; sand	NONE	?	?
+726	9	rock	NONE	?	?
+726	9	hole	NONE	?	?
+726	10	animal	NONE	?	?
+726	10	animal's skeleton	NONE	?	?
+726	10	mud; sand	NONE	?	?
+726	10	rock	NONE	?	?
+726	10	hole	NONE	?	?
+727	1	animal	DESTROY	?	-
+727	1	soft tissues	DESTROY	?	-
+727	1	bones	NONE	?	?
+727	1	mud; silt	NONE	?	?
+727	1	rock	NONE	?	?
+727	1	minerals	NONE	?	?
+727	1	fossil	NONE	?	?
+727	2	animal	NONE	?	?
+727	2	soft tissues	NONE	?	?
+727	2	bones	NONE	?	?
+727	2	mud; silt	NONE	?	?
+727	2	rock	NONE	?	?
+727	2	minerals	NONE	?	?
+727	2	fossil	NONE	?	?
+727	3	animal	NONE	?	?
+727	3	soft tissues	NONE	?	?
+727	3	bones	NONE	?	?
+727	3	mud; silt	NONE	?	?
+727	3	rock	NONE	?	?
+727	3	minerals	NONE	?	?
+727	3	fossil	NONE	?	?
+727	4	animal	NONE	?	?
+727	4	soft tissues	NONE	?	?
+727	4	bones	NONE	?	?
+727	4	mud; silt	NONE	?	?
+727	4	rock	NONE	?	?
+727	4	minerals	NONE	?	?
+727	4	fossil	NONE	?	?
+727	5	animal	NONE	?	?
+727	5	soft tissues	NONE	?	?
+727	5	bones	NONE	?	?
+727	5	mud; silt	NONE	?	?
+727	5	rock	NONE	?	?
+727	5	minerals	NONE	?	?
+727	5	fossil	NONE	?	?
+727	6	animal	NONE	?	?
+727	6	soft tissues	NONE	?	?
+727	6	bones	NONE	?	?
+727	6	mud; silt	DESTROY	?	-
+727	6	rock	CREATE	-	?
+727	6	minerals	NONE	?	?
+727	6	fossil	NONE	?	?
+727	7	animal	NONE	?	?
+727	7	soft tissues	NONE	?	?
+727	7	bones	DESTROY	?	-
+727	7	mud; silt	NONE	?	?
+727	7	rock	NONE	?	?
+727	7	minerals	NONE	?	?
+727	7	fossil	NONE	?	?
+727	8	animal	NONE	?	?
+727	8	soft tissues	NONE	?	?
+727	8	bones	NONE	?	?
+727	8	mud; silt	NONE	?	?
+727	8	rock	NONE	?	?
+727	8	minerals	MOVE	?	seep
+727	8	fossil	NONE	?	?
+727	9	animal	NONE	?	?
+727	9	soft tissues	NONE	?	?
+727	9	bones	NONE	?	?
+727	9	mud; silt	NONE	?	?
+727	9	rock	NONE	?	?
+727	9	minerals	NONE	?	?
+727	9	fossil	NONE	?	?
+727	10	animal	NONE	?	?
+727	10	soft tissues	NONE	?	?
+727	10	bones	NONE	?	?
+727	10	mud; silt	NONE	?	?
+727	10	rock	NONE	?	?
+727	10	minerals	NONE	?	?
+727	10	fossil	NONE	?	?
+791	1	DC electricity	NONE	?	?
+791	1	AC electricity	NONE	?	?
+791	2	DC electricity	NONE	?	?
+791	2	AC electricity	NONE	?	?
+791	3	DC electricity	CREATE	-	?
+791	3	AC electricity	NONE	?	?
+791	4	DC electricity	NONE	?	?
+791	4	AC electricity	NONE	?	?
+791	5	DC electricity	NONE	?	?
+791	5	AC electricity	NONE	?	?
+791	6	DC electricity	NONE	?	?
+791	6	AC electricity	NONE	?	?
+896	1	oxygen-depleted blood ; blood	MOVE	?	atrium
+896	1	oxygenated blood ; blood	MOVE	?	atrium
+896	2	oxygen-depleted blood ; blood	NONE	?	?
+896	2	oxygenated blood ; blood	NONE	?	?
+896	3	oxygen-depleted blood ; blood	MOVE	?	tricuspid
+896	3	oxygenated blood ; blood	MOVE	?	tricuspid
+896	4	oxygen-depleted blood ; blood	NONE	?	?
+896	4	oxygenated blood ; blood	NONE	?	?
+896	5	oxygen-depleted blood ; blood	NONE	?	?
+896	5	oxygenated blood ; blood	NONE	?	?
+896	6	oxygen-depleted blood ; blood	MOVE	?	lungs
+896	6	oxygenated blood ; blood	MOVE	?	lungs
+896	7	oxygen-depleted blood ; blood	NONE	?	?
+896	7	oxygenated blood ; blood	NONE	?	?
+896	8	oxygen-depleted blood ; blood	MOVE	?	atrium
+896	8	oxygenated blood ; blood	MOVE	?	atrium
+896	9	oxygen-depleted blood ; blood	MOVE	atrium	body
+896	9	oxygenated blood ; blood	MOVE	atrium	body
+903	1	visible light; light	MOVE	?	lens
+903	1	chemical energy	NONE	?	?
+903	1	image	NONE	?	?
+903	2	visible light; light	MOVE	lens	retina
+903	2	chemical energy	NONE	?	?
+903	2	image	NONE	?	?
+903	3	visible light; light	MOVE	retina	photoreceptor
+903	3	chemical energy	NONE	?	?
+903	3	image	NONE	?	?
+903	4	visible light; light	NONE	?	?
+903	4	chemical energy	CREATE	-	?
+903	4	image	NONE	?	?
+903	5	visible light; light	NONE	?	?
+903	5	chemical energy	NONE	?	?
+903	5	image	NONE	?	?
+904	1	light	NONE	?	?
+904	1	small image	CREATE	-	?
+904	1	retina's rods and cones	CREATE	-	?
+904	1	electrical pulses	NONE	?	?
+904	2	light	NONE	?	?
+904	2	small image	NONE	?	?
+904	2	retina's rods and cones	NONE	?	?
+904	2	electrical pulses	NONE	?	?
+904	3	light	NONE	?	?
+904	3	small image	NONE	?	?
+904	3	retina's rods and cones	NONE	?	?
+904	3	electrical pulses	CREATE	-	?
+904	4	light	NONE	?	?
+904	4	small image	NONE	?	?
+904	4	retina's rods and cones	NONE	?	?
+904	4	electrical pulses	MOVE	retina	optic
+904	5	light	NONE	?	?
+904	5	small image	NONE	?	?
+904	5	retina's rods and cones	NONE	?	?
+904	5	electrical pulses	NONE	?	?
+927	1	rain	NONE	?	?
+927	1	rain water; water	NONE	?	?
+927	1	land	NONE	?	?
+927	1	plants	NONE	?	?
+927	1	trees	NONE	?	?
+927	2	rain	NONE	?	?
+927	2	rain water; water	NONE	?	?
+927	2	land	NONE	?	?
+927	2	plants	NONE	?	?
+927	2	trees	NONE	?	?
+927	3	rain	NONE	?	?
+927	3	rain water; water	NONE	?	?
+927	3	land	NONE	?	?
+927	3	plants	NONE	?	?
+927	3	trees	NONE	?	?
+927	4	rain	NONE	?	?
+927	4	rain water; water	NONE	?	?
+927	4	land	NONE	?	?
+927	4	plants	NONE	?	?
+927	4	trees	NONE	?	?
+927	5	rain	NONE	?	?
+927	5	rain water; water	MOVE	?	plants
+927	5	land	MOVE	?	plants
+927	5	plants	NONE	?	?
+927	5	trees	NONE	?	?
+927	6	rain	NONE	?	?
+927	6	rain water; water	NONE	?	?
+927	6	land	NONE	?	?
+927	6	plants	NONE	?	?
+927	6	trees	NONE	?	?
+932	1	water	NONE	?	?
+932	1	rocks	NONE	?	?
+932	1	chemicals	NONE	?	?
+932	1	oxygen	NONE	?	?
+932	2	water	NONE	?	?
+932	2	rocks	NONE	?	?
+932	2	chemicals	NONE	?	?
+932	2	oxygen	NONE	?	?
+932	3	water	NONE	?	?
+932	3	rocks	NONE	?	?
+932	3	chemicals	NONE	?	?
+932	3	oxygen	NONE	?	?
+932	4	water	NONE	?	?
+932	4	rocks	NONE	?	?
+932	4	chemicals	NONE	?	?
+932	4	oxygen	NONE	?	?
+932	5	water	NONE	?	?
+932	5	rocks	NONE	?	?
+932	5	chemicals	NONE	?	?
+932	5	oxygen	MOVE	?	rocks
+932	6	water	NONE	?	?
+932	6	rocks	NONE	?	?
+932	6	chemicals	NONE	?	?
+932	6	oxygen	NONE	?	?
+933	1	water	NONE	?	?
+933	1	carbon dioxide	CREATE	-	?
+933	1	mineral based material	CREATE	-	?
+933	1	rock	NONE	?	?
+933	2	water	DESTROY	?	-
+933	2	carbon dioxide	NONE	?	?
+933	2	mineral based material	NONE	?	?
+933	2	rock	NONE	?	?
+933	3	water	NONE	?	?
+933	3	carbon dioxide	NONE	?	?
+933	3	mineral based material	NONE	?	?
+933	3	rock	NONE	?	?
+933	4	water	NONE	?	?
+933	4	carbon dioxide	NONE	?	?
+933	4	mineral based material	NONE	?	?
+933	4	rock	NONE	?	?
+933	5	water	NONE	?	?
+933	5	carbon dioxide	NONE	?	?
+933	5	mineral based material	NONE	?	?
+933	5	rock	NONE	?	?

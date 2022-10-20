@@ -1,0 +1,40 @@
+4	1	plants	NONE	?	?
+4	2	plants	MOVE	?	sediment
+4	3	plants	NONE	sediment	sediment
+4	4	plants	NONE	sediment	sediment
+4	5	plants	NONE	sediment	sediment
+4	6	plants	NONE	sediment	sediment
+4	7	plants	NONE	sediment	sediment
+4	8	plants	MOVE	sediment	one mile underground
+4	9	plants	NONE	one mile underground	one mile underground
+4	10	plants	DESTROY	one mile underground	-
+4	1	bacteria	NONE	?	?
+4	2	bacteria	NONE	?	?
+4	3	bacteria	MOVE	?	sediment
+4	4	bacteria	NONE	sediment	sediment
+4	5	bacteria	NONE	sediment	sediment
+4	6	bacteria	NONE	sediment	sediment
+4	7	bacteria	NONE	sediment	sediment
+4	8	bacteria	NONE	sediment	sediment
+4	9	bacteria	NONE	sediment	sediment
+4	10	bacteria	DESTROY	sediment	-
+4	1	sediment	NONE	?	?
+4	2	sediment	NONE	?	?
+4	3	sediment	NONE	?	?
+4	4	sediment	NONE	?	?
+4	5	sediment	NONE	?	?
+4	6	sediment	NONE	?	?
+4	7	sediment	NONE	?	?
+4	8	sediment	MOVE	?	underground
+4	9	sediment	NONE	underground	underground
+4	10	sediment	NONE	underground	underground
+4	1	oil	NONE	-	-
+4	2	oil	NONE	-	-
+4	3	oil	NONE	-	-
+4	4	oil	NONE	-	-
+4	5	oil	NONE	-	-
+4	6	oil	NONE	-	-
+4	7	oil	NONE	-	-
+4	8	oil	NONE	-	-
+4	9	oil	NONE	-	-
+4	10	oil	CREATE	-	underground

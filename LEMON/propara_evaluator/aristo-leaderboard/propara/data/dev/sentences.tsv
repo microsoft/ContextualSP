@@ -1,0 +1,290 @@
+4	1	Plants die.
+4	2	They are buried in sediment.
+4	3	Bacteria is buried in the sediment.
+4	4	Large amounts of sediment gradually pile on top of the original sediment.
+4	5	Pressure builds up.
+4	6	Heat increases.
+4	7	The chemical structure of the buried sediment and plants changes.
+4	8	The sediment and plants are at least one mile underground.
+4	9	The buried area is extremely hot.
+4	10	More chemical changes happen and the buried material becomes oil.
+5	1	Algae and plankton die.
+5	2	The dead algae and plankton end up part of sediment on a seafloor.
+5	3	The sediment breaks down.
+5	4	The bottom layers of sediment become compacted by pressure.
+5	5	Higher pressure causes the sediment to heat up.
+5	6	The heat causes chemical processes.
+5	7	The material becomes a liquid.
+5	8	Is known as oil.
+5	9	Oil moves up through rock.
+272	1	A fuel goes into the generator.
+272	2	The generator converts mechanical energy into electrical energy.
+272	3	A magnet moves near a wire.
+272	4	A steady flow of electrons is C.
+272	5	Electricity flows through a wire.
+272	6	Electricity comes out of the generator.
+349	1	Something happens to produce a sound.
+349	2	The sound travels in waves.
+349	3	The sound waves hit an object.
+349	4	The object absorbs some of the sound waves.
+349	5	Some of the sound waves bounce off of the object.
+349	6	The reflected sound waves can be heard, though they have slightly different properties than the original sound.
+349	7	The sound continues to bounce off of things and produce echoes until it is totally absorbed or dissipated.
+375	1	Electricity enters the computer.
+375	2	Some electricity becomes light.
+375	3	Some light becomes heat when it hits something.
+375	4	Some electricity becomes motion in a hard drive, dvd drive or fan.
+375	5	Motion energy also becomes heat.
+388	1	Waters flows downwards thanks to gravity.
+388	2	Enters the dam at high pressure.
+388	3	The moving water spins the turbines in the power plant.
+388	4	The turbines turn the generators.
+388	5	The generators spin, and produce electricity.
+388	6	The water leaves the dam at the bottom.
+390	1	A reservoir is formed.
+390	2	The collects water converting the water's from kinectic to potential.
+390	3	The water is forced through a turbine under the reservoir.
+390	4	The turbine spins and so does the generator connected to it.
+390	5	The water's energy is turned into electrical energy.
+390	6	The transformer converts electrical energy from the generator to a high voltage.
+390	7	The national grid uses high voltages to transmit electricity through the power lines.
+394	1	Fuel produces heat.
+394	2	Water is boiled to make steam.
+394	3	Steam spins turbine.
+394	4	Generator is turned.
+394	5	Makes electricity.
+394	6	Electricity transfers to transformers.
+394	7	Produces the correct voltage.
+396	1	Uranium fuel is placed in the nuclear reactor.
+396	2	The uranium atoms are split (fission) to produce heat.
+396	3	The heat is used to turn water into steam.
+396	4	The steam drives a turbine.
+396	5	The turbine spins a genator.
+396	6	The spinning generator creates electricity.
+430	1	Trash is made during household activities.
+430	2	Trash is collected within the house.
+430	3	Sometimes trash is sorted into recycling.
+430	4	Trash is put out at the curbside.
+430	5	The city collects the trash.
+430	6	The trash is placed into a truck.
+430	7	The truck drives to a landfill.
+430	8	The trash is unloaded.
+430	9	Sometimes the trash might be sorted more.
+430	10	The trash is put into the landfill.
+431	1	Trash is put into a household trashbag.
+431	2	The trashbags are thrown into a large outdoor trashcan.
+431	3	The trashcan is emptied by a large trash truck.
+431	4	The trash truck travels to the landfill.
+431	5	Unloads all the trash the truck has collected.
+432	1	Trash is deposited in a large can or in bags outside of the house.
+432	2	The trash is picked up by workers who put it on a garbage truck.
+432	3	The garbage truck is driven to a sorting center.
+432	4	The garbage is sorted.
+432	5	Some of the garbage is saved for recycling.
+432	6	The rest of the garbage is driven to the landfill.
+445	1	The magma comes out from a volcano.
+445	2	The magma cools and becomes a rock.
+445	3	Over time the rock picks up sediment which changes the type of rock.
+445	4	This creates a sedimentary rock.
+445	5	The heat from inside and outside can cook a rock.
+445	6	This heat forms a third kind of rock.
+445	7	The cycle continues around the three types of rocks.
+446	1	Rock begins as magma from a volcano.
+446	2	The magma cools.
+446	3	Crystals form and the magma become igneous rocks.
+446	4	The igneous rocks break down into sediment become sedimentary rocks.
+446	5	If subjected to heat and/or pressure from plate-tectonic activity the sedimentary rocks become metamorphic rock.
+446	6	The metaphoric rocks melt becoming magma again.
+509	1	Fuel is injected into the chamber.
+509	2	The piston moves upwards.
+509	3	Compresses the fuel.
+509	4	The fuel explodes.
+509	5	Chemical energy becomes thermal energy.
+509	6	The explosion pushes the piston downward.
+509	7	The piston moves upwards again.
+509	8	The spent fuel is ejected.
+509	9	New fuel is injected.
+509	10	The cycle repeats.
+514	1	Snow falls in an area for a very long time.
+514	2	The snow builds up for a very long time.
+514	3	The snow starts to become packed very firmly.
+514	4	The snow becomes something that's more like ice.
+514	5	Air pockets in the mass continue to grow smaller.
+514	6	The mass becomes solid and heavy enough to be called a glacier.
+514	7	The glacier moves because of gravity.
+542	1	Waste builds up in the blood.
+542	2	Blood enters the kidney.
+542	3	Blood passes through nephrons in the kidney.
+542	4	Different kinds of waste are momentarily trapped in the kidney.
+542	5	Cleaned blood flows out of the kidney.
+542	6	Filtered waste accumulates in liquid form (urine).
+542	7	Urine flows out of the kidney into the bladder.
+543	1	Blood is carried into the kidneys by the renal artery.
+543	2	Kidneys filter that blood tiny filters inside the kidneys called nephrons.
+543	3	Remove the waste from the blood.
+543	4	The waste that is collected combines with water to become urine.
+543	5	As each kidney makes urine, the urine slides down a long tube called the ureter.
+543	6	Collects in the bladder.
+543	7	The filtered blood is sent back into the body.
+544	1	They take in fluids and liquids.
+544	2	They process the fluid.
+544	3	They take out the toxins.
+544	4	Produce urine.
+544	5	Urine is released.
+544	6	The nutrients are returned to the body.
+608	1	Fuel enters the engine through a carburetor or fuel injectors.
+608	2	Air is let into the engine at the same time as the fuel.
+608	3	The piston in the engine moves downwards compressing the air and fuel mixture.
+608	4	A spark plug causes a spark at the bottom stroke of the piston.
+608	5	An explosion occurs in the engine forcing the piston back upwards.
+608	6	As the piston goes up the valves for fuel and air open again.
+608	7	Fuel and air go in, and the process repeats.
+608	8	The moving pistons are attached via connecting rods to a shaft.
+608	9	The shaft rotates out of the motor to turn the piston energy into rotational energy.
+609	1	The piston starts at the top, the intake valve opens, and the piston moves down to let the engine take in a cylinder-full of air and gasoline.
+609	2	Then the piston moves back up to compress this fuel/air mixture.
+609	3	Compression makes the explosion more powerful.
+609	4	When the piston reaches the top of its stroke, the spark plug emits a spark to ignite the gasoline.
+609	5	The gasoline charge in the cylinder explodes, driving the piston down.
+609	6	Once the piston hits the bottom of its stroke, the exhaust valve opens and the exhaust leaves the cylinder to go out the tailpipe.
+610	1	Fuels burns in the combustion chamber.
+610	2	The burning fuel creates energy.
+610	3	The upward motion cause air to be released into the cylinder.
+610	4	The piston compresses the air.
+610	5	A spark ignites the fuel and air inside the cylinder.
+610	6	The pressure pushes the piston down.
+610	7	The exhaust valve opens.
+610	8	The piston pushes the air out of the cylinder.
+629	1	People put trash in a plastic bag.
+629	2	The plastic bag is put into a garbage can.
+629	3	The garbage can is rolled outside.
+629	4	The garbage truck comes to the house.
+629	5	Workers take the plastic bag out of the garbage can and place it in the truck.
+629	6	The truck drives to the landfill.
+629	7	The truck dumps the trash into the landfill.
+630	1	Trash is placed into a garbage container in the house.
+630	2	The trash is moved to a centralized container for the house.
+630	3	Trash is picked up by a sanitation company.
+630	4	The trash is combined in a large truck with trash from all around the city.
+630	5	The truck goes to the landfill.
+630	6	The truck dumps the trash into the landfill.
+631	1	Trash is bagged up.
+631	2	Bags get carried out to the trashcan.
+631	3	Trashcan is put at the curb once a week.
+631	4	Can gets emptied into trash truck.
+631	5	As the truck fills it will compact the trash.
+631	6	When the truck is full it heads to the landfill.
+631	7	The truck dumps its load into the landfill.
+632	1	Electricity comes into the computer from the plug.
+632	2	The electricity runs the components in the computer.
+632	3	Electricity turns the fan to keep the components cool.
+632	4	Heat is released from the computer.
+632	5	Electricity runs the computer's display.
+632	6	Light is formed from the electricity.
+634	1	Electricity enters the power supply unit.
+634	2	The power supply gives electricity to transistors.
+634	3	The power supply gives electricity to the CPU.
+634	4	The systems use electricity to complete tasks.
+634	5	The signals they complete are sent out as visual signals.
+634	6	The energy is used to complete computations.
+1002	1	Add dirty laundry to the washing machine.
+1002	2	Add laundry detergent to the washing machine.
+1002	3	Select the setting for the load of laundry.
+1002	4	Close the door of the washing machine.
+1002	5	Turn on the washing machine.
+1007	1	A plant dies and withers.
+1007	2	The dead plant starts to draw microbes.
+1007	3	The microbes break down the material.
+1007	4	Forms decay.
+1007	5	The resulting material disappears.
+1007	6	The plant becomes one with the soil.
+1008	1	A plant dies.
+1008	2	Bacteria from the ground migrate to the plant material.
+1008	3	Bacteria release enzymes onto the plant material.
+1008	4	The enzymes break down the plant cells to simpler components.
+1008	5	The bacteria absorb the resulting components.
+1112	1	Dissolution of limestone forms caves.
+1112	2	Rain gets carbon dioxide from the air.
+1112	3	When rain goes into soil it creates an acid.
+1112	4	The acid dissolves the limestone along cracks.
+1112	5	Some will dissolve enough to form caves.
+1113	1	Rainwater picks up carbon dioxide from the air.
+1113	2	Rainwater goes into soil.
+1113	3	Water with carbon dioxide percolates through soil.
+1113	4	The water becomes a weak acid.
+1113	5	The water dissolves limestone.
+1113	6	Caves form where the limestone was dissolved.
+1114	1	Rainwater falls onto the soil.
+1114	2	The rainwater seeps into the soil.
+1114	3	The water starts going into the bedrock below.
+1114	4	The bedrock erodes after much time passes.
+1114	5	The bedrock forms funnels.
+1114	6	The funnels grow larger and wider.
+1114	7	The funnels finally become caves.
+1197	1	Food enters the mouth.
+1197	2	Food mixes with saliva.
+1197	3	Food is swallowed.
+1197	4	Enzymes in the stomach break down the food.
+1197	5	The food moves to the small intestine.
+1197	6	Hormones from the pancreas move to the small intestine.
+1197	7	The hormones create the amount of sugar in the blood from the food.
+1197	8	The sugar in the blood travels to the body.
+1197	9	The sugar provides energy for the muscles.
+1226	1	Food is entered into the gut.
+1226	2	The pancreas secretes enyzmes.
+1226	3	Some of the enzymes break down fat.
+1226	4	It breaks down carbohydrates.
+1226	5	The broken down food can be passed.
+1226	6	Absorbed by the body.
+1259	1	A spider must find a suitable place for its web.
+1259	2	The spider produces a thread from one its glands from one point to another.
+1259	3	The spider does this in several points.
+1259	4	The spider threads through each of the other threads forming a web.
+1259	5	The spider reinforces the web.
+1303	1	Food or milk that could spoil easily is brought in.
+1303	2	Through methods of heating the food is treated.
+1303	3	The microbes that may proliferate in the food are destroyed.
+1303	4	Depending on the treatment this happens a few more times.
+1303	5	The food is considered pasteurized.
+708	1	Rocks are constantly worn down and broken by erosion.
+708	2	Erosion can be wind or water.
+708	3	Erosion breaks them down to sediment.
+708	4	Sediment gets compressed and heated or gets buried.
+708	5	When sediment is buried it then gets melted.
+708	6	When sediment is compressed it becomes metamorphic rock.
+708	7	Metamorphic rock gets buried.
+708	8	Buried metamorphic rock gets melted.
+708	9	Melted rock eventually cools.
+708	10	Rock pushed back to the surface.
+716	1	Blood filled with waste flows into the kidneys.
+716	2	The kidneys are made up of filtering units called nephrons.
+716	3	The nephrons in the kidneys filter the blood.
+716	4	Produce urine.
+716	5	The urine leaves the kidneys.
+716	6	The cleaned blood goes back into the body.
+758	1	An engine must be powered by gas or some fuel source.
+758	2	The fuel source will power an alternator.
+758	3	An alternator will convert mechanical energy in to measurable electrical energy.
+758	4	Electrical energy will be channeled and moved.
+758	5	The electrons will run through to the outlets of the generator.
+758	6	When you plug something in to the outlets of the generator, a flow of current will conduct electrons.
+825	1	Uranium is underground.
+825	2	Uranium is dug up.
+825	3	Uranium is brought to nuclear power plants.
+825	4	Uranium atoms are split into two smaller atoms.
+825	5	Heat energy is released from the uranium.
+825	6	The heat energy turns water into steam in a nuclear reactor.
+825	7	The steam turns big turbines.
+825	8	The turbines drive generators.
+825	9	The generators make electricity.
+825	10	The steam turns back into water.
+826	1	A nuclear reactor generates heat by nuclear fission.
+826	2	The heat created raises steam.
+826	3	The steam runs through turbines.
+826	4	The turbines generate electricity.
+826	5	The electricity leaves the station.
+1260	1	The spider picks a suitable place.
+1260	2	The spider produces sticky silk from its abdomen.
+1260	3	The spider attaches it to objects where it wants to build the web.
+1260	4	The spider strings this silk back and forth between objects.
+1260	5	A web is created.

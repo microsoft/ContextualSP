@@ -1,0 +1,1204 @@
+4	1	bacteria	NONE	?	?
+4	2	bacteria	NONE	?	?
+4	3	bacteria	MOVE	?	sediment
+4	4	bacteria	NONE	sediment	sediment
+4	5	bacteria	NONE	sediment	sediment
+4	6	bacteria	NONE	sediment	sediment
+4	7	bacteria	NONE	sediment	sediment
+4	8	bacteria	NONE	sediment	sediment
+4	9	bacteria	NONE	sediment	sediment
+4	10	bacteria	DESTROY	sediment	-
+4	1	oil	NONE	-	-
+4	2	oil	NONE	-	-
+4	3	oil	NONE	-	-
+4	4	oil	NONE	-	-
+4	5	oil	NONE	-	-
+4	6	oil	NONE	-	-
+4	7	oil	NONE	-	-
+4	8	oil	NONE	-	-
+4	9	oil	NONE	-	-
+4	10	oil	CREATE	-	underground
+4	1	plants	NONE	?	?
+4	2	plants	MOVE	?	sediment
+4	3	plants	NONE	sediment	sediment
+4	4	plants	NONE	sediment	sediment
+4	5	plants	NONE	sediment	sediment
+4	6	plants	NONE	sediment	sediment
+4	7	plants	NONE	sediment	sediment
+4	8	plants	MOVE	sediment	one mile underground
+4	9	plants	NONE	one mile underground	one mile underground
+4	10	plants	DESTROY	one mile underground	-
+4	1	sediment	NONE	?	?
+4	2	sediment	NONE	?	?
+4	3	sediment	NONE	?	?
+4	4	sediment	NONE	?	?
+4	5	sediment	NONE	?	?
+4	6	sediment	NONE	?	?
+4	7	sediment	NONE	?	?
+4	8	sediment	MOVE	?	underground
+4	9	sediment	NONE	underground	underground
+4	10	sediment	NONE	underground	underground
+5	1	algae	MOVE	?	seafloor
+5	2	algae	DESTROY	seafloor	-
+5	3	algae	NONE	-	-
+5	4	algae	NONE	-	-
+5	5	algae	NONE	-	-
+5	6	algae	NONE	-	-
+5	7	algae	NONE	-	-
+5	8	algae	NONE	-	-
+5	9	algae	NONE	-	-
+5	1	material	NONE	-	-
+5	2	material	NONE	-	-
+5	3	material	NONE	-	-
+5	4	material	NONE	-	-
+5	5	material	NONE	-	-
+5	6	material	CREATE	-	seafloor
+5	7	material	DESTROY	seafloor	-
+5	8	material	NONE	-	-
+5	9	material	NONE	-	-
+5	1	oil	NONE	-	-
+5	2	oil	NONE	-	-
+5	3	oil	NONE	-	-
+5	4	oil	NONE	-	-
+5	5	oil	NONE	-	-
+5	6	oil	NONE	-	-
+5	7	oil	CREATE	-	rock
+5	8	oil	NONE	rock	rock
+5	9	oil	NONE	rock	rock
+5	1	plankton	MOVE	?	seafloor
+5	2	plankton	DESTROY	seafloor	-
+5	3	plankton	NONE	-	-
+5	4	plankton	NONE	-	-
+5	5	plankton	NONE	-	-
+5	6	plankton	NONE	-	-
+5	7	plankton	NONE	-	-
+5	8	plankton	NONE	-	-
+5	9	plankton	NONE	-	-
+5	1	sediment	NONE	seafloor	seafloor
+5	2	sediment	NONE	seafloor	seafloor
+5	3	sediment	NONE	seafloor	seafloor
+5	4	sediment	NONE	seafloor	seafloor
+5	5	sediment	NONE	seafloor	seafloor
+5	6	sediment	DESTROY	seafloor	-
+5	7	sediment	NONE	-	-
+5	8	sediment	NONE	-	-
+5	9	sediment	NONE	-	-
+272	1	electrical energy	NONE	-	-
+272	2	electrical energy	CREATE	-	generator
+272	3	electrical energy	NONE	generator	generator
+272	4	electrical energy	NONE	generator	generator
+272	5	electrical energy	MOVE	generator	wire
+272	6	electrical energy	MOVE	wire	generator
+272	1	flow of electrons ; electricity	NONE	-	-
+272	2	flow of electrons ; electricity	NONE	-	-
+272	3	flow of electrons ; electricity	NONE	-	-
+272	4	flow of electrons ; electricity	CREATE	-	wire
+272	5	flow of electrons ; electricity	NONE	wire	wire
+272	6	flow of electrons ; electricity	NONE	wire	wire
+272	1	fuel	MOVE	?	generator
+272	2	fuel	DESTROY	generator	-
+272	3	fuel	NONE	-	-
+272	4	fuel	NONE	-	-
+272	5	fuel	NONE	-	-
+272	6	fuel	NONE	-	-
+272	1	magnet	NONE	?	?
+272	2	magnet	NONE	?	?
+272	3	magnet	MOVE	?	near a wire
+272	4	magnet	MOVE	near a wire	generator
+272	5	magnet	NONE	generator	generator
+272	6	magnet	NONE	generator	generator
+272	1	mechanical energy	MOVE	?	generator
+272	2	mechanical energy	DESTROY	generator	-
+272	3	mechanical energy	NONE	-	-
+272	4	mechanical energy	NONE	-	-
+272	5	mechanical energy	NONE	-	-
+272	6	mechanical energy	NONE	-	-
+349	1	echoes	NONE	-	-
+349	2	echoes	NONE	-	-
+349	3	echoes	NONE	-	-
+349	4	echoes	NONE	-	-
+349	5	echoes	NONE	-	-
+349	6	echoes	NONE	-	-
+349	7	echoes	CREATE	-	?
+349	1	sound ; sound waves	CREATE	-	?
+349	2	sound ; sound waves	NONE	?	?
+349	3	sound ; sound waves	MOVE	?	object
+349	4	sound ; sound waves	NONE	object	object
+349	5	sound ; sound waves	MOVE	object	?
+349	6	sound ; sound waves	NONE	?	?
+349	7	sound ; sound waves	DESTROY	?	-
+375	1	electricity	MOVE	?	computer
+375	2	electricity	NONE	computer	computer
+375	3	electricity	NONE	computer	computer
+375	4	electricity	NONE	computer	computer
+375	5	electricity	NONE	computer	computer
+375	1	heat	NONE	-	-
+375	2	heat	NONE	-	-
+375	3	heat	CREATE	-	computer
+375	4	heat	NONE	computer	computer
+375	5	heat	NONE	computer	computer
+375	1	light	NONE	-	-
+375	2	light	CREATE	-	computer
+375	3	light	NONE	computer	computer
+375	4	light	NONE	computer	computer
+375	5	light	NONE	computer	computer
+375	1	motion	NONE	-	-
+375	1	motion energy	NONE	-	-
+375	2	motion	NONE	-	-
+375	2	motion energy	NONE	-	-
+375	3	motion	NONE	-	-
+375	3	motion energy	NONE	-	-
+375	4	motion	CREATE	-	hard drive , dvd drive or fan
+375	4	motion energy	CREATE	-	hard drive , dvd drive or fan
+375	5	motion	NONE	hard drive , dvd drive or fan	hard drive , dvd drive or fan
+375	5	motion energy	DESTROY	hard drive , dvd drive or fan	-
+388	1	electricity	NONE	-	-
+388	2	electricity	NONE	-	-
+388	3	electricity	NONE	-	-
+388	4	electricity	NONE	-	-
+388	5	electricity	CREATE	-	generator
+388	6	electricity	NONE	generator	generator
+388	1	generators	NONE	power plant	power plant
+388	2	generators	NONE	power plant	power plant
+388	3	generators	NONE	power plant	power plant
+388	4	generators	NONE	power plant	power plant
+388	5	generators	NONE	power plant	power plant
+388	6	generators	NONE	power plant	power plant
+388	1	turbines	NONE	power plant	power plant
+388	2	turbines	NONE	power plant	power plant
+388	3	turbines	NONE	power plant	power plant
+388	4	turbines	NONE	power plant	power plant
+388	5	turbines	NONE	power plant	power plant
+388	6	turbines	NONE	power plant	power plant
+388	1	waters;water	NONE	?	?
+388	2	waters;water	MOVE	?	dam
+388	3	waters;water	MOVE	dam	turbine
+388	4	waters;water	NONE	turbine	turbine
+388	5	waters;water	NONE	turbine	turbine
+388	6	waters;water	MOVE	turbine	?
+390	1	electrical energy	NONE	-	-
+390	2	electrical energy	NONE	-	-
+390	3	electrical energy	NONE	-	-
+390	4	electrical energy	NONE	-	-
+390	5	electrical energy	CREATE	-	generator
+390	6	electrical energy	DESTROY	generator	-
+390	7	electrical energy	NONE	-	-
+390	1	generator	NONE	?	?
+390	2	generator	NONE	?	?
+390	3	generator	NONE	?	?
+390	4	generator	MOVE	?	reservoir
+390	5	generator	NONE	reservoir	reservoir
+390	6	generator	NONE	reservoir	reservoir
+390	7	generator	NONE	reservoir	reservoir
+390	1	high voltage ; electricity	NONE	-	-
+390	2	high voltage ; electricity	NONE	-	-
+390	3	high voltage ; electricity	NONE	-	-
+390	4	high voltage ; electricity	NONE	-	-
+390	5	high voltage ; electricity	NONE	-	-
+390	6	high voltage ; electricity	CREATE	-	transformer
+390	7	high voltage ; electricity	MOVE	transformer	power line
+390	1	reservoir	CREATE	-	?
+390	2	reservoir	NONE	?	?
+390	3	reservoir	NONE	?	?
+390	4	reservoir	NONE	?	?
+390	5	reservoir	NONE	?	?
+390	6	reservoir	NONE	?	?
+390	7	reservoir	NONE	?	?
+390	1	turbine	NONE	reservoir	reservoir
+390	2	turbine	NONE	reservoir	reservoir
+390	3	turbine	NONE	reservoir	reservoir
+390	4	turbine	NONE	reservoir	reservoir
+390	5	turbine	NONE	reservoir	reservoir
+390	6	turbine	NONE	reservoir	reservoir
+390	7	turbine	NONE	reservoir	reservoir
+390	1	water	MOVE	?	reservoir
+390	2	water	NONE	reservoir	reservoir
+390	3	water	MOVE	reservoir	turbine
+390	4	water	NONE	turbine	turbine
+390	5	water	MOVE	turbine	?
+390	6	water	NONE	?	?
+390	7	water	NONE	?	?
+390	1	water's energy	NONE	-	-
+390	2	water's energy	NONE	-	-
+390	3	water's energy	NONE	-	-
+390	4	water's energy	CREATE	-	turbine
+390	5	water's energy	DESTROY	turbine	-
+390	6	water's energy	NONE	-	-
+390	7	water's energy	NONE	-	-
+394	1	electricity	NONE	-	-
+394	2	electricity	NONE	-	-
+394	3	electricity	NONE	-	-
+394	4	electricity	NONE	-	-
+394	5	electricity	CREATE	-	generator
+394	6	electricity	MOVE	generator	transformer
+394	7	electricity	NONE	transformer	transformer
+394	1	fuel	DESTROY	?	-
+394	2	fuel	NONE	-	-
+394	3	fuel	NONE	-	-
+394	4	fuel	NONE	-	-
+394	5	fuel	NONE	-	-
+394	6	fuel	NONE	-	-
+394	7	fuel	NONE	-	-
+394	1	generator	NONE	?	?
+394	2	generator	NONE	?	?
+394	3	generator	NONE	?	?
+394	4	generator	NONE	?	?
+394	5	generator	NONE	?	?
+394	6	generator	NONE	?	?
+394	7	generator	NONE	?	?
+394	1	heat	CREATE	-	?
+394	2	heat	DESTROY	?	-
+394	3	heat	NONE	-	-
+394	4	heat	NONE	-	-
+394	5	heat	NONE	-	-
+394	6	heat	NONE	-	-
+394	7	heat	NONE	-	-
+394	1	steam	NONE	-	-
+394	2	steam	CREATE	-	turbine
+394	3	steam	MOVE	turbine	?
+394	4	steam	NONE	?	?
+394	5	steam	NONE	?	?
+394	6	steam	NONE	?	?
+394	7	steam	NONE	?	?
+394	1	turbine	NONE	generator	generator
+394	2	turbine	NONE	generator	generator
+394	3	turbine	NONE	generator	generator
+394	4	turbine	NONE	generator	generator
+394	5	turbine	NONE	generator	generator
+394	6	turbine	NONE	generator	generator
+394	7	turbine	NONE	generator	generator
+394	1	voltage	NONE	-	-
+394	2	voltage	NONE	-	-
+394	3	voltage	NONE	-	-
+394	4	voltage	NONE	-	-
+394	5	voltage	NONE	-	-
+394	6	voltage	NONE	-	-
+394	7	voltage	CREATE	-	transformer
+394	1	water	NONE	?	?
+394	2	water	DESTROY	?	-
+394	3	water	NONE	-	-
+394	4	water	NONE	-	-
+394	5	water	NONE	-	-
+394	6	water	NONE	-	-
+394	7	water	NONE	-	-
+396	1	electricity	NONE	-	-
+396	2	electricity	NONE	-	-
+396	3	electricity	NONE	-	-
+396	4	electricity	NONE	-	-
+396	5	electricity	NONE	-	-
+396	6	electricity	CREATE	-	generator
+396	1	heat	NONE	-	-
+396	2	heat	CREATE	-	nuclear reactor
+396	3	heat	DESTROY	nuclear reactor	-
+396	4	heat	NONE	-	-
+396	5	heat	NONE	-	-
+396	6	heat	NONE	-	-
+396	1	steam	NONE	-	-
+396	2	steam	NONE	-	-
+396	3	steam	CREATE	-	turbine
+396	4	steam	NONE	turbine	turbine
+396	5	steam	NONE	turbine	turbine
+396	6	steam	NONE	turbine	turbine
+396	1	uranium atoms	CREATE	-	?
+396	1	uranium fuel	DESTROY	nuclear reactor	-
+396	2	uranium atoms	DESTROY	?	-
+396	2	uranium fuel	NONE	-	-
+396	3	uranium atoms	NONE	-	-
+396	3	uranium fuel	NONE	-	-
+396	4	uranium atoms	NONE	-	-
+396	4	uranium fuel	NONE	-	-
+396	5	uranium atoms	NONE	-	-
+396	5	uranium fuel	NONE	-	-
+396	6	uranium atoms	NONE	-	-
+396	6	uranium fuel	NONE	-	-
+396	1	water	NONE	?	?
+396	2	water	NONE	?	?
+396	3	water	DESTROY	?	-
+396	4	water	NONE	-	-
+396	5	water	NONE	-	-
+396	6	water	NONE	-	-
+430	1	Recycling	NONE	-	-
+430	2	Recycling	NONE	-	-
+430	3	Recycling	CREATE	-	?
+430	4	Recycling	NONE	?	?
+430	5	Recycling	NONE	?	?
+430	6	Recycling	MOVE	?	truck
+430	7	Recycling	MOVE	truck	?
+430	8	Recycling	NONE	?	?
+430	9	Recycling	NONE	?	?
+430	10	Recycling	NONE	?	?
+430	1	trash	CREATE	-	house
+430	2	trash	NONE	house	house
+430	3	trash	NONE	house	house
+430	4	trash	MOVE	house	curbside
+430	5	trash	NONE	curbside	curbside
+430	6	trash	MOVE	curbside	truck
+430	7	trash	MOVE	truck	landfill
+430	8	trash	NONE	landfill	landfill
+430	9	trash	NONE	landfill	landfill
+430	10	trash	NONE	landfill	landfill
+430	1	truck	NONE	?	?
+430	2	truck	NONE	?	?
+430	3	truck	NONE	?	?
+430	4	truck	NONE	?	?
+430	5	truck	NONE	?	?
+430	6	truck	MOVE	?	curbside
+430	7	truck	MOVE	curbside	landfill
+430	8	truck	NONE	landfill	landfill
+430	9	truck	MOVE	landfill	?
+430	10	truck	NONE	?	?
+431	1	trash	MOVE	house	trashbag
+431	1	trash truck	NONE	?	?
+431	2	trash	MOVE	trashbag	trashcan
+431	2	trash truck	NONE	?	?
+431	3	trash	MOVE	trashcan	trash truck
+431	3	trash truck	NONE	?	?
+431	4	trash	MOVE	trash truck	landfill
+431	4	trash truck	MOVE	?	landfill
+431	5	trash	NONE	landfill	landfill
+431	5	trash truck	NONE	landfill	landfill
+431	1	trashbags	NONE	house	house
+431	2	trashbags	MOVE	house	trashcan
+431	3	trashbags	MOVE	trashcan	trash truck
+431	4	trashbags	MOVE	trash truck	landfill
+431	5	trashbags	NONE	landfill	landfill
+432	1	garbage	MOVE	?	can or bag
+432	1	garbage truck	NONE	?	?
+432	2	garbage	MOVE	can or bag	truck
+432	2	garbage truck	MOVE	?	outside of the house
+432	3	garbage	MOVE	truck	sort center
+432	3	garbage truck	MOVE	outside of the house	sort center
+432	4	garbage	NONE	sort center	sort center
+432	4	garbage truck	MOVE	sort center	?
+432	5	garbage	NONE	sort center	sort center
+432	5	garbage truck	NONE	?	?
+432	6	garbage	MOVE	sort center	landfill
+432	6	garbage truck	MOVE	?	landfill
+432	1	recycling	NONE	-	-
+432	2	recycling	NONE	-	-
+432	3	recycling	NONE	-	-
+432	4	recycling	NONE	-	-
+432	5	recycling	CREATE	-	sort center
+432	6	recycling	MOVE	sort center	?
+432	1	trash	MOVE	?	can or bag
+432	2	trash	MOVE	can or bag	truck
+432	3	trash	MOVE	truck	sort center
+432	4	trash	NONE	sort center	sort center
+432	5	trash	NONE	sort center	sort center
+432	6	trash	MOVE	sort center	landfill
+445	1	magma	CREATE	-	volcano
+445	2	magma	DESTROY	volcano	-
+445	3	magma	NONE	-	-
+445	4	magma	NONE	-	-
+445	5	magma	NONE	-	-
+445	6	magma	NONE	-	-
+445	7	magma	NONE	-	-
+445	1	rock	NONE	-	-
+445	2	rock	CREATE	-	?
+445	3	rock	DESTROY	?	-
+445	4	rock	NONE	-	-
+445	5	rock	NONE	-	-
+445	6	rock	NONE	-	-
+445	7	rock	NONE	-	-
+445	1	sedimentary rock	NONE	-	-
+445	2	sedimentary rock	NONE	-	-
+445	3	sedimentary rock	CREATE	-	?
+445	4	sedimentary rock	NONE	?	?
+445	5	sedimentary rock	NONE	?	?
+445	6	sedimentary rock	DESTROY	?	-
+445	7	sedimentary rock	NONE	-	-
+445	1	third kind of rock	NONE	-	-
+445	2	third kind of rock	NONE	-	-
+445	3	third kind of rock	NONE	-	-
+445	4	third kind of rock	NONE	-	-
+445	5	third kind of rock	NONE	-	-
+445	6	third kind of rock	CREATE	-	?
+445	7	third kind of rock	NONE	?	?
+446	1	crystals	NONE	-	-
+446	2	crystals	NONE	-	-
+446	3	crystals	CREATE	-	igneous rock
+446	4	crystals	MOVE	igneous rock	sedimentary rock
+446	5	crystals	MOVE	sedimentary rock	?
+446	6	crystals	NONE	?	?
+446	1	igneous rocks	NONE	-	-
+446	2	igneous rocks	NONE	-	-
+446	3	igneous rocks	CREATE	-	volcano
+446	4	igneous rocks	DESTROY	volcano	-
+446	5	igneous rocks	NONE	-	-
+446	6	igneous rocks	NONE	-	-
+446	1	magma	NONE	volcano	volcano
+446	2	magma	NONE	volcano	volcano
+446	3	magma	DESTROY	volcano	-
+446	4	magma	NONE	-	-
+446	5	magma	NONE	-	-
+446	6	magma	CREATE	-	?
+446	1	metamorphic rock	NONE	-	-
+446	2	metamorphic rock	NONE	-	-
+446	3	metamorphic rock	NONE	-	-
+446	4	metamorphic rock	NONE	-	-
+446	5	metamorphic rock	CREATE	-	?
+446	6	metamorphic rock	DESTROY	?	-
+446	1	sedimentary rocks	NONE	-	-
+446	2	sedimentary rocks	NONE	-	-
+446	3	sedimentary rocks	NONE	-	-
+446	4	sedimentary rocks	CREATE	-	?
+446	5	sedimentary rocks	DESTROY	?	-
+446	6	sedimentary rocks	NONE	-	-
+509	1	chemical energy	NONE	fuel	fuel
+509	2	chemical energy	NONE	fuel	fuel
+509	3	chemical energy	NONE	fuel	fuel
+509	4	chemical energy	NONE	fuel	fuel
+509	5	chemical energy	DESTROY	fuel	-
+509	6	chemical energy	NONE	-	-
+509	7	chemical energy	NONE	-	-
+509	8	chemical energy	NONE	-	-
+509	9	chemical energy	NONE	-	-
+509	10	chemical energy	NONE	-	-
+509	1	explosion	NONE	?	?
+509	2	explosion	NONE	?	?
+509	3	explosion	NONE	?	?
+509	4	explosion	MOVE	?	chamber
+509	5	explosion	NONE	chamber	chamber
+509	6	explosion	MOVE	chamber	?
+509	7	explosion	NONE	?	?
+509	8	explosion	NONE	?	?
+509	9	explosion	NONE	?	?
+509	10	explosion	NONE	?	?
+509	1	fuel ; spent fuel	MOVE	?	chamber
+509	2	fuel ; spent fuel	NONE	chamber	chamber
+509	3	fuel ; spent fuel	NONE	chamber	chamber
+509	4	fuel ; spent fuel	NONE	chamber	chamber
+509	5	fuel ; spent fuel	NONE	chamber	chamber
+509	6	fuel ; spent fuel	NONE	chamber	chamber
+509	7	fuel ; spent fuel	NONE	chamber	chamber
+509	8	fuel ; spent fuel	DESTROY	chamber	-
+509	9	fuel ; spent fuel	NONE	-	-
+509	10	fuel ; spent fuel	NONE	-	-
+509	1	new fuel	NONE	-	-
+509	2	new fuel	NONE	-	-
+509	3	new fuel	NONE	-	-
+509	4	new fuel	NONE	-	-
+509	5	new fuel	NONE	-	-
+509	6	new fuel	NONE	-	-
+509	7	new fuel	NONE	-	-
+509	8	new fuel	NONE	-	-
+509	9	new fuel	CREATE	-	chamber
+509	10	new fuel	NONE	chamber	chamber
+509	1	piston	NONE	?	?
+509	2	piston	MOVE	?	upward
+509	3	piston	MOVE	upward	?
+509	4	piston	NONE	?	?
+509	5	piston	NONE	?	?
+509	6	piston	MOVE	?	downward
+509	7	piston	MOVE	downward	?
+509	8	piston	NONE	?	?
+509	9	piston	NONE	?	?
+509	10	piston	NONE	?	?
+509	1	thermal energy	NONE	-	-
+509	2	thermal energy	NONE	-	-
+509	3	thermal energy	NONE	-	-
+509	4	thermal energy	NONE	-	-
+509	5	thermal energy	CREATE	-	chamber
+509	6	thermal energy	NONE	chamber	chamber
+509	7	thermal energy	NONE	chamber	chamber
+509	8	thermal energy	NONE	chamber	chamber
+509	9	thermal energy	NONE	chamber	chamber
+509	10	thermal energy	NONE	chamber	chamber
+514	1	glacier	NONE	-	-
+514	2	glacier	NONE	-	-
+514	3	glacier	NONE	-	-
+514	4	glacier	NONE	-	-
+514	5	glacier	NONE	-	-
+514	6	glacier	CREATE	-	area
+514	7	glacier	NONE	area	area
+514	1	mass	NONE	-	-
+514	2	mass	NONE	-	-
+514	3	mass	NONE	-	-
+514	4	mass	NONE	-	-
+514	5	mass	CREATE	-	area
+514	6	mass	NONE	area	area
+514	7	mass	NONE	area	area
+514	1	snow	NONE	area	area
+514	2	snow	NONE	area	area
+514	3	snow	NONE	area	area
+514	4	snow	DESTROY	area	-
+514	5	snow	NONE	-	-
+514	6	snow	NONE	-	-
+514	7	snow	NONE	-	-
+542	1	blood	NONE	?	?
+542	2	blood	MOVE	?	kidney
+542	3	blood	NONE	kidney	kidney
+542	4	blood	DESTROY	kidney	-
+542	5	blood	NONE	-	-
+542	6	blood	NONE	-	-
+542	7	blood	NONE	-	-
+542	1	cleaned blood	NONE	-	-
+542	2	cleaned blood	NONE	-	-
+542	3	cleaned blood	NONE	-	-
+542	4	cleaned blood	CREATE	-	kidney
+542	5	cleaned blood	MOVE	kidney	?
+542	6	cleaned blood	NONE	?	?
+542	7	cleaned blood	NONE	?	?
+542	1	filtered waste	NONE	-	-
+542	2	filtered waste	NONE	-	-
+542	3	filtered waste	NONE	-	-
+542	4	filtered waste	CREATE	-	kidney
+542	5	filtered waste	NONE	kidney	kidney
+542	6	filtered waste	DESTROY	kidney	-
+542	7	filtered waste	NONE	-	-
+542	1	urine	NONE	-	-
+542	2	urine	NONE	-	-
+542	3	urine	NONE	-	-
+542	4	urine	NONE	-	-
+542	5	urine	NONE	-	-
+542	6	urine	CREATE	-	kidney
+542	7	urine	MOVE	kidney	bladder
+542	1	waste	NONE	blood	blood
+542	2	waste	NONE	blood	blood
+542	3	waste	NONE	blood	blood
+542	4	waste	MOVE	blood	kidney
+542	5	waste	NONE	kidney	kidney
+542	6	waste	MOVE	kidney	urine
+542	7	waste	MOVE	urine	bladder
+543	1	blood	MOVE	renal artery	kidney
+543	2	blood	NONE	kidney	kidney
+543	3	blood	DESTROY	kidney	-
+543	4	blood	NONE	-	-
+543	5	blood	NONE	-	-
+543	6	blood	NONE	-	-
+543	7	blood	NONE	-	-
+543	1	filtered blood	NONE	-	-
+543	2	filtered blood	NONE	-	-
+543	3	filtered blood	CREATE	-	kidney
+543	4	filtered blood	NONE	kidney	kidney
+543	5	filtered blood	NONE	kidney	kidney
+543	6	filtered blood	NONE	kidney	kidney
+543	7	filtered blood	MOVE	kidney	body
+543	1	urine	NONE	-	-
+543	2	urine	NONE	-	-
+543	3	urine	NONE	-	-
+543	4	urine	CREATE	-	kidney
+543	5	urine	MOVE	kidney	ureter
+543	6	urine	MOVE	ureter	bladder
+543	7	urine	NONE	bladder	bladder
+543	1	waste	NONE	blood	blood
+543	2	waste	NONE	blood	blood
+543	3	waste	MOVE	blood	kidney
+543	4	waste	DESTROY	kidney	-
+543	5	waste	NONE	-	-
+543	6	waste	NONE	-	-
+543	7	waste	NONE	-	-
+544	1	fluids and liquids ; fluid ; nutrients	MOVE	?	kidney
+544	2	fluids and liquids ; fluid ; nutrients	NONE	kidney	kidney
+544	3	fluids and liquids ; fluid ; nutrients	NONE	kidney	kidney
+544	4	fluids and liquids ; fluid ; nutrients	NONE	kidney	kidney
+544	5	fluids and liquids ; fluid ; nutrients	MOVE	kidney	?
+544	6	fluids and liquids ; fluid ; nutrients	NONE	?	?
+544	1	toxins	NONE	fluid	fluid
+544	2	toxins	NONE	fluid	fluid
+544	3	toxins	MOVE	fluid	kidney
+544	4	toxins	DESTROY	kidney	-
+544	5	toxins	NONE	-	-
+544	6	toxins	NONE	-	-
+544	1	urine	NONE	-	-
+544	2	urine	NONE	-	-
+544	3	urine	NONE	-	-
+544	4	urine	CREATE	-	kidney
+544	5	urine	MOVE	kidney	?
+544	6	urine	NONE	?	?
+608	1	air	MOVE	?	engine
+608	2	air	NONE	engine	engine
+608	3	air	NONE	engine	engine
+608	4	air	NONE	engine	engine
+608	5	air	NONE	engine	engine
+608	6	air	NONE	engine	engine
+608	7	air	NONE	engine	engine
+608	8	air	NONE	engine	engine
+608	9	air	NONE	engine	engine
+608	1	explosion	NONE	-	-
+608	2	explosion	NONE	-	-
+608	3	explosion	NONE	-	-
+608	4	explosion	NONE	-	-
+608	5	explosion	CREATE	-	engine
+608	6	explosion	DESTROY	engine	-
+608	7	explosion	NONE	-	-
+608	8	explosion	NONE	-	-
+608	9	explosion	NONE	-	-
+608	1	fuel	MOVE	carburetor	engine
+608	2	fuel	NONE	engine	engine
+608	3	fuel	NONE	engine	engine
+608	4	fuel	NONE	engine	engine
+608	5	fuel	NONE	engine	engine
+608	6	fuel	NONE	engine	engine
+608	7	fuel	NONE	engine	engine
+608	8	fuel	NONE	engine	engine
+608	9	fuel	NONE	engine	engine
+608	1	piston	NONE	engine	engine
+608	2	piston	NONE	engine	engine
+608	3	piston	NONE	engine	engine
+608	4	piston	NONE	engine	engine
+608	5	piston	NONE	engine	engine
+608	6	piston	NONE	engine	engine
+608	7	piston	NONE	engine	engine
+608	8	piston	NONE	engine	engine
+608	9	piston	NONE	engine	engine
+608	1	spark	NONE	-	-
+608	2	spark	NONE	-	-
+608	3	spark	NONE	-	-
+608	4	spark	CREATE	-	engine
+608	5	spark	DESTROY	engine	-
+608	6	spark	NONE	-	-
+608	7	spark	NONE	-	-
+608	8	spark	NONE	-	-
+608	9	spark	NONE	-	-
+609	1	air	MOVE	?	cylinder
+609	2	air	NONE	cylinder	cylinder
+609	3	air	NONE	cylinder	cylinder
+609	4	air	NONE	cylinder	cylinder
+609	5	air	DESTROY	cylinder	-
+609	6	air	NONE	-	-
+609	1	exhaust	NONE	-	-
+609	2	exhaust	NONE	-	-
+609	3	exhaust	NONE	-	-
+609	4	exhaust	NONE	-	-
+609	5	exhaust	CREATE	-	cylinder
+609	6	exhaust	MOVE	cylinder	tailpipe
+609	1	explosion	NONE	-	-
+609	2	explosion	NONE	-	-
+609	3	explosion	NONE	-	-
+609	4	explosion	NONE	-	-
+609	5	explosion	CREATE	-	cylinder
+609	6	explosion	NONE	cylinder	cylinder
+609	1	gasoline	MOVE	?	cylinder
+609	2	gasoline	NONE	cylinder	cylinder
+609	3	gasoline	NONE	cylinder	cylinder
+609	4	gasoline	NONE	cylinder	cylinder
+609	5	gasoline	DESTROY	cylinder	-
+609	6	gasoline	NONE	-	-
+609	1	piston	NONE	engine	engine
+609	2	piston	NONE	engine	engine
+609	3	piston	NONE	engine	engine
+609	4	piston	NONE	engine	engine
+609	5	piston	NONE	engine	engine
+609	6	piston	NONE	engine	engine
+609	1	spark	NONE	-	-
+609	2	spark	NONE	-	-
+609	3	spark	NONE	-	-
+609	4	spark	CREATE	-	cylinder
+609	5	spark	DESTROY	cylinder	-
+609	6	spark	NONE	-	-
+610	1	air	NONE	?	?
+610	2	air	NONE	?	?
+610	3	air	MOVE	?	cylinder
+610	4	air	NONE	cylinder	cylinder
+610	5	air	NONE	cylinder	cylinder
+610	6	air	NONE	cylinder	cylinder
+610	7	air	NONE	cylinder	cylinder
+610	8	air	MOVE	cylinder	?
+610	1	fuel	NONE	combustion chamber	combustion chamber
+610	2	fuel	NONE	combustion chamber	combustion chamber
+610	3	fuel	NONE	combustion chamber	combustion chamber
+610	4	fuel	NONE	combustion chamber	combustion chamber
+610	5	fuel	NONE	combustion chamber	combustion chamber
+610	6	fuel	NONE	combustion chamber	combustion chamber
+610	7	fuel	NONE	combustion chamber	combustion chamber
+610	8	fuel	NONE	combustion chamber	combustion chamber
+610	1	pressure	NONE	-	-
+610	2	pressure	NONE	-	-
+610	3	pressure	NONE	-	-
+610	4	pressure	NONE	-	-
+610	5	pressure	CREATE	-	cylinder
+610	6	pressure	NONE	cylinder	cylinder
+610	7	pressure	NONE	cylinder	cylinder
+610	8	pressure	NONE	cylinder	cylinder
+610	1	spark	NONE	-	-
+610	2	spark	NONE	-	-
+610	3	spark	NONE	-	-
+610	4	spark	NONE	-	-
+610	5	spark	CREATE	-	cylinder
+610	6	spark	DESTROY	cylinder	-
+610	7	spark	NONE	-	-
+610	8	spark	NONE	-	-
+629	1	garbage can	NONE	?	?
+629	1	garbage truck; truck	NONE	?	?
+629	2	garbage can	NONE	?	?
+629	2	garbage truck; truck	NONE	?	?
+629	3	garbage can	MOVE	?	outside
+629	3	garbage truck; truck	NONE	?	?
+629	4	garbage can	NONE	outside	outside
+629	4	garbage truck; truck	MOVE	?	house
+629	5	garbage can	NONE	outside	outside
+629	5	garbage truck; truck	NONE	house	house
+629	6	garbage can	NONE	outside	outside
+629	6	garbage truck; truck	MOVE	house	landfill
+629	7	garbage can	NONE	outside	outside
+629	7	garbage truck; truck	NONE	landfill	landfill
+629	1	plastic bag	NONE	?	?
+629	2	plastic bag	MOVE	?	garbage can
+629	3	plastic bag	NONE	garbage can	garbage can
+629	4	plastic bag	NONE	garbage can	garbage can
+629	5	plastic bag	MOVE	garbage can	truck
+629	6	plastic bag	NONE	truck	truck
+629	7	plastic bag	MOVE	truck	landfill
+629	1	trash	MOVE	?	plastic bag
+629	2	trash	NONE	plastic bag	plastic bag
+629	3	trash	NONE	plastic bag	plastic bag
+629	4	trash	NONE	plastic bag	plastic bag
+629	5	trash	NONE	plastic bag	plastic bag
+629	6	trash	NONE	plastic bag	plastic bag
+629	7	trash	MOVE	plastic bag	landfill
+630	1	trash	MOVE	house	garbage container
+630	2	trash	MOVE	garbage container	centralize container
+630	3	trash	MOVE	centralize container	truck
+630	4	trash	NONE	truck	truck
+630	5	trash	NONE	truck	truck
+630	6	trash	MOVE	truck	landfill
+630	1	truck	NONE	?	?
+630	2	truck	NONE	?	?
+630	3	truck	NONE	?	?
+630	4	truck	NONE	?	?
+630	5	truck	MOVE	?	landfill
+630	6	truck	NONE	landfill	landfill
+631	1	bags	NONE	?	?
+631	2	bags	MOVE	?	trashcan
+631	3	bags	NONE	trashcan	trashcan
+631	4	bags	MOVE	trashcan	trash truck
+631	5	bags	NONE	trash truck	trash truck
+631	6	bags	NONE	trash truck	trash truck
+631	7	bags	MOVE	trash truck	landfill
+631	1	trash	MOVE	?	bag
+631	1	trash truck; truck	NONE	?	?
+631	2	trash	NONE	bag	bag
+631	2	trash truck; truck	NONE	?	?
+631	3	trash	NONE	bag	bag
+631	3	trash truck; truck	NONE	?	?
+631	4	trash	NONE	bag	bag
+631	4	trash truck; truck	MOVE	?	curb
+631	5	trash	NONE	bag	bag
+631	5	trash truck; truck	MOVE	curb	?
+631	6	trash	NONE	bag	bag
+631	6	trash truck; truck	MOVE	?	landfill
+631	7	trash	NONE	bag	bag
+631	7	trash truck; truck	NONE	landfill	landfill
+631	1	trashcan	NONE	?	?
+631	2	trashcan	NONE	?	?
+631	3	trashcan	MOVE	?	curb
+631	4	trashcan	NONE	curb	curb
+631	5	trashcan	NONE	curb	curb
+631	6	trashcan	NONE	curb	curb
+631	7	trashcan	NONE	curb	curb
+632	1	electricity	MOVE	plug	computer
+632	2	electricity	MOVE	computer	component
+632	3	electricity	MOVE	component	fan
+632	4	electricity	NONE	fan	fan
+632	5	electricity	MOVE	fan	display
+632	6	electricity	NONE	display	display
+632	1	heat	NONE	-	-
+632	2	heat	CREATE	-	computer
+632	3	heat	NONE	computer	computer
+632	4	heat	NONE	computer	computer
+632	5	heat	NONE	computer	computer
+632	6	heat	NONE	computer	computer
+632	1	light	NONE	-	-
+632	2	light	NONE	-	-
+632	3	light	NONE	-	-
+632	4	light	NONE	-	-
+632	5	light	CREATE	-	electricity
+632	6	light	NONE	electricity	electricity
+634	1	computations	NONE	-	-
+634	2	computations	NONE	-	-
+634	3	computations	NONE	-	-
+634	4	computations	NONE	-	-
+634	5	computations	NONE	-	-
+634	6	computations	CREATE	-	cpu
+634	1	electricity; energy	MOVE	?	power supply unit
+634	2	electricity; energy	MOVE	power supply unit	transistor
+634	3	electricity; energy	MOVE	transistor	cpu
+634	4	electricity; energy	NONE	cpu	cpu
+634	5	electricity; energy	NONE	cpu	cpu
+634	6	electricity; energy	DESTROY	cpu	-
+634	1	visual signals	NONE	-	-
+634	2	visual signals	NONE	-	-
+634	3	visual signals	NONE	-	-
+634	4	visual signals	NONE	-	-
+634	5	visual signals	CREATE	-	cpu
+634	6	visual signals	NONE	cpu	cpu
+708	1	melted rock	NONE	-	-
+708	2	melted rock	NONE	-	-
+708	3	melted rock	NONE	-	-
+708	4	melted rock	NONE	-	-
+708	5	melted rock	NONE	-	-
+708	6	melted rock	NONE	-	-
+708	7	melted rock	NONE	-	-
+708	8	melted rock	CREATE	-	?
+708	9	melted rock	NONE	?	?
+708	10	melted rock	DESTROY	?	-
+708	1	metamorphic rock	NONE	-	-
+708	2	metamorphic rock	NONE	-	-
+708	3	metamorphic rock	NONE	-	-
+708	4	metamorphic rock	NONE	-	-
+708	5	metamorphic rock	NONE	-	-
+708	6	metamorphic rock	CREATE	-	?
+708	7	metamorphic rock	MOVE	?	bury
+708	8	metamorphic rock	DESTROY	bury	-
+708	9	metamorphic rock	NONE	-	-
+708	10	metamorphic rock	NONE	-	-
+708	1	rock	NONE	?	?
+708	2	rock	NONE	?	?
+708	3	rock	DESTROY	?	-
+708	4	rock	NONE	-	-
+708	5	rock	NONE	-	-
+708	6	rock	NONE	-	-
+708	7	rock	NONE	-	-
+708	8	rock	NONE	-	-
+708	9	rock	NONE	-	-
+708	10	rock	CREATE	-	surface
+708	1	sediment	NONE	-	-
+708	2	sediment	NONE	-	-
+708	3	sediment	CREATE	-	?
+708	4	sediment	NONE	?	?
+708	5	sediment	NONE	?	?
+708	6	sediment	DESTROY	?	-
+708	7	sediment	NONE	-	-
+708	8	sediment	NONE	-	-
+708	9	sediment	NONE	-	-
+708	10	sediment	NONE	-	-
+716	1	blood	MOVE	?	kidney
+716	2	blood	NONE	kidney	kidney
+716	3	blood	NONE	kidney	kidney
+716	4	blood	NONE	kidney	kidney
+716	5	blood	NONE	kidney	kidney
+716	6	blood	MOVE	kidney	body
+716	1	cleaned blood	NONE	?	?
+716	2	cleaned blood	NONE	?	?
+716	3	cleaned blood	NONE	?	?
+716	4	cleaned blood	NONE	?	?
+716	5	cleaned blood	NONE	?	?
+716	6	cleaned blood	MOVE	?	body
+716	1	kidney	MOVE	?	body
+716	2	kidney	NONE	body	body
+716	3	kidney	NONE	body	body
+716	4	kidney	NONE	body	body
+716	5	kidney	NONE	body	body
+716	6	kidney	NONE	body	body
+716	1	urine	NONE	-	-
+716	2	urine	NONE	-	-
+716	3	urine	NONE	-	-
+716	4	urine	CREATE	-	kidney
+716	5	urine	MOVE	kidney	?
+716	6	urine	NONE	?	?
+716	1	waste	MOVE	blood	kidney
+716	2	waste	NONE	kidney	kidney
+716	3	waste	NONE	kidney	kidney
+716	4	waste	MOVE	kidney	?
+716	5	waste	NONE	?	?
+716	6	waste	NONE	?	?
+758	1	electrical energy; electrons	NONE	-	-
+758	2	electrical energy; electrons	NONE	-	-
+758	3	electrical energy; electrons	CREATE	-	alternator
+758	4	electrical energy; electrons	NONE	alternator	alternator
+758	5	electrical energy; electrons	MOVE	alternator	outlet of the generator .
+758	6	electrical energy; electrons	MOVE	outlet of the generator .	?
+758	1	gas; fuel source	MOVE	?	engine
+758	2	gas; fuel source	DESTROY	engine	-
+758	3	gas; fuel source	NONE	-	-
+758	4	gas; fuel source	NONE	-	-
+758	5	gas; fuel source	NONE	-	-
+758	6	gas; fuel source	NONE	-	-
+758	1	mechanical energy	NONE	-	-
+758	2	mechanical energy	CREATE	-	alternator
+758	3	mechanical energy	DESTROY	alternator	-
+758	4	mechanical energy	NONE	-	-
+758	5	mechanical energy	NONE	-	-
+758	6	mechanical energy	NONE	-	-
+825	1	electricity	NONE	-	-
+825	2	electricity	NONE	-	-
+825	3	electricity	NONE	-	-
+825	4	electricity	NONE	-	-
+825	5	electricity	NONE	-	-
+825	6	electricity	NONE	-	-
+825	7	electricity	NONE	-	-
+825	8	electricity	NONE	-	-
+825	9	electricity	CREATE	-	generator
+825	10	electricity	NONE	generator	generator
+825	1	heat energy	NONE	-	-
+825	2	heat energy	NONE	-	-
+825	3	heat energy	NONE	-	-
+825	4	heat energy	CREATE	-	nuclear power plant
+825	5	heat energy	NONE	nuclear power plant	nuclear power plant
+825	6	heat energy	MOVE	nuclear power plant	nuclear reactor
+825	7	heat energy	NONE	nuclear reactor	nuclear reactor
+825	8	heat energy	NONE	nuclear reactor	nuclear reactor
+825	9	heat energy	NONE	nuclear reactor	nuclear reactor
+825	10	heat energy	NONE	nuclear reactor	nuclear reactor
+825	1	steam	NONE	-	-
+825	2	steam	NONE	-	-
+825	3	steam	NONE	-	-
+825	4	steam	NONE	-	-
+825	5	steam	NONE	-	-
+825	6	steam	CREATE	-	nuclear reactor
+825	7	steam	MOVE	nuclear reactor	turbine
+825	8	steam	MOVE	turbine	nuclear reactor
+825	9	steam	NONE	nuclear reactor	nuclear reactor
+825	10	steam	DESTROY	nuclear reactor	-
+825	1	uranium ; uranium atoms	NONE	underground	underground
+825	2	uranium ; uranium atoms	MOVE	underground	?
+825	3	uranium ; uranium atoms	MOVE	?	nuclear power plant
+825	4	uranium ; uranium atoms	DESTROY	nuclear power plant	-
+825	5	uranium ; uranium atoms	NONE	-	-
+825	6	uranium ; uranium atoms	NONE	-	-
+825	7	uranium ; uranium atoms	NONE	-	-
+825	8	uranium ; uranium atoms	NONE	-	-
+825	9	uranium ; uranium atoms	NONE	-	-
+825	10	uranium ; uranium atoms	NONE	-	-
+825	1	water	NONE	?	?
+825	2	water	NONE	?	?
+825	3	water	NONE	?	?
+825	4	water	NONE	?	?
+825	5	water	NONE	?	?
+825	6	water	DESTROY	?	-
+825	7	water	NONE	-	-
+825	8	water	NONE	-	-
+825	9	water	NONE	-	-
+825	10	water	CREATE	-	generator
+826	1	electricity	NONE	-	-
+826	2	electricity	NONE	-	-
+826	3	electricity	NONE	-	-
+826	4	electricity	CREATE	-	turbine
+826	5	electricity	NONE	turbine	turbine
+826	1	heat	MOVE	?	nuclear reactor
+826	2	heat	NONE	nuclear reactor	nuclear reactor
+826	3	heat	NONE	nuclear reactor	nuclear reactor
+826	4	heat	NONE	nuclear reactor	nuclear reactor
+826	5	heat	NONE	nuclear reactor	nuclear reactor
+826	1	steam	NONE	-	-
+826	2	steam	CREATE	-	nuclear reactor
+826	3	steam	MOVE	nuclear reactor	turbine
+826	4	steam	NONE	turbine	turbine
+826	5	steam	NONE	turbine	turbine
+1002	1	dirty laundry	MOVE	?	wash machine
+1002	2	dirty laundry	NONE	wash machine	wash machine
+1002	3	dirty laundry	NONE	wash machine	wash machine
+1002	4	dirty laundry	NONE	wash machine	wash machine
+1002	5	dirty laundry	NONE	wash machine	wash machine
+1002	1	laundry detergent	NONE	?	?
+1002	2	laundry detergent	MOVE	?	wash machine
+1002	3	laundry detergent	NONE	wash machine	wash machine
+1002	4	laundry detergent	NONE	wash machine	wash machine
+1002	5	laundry detergent	NONE	wash machine	wash machine
+1007	1	microbes	NONE	?	?
+1007	2	microbes	MOVE	?	dead plant
+1007	3	microbes	NONE	dead plant	dead plant
+1007	4	microbes	NONE	dead plant	dead plant
+1007	5	microbes	MOVE	dead plant	soil
+1007	6	microbes	NONE	soil	soil
+1007	1	plant ; material	NONE	?	?
+1007	2	plant ; material	NONE	?	?
+1007	3	plant ; material	NONE	?	?
+1007	4	plant ; material	NONE	?	?
+1007	5	plant ; material	DESTROY	?	-
+1007	6	plant ; material	NONE	-	-
+1008	1	bacteria	NONE	ground	ground
+1008	2	bacteria	MOVE	ground	plant material
+1008	3	bacteria	NONE	plant material	plant material
+1008	4	bacteria	NONE	plant material	plant material
+1008	5	bacteria	NONE	plant material	plant material
+1008	1	components	NONE	-	-
+1008	2	components	NONE	-	-
+1008	3	components	NONE	-	-
+1008	4	components	CREATE	-	plant
+1008	5	components	DESTROY	plant	-
+1008	1	enzymes	NONE	bacterium	bacterium
+1008	2	enzymes	NONE	bacterium	bacterium
+1008	3	enzymes	MOVE	bacterium	plant material
+1008	4	enzymes	NONE	plant material	plant material
+1008	5	enzymes	NONE	plant material	plant material
+1008	1	plant cells	NONE	plant	plant
+1008	2	plant cells	NONE	plant	plant
+1008	3	plant cells	NONE	plant	plant
+1008	4	plant cells	DESTROY	plant	-
+1008	5	plant cells	NONE	-	-
+1112	1	acid	NONE	-	-
+1112	2	acid	NONE	-	-
+1112	3	acid	CREATE	-	soil
+1112	4	acid	NONE	soil	soil
+1112	5	acid	MOVE	soil	cave
+1112	1	carbon dioxide	NONE	air	air
+1112	2	carbon dioxide	DESTROY	air	-
+1112	3	carbon dioxide	NONE	-	-
+1112	4	carbon dioxide	NONE	-	-
+1112	5	carbon dioxide	NONE	-	-
+1112	1	caves	NONE	-	-
+1112	2	caves	NONE	-	-
+1112	3	caves	NONE	-	-
+1112	4	caves	NONE	-	-
+1112	5	caves	CREATE	-	limestone
+1112	1	limestone	NONE	soil	soil
+1112	2	limestone	NONE	soil	soil
+1112	3	limestone	NONE	soil	soil
+1112	4	limestone	DESTROY	soil	-
+1112	5	limestone	NONE	-	-
+1112	1	rain	NONE	air	air
+1112	2	rain	NONE	air	air
+1112	3	rain	DESTROY	air	-
+1112	4	rain	NONE	-	-
+1112	5	rain	NONE	-	-
+1113	1	carbon dioxide	MOVE	air	rainwater
+1113	2	carbon dioxide	NONE	rainwater	rainwater
+1113	3	carbon dioxide	NONE	rainwater	rainwater
+1113	4	carbon dioxide	NONE	rainwater	rainwater
+1113	5	carbon dioxide	NONE	rainwater	rainwater
+1113	6	carbon dioxide	NONE	rainwater	rainwater
+1113	1	caves	NONE	-	-
+1113	2	caves	NONE	-	-
+1113	3	caves	NONE	-	-
+1113	4	caves	NONE	-	-
+1113	5	caves	NONE	-	-
+1113	6	caves	CREATE	-	limestone
+1113	1	limestone	NONE	soil	soil
+1113	2	limestone	NONE	soil	soil
+1113	3	limestone	NONE	soil	soil
+1113	4	limestone	NONE	soil	soil
+1113	5	limestone	DESTROY	soil	-
+1113	6	limestone	NONE	-	-
+1113	1	rainwater	NONE	air	air
+1113	2	rainwater	MOVE	air	soil
+1113	3	rainwater	NONE	soil	soil
+1113	4	rainwater	NONE	soil	soil
+1113	5	rainwater	MOVE	soil	limestone
+1113	6	rainwater	MOVE	limestone	soil
+1113	1	water	NONE	air	air
+1113	2	water	MOVE	air	soil
+1113	3	water	NONE	soil	soil
+1113	4	water	DESTROY	soil	-
+1113	5	water	NONE	-	-
+1113	6	water	NONE	-	-
+1113	1	weak acid	NONE	-	-
+1113	2	weak acid	NONE	-	-
+1113	3	weak acid	NONE	-	-
+1113	4	weak acid	CREATE	-	soil
+1113	5	weak acid	MOVE	soil	limestone
+1113	6	weak acid	MOVE	limestone	soil
+1114	1	bedrock	NONE	below	below
+1114	2	bedrock	NONE	below	below
+1114	3	bedrock	MOVE	below	soil
+1114	4	bedrock	NONE	soil	soil
+1114	5	bedrock	DESTROY	soil	-
+1114	6	bedrock	NONE	-	-
+1114	7	bedrock	NONE	-	-
+1114	1	caves	NONE	-	-
+1114	2	caves	NONE	-	-
+1114	3	caves	NONE	-	-
+1114	4	caves	NONE	-	-
+1114	5	caves	NONE	-	-
+1114	6	caves	NONE	-	-
+1114	7	caves	CREATE	-	funnel
+1114	1	funnels	NONE	-	-
+1114	2	funnels	NONE	-	-
+1114	3	funnels	NONE	-	-
+1114	4	funnels	NONE	-	-
+1114	5	funnels	CREATE	-	bedrock
+1114	6	funnels	NONE	bedrock	bedrock
+1114	7	funnels	DESTROY	bedrock	-
+1114	1	rainwater; water	MOVE	?	soil
+1114	2	rainwater; water	NONE	soil	soil
+1114	3	rainwater; water	MOVE	soil	bedrock
+1114	4	rainwater; water	NONE	bedrock	bedrock
+1114	5	rainwater; water	NONE	bedrock	bedrock
+1114	6	rainwater; water	NONE	bedrock	bedrock
+1114	7	rainwater; water	NONE	bedrock	bedrock
+1197	1	broken down food	NONE	-	-
+1197	2	broken down food	NONE	-	-
+1197	3	broken down food	NONE	-	-
+1197	4	broken down food	CREATE	-	stomach
+1197	5	broken down food	MOVE	stomach	small intestine
+1197	6	broken down food	NONE	small intestine	small intestine
+1197	7	broken down food	DESTROY	small intestine	-
+1197	8	broken down food	NONE	-	-
+1197	9	broken down food	NONE	-	-
+1197	1	energy	NONE	-	-
+1197	2	energy	NONE	-	-
+1197	3	energy	NONE	-	-
+1197	4	energy	NONE	-	-
+1197	5	energy	NONE	-	-
+1197	6	energy	NONE	-	-
+1197	7	energy	NONE	-	-
+1197	8	energy	NONE	-	-
+1197	9	energy	CREATE	-	muscle
+1197	1	food	MOVE	?	mouth
+1197	2	food	NONE	mouth	mouth
+1197	3	food	MOVE	mouth	stomach
+1197	4	food	DESTROY	stomach	-
+1197	5	food	NONE	-	-
+1197	6	food	NONE	-	-
+1197	7	food	NONE	-	-
+1197	8	food	NONE	-	-
+1197	9	food	NONE	-	-
+1197	1	sugar	NONE	-	-
+1197	2	sugar	NONE	-	-
+1197	3	sugar	NONE	-	-
+1197	4	sugar	NONE	-	-
+1197	5	sugar	NONE	-	-
+1197	6	sugar	NONE	-	-
+1197	7	sugar	CREATE	-	blood
+1197	8	sugar	MOVE	blood	body
+1197	9	sugar	DESTROY	body	-
+1226	1	Carbohydrates	MOVE	food	gut
+1226	2	Carbohydrates	NONE	gut	gut
+1226	3	Carbohydrates	NONE	gut	gut
+1226	4	Carbohydrates	DESTROY	gut	-
+1226	5	Carbohydrates	NONE	-	-
+1226	6	Carbohydrates	NONE	-	-
+1226	1	Enyzmes	NONE	-	-
+1226	2	Enyzmes	CREATE	-	pancreas
+1226	3	Enyzmes	NONE	pancreas	pancreas
+1226	4	Enyzmes	NONE	pancreas	pancreas
+1226	5	Enyzmes	NONE	pancreas	pancreas
+1226	6	Enyzmes	NONE	pancreas	pancreas
+1226	1	Fat	NONE	food	food
+1226	2	Fat	NONE	food	food
+1226	3	Fat	DESTROY	food	-
+1226	4	Fat	NONE	-	-
+1226	5	Fat	NONE	-	-
+1226	6	Fat	NONE	-	-
+1226	1	Food	MOVE	?	gut
+1226	2	Food	DESTROY	gut	-
+1226	3	Food	NONE	-	-
+1226	4	Food	NONE	-	-
+1226	5	Food	NONE	-	-
+1226	6	Food	NONE	-	-
+1259	1	Thread	NONE	-	-
+1259	2	Thread	CREATE	-	gland
+1259	3	Thread	MOVE	gland	several point
+1259	4	Thread	MOVE	several point	web
+1259	5	Thread	NONE	web	web
+1259	1	Web	NONE	-	-
+1259	2	Web	NONE	-	-
+1259	3	Web	NONE	-	-
+1259	4	Web	CREATE	-	suitable place
+1259	5	Web	NONE	suitable place	suitable place
+1260	1	silk	NONE	-	-
+1260	2	silk	CREATE	-	abdomen
+1260	3	silk	MOVE	abdomen	object
+1260	4	silk	NONE	object	object
+1260	5	silk	DESTROY	object	-
+1260	1	web	NONE	-	-
+1260	2	web	NONE	-	-
+1260	3	web	NONE	-	-
+1260	4	web	NONE	-	-
+1260	5	web	CREATE	-	object
+1303	1	food	NONE	?	?
+1303	2	food	NONE	?	?
+1303	3	food	NONE	?	?
+1303	4	food	NONE	?	?
+1303	5	food	NONE	?	?
+1303	1	microbes	NONE	food or milk	food or milk
+1303	2	microbes	NONE	food or milk	food or milk
+1303	3	microbes	DESTROY	food or milk	-
+1303	4	microbes	NONE	-	-
+1303	5	microbes	NONE	-	-
+1303	1	milk	NONE	?	?
+1303	2	milk	NONE	?	?
+1303	3	milk	NONE	?	?
+1303	4	milk	NONE	?	?
+1303	5	milk	NONE	?	?
