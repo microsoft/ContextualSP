@@ -1,6 +1,6 @@
 # LEMON
 
-This repository contains the code and pre-trained models for our paper [LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](https://arxiv.org/pdf/2201.08081.pdf)
+This repository contains the code and pre-trained models for our EMNLP2022 Findings paper [LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](https://arxiv.org/pdf/2201.08081.pdf)
 
 Data
 -------
