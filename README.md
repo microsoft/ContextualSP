@@ -24,6 +24,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 Xinyu Pi*, Wanjun Zhong*, Yan Gao, Nan Duan, Jian-Guang Lou, NeurIPS 2022.
 
 > **[LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](LEMON)**
+Qi Shi, Qian Liu, Bei Chen, Yu Zhang, Ting Liu, Jian-Guang Lou, EMNLP 2022 Findings.
 
 ### Text-to-SQL
 
