@@ -6,6 +6,7 @@
 This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI Group](https://www.microsoft.com/en-us/research/opportunity/data-analytics-intern-msra-dki/). You could find the corresponding code as below:
 
 ## News
+- October, 2022 our paper [LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](https://https://arxiv.org/abs/2201.08081) was accepted by EMNLP 2022 Findings.
 - Septempter, 2022 our paper [LogiGAN: Learning Logical Reasoning via Adversarial Pre-training](https://arxiv.org/abs/2205.08794) was accepted by NeurIPS 2022.
 - March, 2022: Our paper [Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation](https://aclanthology.org/2022.acl-long.142.pdf) was accepted by ACL 2022.
 - August, 2021: Our paper [Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](https://aclanthology.org/2021.findings-acl.100.pdf) was accepted by ACL 2021 Findings.
@@ -21,6 +22,8 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 ### Reasoning
 > **[LogiGAN: Learning Logical Reasoning via Adversarial Pre-training](LogiGAN)**
 Xinyu Pi*, Wanjun Zhong*, Yan Gao, Nan Duan, Jian-Guang Lou, NeurIPS 2022.
+
+> **[LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](LEMON)**
 
 ### Text-to-SQL
 
