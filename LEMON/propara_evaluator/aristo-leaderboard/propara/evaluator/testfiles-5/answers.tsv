@@ -1,0 +1,109 @@
+4	1	plants	NONE	?	?
+4	2	plants	MOVE	?	sediment
+4	3	plants	NONE	sediment	sediment
+4	4	plants	NONE	sediment	sediment
+4	5	plants	NONE	sediment	sediment
+4	6	plants	NONE	sediment	sediment
+4	7	plants	NONE	sediment	sediment
+4	8	plants	MOVE	sediment	one mile underground
+4	9	plants	NONE	one mile underground	one mile underground
+4	10	plants	DESTROY	one mile underground	-
+4	1	bacteria	NONE	?	?
+4	2	bacteria	NONE	?	?
+4	3	bacteria	MOVE	?	sediment
+4	4	bacteria	NONE	sediment	sediment
+4	5	bacteria	NONE	sediment	sediment
+4	6	bacteria	NONE	sediment	sediment
+4	7	bacteria	NONE	sediment	sediment
+4	8	bacteria	NONE	sediment	sediment
+4	9	bacteria	NONE	sediment	sediment
+4	10	bacteria	DESTROY	sediment	-
+4	1	sediment	NONE	?	?
+4	2	sediment	NONE	?	?
+4	3	sediment	NONE	?	?
+4	4	sediment	NONE	?	?
+4	5	sediment	NONE	?	?
+4	6	sediment	NONE	?	?
+4	7	sediment	NONE	?	?
+4	8	sediment	MOVE	?	underground
+4	9	sediment	NONE	underground	underground
+4	10	sediment	NONE	underground	underground
+4	1	oil	NONE	-	-
+4	2	oil	NONE	-	-
+4	3	oil	NONE	-	-
+4	4	oil	NONE	-	-
+4	5	oil	NONE	-	-
+4	6	oil	NONE	-	-
+4	7	oil	NONE	-	-
+4	8	oil	NONE	-	-
+4	9	oil	NONE	-	-
+4	10	oil	CREATE	-	underground
+5	1	algae	MOVE	?	seafloor
+5	2	algae	DESTROY	seafloor	-
+5	3	algae	NONE	-	-
+5	4	algae	NONE	-	-
+5	5	algae	NONE	-	-
+5	6	algae	NONE	-	-
+5	7	algae	NONE	-	-
+5	8	algae	NONE	-	-
+5	9	algae	NONE	-	-
+5	1	plankton	MOVE	?	seafloor
+5	2	plankton	DESTROY	seafloor	-
+5	3	plankton	NONE	-	-
+5	4	plankton	NONE	-	-
+5	5	plankton	NONE	-	-
+5	6	plankton	NONE	-	-
+5	7	plankton	NONE	-	-
+5	8	plankton	NONE	-	-
+5	9	plankton	NONE	-	-
+5	1	sediment	NONE	seafloor	seafloor
+5	2	sediment	NONE	seafloor	seafloor
+5	3	sediment	NONE	seafloor	seafloor
+5	4	sediment	NONE	seafloor	seafloor
+5	5	sediment	NONE	seafloor	seafloor
+5	6	sediment	DESTROY	seafloor	-
+5	7	sediment	NONE	-	-
+5	8	sediment	NONE	-	-
+5	9	sediment	NONE	-	-
+5	1	material	NONE	-	-
+5	2	material	NONE	-	-
+5	3	material	NONE	-	-
+5	4	material	NONE	-	-
+5	5	material	NONE	-	-
+5	6	material	CREATE	-	seafloor
+5	7	material	DESTROY	seafloor	-
+5	8	material	NONE	-	-
+5	9	material	NONE	-	-
+5	1	oil	NONE	-	-
+5	2	oil	NONE	-	-
+5	3	oil	NONE	-	-
+5	4	oil	NONE	-	-
+5	5	oil	NONE	-	-
+5	6	oil	NONE	-	-
+5	7	oil	CREATE	-	rock
+5	8	oil	NONE	rock	rock
+5	9	oil	NONE	rock	rock
+7	1	magma	NONE	deep in the earth	deep in the earth
+7	2	magma	MOVE	deep in the earth	volcano
+7	3	magma	NONE	volcano	volcano
+7	4	magma	DESTROY	volcano	-
+7	5	magma	NONE	-	-
+7	6	magma	NONE	-	-
+7	7	magma	NONE	-	-
+7	8	magma	NONE	-	-
+7	1	lava	NONE	-	-
+7	2	lava	NONE	-	-
+7	3	lava	NONE	-	-
+7	4	lava	CREATE	-	?
+7	5	lava	NONE	?	?
+7	6	lava	DESTROY	?	-
+7	7	lava	NONE	-	-
+7	8	lava	NONE	-	-
+7	1	new rock	NONE	-	-
+7	2	new rock	NONE	-	-
+7	3	new rock	NONE	-	-
+7	4	new rock	NONE	-	-
+7	5	new rock	NONE	-	-
+7	6	new rock	CREATE	-	?
+7	7	new rock	NONE	?	?
+7	8	new rock	NONE	?	?

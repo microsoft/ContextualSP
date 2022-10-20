@@ -1,0 +1,10 @@
+1167	1	atoms of hydrogen	NONE	-	-
+1167	1	sunlight; light	NONE	-	-
+1167	2	atoms of hydrogen	NONE	-	-
+1167	2	sunlight; light	NONE	-	-
+1167	3	atoms of hydrogen	DESTROY	star	-
+1167	3	sunlight; light	NONE	-	-
+1167	4	atoms of hydrogen	NONE	-	-
+1167	4	sunlight; light	CREATE	-	star	
+1167	5	atoms of hydrogen	NONE	-	-
+1167	5	sunlight; light	MOVE	star	soil	

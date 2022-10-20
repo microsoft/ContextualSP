@@ -1,0 +1,3 @@
+The file [dummy-predictions.csv](dummy-predictions.csv) is a valid example prediction file that can be submitted to the [OpenBookQA Leaderboard](https://leaderboard.allenai.org/). This is a prediction that every question's correct answer is the choice `A`, and scores about 25% correct. This file shows the submission format without revealing the correct answers.
+
+The file [question-answers.jsonl](question-answers.jsonl) has the correct answers formatted to minimally hold the question identifier and the correct answer. (It is derived from the more verbose file `OpenBookQA-V1-Sep2018/Data/Main/test.jsonl` in the archive https://s3-us-west-2.amazonaws.com/ai2-website/data/OpenBookQA-V1-Sep2018.zip.)

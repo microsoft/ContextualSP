@@ -1,0 +1,10 @@
+1167	1	atoms of hydrogen	NONE	sun	sun
+1167	2	atoms of hydrogen	NONE	sun	sun
+1167	3	atoms of hydrogen	VIBRATE	sun	sun
+1167	4	atoms of hydrogen	NONE	-	-
+1167	5	atoms of hydrogen	NONE	-	-
+1167	1	sunlight; light	NONE	-	-
+1167	2	sunlight; light	NONE	-	-
+1167	3	sunlight; light	NONE	-	-
+1167	4	sunlight; light	CREATE	-	sun
+1167	5	sunlight; light	MOVE	sun	earth

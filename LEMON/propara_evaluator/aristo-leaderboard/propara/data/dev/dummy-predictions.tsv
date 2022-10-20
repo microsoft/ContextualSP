@@ -1,0 +1,1204 @@
+4	1	bacteria	NONE		
+4	2	bacteria	NONE		
+4	3	bacteria	NONE		
+4	4	bacteria	NONE		
+4	5	bacteria	NONE		
+4	6	bacteria	NONE		
+4	7	bacteria	NONE		
+4	8	bacteria	NONE		
+4	9	bacteria	NONE		
+4	10	bacteria	NONE		
+4	1	oil	NONE		
+4	2	oil	NONE		
+4	3	oil	NONE		
+4	4	oil	NONE		
+4	5	oil	NONE		
+4	6	oil	NONE		
+4	7	oil	NONE		
+4	8	oil	NONE		
+4	9	oil	NONE		
+4	10	oil	NONE		
+4	1	plants	NONE		
+4	2	plants	NONE		
+4	3	plants	NONE		
+4	4	plants	NONE		
+4	5	plants	NONE		
+4	6	plants	NONE		
+4	7	plants	NONE		
+4	8	plants	NONE		
+4	9	plants	NONE		
+4	10	plants	NONE		
+4	1	sediment	NONE		
+4	2	sediment	NONE		
+4	3	sediment	NONE		
+4	4	sediment	NONE		
+4	5	sediment	NONE		
+4	6	sediment	NONE		
+4	7	sediment	NONE		
+4	8	sediment	NONE		
+4	9	sediment	NONE		
+4	10	sediment	NONE		
+5	1	algae	NONE		
+5	2	algae	NONE		
+5	3	algae	NONE		
+5	4	algae	NONE		
+5	5	algae	NONE		
+5	6	algae	NONE		
+5	7	algae	NONE		
+5	8	algae	NONE		
+5	9	algae	NONE		
+5	1	material	NONE		
+5	2	material	NONE		
+5	3	material	NONE		
+5	4	material	NONE		
+5	5	material	NONE		
+5	6	material	NONE		
+5	7	material	NONE		
+5	8	material	NONE		
+5	9	material	NONE		
+5	1	oil	NONE		
+5	2	oil	NONE		
+5	3	oil	NONE		
+5	4	oil	NONE		
+5	5	oil	NONE		
+5	6	oil	NONE		
+5	7	oil	NONE		
+5	8	oil	NONE		
+5	9	oil	NONE		
+5	1	plankton	NONE		
+5	2	plankton	NONE		
+5	3	plankton	NONE		
+5	4	plankton	NONE		
+5	5	plankton	NONE		
+5	6	plankton	NONE		
+5	7	plankton	NONE		
+5	8	plankton	NONE		
+5	9	plankton	NONE		
+5	1	sediment	NONE		
+5	2	sediment	NONE		
+5	3	sediment	NONE		
+5	4	sediment	NONE		
+5	5	sediment	NONE		
+5	6	sediment	NONE		
+5	7	sediment	NONE		
+5	8	sediment	NONE		
+5	9	sediment	NONE		
+272	1	electrical energy	NONE		
+272	2	electrical energy	NONE		
+272	3	electrical energy	NONE		
+272	4	electrical energy	NONE		
+272	5	electrical energy	NONE		
+272	6	electrical energy	NONE		
+272	1	flow of electrons ; electricity	NONE		
+272	2	flow of electrons ; electricity	NONE		
+272	3	flow of electrons ; electricity	NONE		
+272	4	flow of electrons ; electricity	NONE		
+272	5	flow of electrons ; electricity	NONE		
+272	6	flow of electrons ; electricity	NONE		
+272	1	fuel	NONE		
+272	2	fuel	NONE		
+272	3	fuel	NONE		
+272	4	fuel	NONE		
+272	5	fuel	NONE		
+272	6	fuel	NONE		
+272	1	magnet	NONE		
+272	2	magnet	NONE		
+272	3	magnet	NONE		
+272	4	magnet	NONE		
+272	5	magnet	NONE		
+272	6	magnet	NONE		
+272	1	mechanical energy	NONE		
+272	2	mechanical energy	NONE		
+272	3	mechanical energy	NONE		
+272	4	mechanical energy	NONE		
+272	5	mechanical energy	NONE		
+272	6	mechanical energy	NONE		
+349	1	echoes	NONE		
+349	2	echoes	NONE		
+349	3	echoes	NONE		
+349	4	echoes	NONE		
+349	5	echoes	NONE		
+349	6	echoes	NONE		
+349	7	echoes	NONE		
+349	1	sound ; sound waves	NONE		
+349	2	sound ; sound waves	NONE		
+349	3	sound ; sound waves	NONE		
+349	4	sound ; sound waves	NONE		
+349	5	sound ; sound waves	NONE		
+349	6	sound ; sound waves	NONE		
+349	7	sound ; sound waves	NONE		
+375	1	electricity	NONE		
+375	2	electricity	NONE		
+375	3	electricity	NONE		
+375	4	electricity	NONE		
+375	5	electricity	NONE		
+375	1	heat	NONE		
+375	2	heat	NONE		
+375	3	heat	NONE		
+375	4	heat	NONE		
+375	5	heat	NONE		
+375	1	light	NONE		
+375	2	light	NONE		
+375	3	light	NONE		
+375	4	light	NONE		
+375	5	light	NONE		
+375	1	motion	NONE		
+375	1	motion energy	NONE		
+375	2	motion	NONE		
+375	2	motion energy	NONE		
+375	3	motion	NONE		
+375	3	motion energy	NONE		
+375	4	motion	NONE		
+375	4	motion energy	NONE		
+375	5	motion	NONE		
+375	5	motion energy	NONE		
+388	1	electricity	NONE		
+388	2	electricity	NONE		
+388	3	electricity	NONE		
+388	4	electricity	NONE		
+388	5	electricity	NONE		
+388	6	electricity	NONE		
+388	1	generators	NONE		
+388	2	generators	NONE		
+388	3	generators	NONE		
+388	4	generators	NONE		
+388	5	generators	NONE		
+388	6	generators	NONE		
+388	1	turbines	NONE		
+388	2	turbines	NONE		
+388	3	turbines	NONE		
+388	4	turbines	NONE		
+388	5	turbines	NONE		
+388	6	turbines	NONE		
+388	1	waters;water	NONE		
+388	2	waters;water	NONE		
+388	3	waters;water	NONE		
+388	4	waters;water	NONE		
+388	5	waters;water	NONE		
+388	6	waters;water	NONE		
+390	1	electrical energy	NONE		
+390	2	electrical energy	NONE		
+390	3	electrical energy	NONE		
+390	4	electrical energy	NONE		
+390	5	electrical energy	NONE		
+390	6	electrical energy	NONE		
+390	7	electrical energy	NONE		
+390	1	generator	NONE		
+390	2	generator	NONE		
+390	3	generator	NONE		
+390	4	generator	NONE		
+390	5	generator	NONE		
+390	6	generator	NONE		
+390	7	generator	NONE		
+390	1	high voltage ; electricity	NONE		
+390	2	high voltage ; electricity	NONE		
+390	3	high voltage ; electricity	NONE		
+390	4	high voltage ; electricity	NONE		
+390	5	high voltage ; electricity	NONE		
+390	6	high voltage ; electricity	NONE		
+390	7	high voltage ; electricity	NONE		
+390	1	reservoir	NONE		
+390	2	reservoir	NONE		
+390	3	reservoir	NONE		
+390	4	reservoir	NONE		
+390	5	reservoir	NONE		
+390	6	reservoir	NONE		
+390	7	reservoir	NONE		
+390	1	turbine	NONE		
+390	2	turbine	NONE		
+390	3	turbine	NONE		
+390	4	turbine	NONE		
+390	5	turbine	NONE		
+390	6	turbine	NONE		
+390	7	turbine	NONE		
+390	1	water	NONE		
+390	2	water	NONE		
+390	3	water	NONE		
+390	4	water	NONE		
+390	5	water	NONE		
+390	6	water	NONE		
+390	7	water	NONE		
+390	1	water's energy	NONE		
+390	2	water's energy	NONE		
+390	3	water's energy	NONE		
+390	4	water's energy	NONE		
+390	5	water's energy	NONE		
+390	6	water's energy	NONE		
+390	7	water's energy	NONE		
+394	1	electricity	NONE		
+394	2	electricity	NONE		
+394	3	electricity	NONE		
+394	4	electricity	NONE		
+394	5	electricity	NONE		
+394	6	electricity	NONE		
+394	7	electricity	NONE		
+394	1	fuel	NONE		
+394	2	fuel	NONE		
+394	3	fuel	NONE		
+394	4	fuel	NONE		
+394	5	fuel	NONE		
+394	6	fuel	NONE		
+394	7	fuel	NONE		
+394	1	generator	NONE		
+394	2	generator	NONE		
+394	3	generator	NONE		
+394	4	generator	NONE		
+394	5	generator	NONE		
+394	6	generator	NONE		
+394	7	generator	NONE		
+394	1	heat	NONE		
+394	2	heat	NONE		
+394	3	heat	NONE		
+394	4	heat	NONE		
+394	5	heat	NONE		
+394	6	heat	NONE		
+394	7	heat	NONE		
+394	1	steam	NONE		
+394	2	steam	NONE		
+394	3	steam	NONE		
+394	4	steam	NONE		
+394	5	steam	NONE		
+394	6	steam	NONE		
+394	7	steam	NONE		
+394	1	turbine	NONE		
+394	2	turbine	NONE		
+394	3	turbine	NONE		
+394	4	turbine	NONE		
+394	5	turbine	NONE		
+394	6	turbine	NONE		
+394	7	turbine	NONE		
+394	1	voltage	NONE		
+394	2	voltage	NONE		
+394	3	voltage	NONE		
+394	4	voltage	NONE		
+394	5	voltage	NONE		
+394	6	voltage	NONE		
+394	7	voltage	NONE		
+394	1	water	NONE		
+394	2	water	NONE		
+394	3	water	NONE		
+394	4	water	NONE		
+394	5	water	NONE		
+394	6	water	NONE		
+394	7	water	NONE		
+396	1	electricity	NONE		
+396	2	electricity	NONE		
+396	3	electricity	NONE		
+396	4	electricity	NONE		
+396	5	electricity	NONE		
+396	6	electricity	NONE		
+396	1	heat	NONE		
+396	2	heat	NONE		
+396	3	heat	NONE		
+396	4	heat	NONE		
+396	5	heat	NONE		
+396	6	heat	NONE		
+396	1	steam	NONE		
+396	2	steam	NONE		
+396	3	steam	NONE		
+396	4	steam	NONE		
+396	5	steam	NONE		
+396	6	steam	NONE		
+396	1	uranium atoms	NONE		
+396	1	uranium fuel	NONE		
+396	2	uranium atoms	NONE		
+396	2	uranium fuel	NONE		
+396	3	uranium atoms	NONE		
+396	3	uranium fuel	NONE		
+396	4	uranium atoms	NONE		
+396	4	uranium fuel	NONE		
+396	5	uranium atoms	NONE		
+396	5	uranium fuel	NONE		
+396	6	uranium atoms	NONE		
+396	6	uranium fuel	NONE		
+396	1	water	NONE		
+396	2	water	NONE		
+396	3	water	NONE		
+396	4	water	NONE		
+396	5	water	NONE		
+396	6	water	NONE		
+430	1	Recycling	NONE		
+430	2	Recycling	NONE		
+430	3	Recycling	NONE		
+430	4	Recycling	NONE		
+430	5	Recycling	NONE		
+430	6	Recycling	NONE		
+430	7	Recycling	NONE		
+430	8	Recycling	NONE		
+430	9	Recycling	NONE		
+430	10	Recycling	NONE		
+430	1	trash	NONE		
+430	2	trash	NONE		
+430	3	trash	NONE		
+430	4	trash	NONE		
+430	5	trash	NONE		
+430	6	trash	NONE		
+430	7	trash	NONE		
+430	8	trash	NONE		
+430	9	trash	NONE		
+430	10	trash	NONE		
+430	1	truck	NONE		
+430	2	truck	NONE		
+430	3	truck	NONE		
+430	4	truck	NONE		
+430	5	truck	NONE		
+430	6	truck	NONE		
+430	7	truck	NONE		
+430	8	truck	NONE		
+430	9	truck	NONE		
+430	10	truck	NONE		
+431	1	trash	NONE		
+431	1	trash truck	NONE		
+431	2	trash	NONE		
+431	2	trash truck	NONE		
+431	3	trash	NONE		
+431	3	trash truck	NONE		
+431	4	trash	NONE		
+431	4	trash truck	NONE		
+431	5	trash	NONE		
+431	5	trash truck	NONE		
+431	1	trashbags	NONE		
+431	2	trashbags	NONE		
+431	3	trashbags	NONE		
+431	4	trashbags	NONE		
+431	5	trashbags	NONE		
+432	1	garbage	NONE		
+432	1	garbage truck	NONE		
+432	2	garbage	NONE		
+432	2	garbage truck	NONE		
+432	3	garbage	NONE		
+432	3	garbage truck	NONE		
+432	4	garbage	NONE		
+432	4	garbage truck	NONE		
+432	5	garbage	NONE		
+432	5	garbage truck	NONE		
+432	6	garbage	NONE		
+432	6	garbage truck	NONE		
+432	1	recycling	NONE		
+432	2	recycling	NONE		
+432	3	recycling	NONE		
+432	4	recycling	NONE		
+432	5	recycling	NONE		
+432	6	recycling	NONE		
+432	1	trash	NONE		
+432	2	trash	NONE		
+432	3	trash	NONE		
+432	4	trash	NONE		
+432	5	trash	NONE		
+432	6	trash	NONE		
+445	1	magma	NONE		
+445	2	magma	NONE		
+445	3	magma	NONE		
+445	4	magma	NONE		
+445	5	magma	NONE		
+445	6	magma	NONE		
+445	7	magma	NONE		
+445	1	rock	NONE		
+445	2	rock	NONE		
+445	3	rock	NONE		
+445	4	rock	NONE		
+445	5	rock	NONE		
+445	6	rock	NONE		
+445	7	rock	NONE		
+445	1	sedimentary rock	NONE		
+445	2	sedimentary rock	NONE		
+445	3	sedimentary rock	NONE		
+445	4	sedimentary rock	NONE		
+445	5	sedimentary rock	NONE		
+445	6	sedimentary rock	NONE		
+445	7	sedimentary rock	NONE		
+445	1	third kind of rock	NONE		
+445	2	third kind of rock	NONE		
+445	3	third kind of rock	NONE		
+445	4	third kind of rock	NONE		
+445	5	third kind of rock	NONE		
+445	6	third kind of rock	NONE		
+445	7	third kind of rock	NONE		
+446	1	crystals	NONE		
+446	2	crystals	NONE		
+446	3	crystals	NONE		
+446	4	crystals	NONE		
+446	5	crystals	NONE		
+446	6	crystals	NONE		
+446	1	igneous rocks	NONE		
+446	2	igneous rocks	NONE		
+446	3	igneous rocks	NONE		
+446	4	igneous rocks	NONE		
+446	5	igneous rocks	NONE		
+446	6	igneous rocks	NONE		
+446	1	magma	NONE		
+446	2	magma	NONE		
+446	3	magma	NONE		
+446	4	magma	NONE		
+446	5	magma	NONE		
+446	6	magma	NONE		
+446	1	metamorphic rock	NONE		
+446	2	metamorphic rock	NONE		
+446	3	metamorphic rock	NONE		
+446	4	metamorphic rock	NONE		
+446	5	metamorphic rock	NONE		
+446	6	metamorphic rock	NONE		
+446	1	sedimentary rocks	NONE		
+446	2	sedimentary rocks	NONE		
+446	3	sedimentary rocks	NONE		
+446	4	sedimentary rocks	NONE		
+446	5	sedimentary rocks	NONE		
+446	6	sedimentary rocks	NONE		
+509	1	chemical energy	NONE		
+509	2	chemical energy	NONE		
+509	3	chemical energy	NONE		
+509	4	chemical energy	NONE		
+509	5	chemical energy	NONE		
+509	6	chemical energy	NONE		
+509	7	chemical energy	NONE		
+509	8	chemical energy	NONE		
+509	9	chemical energy	NONE		
+509	10	chemical energy	NONE		
+509	1	explosion	NONE		
+509	2	explosion	NONE		
+509	3	explosion	NONE		
+509	4	explosion	NONE		
+509	5	explosion	NONE		
+509	6	explosion	NONE		
+509	7	explosion	NONE		
+509	8	explosion	NONE		
+509	9	explosion	NONE		
+509	10	explosion	NONE		
+509	1	fuel ; spent fuel	NONE		
+509	2	fuel ; spent fuel	NONE		
+509	3	fuel ; spent fuel	NONE		
+509	4	fuel ; spent fuel	NONE		
+509	5	fuel ; spent fuel	NONE		
+509	6	fuel ; spent fuel	NONE		
+509	7	fuel ; spent fuel	NONE		
+509	8	fuel ; spent fuel	NONE		
+509	9	fuel ; spent fuel	NONE		
+509	10	fuel ; spent fuel	NONE		
+509	1	new fuel	NONE		
+509	2	new fuel	NONE		
+509	3	new fuel	NONE		
+509	4	new fuel	NONE		
+509	5	new fuel	NONE		
+509	6	new fuel	NONE		
+509	7	new fuel	NONE		
+509	8	new fuel	NONE		
+509	9	new fuel	NONE		
+509	10	new fuel	NONE		
+509	1	piston	NONE		
+509	2	piston	NONE		
+509	3	piston	NONE		
+509	4	piston	NONE		
+509	5	piston	NONE		
+509	6	piston	NONE		
+509	7	piston	NONE		
+509	8	piston	NONE		
+509	9	piston	NONE		
+509	10	piston	NONE		
+509	1	thermal energy	NONE		
+509	2	thermal energy	NONE		
+509	3	thermal energy	NONE		
+509	4	thermal energy	NONE		
+509	5	thermal energy	NONE		
+509	6	thermal energy	NONE		
+509	7	thermal energy	NONE		
+509	8	thermal energy	NONE		
+509	9	thermal energy	NONE		
+509	10	thermal energy	NONE		
+514	1	glacier	NONE		
+514	2	glacier	NONE		
+514	3	glacier	NONE		
+514	4	glacier	NONE		
+514	5	glacier	NONE		
+514	6	glacier	NONE		
+514	7	glacier	NONE		
+514	1	mass	NONE		
+514	2	mass	NONE		
+514	3	mass	NONE		
+514	4	mass	NONE		
+514	5	mass	NONE		
+514	6	mass	NONE		
+514	7	mass	NONE		
+514	1	snow	NONE		
+514	2	snow	NONE		
+514	3	snow	NONE		
+514	4	snow	NONE		
+514	5	snow	NONE		
+514	6	snow	NONE		
+514	7	snow	NONE		
+542	1	blood	NONE		
+542	2	blood	NONE		
+542	3	blood	NONE		
+542	4	blood	NONE		
+542	5	blood	NONE		
+542	6	blood	NONE		
+542	7	blood	NONE		
+542	1	cleaned blood	NONE		
+542	2	cleaned blood	NONE		
+542	3	cleaned blood	NONE		
+542	4	cleaned blood	NONE		
+542	5	cleaned blood	NONE		
+542	6	cleaned blood	NONE		
+542	7	cleaned blood	NONE		
+542	1	filtered waste	NONE		
+542	2	filtered waste	NONE		
+542	3	filtered waste	NONE		
+542	4	filtered waste	NONE		
+542	5	filtered waste	NONE		
+542	6	filtered waste	NONE		
+542	7	filtered waste	NONE		
+542	1	urine	NONE		
+542	2	urine	NONE		
+542	3	urine	NONE		
+542	4	urine	NONE		
+542	5	urine	NONE		
+542	6	urine	NONE		
+542	7	urine	NONE		
+542	1	waste	NONE		
+542	2	waste	NONE		
+542	3	waste	NONE		
+542	4	waste	NONE		
+542	5	waste	NONE		
+542	6	waste	NONE		
+542	7	waste	NONE		
+543	1	blood	NONE		
+543	2	blood	NONE		
+543	3	blood	NONE		
+543	4	blood	NONE		
+543	5	blood	NONE		
+543	6	blood	NONE		
+543	7	blood	NONE		
+543	1	filtered blood	NONE		
+543	2	filtered blood	NONE		
+543	3	filtered blood	NONE		
+543	4	filtered blood	NONE		
+543	5	filtered blood	NONE		
+543	6	filtered blood	NONE		
+543	7	filtered blood	NONE		
+543	1	urine	NONE		
+543	2	urine	NONE		
+543	3	urine	NONE		
+543	4	urine	NONE		
+543	5	urine	NONE		
+543	6	urine	NONE		
+543	7	urine	NONE		
+543	1	waste	NONE		
+543	2	waste	NONE		
+543	3	waste	NONE		
+543	4	waste	NONE		
+543	5	waste	NONE		
+543	6	waste	NONE		
+543	7	waste	NONE		
+544	1	fluids and liquids ; fluid ; nutrients	NONE		
+544	2	fluids and liquids ; fluid ; nutrients	NONE		
+544	3	fluids and liquids ; fluid ; nutrients	NONE		
+544	4	fluids and liquids ; fluid ; nutrients	NONE		
+544	5	fluids and liquids ; fluid ; nutrients	NONE		
+544	6	fluids and liquids ; fluid ; nutrients	NONE		
+544	1	toxins	NONE		
+544	2	toxins	NONE		
+544	3	toxins	NONE		
+544	4	toxins	NONE		
+544	5	toxins	NONE		
+544	6	toxins	NONE		
+544	1	urine	NONE		
+544	2	urine	NONE		
+544	3	urine	NONE		
+544	4	urine	NONE		
+544	5	urine	NONE		
+544	6	urine	NONE		
+608	1	air	NONE		
+608	2	air	NONE		
+608	3	air	NONE		
+608	4	air	NONE		
+608	5	air	NONE		
+608	6	air	NONE		
+608	7	air	NONE		
+608	8	air	NONE		
+608	9	air	NONE		
+608	1	explosion	NONE		
+608	2	explosion	NONE		
+608	3	explosion	NONE		
+608	4	explosion	NONE		
+608	5	explosion	NONE		
+608	6	explosion	NONE		
+608	7	explosion	NONE		
+608	8	explosion	NONE		
+608	9	explosion	NONE		
+608	1	fuel	NONE		
+608	2	fuel	NONE		
+608	3	fuel	NONE		
+608	4	fuel	NONE		
+608	5	fuel	NONE		
+608	6	fuel	NONE		
+608	7	fuel	NONE		
+608	8	fuel	NONE		
+608	9	fuel	NONE		
+608	1	piston	NONE		
+608	2	piston	NONE		
+608	3	piston	NONE		
+608	4	piston	NONE		
+608	5	piston	NONE		
+608	6	piston	NONE		
+608	7	piston	NONE		
+608	8	piston	NONE		
+608	9	piston	NONE		
+608	1	spark	NONE		
+608	2	spark	NONE		
+608	3	spark	NONE		
+608	4	spark	NONE		
+608	5	spark	NONE		
+608	6	spark	NONE		
+608	7	spark	NONE		
+608	8	spark	NONE		
+608	9	spark	NONE		
+609	1	air	NONE		
+609	2	air	NONE		
+609	3	air	NONE		
+609	4	air	NONE		
+609	5	air	NONE		
+609	6	air	NONE		
+609	1	exhaust	NONE		
+609	2	exhaust	NONE		
+609	3	exhaust	NONE		
+609	4	exhaust	NONE		
+609	5	exhaust	NONE		
+609	6	exhaust	NONE		
+609	1	explosion	NONE		
+609	2	explosion	NONE		
+609	3	explosion	NONE		
+609	4	explosion	NONE		
+609	5	explosion	NONE		
+609	6	explosion	NONE		
+609	1	gasoline	NONE		
+609	2	gasoline	NONE		
+609	3	gasoline	NONE		
+609	4	gasoline	NONE		
+609	5	gasoline	NONE		
+609	6	gasoline	NONE		
+609	1	piston	NONE		
+609	2	piston	NONE		
+609	3	piston	NONE		
+609	4	piston	NONE		
+609	5	piston	NONE		
+609	6	piston	NONE		
+609	1	spark	NONE		
+609	2	spark	NONE		
+609	3	spark	NONE		
+609	4	spark	NONE		
+609	5	spark	NONE		
+609	6	spark	NONE		
+610	1	air	NONE		
+610	2	air	NONE		
+610	3	air	NONE		
+610	4	air	NONE		
+610	5	air	NONE		
+610	6	air	NONE		
+610	7	air	NONE		
+610	8	air	NONE		
+610	1	fuel	NONE		
+610	2	fuel	NONE		
+610	3	fuel	NONE		
+610	4	fuel	NONE		
+610	5	fuel	NONE		
+610	6	fuel	NONE		
+610	7	fuel	NONE		
+610	8	fuel	NONE		
+610	1	pressure	NONE		
+610	2	pressure	NONE		
+610	3	pressure	NONE		
+610	4	pressure	NONE		
+610	5	pressure	NONE		
+610	6	pressure	NONE		
+610	7	pressure	NONE		
+610	8	pressure	NONE		
+610	1	spark	NONE		
+610	2	spark	NONE		
+610	3	spark	NONE		
+610	4	spark	NONE		
+610	5	spark	NONE		
+610	6	spark	NONE		
+610	7	spark	NONE		
+610	8	spark	NONE		
+629	1	garbage can	NONE		
+629	1	garbage truck; truck	NONE		
+629	2	garbage can	NONE		
+629	2	garbage truck; truck	NONE		
+629	3	garbage can	NONE		
+629	3	garbage truck; truck	NONE		
+629	4	garbage can	NONE		
+629	4	garbage truck; truck	NONE		
+629	5	garbage can	NONE		
+629	5	garbage truck; truck	NONE		
+629	6	garbage can	NONE		
+629	6	garbage truck; truck	NONE		
+629	7	garbage can	NONE		
+629	7	garbage truck; truck	NONE		
+629	1	plastic bag	NONE		
+629	2	plastic bag	NONE		
+629	3	plastic bag	NONE		
+629	4	plastic bag	NONE		
+629	5	plastic bag	NONE		
+629	6	plastic bag	NONE		
+629	7	plastic bag	NONE		
+629	1	trash	NONE		
+629	2	trash	NONE		
+629	3	trash	NONE		
+629	4	trash	NONE		
+629	5	trash	NONE		
+629	6	trash	NONE		
+629	7	trash	NONE		
+630	1	trash	NONE		
+630	2	trash	NONE		
+630	3	trash	NONE		
+630	4	trash	NONE		
+630	5	trash	NONE		
+630	6	trash	NONE		
+630	1	truck	NONE		
+630	2	truck	NONE		
+630	3	truck	NONE		
+630	4	truck	NONE		
+630	5	truck	NONE		
+630	6	truck	NONE		
+631	1	bags	NONE		
+631	2	bags	NONE		
+631	3	bags	NONE		
+631	4	bags	NONE		
+631	5	bags	NONE		
+631	6	bags	NONE		
+631	7	bags	NONE		
+631	1	trash	NONE		
+631	1	trash truck; truck	NONE		
+631	2	trash	NONE		
+631	2	trash truck; truck	NONE		
+631	3	trash	NONE		
+631	3	trash truck; truck	NONE		
+631	4	trash	NONE		
+631	4	trash truck; truck	NONE		
+631	5	trash	NONE		
+631	5	trash truck; truck	NONE		
+631	6	trash	NONE		
+631	6	trash truck; truck	NONE		
+631	7	trash	NONE		
+631	7	trash truck; truck	NONE		
+631	1	trashcan	NONE		
+631	2	trashcan	NONE		
+631	3	trashcan	NONE		
+631	4	trashcan	NONE		
+631	5	trashcan	NONE		
+631	6	trashcan	NONE		
+631	7	trashcan	NONE		
+632	1	electricity	NONE		
+632	2	electricity	NONE		
+632	3	electricity	NONE		
+632	4	electricity	NONE		
+632	5	electricity	NONE		
+632	6	electricity	NONE		
+632	1	heat	NONE		
+632	2	heat	NONE		
+632	3	heat	NONE		
+632	4	heat	NONE		
+632	5	heat	NONE		
+632	6	heat	NONE		
+632	1	light	NONE		
+632	2	light	NONE		
+632	3	light	NONE		
+632	4	light	NONE		
+632	5	light	NONE		
+632	6	light	NONE		
+634	1	computations	NONE		
+634	2	computations	NONE		
+634	3	computations	NONE		
+634	4	computations	NONE		
+634	5	computations	NONE		
+634	6	computations	NONE		
+634	1	electricity; energy	NONE		
+634	2	electricity; energy	NONE		
+634	3	electricity; energy	NONE		
+634	4	electricity; energy	NONE		
+634	5	electricity; energy	NONE		
+634	6	electricity; energy	NONE		
+634	1	visual signals	NONE		
+634	2	visual signals	NONE		
+634	3	visual signals	NONE		
+634	4	visual signals	NONE		
+634	5	visual signals	NONE		
+634	6	visual signals	NONE		
+708	1	melted rock	NONE		
+708	2	melted rock	NONE		
+708	3	melted rock	NONE		
+708	4	melted rock	NONE		
+708	5	melted rock	NONE		
+708	6	melted rock	NONE		
+708	7	melted rock	NONE		
+708	8	melted rock	NONE		
+708	9	melted rock	NONE		
+708	10	melted rock	NONE		
+708	1	metamorphic rock	NONE		
+708	2	metamorphic rock	NONE		
+708	3	metamorphic rock	NONE		
+708	4	metamorphic rock	NONE		
+708	5	metamorphic rock	NONE		
+708	6	metamorphic rock	NONE		
+708	7	metamorphic rock	NONE		
+708	8	metamorphic rock	NONE		
+708	9	metamorphic rock	NONE		
+708	10	metamorphic rock	NONE		
+708	1	rock	NONE		
+708	2	rock	NONE		
+708	3	rock	NONE		
+708	4	rock	NONE		
+708	5	rock	NONE		
+708	6	rock	NONE		
+708	7	rock	NONE		
+708	8	rock	NONE		
+708	9	rock	NONE		
+708	10	rock	NONE		
+708	1	sediment	NONE		
+708	2	sediment	NONE		
+708	3	sediment	NONE		
+708	4	sediment	NONE		
+708	5	sediment	NONE		
+708	6	sediment	NONE		
+708	7	sediment	NONE		
+708	8	sediment	NONE		
+708	9	sediment	NONE		
+708	10	sediment	NONE		
+716	1	blood	NONE		
+716	2	blood	NONE		
+716	3	blood	NONE		
+716	4	blood	NONE		
+716	5	blood	NONE		
+716	6	blood	NONE		
+716	1	cleaned blood	NONE		
+716	2	cleaned blood	NONE		
+716	3	cleaned blood	NONE		
+716	4	cleaned blood	NONE		
+716	5	cleaned blood	NONE		
+716	6	cleaned blood	NONE		
+716	1	kidney	NONE		
+716	2	kidney	NONE		
+716	3	kidney	NONE		
+716	4	kidney	NONE		
+716	5	kidney	NONE		
+716	6	kidney	NONE		
+716	1	urine	NONE		
+716	2	urine	NONE		
+716	3	urine	NONE		
+716	4	urine	NONE		
+716	5	urine	NONE		
+716	6	urine	NONE		
+716	1	waste	NONE		
+716	2	waste	NONE		
+716	3	waste	NONE		
+716	4	waste	NONE		
+716	5	waste	NONE		
+716	6	waste	NONE		
+758	1	electrical energy; electrons	NONE		
+758	2	electrical energy; electrons	NONE		
+758	3	electrical energy; electrons	NONE		
+758	4	electrical energy; electrons	NONE		
+758	5	electrical energy; electrons	NONE		
+758	6	electrical energy; electrons	NONE		
+758	1	gas; fuel source	NONE		
+758	2	gas; fuel source	NONE		
+758	3	gas; fuel source	NONE		
+758	4	gas; fuel source	NONE		
+758	5	gas; fuel source	NONE		
+758	6	gas; fuel source	NONE		
+758	1	mechanical energy	NONE		
+758	2	mechanical energy	NONE		
+758	3	mechanical energy	NONE		
+758	4	mechanical energy	NONE		
+758	5	mechanical energy	NONE		
+758	6	mechanical energy	NONE		
+825	1	electricity	NONE		
+825	2	electricity	NONE		
+825	3	electricity	NONE		
+825	4	electricity	NONE		
+825	5	electricity	NONE		
+825	6	electricity	NONE		
+825	7	electricity	NONE		
+825	8	electricity	NONE		
+825	9	electricity	NONE		
+825	10	electricity	NONE		
+825	1	heat energy	NONE		
+825	2	heat energy	NONE		
+825	3	heat energy	NONE		
+825	4	heat energy	NONE		
+825	5	heat energy	NONE		
+825	6	heat energy	NONE		
+825	7	heat energy	NONE		
+825	8	heat energy	NONE		
+825	9	heat energy	NONE		
+825	10	heat energy	NONE		
+825	1	steam	NONE		
+825	2	steam	NONE		
+825	3	steam	NONE		
+825	4	steam	NONE		
+825	5	steam	NONE		
+825	6	steam	NONE		
+825	7	steam	NONE		
+825	8	steam	NONE		
+825	9	steam	NONE		
+825	10	steam	NONE		
+825	1	uranium ; uranium atoms	NONE		
+825	2	uranium ; uranium atoms	NONE		
+825	3	uranium ; uranium atoms	NONE		
+825	4	uranium ; uranium atoms	NONE		
+825	5	uranium ; uranium atoms	NONE		
+825	6	uranium ; uranium atoms	NONE		
+825	7	uranium ; uranium atoms	NONE		
+825	8	uranium ; uranium atoms	NONE		
+825	9	uranium ; uranium atoms	NONE		
+825	10	uranium ; uranium atoms	NONE		
+825	1	water	NONE		
+825	2	water	NONE		
+825	3	water	NONE		
+825	4	water	NONE		
+825	5	water	NONE		
+825	6	water	NONE		
+825	7	water	NONE		
+825	8	water	NONE		
+825	9	water	NONE		
+825	10	water	NONE		
+826	1	electricity	NONE		
+826	2	electricity	NONE		
+826	3	electricity	NONE		
+826	4	electricity	NONE		
+826	5	electricity	NONE		
+826	1	heat	NONE		
+826	2	heat	NONE		
+826	3	heat	NONE		
+826	4	heat	NONE		
+826	5	heat	NONE		
+826	1	steam	NONE		
+826	2	steam	NONE		
+826	3	steam	NONE		
+826	4	steam	NONE		
+826	5	steam	NONE		
+1002	1	dirty laundry	NONE		
+1002	2	dirty laundry	NONE		
+1002	3	dirty laundry	NONE		
+1002	4	dirty laundry	NONE		
+1002	5	dirty laundry	NONE		
+1002	1	laundry detergent	NONE		
+1002	2	laundry detergent	NONE		
+1002	3	laundry detergent	NONE		
+1002	4	laundry detergent	NONE		
+1002	5	laundry detergent	NONE		
+1007	1	microbes	NONE		
+1007	2	microbes	NONE		
+1007	3	microbes	NONE		
+1007	4	microbes	NONE		
+1007	5	microbes	NONE		
+1007	6	microbes	NONE		
+1007	1	plant ; material	NONE		
+1007	2	plant ; material	NONE		
+1007	3	plant ; material	NONE		
+1007	4	plant ; material	NONE		
+1007	5	plant ; material	NONE		
+1007	6	plant ; material	NONE		
+1008	1	bacteria	NONE		
+1008	2	bacteria	NONE		
+1008	3	bacteria	NONE		
+1008	4	bacteria	NONE		
+1008	5	bacteria	NONE		
+1008	1	components	NONE		
+1008	2	components	NONE		
+1008	3	components	NONE		
+1008	4	components	NONE		
+1008	5	components	NONE		
+1008	1	enzymes	NONE		
+1008	2	enzymes	NONE		
+1008	3	enzymes	NONE		
+1008	4	enzymes	NONE		
+1008	5	enzymes	NONE		
+1008	1	plant cells	NONE		
+1008	2	plant cells	NONE		
+1008	3	plant cells	NONE		
+1008	4	plant cells	NONE		
+1008	5	plant cells	NONE		
+1112	1	acid	NONE		
+1112	2	acid	NONE		
+1112	3	acid	NONE		
+1112	4	acid	NONE		
+1112	5	acid	NONE		
+1112	1	carbon dioxide	NONE		
+1112	2	carbon dioxide	NONE		
+1112	3	carbon dioxide	NONE		
+1112	4	carbon dioxide	NONE		
+1112	5	carbon dioxide	NONE		
+1112	1	caves	NONE		
+1112	2	caves	NONE		
+1112	3	caves	NONE		
+1112	4	caves	NONE		
+1112	5	caves	NONE		
+1112	1	limestone	NONE		
+1112	2	limestone	NONE		
+1112	3	limestone	NONE		
+1112	4	limestone	NONE		
+1112	5	limestone	NONE		
+1112	1	rain	NONE		
+1112	2	rain	NONE		
+1112	3	rain	NONE		
+1112	4	rain	NONE		
+1112	5	rain	NONE		
+1113	1	carbon dioxide	NONE		
+1113	2	carbon dioxide	NONE		
+1113	3	carbon dioxide	NONE		
+1113	4	carbon dioxide	NONE		
+1113	5	carbon dioxide	NONE		
+1113	6	carbon dioxide	NONE		
+1113	1	caves	NONE		
+1113	2	caves	NONE		
+1113	3	caves	NONE		
+1113	4	caves	NONE		
+1113	5	caves	NONE		
+1113	6	caves	NONE		
+1113	1	limestone	NONE		
+1113	2	limestone	NONE		
+1113	3	limestone	NONE		
+1113	4	limestone	NONE		
+1113	5	limestone	NONE		
+1113	6	limestone	NONE		
+1113	1	rainwater	NONE		
+1113	2	rainwater	NONE		
+1113	3	rainwater	NONE		
+1113	4	rainwater	NONE		
+1113	5	rainwater	NONE		
+1113	6	rainwater	NONE		
+1113	1	water	NONE		
+1113	2	water	NONE		
+1113	3	water	NONE		
+1113	4	water	NONE		
+1113	5	water	NONE		
+1113	6	water	NONE		
+1113	1	weak acid	NONE		
+1113	2	weak acid	NONE		
+1113	3	weak acid	NONE		
+1113	4	weak acid	NONE		
+1113	5	weak acid	NONE		
+1113	6	weak acid	NONE		
+1114	1	bedrock	NONE		
+1114	2	bedrock	NONE		
+1114	3	bedrock	NONE		
+1114	4	bedrock	NONE		
+1114	5	bedrock	NONE		
+1114	6	bedrock	NONE		
+1114	7	bedrock	NONE		
+1114	1	caves	NONE		
+1114	2	caves	NONE		
+1114	3	caves	NONE		
+1114	4	caves	NONE		
+1114	5	caves	NONE		
+1114	6	caves	NONE		
+1114	7	caves	NONE		
+1114	1	funnels	NONE		
+1114	2	funnels	NONE		
+1114	3	funnels	NONE		
+1114	4	funnels	NONE		
+1114	5	funnels	NONE		
+1114	6	funnels	NONE		
+1114	7	funnels	NONE		
+1114	1	rainwater; water	NONE		
+1114	2	rainwater; water	NONE		
+1114	3	rainwater; water	NONE		
+1114	4	rainwater; water	NONE		
+1114	5	rainwater; water	NONE		
+1114	6	rainwater; water	NONE		
+1114	7	rainwater; water	NONE		
+1197	1	broken down food	NONE		
+1197	2	broken down food	NONE		
+1197	3	broken down food	NONE		
+1197	4	broken down food	NONE		
+1197	5	broken down food	NONE		
+1197	6	broken down food	NONE		
+1197	7	broken down food	NONE		
+1197	8	broken down food	NONE		
+1197	9	broken down food	NONE		
+1197	1	energy	NONE		
+1197	2	energy	NONE		
+1197	3	energy	NONE		
+1197	4	energy	NONE		
+1197	5	energy	NONE		
+1197	6	energy	NONE		
+1197	7	energy	NONE		
+1197	8	energy	NONE		
+1197	9	energy	NONE		
+1197	1	food	NONE		
+1197	2	food	NONE		
+1197	3	food	NONE		
+1197	4	food	NONE		
+1197	5	food	NONE		
+1197	6	food	NONE		
+1197	7	food	NONE		
+1197	8	food	NONE		
+1197	9	food	NONE		
+1197	1	sugar	NONE		
+1197	2	sugar	NONE		
+1197	3	sugar	NONE		
+1197	4	sugar	NONE		
+1197	5	sugar	NONE		
+1197	6	sugar	NONE		
+1197	7	sugar	NONE		
+1197	8	sugar	NONE		
+1197	9	sugar	NONE		
+1226	1	Carbohydrates	NONE		
+1226	2	Carbohydrates	NONE		
+1226	3	Carbohydrates	NONE		
+1226	4	Carbohydrates	NONE		
+1226	5	Carbohydrates	NONE		
+1226	6	Carbohydrates	NONE		
+1226	1	Enyzmes	NONE		
+1226	2	Enyzmes	NONE		
+1226	3	Enyzmes	NONE		
+1226	4	Enyzmes	NONE		
+1226	5	Enyzmes	NONE		
+1226	6	Enyzmes	NONE		
+1226	1	Fat	NONE		
+1226	2	Fat	NONE		
+1226	3	Fat	NONE		
+1226	4	Fat	NONE		
+1226	5	Fat	NONE		
+1226	6	Fat	NONE		
+1226	1	Food	NONE		
+1226	2	Food	NONE		
+1226	3	Food	NONE		
+1226	4	Food	NONE		
+1226	5	Food	NONE		
+1226	6	Food	NONE		
+1259	1	Thread	NONE		
+1259	2	Thread	NONE		
+1259	3	Thread	NONE		
+1259	4	Thread	NONE		
+1259	5	Thread	NONE		
+1259	1	Web	NONE		
+1259	2	Web	NONE		
+1259	3	Web	NONE		
+1259	4	Web	NONE		
+1259	5	Web	NONE		
+1260	1	silk	NONE		
+1260	2	silk	NONE		
+1260	3	silk	NONE		
+1260	4	silk	NONE		
+1260	5	silk	NONE		
+1260	1	web	NONE		
+1260	2	web	NONE		
+1260	3	web	NONE		
+1260	4	web	NONE		
+1260	5	web	NONE		
+1303	1	food	NONE		
+1303	2	food	NONE		
+1303	3	food	NONE		
+1303	4	food	NONE		
+1303	5	food	NONE		
+1303	1	microbes	NONE		
+1303	2	microbes	NONE		
+1303	3	microbes	NONE		
+1303	4	microbes	NONE		
+1303	5	microbes	NONE		
+1303	1	milk	NONE		
+1303	2	milk	NONE		
+1303	3	milk	NONE		
+1303	4	milk	NONE		
+1303	5	milk	NONE		
