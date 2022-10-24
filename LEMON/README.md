@@ -4,7 +4,7 @@ This repository contains the code and pre-trained models for our paper [LEMON: L
 
 Data
 -------
-The data is in the [release](https://github.com/qshi95/LEMON/releases/tag/data). Please unzip it and put it in the lemon_data folder.
+The data is in the [release](https://github.com/microsoft/ContextualSP/releases/tag/lemon_data). Please unzip it and put it in the lemon_data folder.
 
 Pre-training
 -------
