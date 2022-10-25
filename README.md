@@ -23,7 +23,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 ### Reasoning
 
 > **[Reasoning Like Program Executors](poet)**
-> Xinyu Pi*, Qian Liu*, Bei Chen, Morteza Ziyadi, Zeqi Lin, Qiang Fu, Yan Gao, Jian-Guang Lou, Weizhu Chen, EMNLP 2022 Findings.
+> Xinyu Pi*, Qian Liu*, Bei Chen, Morteza Ziyadi, Zeqi Lin, Qiang Fu, Yan Gao, Jian-Guang Lou, Weizhu Chen, EMNLP 2022.
 
 > **[LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](lemon)**
 > Qi Shi, Qian Liu, Bei Chen, Yu Zhang, Ting Liu, Jian-Guang Lou, EMNLP 2022 Findings.
