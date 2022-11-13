@@ -1,6 +1,8 @@
 # LogiGAN
 This repository serves primarily as codebase and data, model for training, evaluation and inference of the logical pre-training method LogiGAN.
 [LogiGAN](https://arxiv.org/abs/2205.08794) (NeurIPS 2022) is the adversarial logical pre-training method with Transformer-based encoder-decoder backbone.
+
+The data and model are released in [Here](https://github.com/microsoft/ContextualSP/releases/tag/logigan).
 # Preprocessing
 ## Logic MLM Corpus Construction
 ```angular2
