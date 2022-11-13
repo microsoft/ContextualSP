@@ -5,14 +5,15 @@ import os
 import torch
 from .pipeline_base import NLBindingInferencePipeline
 
+
 class NLBindingTorchScriptPipeline(NLBindingInferencePipeline):
     def __init__(self,
-        model_dir: str,
-        greedy_linking: bool,
-        threshold: float=0.2,
-        num_threads: int=8,
-        use_gpu: bool = torch.cuda.is_available()
-    ) -> None:
+                 model_dir: str,
+                 greedy_linking: bool,
+                 threshold: float = 0.2,
+                 num_threads: int = 8,
+                 use_gpu: bool = torch.cuda.is_available()
+                 ) -> None:
         super().__init__(model_dir, greedy_linking=greedy_linking, threshold=threshold)
 
         self.device = torch.device('cuda') if use_gpu else torch.device('cpu')
@@ -20,7 +21,8 @@ class NLBindingTorchScriptPipeline(NLBindingInferencePipeline):
 
         torch.set_num_interop_threads(2)
         torch.set_num_threads(num_threads)
-        print('Torch model Threads: {}, {}, {}'.format(torch.get_num_interop_threads(), torch.get_num_threads(), self.device))
+        print('Torch model Threads: {}, {}, {}'.format(torch.get_num_interop_threads(), torch.get_num_threads(),
+                                                       self.device))
         model_ckpt_path = os.path.join(model_dir, model_file)
         self.model = torch.jit.load(model_ckpt_path, map_location=self.device)
         self.model.eval()
