@@ -1,0 +1,4420 @@
+[
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What position does the player who played for butler cc (ks) play?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "position",
+          "lemma": "position"
+        },
+        {
+          "token": "does",
+          "lemma": "do"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "player",
+          "lemma": "player"
+        },
+        {
+          "token": "who",
+          "lemma": "who"
+        },
+        {
+          "token": "played",
+          "lemma": "play"
+        },
+        {
+          "token": "for",
+          "lemma": "for"
+        },
+        {
+          "token": "butler",
+          "lemma": "butler"
+        },
+        {
+          "token": "cc",
+          "lemma": "cc"
+        },
+        {
+          "token": "(",
+          "lemma": "("
+        },
+        {
+          "token": "ks",
+          "lemma": "ks"
+        },
+        {
+          "token": ")",
+          "lemma": ")"
+        },
+        {
+          "token": "play",
+          "lemma": "play"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-11",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-11",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Position"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "School/Club Team"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "School/Club Team::Butler CC (KS)"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Antonio Lang",
+        "tokens": [
+          {
+            "token": "Antonio",
+            "lemma": "antonio"
+          },
+          {
+            "token": "Lang",
+            "lemma": "lang"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "21",
+        "tokens": [
+          {
+            "token": "21",
+            "lemma": "21"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard-Forward",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "Forward",
+            "lemma": "forward"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "1999-2000",
+        "tokens": [
+          {
+            "token": "1999",
+            "lemma": "1999"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "2000",
+            "lemma": "2000"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Butler CC (KS)",
+        "tokens": [
+          {
+            "token": "Butler",
+            "lemma": "butler"
+          },
+          {
+            "token": "CC",
+            "lemma": "cc"
+          },
+          {
+            "token": "(",
+            "lemma": "("
+          },
+          {
+            "token": "KS",
+            "lemma": "ks"
+          },
+          {
+            "token": ")",
+            "lemma": ")"
+          }
+        ],
+        "span": {
+          "start": 8,
+          "end": 11
+        },
+        "column": "School/Club Team",
+        "score": 1.0494
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      },
+      {
+        "start": 10,
+        "end": 10
+      },
+      {
+        "start": 11,
+        "end": 11
+      },
+      {
+        "start": 12,
+        "end": 12
+      },
+      {
+        "start": 13,
+        "end": 13
+      },
+      {
+        "start": 14,
+        "end": 14
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "position",
+        "term_type": "Column",
+        "term_value": "Position",
+        "confidence": 0.901
+      },
+      {
+        "token": "does",
+        "term_type": "Null",
+        "term_value": "does",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "player",
+        "term_type": "Null",
+        "term_value": "player",
+        "confidence": 1.0
+      },
+      {
+        "token": "who",
+        "term_type": "Null",
+        "term_value": "who",
+        "confidence": 1.0
+      },
+      {
+        "token": "played",
+        "term_type": "Null",
+        "term_value": "played",
+        "confidence": 1.0
+      },
+      {
+        "token": "for",
+        "term_type": "Null",
+        "term_value": "for",
+        "confidence": 1.0
+      },
+      {
+        "token": "butler",
+        "term_type": "Value",
+        "term_value": "Butler CC (KS)/School/Club Team",
+        "confidence": 0.952
+      },
+      {
+        "token": "cc",
+        "term_type": "Value",
+        "term_value": "Butler CC (KS)/School/Club Team",
+        "confidence": 0.952
+      },
+      {
+        "token": "(",
+        "term_type": "Value",
+        "term_value": "Butler CC (KS)/School/Club Team",
+        "confidence": 0.952
+      },
+      {
+        "token": "ks",
+        "term_type": "Value",
+        "term_value": "Butler CC (KS)/School/Club Team",
+        "confidence": 0.952
+      },
+      {
+        "token": ")",
+        "term_type": "Null",
+        "term_value": ")",
+        "confidence": 1.0
+      },
+      {
+        "token": "play",
+        "term_type": "Null",
+        "term_value": "play",
+        "confidence": 1.0
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "How many schools did player number 3 play at?",
+      "tokens": [
+        {
+          "token": "How",
+          "lemma": "how"
+        },
+        {
+          "token": "many",
+          "lemma": "many"
+        },
+        {
+          "token": "schools",
+          "lemma": "school"
+        },
+        {
+          "token": "did",
+          "lemma": "do"
+        },
+        {
+          "token": "player",
+          "lemma": "player"
+        },
+        {
+          "token": "number",
+          "lemma": "number"
+        },
+        {
+          "token": "3",
+          "lemma": "3"
+        },
+        {
+          "token": "play",
+          "lemma": "play"
+        },
+        {
+          "token": "at",
+          "lemma": "at"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-11",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-11",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "COUNT"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "("
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "School/Club Team"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": ")"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "No."
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "No.::3"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Antonio Lang",
+        "tokens": [
+          {
+            "token": "Antonio",
+            "lemma": "antonio"
+          },
+          {
+            "token": "Lang",
+            "lemma": "lang"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "3",
+        "tokens": [
+          {
+            "token": "3",
+            "lemma": "3"
+          }
+        ],
+        "span": {
+          "start": 6,
+          "end": 6
+        },
+        "column": "No.",
+        "score": 1.1
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard-Forward",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "Forward",
+            "lemma": "forward"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "1999-2000",
+        "tokens": [
+          {
+            "token": "1999",
+            "lemma": "1999"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "2000",
+            "lemma": "2000"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Duke",
+        "tokens": [
+          {
+            "token": "Duke",
+            "lemma": "duke"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "How",
+        "term_type": "Null",
+        "term_value": "How",
+        "confidence": 1.0
+      },
+      {
+        "token": "many",
+        "term_type": "Keyword",
+        "term_value": "Count",
+        "confidence": 0.859
+      },
+      {
+        "token": "schools",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.928
+      },
+      {
+        "token": "did",
+        "term_type": "Null",
+        "term_value": "did",
+        "confidence": 1.0
+      },
+      {
+        "token": "player",
+        "term_type": "Column",
+        "term_value": "No.",
+        "confidence": 0.623
+      },
+      {
+        "token": "number",
+        "term_type": "Null",
+        "term_value": "number",
+        "confidence": 1.0
+      },
+      {
+        "token": "3",
+        "term_type": "Value",
+        "term_value": "3/No.",
+        "confidence": 0.959
+      },
+      {
+        "token": "play",
+        "term_type": "Null",
+        "term_value": "play",
+        "confidence": 1.0
+      },
+      {
+        "token": "at",
+        "term_type": "Null",
+        "term_value": "at",
+        "confidence": 1.0
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What school did player number 21 play for?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "school",
+          "lemma": "school"
+        },
+        {
+          "token": "did",
+          "lemma": "do"
+        },
+        {
+          "token": "player",
+          "lemma": "player"
+        },
+        {
+          "token": "number",
+          "lemma": "number"
+        },
+        {
+          "token": "21",
+          "lemma": "21"
+        },
+        {
+          "token": "play",
+          "lemma": "play"
+        },
+        {
+          "token": "for",
+          "lemma": "for"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-11",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-11",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "School/Club Team"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "No."
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "No.::21"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Antonio Lang",
+        "tokens": [
+          {
+            "token": "Antonio",
+            "lemma": "antonio"
+          },
+          {
+            "token": "Lang",
+            "lemma": "lang"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "21",
+        "tokens": [
+          {
+            "token": "21",
+            "lemma": "21"
+          }
+        ],
+        "span": {
+          "start": 5,
+          "end": 5
+        },
+        "column": "No.",
+        "score": 1.1
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard-Forward",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "Forward",
+            "lemma": "forward"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "1999-2000",
+        "tokens": [
+          {
+            "token": "1999",
+            "lemma": "1999"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "2000",
+            "lemma": "2000"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Duke",
+        "tokens": [
+          {
+            "token": "Duke",
+            "lemma": "duke"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "school",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.942
+      },
+      {
+        "token": "did",
+        "term_type": "Null",
+        "term_value": "did",
+        "confidence": 1.0
+      },
+      {
+        "token": "player",
+        "term_type": "Column",
+        "term_value": "No.",
+        "confidence": 0.587
+      },
+      {
+        "token": "number",
+        "term_type": "Null",
+        "term_value": "number",
+        "confidence": 1.0
+      },
+      {
+        "token": "21",
+        "term_type": "Value",
+        "term_value": "21/No.",
+        "confidence": 0.957
+      },
+      {
+        "token": "play",
+        "term_type": "Null",
+        "term_value": "play",
+        "confidence": 1.0
+      },
+      {
+        "token": "for",
+        "term_type": "Null",
+        "term_value": "for",
+        "confidence": 1.0
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "Who is the player that wears number 42?",
+      "tokens": [
+        {
+          "token": "Who",
+          "lemma": "who"
+        },
+        {
+          "token": "is",
+          "lemma": "be"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "player",
+          "lemma": "player"
+        },
+        {
+          "token": "that",
+          "lemma": "that"
+        },
+        {
+          "token": "wears",
+          "lemma": "wear"
+        },
+        {
+          "token": "number",
+          "lemma": "number"
+        },
+        {
+          "token": "42",
+          "lemma": "42"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-11",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-11",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Player"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "No."
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "No.::42"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Antonio Lang",
+        "tokens": [
+          {
+            "token": "Antonio",
+            "lemma": "antonio"
+          },
+          {
+            "token": "Lang",
+            "lemma": "lang"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "42",
+        "tokens": [
+          {
+            "token": "42",
+            "lemma": "42"
+          }
+        ],
+        "span": {
+          "start": 7,
+          "end": 7
+        },
+        "column": "No.",
+        "score": 1.1
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard-Forward",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "Forward",
+            "lemma": "forward"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "1999-2000",
+        "tokens": [
+          {
+            "token": "1999",
+            "lemma": "1999"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "2000",
+            "lemma": "2000"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Duke",
+        "tokens": [
+          {
+            "token": "Duke",
+            "lemma": "duke"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "Who",
+        "term_type": "Null",
+        "term_value": "Who",
+        "confidence": 1.0
+      },
+      {
+        "token": "is",
+        "term_type": "Null",
+        "term_value": "is",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "player",
+        "term_type": "Column",
+        "term_value": "Player",
+        "confidence": 0.755
+      },
+      {
+        "token": "that",
+        "term_type": "Null",
+        "term_value": "that",
+        "confidence": 1.0
+      },
+      {
+        "token": "wears",
+        "term_type": "Null",
+        "term_value": "wears",
+        "confidence": 1.0
+      },
+      {
+        "token": "number",
+        "term_type": "Null",
+        "term_value": "number",
+        "confidence": 1.0
+      },
+      {
+        "token": "42",
+        "term_type": "Value",
+        "term_value": "42/No.",
+        "confidence": 0.956
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What player played guard for toronto in 1996-97?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "player",
+          "lemma": "player"
+        },
+        {
+          "token": "played",
+          "lemma": "play"
+        },
+        {
+          "token": "guard",
+          "lemma": "guard"
+        },
+        {
+          "token": "for",
+          "lemma": "for"
+        },
+        {
+          "token": "toronto",
+          "lemma": "toronto"
+        },
+        {
+          "token": "in",
+          "lemma": "in"
+        },
+        {
+          "token": "1996",
+          "lemma": "1996"
+        },
+        {
+          "token": "-",
+          "lemma": "-"
+        },
+        {
+          "token": "97",
+          "lemma": "97"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-11",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-11",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Player"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Position"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "Position::Guard"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "and"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Years in Toronto"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "Years in Toronto::1996-97"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Antonio Lang",
+        "tokens": [
+          {
+            "token": "Antonio",
+            "lemma": "antonio"
+          },
+          {
+            "token": "Lang",
+            "lemma": "lang"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "21",
+        "tokens": [
+          {
+            "token": "21",
+            "lemma": "21"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          }
+        ],
+        "span": {
+          "start": 3,
+          "end": 3
+        },
+        "column": "Position",
+        "score": 1.1
+      },
+      {
+        "name": "1996-97",
+        "tokens": [
+          {
+            "token": "1996",
+            "lemma": "1996"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "97",
+            "lemma": "97"
+          }
+        ],
+        "span": {
+          "start": 7,
+          "end": 9
+        },
+        "column": "Years in Toronto",
+        "score": 1.1
+      },
+      {
+        "name": "Duke",
+        "tokens": [
+          {
+            "token": "Duke",
+            "lemma": "duke"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      },
+      {
+        "start": 10,
+        "end": 10
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "player",
+        "term_type": "Column",
+        "term_value": "Player",
+        "confidence": 0.897
+      },
+      {
+        "token": "played",
+        "term_type": "Null",
+        "term_value": "played",
+        "confidence": 1.0
+      },
+      {
+        "token": "guard",
+        "term_type": "Value",
+        "term_value": "Guard/Position",
+        "confidence": 0.946
+      },
+      {
+        "token": "for",
+        "term_type": "Null",
+        "term_value": "for",
+        "confidence": 1.0
+      },
+      {
+        "token": "toronto",
+        "term_type": "Null",
+        "term_value": "toronto",
+        "confidence": 1.0
+      },
+      {
+        "token": "in",
+        "term_type": "Null",
+        "term_value": "in",
+        "confidence": 1.0
+      },
+      {
+        "token": "1996",
+        "term_type": "Value",
+        "term_value": "1996-97/Years in Toronto",
+        "confidence": 0.953
+      },
+      {
+        "token": "-",
+        "term_type": "Value",
+        "term_value": "1996-97/Years in Toronto",
+        "confidence": 0.953
+      },
+      {
+        "token": "97",
+        "term_type": "Value",
+        "term_value": "1996-97/Years in Toronto",
+        "confidence": 0.953
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "Who are all of the players on the Westchester High School club team?",
+      "tokens": [
+        {
+          "token": "Who",
+          "lemma": "who"
+        },
+        {
+          "token": "are",
+          "lemma": "are"
+        },
+        {
+          "token": "all",
+          "lemma": "all"
+        },
+        {
+          "token": "of",
+          "lemma": "of"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "players",
+          "lemma": "player"
+        },
+        {
+          "token": "on",
+          "lemma": "on"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "Westchester",
+          "lemma": "westchester"
+        },
+        {
+          "token": "High",
+          "lemma": "high"
+        },
+        {
+          "token": "School",
+          "lemma": "school"
+        },
+        {
+          "token": "club",
+          "lemma": "club"
+        },
+        {
+          "token": "team",
+          "lemma": "team"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-9",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-9",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Player"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "School/Club Team"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "School/Club Team::Westchester High School"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Jarrett Jack",
+        "tokens": [
+          {
+            "token": "Jarrett",
+            "lemma": "jarrett"
+          },
+          {
+            "token": "Jack",
+            "lemma": "jack"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "1",
+        "tokens": [
+          {
+            "token": "1",
+            "lemma": "1"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Australia",
+        "tokens": [
+          {
+            "token": "Australia",
+            "lemma": "australia"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "2009-10",
+        "tokens": [
+          {
+            "token": "2009",
+            "lemma": "2009"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "10",
+            "lemma": "10"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Westchester High School",
+        "tokens": [
+          {
+            "token": "Westchester",
+            "lemma": "westchester"
+          },
+          {
+            "token": "High",
+            "lemma": "high"
+          },
+          {
+            "token": "School",
+            "lemma": "school"
+          }
+        ],
+        "span": {
+          "start": 8,
+          "end": 10
+        },
+        "column": "School/Club Team",
+        "score": 1.0523809523809524
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      },
+      {
+        "start": 10,
+        "end": 10
+      },
+      {
+        "start": 11,
+        "end": 11
+      },
+      {
+        "start": 11,
+        "end": 12
+      },
+      {
+        "start": 12,
+        "end": 12
+      },
+      {
+        "start": 13,
+        "end": 13
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "Who",
+        "term_type": "Null",
+        "term_value": "Who",
+        "confidence": 1.0
+      },
+      {
+        "token": "are",
+        "term_type": "Null",
+        "term_value": "are",
+        "confidence": 1.0
+      },
+      {
+        "token": "all",
+        "term_type": "Null",
+        "term_value": "all",
+        "confidence": 1.0
+      },
+      {
+        "token": "of",
+        "term_type": "Null",
+        "term_value": "of",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "players",
+        "term_type": "Column",
+        "term_value": "Player",
+        "confidence": 0.79
+      },
+      {
+        "token": "on",
+        "term_type": "Null",
+        "term_value": "on",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "Westchester",
+        "term_type": "Value",
+        "term_value": "Westchester High School/School/Club Team",
+        "confidence": 0.954
+      },
+      {
+        "token": "High",
+        "term_type": "Value",
+        "term_value": "Westchester High School/School/Club Team",
+        "confidence": 0.954
+      },
+      {
+        "token": "School",
+        "term_type": "Value",
+        "term_value": "Westchester High School/School/Club Team",
+        "confidence": 0.954
+      },
+      {
+        "token": "club",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.214
+      },
+      {
+        "token": "team",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.194
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What school/club team is Amir Johnson on?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "school",
+          "lemma": "school"
+        },
+        {
+          "token": "/",
+          "lemma": "/"
+        },
+        {
+          "token": "club",
+          "lemma": "club"
+        },
+        {
+          "token": "team",
+          "lemma": "team"
+        },
+        {
+          "token": "is",
+          "lemma": "be"
+        },
+        {
+          "token": "Amir",
+          "lemma": "amir"
+        },
+        {
+          "token": "Johnson",
+          "lemma": "johnson"
+        },
+        {
+          "token": "on",
+          "lemma": "on"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-9",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-9",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "School/Club Team"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Player"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "Player::Amir Johnson"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Amir Johnson",
+        "tokens": [
+          {
+            "token": "Amir",
+            "lemma": "amir"
+          },
+          {
+            "token": "Johnson",
+            "lemma": "johnson"
+          }
+        ],
+        "span": {
+          "start": 6,
+          "end": 7
+        },
+        "column": "Player",
+        "score": 1.0363636363636364
+      },
+      {
+        "name": "1",
+        "tokens": [
+          {
+            "token": "1",
+            "lemma": "1"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Australia",
+        "tokens": [
+          {
+            "token": "Australia",
+            "lemma": "australia"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "2009-10",
+        "tokens": [
+          {
+            "token": "2009",
+            "lemma": "2009"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "10",
+            "lemma": "10"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Georgia Tech",
+        "tokens": [
+          {
+            "token": "Georgia",
+            "lemma": "georgia"
+          },
+          {
+            "token": "Tech",
+            "lemma": "tech"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 1,
+        "end": 4
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "school",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.237
+      },
+      {
+        "token": "/",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.284
+      },
+      {
+        "token": "club",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.211
+      },
+      {
+        "token": "team",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.215
+      },
+      {
+        "token": "is",
+        "term_type": "Null",
+        "term_value": "is",
+        "confidence": 1.0
+      },
+      {
+        "token": "Amir",
+        "term_type": "Value",
+        "term_value": "Amir Johnson/Player",
+        "confidence": 0.946
+      },
+      {
+        "token": "Johnson",
+        "term_type": "Value",
+        "term_value": "Amir Johnson/Player",
+        "confidence": 0.946
+      },
+      {
+        "token": "on",
+        "term_type": "Null",
+        "term_value": "on",
+        "confidence": 1.0
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What are the total amount of numbers on the Toronto team in 2005-06?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "are",
+          "lemma": "are"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "total",
+          "lemma": "total"
+        },
+        {
+          "token": "amount",
+          "lemma": "amount"
+        },
+        {
+          "token": "of",
+          "lemma": "of"
+        },
+        {
+          "token": "numbers",
+          "lemma": "number"
+        },
+        {
+          "token": "on",
+          "lemma": "on"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "Toronto",
+          "lemma": "toronto"
+        },
+        {
+          "token": "team",
+          "lemma": "team"
+        },
+        {
+          "token": "in",
+          "lemma": "in"
+        },
+        {
+          "token": "2005",
+          "lemma": "2005"
+        },
+        {
+          "token": "-",
+          "lemma": "-"
+        },
+        {
+          "token": "06",
+          "lemma": "06"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-9",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-9",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "COUNT"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "("
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "No."
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": ")"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Years in Toronto"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "Years in Toronto::2005-06"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Jarrett Jack",
+        "tokens": [
+          {
+            "token": "Jarrett",
+            "lemma": "jarrett"
+          },
+          {
+            "token": "Jack",
+            "lemma": "jack"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "1",
+        "tokens": [
+          {
+            "token": "1",
+            "lemma": "1"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Australia",
+        "tokens": [
+          {
+            "token": "Australia",
+            "lemma": "australia"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "2005-06",
+        "tokens": [
+          {
+            "token": "2005",
+            "lemma": "2005"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "06",
+            "lemma": "06"
+          }
+        ],
+        "span": {
+          "start": 12,
+          "end": 14
+        },
+        "column": "Years in Toronto",
+        "score": 1.1
+      },
+      {
+        "name": "Georgia Tech",
+        "tokens": [
+          {
+            "token": "Georgia",
+            "lemma": "georgia"
+          },
+          {
+            "token": "Tech",
+            "lemma": "tech"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      },
+      {
+        "start": 10,
+        "end": 10
+      },
+      {
+        "start": 11,
+        "end": 11
+      },
+      {
+        "start": 12,
+        "end": 12
+      },
+      {
+        "start": 13,
+        "end": 13
+      },
+      {
+        "start": 14,
+        "end": 14
+      },
+      {
+        "start": 15,
+        "end": 15
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "are",
+        "term_type": "Null",
+        "term_value": "are",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "total",
+        "term_type": "Keyword",
+        "term_value": "Count",
+        "confidence": 0.36
+      },
+      {
+        "token": "amount",
+        "term_type": "Keyword",
+        "term_value": "Count",
+        "confidence": 0.382
+      },
+      {
+        "token": "of",
+        "term_type": "Null",
+        "term_value": "of",
+        "confidence": 1.0
+      },
+      {
+        "token": "numbers",
+        "term_type": "Column",
+        "term_value": "No.",
+        "confidence": 0.244
+      },
+      {
+        "token": "on",
+        "term_type": "Null",
+        "term_value": "on",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "Toronto",
+        "term_type": "Column",
+        "term_value": "Years in Toronto",
+        "confidence": 0.577
+      },
+      {
+        "token": "team",
+        "term_type": "Null",
+        "term_value": "team",
+        "confidence": 1.0
+      },
+      {
+        "token": "in",
+        "term_type": "Null",
+        "term_value": "in",
+        "confidence": 1.0
+      },
+      {
+        "token": "2005",
+        "term_type": "Value",
+        "term_value": "2005-06/Years in Toronto",
+        "confidence": 0.947
+      },
+      {
+        "token": "-",
+        "term_type": "Value",
+        "term_value": "2005-06/Years in Toronto",
+        "confidence": 0.947
+      },
+      {
+        "token": "06",
+        "term_type": "Value",
+        "term_value": "2005-06/Years in Toronto",
+        "confidence": 0.947
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What are the total number of positions on the Toronto team in 2006-07?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "are",
+          "lemma": "are"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "total",
+          "lemma": "total"
+        },
+        {
+          "token": "number",
+          "lemma": "number"
+        },
+        {
+          "token": "of",
+          "lemma": "of"
+        },
+        {
+          "token": "positions",
+          "lemma": "position"
+        },
+        {
+          "token": "on",
+          "lemma": "on"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "Toronto",
+          "lemma": "toronto"
+        },
+        {
+          "token": "team",
+          "lemma": "team"
+        },
+        {
+          "token": "in",
+          "lemma": "in"
+        },
+        {
+          "token": "2006",
+          "lemma": "2006"
+        },
+        {
+          "token": "-",
+          "lemma": "-"
+        },
+        {
+          "token": "07",
+          "lemma": "07"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-9",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-9",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "COUNT"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "("
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Position"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": ")"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Years in Toronto"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "Years in Toronto::2006-07"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Jarrett Jack",
+        "tokens": [
+          {
+            "token": "Jarrett",
+            "lemma": "jarrett"
+          },
+          {
+            "token": "Jack",
+            "lemma": "jack"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "1",
+        "tokens": [
+          {
+            "token": "1",
+            "lemma": "1"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Australia",
+        "tokens": [
+          {
+            "token": "Australia",
+            "lemma": "australia"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "2006-07",
+        "tokens": [
+          {
+            "token": "2006",
+            "lemma": "2006"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "07",
+            "lemma": "07"
+          }
+        ],
+        "span": {
+          "start": 12,
+          "end": 14
+        },
+        "column": "Years in Toronto",
+        "score": 1.1
+      },
+      {
+        "name": "Georgia Tech",
+        "tokens": [
+          {
+            "token": "Georgia",
+            "lemma": "georgia"
+          },
+          {
+            "token": "Tech",
+            "lemma": "tech"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "School/Club Team",
+        "score": 0.0
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      },
+      {
+        "start": 10,
+        "end": 10
+      },
+      {
+        "start": 11,
+        "end": 11
+      },
+      {
+        "start": 12,
+        "end": 12
+      },
+      {
+        "start": 13,
+        "end": 13
+      },
+      {
+        "start": 14,
+        "end": 14
+      },
+      {
+        "start": 15,
+        "end": 15
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "are",
+        "term_type": "Null",
+        "term_value": "are",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "total",
+        "term_type": "Keyword",
+        "term_value": "Count",
+        "confidence": 0.41
+      },
+      {
+        "token": "number",
+        "term_type": "Keyword",
+        "term_value": "Count",
+        "confidence": 0.449
+      },
+      {
+        "token": "of",
+        "term_type": "Null",
+        "term_value": "of",
+        "confidence": 1.0
+      },
+      {
+        "token": "positions",
+        "term_type": "Column",
+        "term_value": "Position",
+        "confidence": 0.886
+      },
+      {
+        "token": "on",
+        "term_type": "Null",
+        "term_value": "on",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "Toronto",
+        "term_type": "Column",
+        "term_value": "Years in Toronto",
+        "confidence": 0.325
+      },
+      {
+        "token": "team",
+        "term_type": "Null",
+        "term_value": "team",
+        "confidence": 1.0
+      },
+      {
+        "token": "in",
+        "term_type": "Null",
+        "term_value": "in",
+        "confidence": 1.0
+      },
+      {
+        "token": "2006",
+        "term_type": "Value",
+        "term_value": "2006-07/Years in Toronto",
+        "confidence": 0.949
+      },
+      {
+        "token": "-",
+        "term_type": "Value",
+        "term_value": "2006-07/Years in Toronto",
+        "confidence": 0.949
+      },
+      {
+        "token": "07",
+        "term_type": "Value",
+        "term_value": "2006-07/Years in Toronto",
+        "confidence": 0.949
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  },
+  {
+    "dataset": "wikisql",
+    "question": {
+      "text": "What are the nationality of the players on the Fresno State school/club team?",
+      "tokens": [
+        {
+          "token": "What",
+          "lemma": "what"
+        },
+        {
+          "token": "are",
+          "lemma": "are"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "nationality",
+          "lemma": "nationality"
+        },
+        {
+          "token": "of",
+          "lemma": "of"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "players",
+          "lemma": "player"
+        },
+        {
+          "token": "on",
+          "lemma": "on"
+        },
+        {
+          "token": "the",
+          "lemma": "the"
+        },
+        {
+          "token": "Fresno",
+          "lemma": "fresno"
+        },
+        {
+          "token": "State",
+          "lemma": "state"
+        },
+        {
+          "token": "school",
+          "lemma": "school"
+        },
+        {
+          "token": "/",
+          "lemma": "/"
+        },
+        {
+          "token": "club",
+          "lemma": "club"
+        },
+        {
+          "token": "team",
+          "lemma": "team"
+        },
+        {
+          "token": "?",
+          "lemma": "?"
+        }
+      ]
+    },
+    "schema": {
+      "db_id": "1-10015132-9",
+      "columns": [
+        {
+          "name": "Player",
+          "tokens": [
+            {
+              "token": "Player",
+              "lemma": "player"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "No.",
+          "tokens": [
+            {
+              "token": "No.",
+              "lemma": "no."
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Nationality",
+          "tokens": [
+            {
+              "token": "Nationality",
+              "lemma": "nationality"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Position",
+          "tokens": [
+            {
+              "token": "Position",
+              "lemma": "position"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "Years in Toronto",
+          "tokens": [
+            {
+              "token": "Years",
+              "lemma": "year"
+            },
+            {
+              "token": "in",
+              "lemma": "in"
+            },
+            {
+              "token": "Toronto",
+              "lemma": "toronto"
+            }
+          ],
+          "data_type": 0
+        },
+        {
+          "name": "School/Club Team",
+          "tokens": [
+            {
+              "token": "School",
+              "lemma": "school"
+            },
+            {
+              "token": "/",
+              "lemma": "/"
+            },
+            {
+              "token": "Club",
+              "lemma": "club"
+            },
+            {
+              "token": "Team",
+              "lemma": "team"
+            }
+          ],
+          "data_type": 0
+        }
+      ],
+      "tables": null
+    },
+    "sql": {
+      "db_id": "1-10015132-9",
+      "tokens": [
+        {
+          "type": 0,
+          "field": 0,
+          "value": "select"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "Nationality"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "where"
+        },
+        {
+          "type": 2,
+          "field": 0,
+          "value": "School/Club Team"
+        },
+        {
+          "type": 0,
+          "field": 0,
+          "value": "="
+        },
+        {
+          "type": 3,
+          "field": 0,
+          "value": "School/Club Team::Fresno State"
+        }
+      ],
+      "sql_dict": null
+    },
+    "matched_values": [
+      {
+        "name": "Jarrett Jack",
+        "tokens": [
+          {
+            "token": "Jarrett",
+            "lemma": "jarrett"
+          },
+          {
+            "token": "Jack",
+            "lemma": "jack"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Player",
+        "score": 0.0
+      },
+      {
+        "name": "1",
+        "tokens": [
+          {
+            "token": "1",
+            "lemma": "1"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "No.",
+        "score": 0.0
+      },
+      {
+        "name": "United States",
+        "tokens": [
+          {
+            "token": "United",
+            "lemma": "united"
+          },
+          {
+            "token": "States",
+            "lemma": "states"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Australia",
+        "tokens": [
+          {
+            "token": "Australia",
+            "lemma": "australia"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Nationality",
+        "score": 0.0
+      },
+      {
+        "name": "Guard",
+        "tokens": [
+          {
+            "token": "Guard",
+            "lemma": "guard"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Position",
+        "score": 0.0
+      },
+      {
+        "name": "2009-10",
+        "tokens": [
+          {
+            "token": "2009",
+            "lemma": "2009"
+          },
+          {
+            "token": "-",
+            "lemma": "-"
+          },
+          {
+            "token": "10",
+            "lemma": "10"
+          }
+        ],
+        "span": {
+          "start": -1,
+          "end": -1
+        },
+        "column": "Years in Toronto",
+        "score": 0.0
+      },
+      {
+        "name": "Fresno State",
+        "tokens": [
+          {
+            "token": "Fresno",
+            "lemma": "fresno"
+          },
+          {
+            "token": "State",
+            "lemma": "state"
+          }
+        ],
+        "span": {
+          "start": 9,
+          "end": 10
+        },
+        "column": "School/Club Team",
+        "score": 1.0545454545454545
+      }
+    ],
+    "erased_ngrams": [
+      {
+        "start": 0,
+        "end": 0
+      },
+      {
+        "start": 1,
+        "end": 1
+      },
+      {
+        "start": 2,
+        "end": 2
+      },
+      {
+        "start": 3,
+        "end": 3
+      },
+      {
+        "start": 4,
+        "end": 4
+      },
+      {
+        "start": 5,
+        "end": 5
+      },
+      {
+        "start": 6,
+        "end": 6
+      },
+      {
+        "start": 7,
+        "end": 7
+      },
+      {
+        "start": 8,
+        "end": 8
+      },
+      {
+        "start": 9,
+        "end": 9
+      },
+      {
+        "start": 10,
+        "end": 10
+      },
+      {
+        "start": 11,
+        "end": 11
+      },
+      {
+        "start": 11,
+        "end": 14
+      },
+      {
+        "start": 12,
+        "end": 12
+      },
+      {
+        "start": 13,
+        "end": 13
+      },
+      {
+        "start": 14,
+        "end": 14
+      },
+      {
+        "start": 15,
+        "end": 15
+      }
+    ],
+    "value_resolved": true,
+    "binding_result": [
+      {
+        "token": "What",
+        "term_type": "Null",
+        "term_value": "What",
+        "confidence": 1.0
+      },
+      {
+        "token": "are",
+        "term_type": "Null",
+        "term_value": "are",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "nationality",
+        "term_type": "Column",
+        "term_value": "Nationality",
+        "confidence": 0.931
+      },
+      {
+        "token": "of",
+        "term_type": "Null",
+        "term_value": "of",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "players",
+        "term_type": "Null",
+        "term_value": "players",
+        "confidence": 1.0
+      },
+      {
+        "token": "on",
+        "term_type": "Null",
+        "term_value": "on",
+        "confidence": 1.0
+      },
+      {
+        "token": "the",
+        "term_type": "Null",
+        "term_value": "the",
+        "confidence": 1.0
+      },
+      {
+        "token": "Fresno",
+        "term_type": "Value",
+        "term_value": "Fresno State/School/Club Team",
+        "confidence": 0.953
+      },
+      {
+        "token": "State",
+        "term_type": "Value",
+        "term_value": "Fresno State/School/Club Team",
+        "confidence": 0.953
+      },
+      {
+        "token": "school",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.157
+      },
+      {
+        "token": "/",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.193
+      },
+      {
+        "token": "club",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.155
+      },
+      {
+        "token": "team",
+        "term_type": "Column",
+        "term_value": "School/Club Team",
+        "confidence": 0.163
+      },
+      {
+        "token": "?",
+        "term_type": "Null",
+        "term_value": "?",
+        "confidence": 1.0
+      }
+    ]
+  }
+]

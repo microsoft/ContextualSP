@@ -1,0 +1,7 @@
+torch
+transformers
+sentencepiece
+protobuf
+wandb
+accelerate==0.4.0
+tornado
