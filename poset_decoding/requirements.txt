@@ -10,7 +10,7 @@ pandas==1.0.3
 sentencepiece==0.1.86
 tensorboard==2.2.1
 tensorboard-plugin-wit==1.6.0.post3
-tensorflow==2.2.0rc4
+tensorflow==2.9.3
 tensorflow-estimator==2.2.0
 torch==1.5.0
 torchtext==0.6.0
