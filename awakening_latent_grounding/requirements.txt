@@ -1,7 +1,11 @@
+recognizers-text==1.0.2a2
+recognizers-text-choice==1.0.2a2
+recognizers-text-date-time==1.0.2a2
+recognizers-text-number==1.0.2a2
+recognizers-text-number-with-unit==1.0.2a2
+recognizers-text-sequence==1.0.2a2
+recognizers-text-suite==1.0.2a2
+emoji==1.7
+Levenshtein
 torch
-transformers
-sentencepiece
-protobuf
-wandb
-accelerate==0.4.0
-tornado
+transformers==4.21.0

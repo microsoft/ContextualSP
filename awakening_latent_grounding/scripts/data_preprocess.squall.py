@@ -1,207 +1,351 @@
-# %%
+#%%
+import os
 import sys
-
+import re
 sys.path.append("..")
-from contracts import *
-from utils.nlp_utils import *
+import json
+from collections import defaultdict, Counter
+from typing import Counter, Dict, List, Tuple
+from transformers import BertTokenizer
 from tqdm import tqdm
+from utils import *
+#%%
+data_dir = r'../data/squall'
+bert_version = 'bert-base-uncased'
+tokenizer = BertTokenizer.from_pretrained(bert_version)
+print('load Bert tokenizer over, vocab size = {}'.format(len(tokenizer)))
+#%%
+@dataclass
+class Column:
+    header: str
+    data_type: str
+    values: List[object]
 
+@dataclass
+class WTQTable:
+    table_id: str
+    headers: List[str]
+    columns_internal: List[Column]
+    internal_to_header: List[int]
+
+    def get_schema(self):
+        return WTQSchema(
+            table_id=self.table_id,
+            column_headers=self.headers,
+            column_names_internal=[x.header for x in self.columns_internal],
+            column_types_internal=[x.data_type for x in self.columns_internal],
+            internal_to_header=self.internal_to_header)
+
+    @classmethod
+    def from_wqt_json(cls, obj: Dict):
+        contents = obj['contents']
+        assert contents[0][0]['col'] == 'id'
+        assert contents[1][0]['col'] == 'agg'
+        assert len(contents) == len(obj['headers'])
+
+        headers = []
+        columns_internal = []
+        internal_to_header = []
+        header_to_internals = []
+
+        internal_to_header += [len(headers)]
+        header_to_internals += [[len(columns_internal)]]
+        headers += ['id']
+        columns_internal += [Column(header='id', data_type='INTEGER', values=[])]
+
+        for i, content in enumerate(contents):
+            if i < 2:
+                continue
+
+            internal_ids = []
+            for col in content:
+                column = Column(header=col['col'], data_type=col['type'], values=col['data'])
+                internal_ids.append(len(columns_internal))
+                internal_to_header.append(len(headers))
+                columns_internal.append(column)
+
+            headers += [obj['headers'][i]]
+            header_to_internals += [internal_ids]
+        
+        internal_to_header += [len(headers)]
+        header_to_internals += [[len(columns_internal)]]
+        headers += ['*']
+        columns_internal += [Column(header='*', data_type='TEXT', values=[])]
+
+        assert len(headers) == len(header_to_internals)
+        assert len(columns_internal) == len(internal_to_header)
+
+        for i in range(len(headers)):
+            headers[i] = headers[i].replace('\n', ' ')
+            if len(headers[i]) == 0:
+                headers[i] = 'c{}'.format(i)
+
+        return WTQTable(
+            table_id=None,
+            headers=headers,
+            columns_internal=columns_internal,
+            internal_to_header=internal_to_header)
+
+def load_wtq_tables(data_dir: str) -> Dict[str, WTQTable]:
+    tables = {}
+    for file_name in os.listdir(data_dir):
+        assert file_name.endswith('.json')
+        path = os.path.join(data_dir, file_name)
+        table = WTQTable.from_wqt_json(json.load(open(path, 'r', encoding='utf-8')))
+        table.table_id = file_name.replace('.json', '')
+        assert table.table_id not in tables
+        tables[table.table_id] = table
+    
+    print('load {} tables from {} over.'.format(len(tables), data_dir))
+    return tables
+
+def column_type_statistics(tables: List[WTQTable]):
+    types = {}
+    for table in tables:
+        for col in table.columns_internal:
+            types[col.data_type] = types.get(col.data_type, 0) + 1
+    
+    for key, val in types.items():
+        print(key, val)
+
+# Download from https://github.com/tzshi/squall/tree/main/tables/json and copy folder to '../data/squall/'
+tables = load_wtq_tables(r'../data/squall/json')
+column_type_statistics(tables.values())
 # %%
-_Data_Type_Mappings = [DataType.Text, DataType.DateTime, DataType.Number, DataType.Number, DataType.Boolean]
+wtq_type_mappings = {
+    'TEXT': 'text',
+    'REAL': 'real',
+    'INTEGER': 'integer',
+    'LIST TEXT': 'text',
+    'LIST REAL': 'real',
+    'LIST INTEGER': 'integer',
+    'EMPTY': 'text'
+    }
 
+def generate_identify_labels_from_align(align_labels):
+    identify_labels: Dict[str, List[str]] = { str(SQLTokenType.column): [] }
+    for align_type, align_value in align_labels:
+        if align_type == 'None':
+            continue
+        if align_type == 'Column':
+            assert isinstance(align_value, str)
+            identify_labels[str(SQLTokenType.column)].add(align_value)
+    
+    for key, labels in identify_labels.items():
+        identify_labels[key] = list(set(labels))
+    return identify_labels
 
-def load_table_schemas(path: str) -> Dict[str, DBSchema]:
-    schemas = {}
-    with open(path, 'r', encoding='utf-8') as fr:
-        for line in fr:
-            table_obj = json.loads(line)
-            table_id = table_obj['table_id']
-            columns = []
-            for column_obj in table_obj['columns']:
-                header, data_type = column_obj['name'], column_obj['data_type']
-                header_tokens = [Token(token=token['token'], lemma=token['lemma']) for token in column_obj['tokens']]
-                column = Column(name=header, tokens=header_tokens, data_type=_Data_Type_Mappings[data_type])
-                columns += [column]
+def generate_identify_labels_from_sql(sql: SQLExpression):
+    identify_labels: Dict[str, List[str]] = { str(SQLTokenType.column): [] }
+    for token in sql.tokens:
+        if isinstance(token, ColumnToken):
+            identify_labels[str(SQLTokenType.column)].append(token.column_name)
+    
+    for key, labels in identify_labels.items():
+        identify_labels[key] = list(set(labels))
+    return identify_labels
 
-            schema = DBSchema(db_id=table_id, columns=columns)
-            schemas[table_id] = schema
-    print('load {} tables from {} over.'.format(len(schemas), path))
-    return schemas
+def _get_value_span(indices: List[int]) -> Tuple[int, int]:
+    assert len(indices) > 0
+    if len(indices) == 1:
+        return indices[0], indices[0]
+    
+    assert len(indices) == 2, indices
+    return indices[0], indices[-1]
 
+def parse_squall_sql(sql: Dict, schema: WTQSchema) -> SQLExpression:
+    tokens = []
+    for item in sql:
+        if item[0] == 'Keyword':
+            if item[1] == 'w':
+                tokens += [TableToken(table_name=schema.table_id)]
+            elif item[1] == 'id':
+                tokens += [ColumnToken(column_header='id', suffix_type='')]
+            elif item[1] == '*':
+                tokens += [ColumnToken(column_header='*', suffix_type='')]
+            else:
+                tokens += [KeywordToken(keyword=item[1])]
+        elif item[0] == 'Column':
+            column, suffix = schema.lookup_header_and_suffix(item[1])
+            tokens += [ColumnToken(column_header=column, suffix_type=suffix)]
 
-# %%
-def get_matched_values(question: str, values: List[Dict], schema: DBSchema) -> Tuple[Utterance, List[CellValue]]:
-    question_tokens = [Token(token=token['text'], lemma=token['Value']) for token in values['question_tokens']]
-    question_utterance = Utterance(text=question, tokens=question_tokens)
-
-    cell_values = []
-    for raw_value in values['matched_values']:
-        start, end = raw_value['start'], raw_value['end']
-        column: Column = schema.identifier_map[raw_value['column']]
-        val_name = raw_value['value']
-        if column.data_type == DataType.Number:
-            val_tokens = question_utterance.tokens[start:end + 1]
-            val_name = "".join([x.token for x in val_tokens])
+        elif item[0].startswith('Literal'):
+            suffix = item[0].replace('Literal.', '')
+            span = _get_value_span(item[2])
+            if item[0] == 'Literal.String':
+                value = item[1]
+                tokens += [ValueToken(value=value, span=span, columns=None)]
+            elif item[0] == 'Literal.Number':
+                value = item[1]
+                tokens += [ValueToken(value=value, span=span, columns=None)]
+            else:
+                raise NotImplementedError(item[0])
         else:
-            val_tokens = [Token(raw_value['value'], lemma=raw_value['value'].lower())]
-        value = CellValue(name=val_name, tokens=val_tokens, span=Span(start=start, end=end), column=raw_value['column'],
-                          score=raw_value['confidence'])
-        cell_values += [value]
-    return question_utterance, cell_values
+            raise NotImplementedError("Not supported SQL type: {}".format(item[0]))
+    return SQLExpression(tokens=tokens)
 
-
-# %%
 ngram_matchers: Dict[str, NGramMatcher] = {}
-
-
-def generate_erased_ngrams(question: Utterance, schema: DBSchema) -> List[Tuple[int, int, str]]:
-    if schema.db_id not in ngram_matchers:
+def generate_masking_ngrams(question: Utterance, schema: WTQSchema) -> List[Tuple[int, int, str]]:
+    if schema.table_id not in ngram_matchers:
         column_tokens = []
-        for i, column in enumerate(schema.columns):
-            column_tokens.append((column.identifier, [x.token for x in column.tokens]))
-        ngram_matchers[schema.db_id] = NGramMatcher(column_tokens)
-
-    ngram_matcher = ngram_matchers[schema.db_id]
-    erased_ngrams = []
-    ngram_spans = set([])
+        for column in schema.column_headers:
+            column_tokens.append((column, column.split(' ')))
+        ngram_matchers[schema.table_id] = NGramMatcher(column_tokens)
+    
+    ngram_matcher = ngram_matchers[schema.table_id]
+    masking_ngrams = []
     for tok_idx in range(len(question.tokens)):
-        ngram_spans.add((tok_idx, tok_idx))
-
+        masking_ngrams.append((tok_idx, tok_idx, question.tokens[tok_idx].token))
+    
+    ngram_spans = set([])
     for q_i, q_j, _, _, _ in ngram_matcher.match([token.token for token in question.tokens]):
         ngram_spans.add((q_i, q_j))
-
-    for q_i, q_j in sorted(list(ngram_spans), key=lambda x: x[1] - x[0], reverse=True):
+    
+    for q_i, q_j in sorted(list(ngram_spans), key=lambda x: x[1]-x[0], reverse=True):
         is_overlap = False
-        for q_i2, q_j2, ngram in erased_ngrams:
+        for q_i2, q_j2, ngram in masking_ngrams:
             if q_i2 <= q_i and q_j2 >= q_j:
                 is_overlap = True
                 break
         if not is_overlap:
-            ngram_ij = " ".join([x.token for x in question.tokens[q_i:q_j + 1]])
-            erased_ngrams.append((q_i, q_j, ngram_ij))
+            ngram_ij = " ".join([x.token for x in question.tokens[q_i:q_j+1]])
+            masking_ngrams.append((q_i, q_j, ngram_ij))
 
-    erased_ngrams = sorted(erased_ngrams, key=lambda x: x[0])
-    return [Span(start=i, end=j) for i, j, _ in erased_ngrams]
+    return masking_ngrams
 
+vocab = { 'keyword': Counter(), 'suffix_type': Counter() }
+
+def process_squall_query(query: Dict) -> Dict:
+    question_tokens = query['nl']
+    question_utterance = generate_utterance(tokenizer, None, question_tokens, None)
+
+    table = tables[query['tbl']]
+    schema = table.get_schema()
+    processed_columns_internal = []
+    for i, column in enumerate(table.columns_internal):
+        header, suffix = schema.lookup_header_and_suffix(column.header)
+        true_col_name = header + ' :' + suffix
+        vocab['suffix_type'][suffix] += 1
+        column_utterance = generate_utterance(tokenizer, true_col_name)
+        column_json = {
+            'index': i,
+            'id': column.header,
+            'data_type': wtq_type_mappings[column.data_type],
+            'utterance': column_utterance.to_json()
+            }
+
+        processed_columns_internal += [column_json]
+    
+    processed_columns = []
+    for i, column in enumerate(table.headers):
+        column_utterance = generate_utterance(tokenizer, column)
+        column_json = {
+            'index': i,
+            'id': column,
+            'data_type': 'text',
+            'utterance': column_utterance.to_json()
+        }
+        processed_columns += [column_json]
+    
+    # Parse SQL
+    sql = parse_squall_sql(query['sql'], schema)
+    for term in sql.tokens:
+        if isinstance(term, KeywordToken):
+            vocab['keyword'][term.value] += 1
+
+    identify_labels = generate_identify_labels_from_sql(sql)
+    # identify_labels_internal = generate_identify_labels_from_align(query['nl_ralign'])
+
+    return {
+            'id': query['nt'],
+            'question': question_utterance.to_json(),
+            'columns': processed_columns,
+            'columns_internal': processed_columns_internal,
+            'identify_labels': identify_labels,
+            'align_labels': query['nl_ralign'],
+            'sql': sql.to_json(),
+            'masking_ngrams': generate_masking_ngrams(question_utterance, schema),
+            'schema': schema.to_json()
+        }
+#%%
+dev_queries = json.load(open(r'../data/squall/dev-0.json', 'r', encoding='utf-8'))
+print('load dev over, size = {}'.format(len(dev_queries)))
+
+train_queries = json.load(open(r'../data/squall/train-0.json', 'r', encoding='utf-8'))
+print('load train over, size = {}'.format(len(train_queries)))
+# %%
+process_squall_query(dev_queries[0])
+process_squall_query(dev_queries[7])
+# %%
+dev_processed = []
+for query in tqdm(dev_queries):
+    dev_processed += [process_squall_query(query)]
+save_json_objects(dev_processed, os.path.join(r'../data/squall/', 'dev.{}.json'.format(bert_version)))
+print('process dev over')
+# %%
+dev_iter = load_wtq_data_iterator(os.path.join(data_dir, 'dev.{}.json'.format(bert_version)), tokenizer, 16, torch.device('cpu'), False, False, 300)
+# %%
+total_size, num_examples = 0, 0
+for batch_input in dev_iter:
+    bs, length = batch_input['input_token_ids'].size(0), batch_input['input_token_ids'].size(1)
+    total_size += bs * length
+    num_examples += bs
+    #print(batch_input['input_token_ids'].size())
+print(total_size, num_examples, total_size / num_examples)
+#%%
+def sampling_sqls(data_iter: DataLoader, count: int):
+    while count > 0:
+        for batch_input in data_iter:
+            for example in batch_input['example']:
+                sql = SQLExpression.from_json(example['sql'])
+                print(sql)
+                count -= 1
 
 # %%
-def parse_ae_tokens(ae_tokens: List[Dict], schema: DBSchema) -> SQLExpression:
-    sql_tokens: List[SQLToken] = []
-    col_idx = -1
-    expr_str = [token['value'] if token['value'] else '@null' for token in ae_tokens]
-    expr_str = " ".join(expr_str)
-    for idx, token in enumerate(ae_tokens):
-        token_type = token['token_type']
-        if token_type == 0:  # keyword
-            sql_tokens += [SQLToken(type=SQLTokenType.Keyword, field=SQLFieldType.Select, value=token['value'])]
+train_processed = []
+for query in tqdm(train_queries):
+    try:
+        processed_query = process_squall_query(query)
+        train_processed += [processed_query]
+    except Exception as ex:
+        print(ex)
+save_json_objects(train_processed, os.path.join(r'../data/squall/', 'train.{}.json'.format(bert_version)))
+print('process train over, {}/{}'.format(len(train_processed), len(train_queries)))
+# %%
+#%%
+print('Keyword Vocab:')
+print(vocab['keyword'].most_common(20))
+keyword_saved_path = os.path.join(data_dir, 'keyword.vocab.txt')
+with open(keyword_saved_path, 'w', encoding='utf-8') as fw:
+    for keyword, cnt in sorted(vocab['keyword'].items(), key=lambda x: x[1], reverse=True):
+        fw.write("{}\t{}\n".format(keyword, cnt))
+print('save keyword vocab into {} over.'.format(keyword_saved_path))
 
-            if token['value'] == 'take':
-                col_idx = idx
-
-        elif token_type == 1:  # column
-            sql_tokens += [SQLToken(type=SQLTokenType.Column, field=SQLFieldType.Select, value=token['value'])]
-            col_idx = idx
-
-        elif token_type == 2:  # value
-            # assert col_idx >= 0 and idx - col_idx <= 3, expr_str
-            column = ae_tokens[col_idx]['value'] if ae_tokens[col_idx]['token_type'] == 1 else '*'
-            value_str = token['value'] if token['value'] is not None else "@null"
-            value = "{}::{}".format(column, value_str)
-            sql_tokens += [SQLToken(type=SQLTokenType.Value, field=SQLFieldType.Select, value=value)]
-
-        elif token_type in [4, 5, 6]:  # LiteralString, LiteralNumber, LiteralDatetime
-            # assert col_idx >= 0 and idx - col_idx <= 3, expr_str
-            column = ae_tokens[col_idx]['value'] if ae_tokens[col_idx]['token_type'] == 1 else '*'
-            value_str = token['value'] if token['value'] is not None else "@null"
-            value = "{}::{}".format(column, value_str)
-            sql_tokens += [SQLToken(type=SQLTokenType.Value, field=SQLFieldType.Select, value=value)]
-
-        else:
-            raise NotImplementedError()
-
-    return SQLExpression(db_id=schema.db_id, tokens=sql_tokens, sql_dict=None)
-
+#%%
+print('Suffix Type Vocab:')
+print(vocab['suffix_type'].most_common(20))
+suffix_type_saved_path = os.path.join(data_dir, 'suffix_type.vocab.txt')
+with open(suffix_type_saved_path, 'w', encoding='utf-8') as fw:
+    for keyword, cnt in sorted(vocab['suffix_type'].items(), key=lambda x: x[1], reverse=True):
+        fw.write("{}\t{}\n".format(keyword, cnt))
+print('save suffix_type vocab into {} over.'.format(suffix_type_saved_path))
 
 # %%
-def parse_text2sql_example(example_obj: Dict, schema: DBSchema) -> Text2SQLExample:
-    question = example_obj['question']
-    question_tokens = [Token(token=x['token'], lemma=x['lemma']) for x in example_obj['question_tokens']]
-    question_utterance = Utterance(text=question, tokens=question_tokens)
-
-    sql = parse_ae_tokens(example_obj['answer_expression']['answer_tokens'], schema)
-
-    matched_values = []
-    if example_obj['matched_values'] is not None:
-        for value_obj in example_obj['matched_values']:
-            value = CellValue(
-                name=value_obj['name'],
-                tokens=[Token(token=value_str, lemma=value_str.lower()) for value_str in value_obj['tokens']],
-                span=Span(start=value_obj['start'], end=value_obj['end']),
-                column=value_obj['column'],
-                score=value_obj['confidence']
-            )
-
-            if len(value.column) > 0:
-                matched_values += [value]
-
-    erased_ngrams = generate_erased_ngrams(question_utterance, schema)
-
-    example = Text2SQLExample(
-        dataset='wikitq',
-        question=question_utterance,
-        schema=schema,
-        sql=sql,
-        matched_values=matched_values,
-        erased_ngrams=erased_ngrams,
-        value_resolved=example_obj['resolved'] and len(sql.tokens) > 0
-    )
-
-    return example
-
-
+train_iter = load_wtq_data_iterator(os.path.join(data_dir, 'train.{}.json'.format(bert_version)), tokenizer, 16, torch.device('cpu'), True, True, 300)
+total_size, num_examples = 0, 0
+for batch_input in train_iter:
+    bs, length = batch_input['input_token_ids'].size(0), batch_input['input_token_ids'].size(1)
+    total_size += bs * length
+    num_examples += bs
+    #print(batch_input['input_token_ids'].size())
+print(total_size, num_examples, total_size / num_examples)
 # %%
-def preprocess_data(mode: str):
-    data_dir = os.path.join(Proj_Abs_Dir, 'data', 'wikitq')
-    schemas = load_table_schemas(os.path.join(data_dir, f'{mode}.tables.json'))
-    preprocessed_path = os.path.join(data_dir, f'{mode}.preproc.json')
-
-    unresolved_cnt = 0
-    with open(os.path.join(data_dir, f'{mode}.json'), 'r', encoding='utf-8') as fr:
-        examples = []
-        for line in tqdm(fr.readlines(), desc='Preprocess {}'.format(mode)):
-            try:
-                obj = json.loads(line)
-                schema = schemas[obj['table_id']]
-                example = parse_text2sql_example(obj, schema)
-
-                if not example.value_resolved:
-                    # print("Database:", example.schema.db_id, ", Question:", example.question.text, ", SQL: ", str(example.sql))
-                    unresolved_cnt += 1
-                examples += [example]
-
-            except Exception as e:
-                print("Exception: {}".format(str(e)))
-
-        save_json_objects(examples, preprocessed_path, ensure_ascii=False)
-        print('proprocess {} examples over, size = {}, unresolved = {}/{:.2f}%'.format(mode, len(examples),
-                                                                                       unresolved_cnt,
-                                                                                       unresolved_cnt * 100.0 / len(
-                                                                                           examples)))
-    pass
-
-
+train_iter2 = load_wtq_data_iterator(os.path.join(data_dir, 'train.{}.json'.format(bert_version)), tokenizer, 16, torch.device('cpu'), False, True, 300)
+total_size, num_examples = 0, 0
+for batch_input in train_iter2:
+    bs, length = batch_input['input_token_ids'].size(0), batch_input['input_token_ids'].size(1)
+    total_size += bs * length
+    num_examples += bs
+    #print(batch_input['input_token_ids'].size())
+print(total_size, num_examples, total_size / num_examples)
 # %%
-preprocess_data('dev')
-# %%
-# preprocess_data('test')
-# %%
-preprocess_data('train')
-
-# %%
-import shutil
-
-print('copy dev as test for squall')
-shutil.copyfile(
-    os.path.join(Proj_Abs_Dir, 'data', 'squall', 'dev.preproc.json'),
-    os.path.join(Proj_Abs_Dir, 'data', 'squall', 'test.preproc.json')
-)

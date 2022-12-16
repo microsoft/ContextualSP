@@ -1,247 +1,539 @@
-from utils.data_loader import Text2SQLDataset
+from utils.nlp_utils import ValueMatch, is_adjective
 import torch
+import nltk
 from collections import OrderedDict, defaultdict
-from contracts import *
-
-class GroundingEvaluator:
-    def __init__(self, dataset: Text2SQLDataset) -> None:
-        self.dataset = dataset
-
-        self.statistics = defaultdict(int)
-        self.logs: List[str] = []
-        self.dataset_logs = defaultdict(list)
-        self.dataset_statistics = defaultdict(dict)
-
-    def add_batch(self, model_inputs, model_outputs):
-        batch_size = len(model_inputs['input_token_ids'])
-        self.statistics['total_count'] += batch_size
-        self.statistics['loss'] += model_outputs['loss'].item() * batch_size
-        self.statistics['cp_loss'] += model_outputs['cp_loss'].item() * batch_size
-        if 'grounding_loss' in model_outputs:
-            self.statistics['grounding_loss'] += model_outputs['grounding_loss'].item() * batch_size
-        if 'sequence_labeling_loss' in model_outputs:
-            self.statistics['sequence_labeling_loss'] += model_outputs['sequence_labeling_loss'].item() * batch_size
-
-        if not 'grounding_scores' in model_outputs:
-            model_outputs['grounding_scores'] = torch.zeros(model_inputs['concept_labels'].size(0), model_inputs['concept_labels'].size(1), model_inputs['question_mask'].size(1))
-
-        for idx in range(batch_size):
-            example: Text2SQLExample = self.dataset.get_example_by_id(model_inputs['id'][idx].item())['example']
-            outputs = {
-                'concept_scores': model_outputs['concept_scores'][idx], 
-                'grounding_scores': model_outputs['grounding_scores'][idx]
-            }
-            if 'question_label_scores' in model_outputs:
-                outputs['question_label_scores'] = model_outputs['question_label_scores'][idx]
-            self._add_one(
-                example=example,
-                inputs={ key : val[idx] for key, val in model_inputs.items() if isinstance(val, list) or isinstance(val, torch.Tensor) },
-                outputs=outputs,
-            )
-
-    def post_process_inputs_and_outputs(self, example: Text2SQLExample, inputs: Dict[str, torch.Tensor], outputs: Dict[str, torch.Tensor]):
-        question_length = len(example.question.tokens)
-
-        mask_size = len(inputs['concept_labels']) - len(All_Agg_Op_Keywords) - example.schema.num_columns - len(example.matched_values)
-        sizes = [len(All_Agg_Op_Keywords), example.schema.num_columns, len(example.matched_values), mask_size]
-        split_concept_labels = torch.split(inputs['concept_labels'], sizes)
-        split_concept_scores = torch.split(outputs['concept_scores'], sizes)
-        inputs['concept_labels'] = {
-            SQLTokenType.Keyword.string: split_concept_labels[0],
-            SQLTokenType.Column.string: split_concept_labels[1],
-            SQLTokenType.Value.string: split_concept_labels[2]
-        }
-
-        outputs["concept_scores"] = {
-            SQLTokenType.Keyword.string: split_concept_scores[0],
-            SQLTokenType.Column.string: split_concept_scores[1],
-            SQLTokenType.Value.string: split_concept_scores[2]
-        }
-
-        split_grounding_scores = torch.split(outputs['grounding_scores'], sizes)
-        outputs["grounding_scores"] = {
-            SQLTokenType.Keyword.string: split_grounding_scores[0][:, :question_length],
-            SQLTokenType.Column.string: split_grounding_scores[1][:, :question_length],
-            SQLTokenType.Value.string: split_grounding_scores[2][:, :question_length]
-        }
-
-        return inputs, outputs
+from typing import Any, List, Dict, Tuple
+from dataclasses import dataclass
+from utils.data_types import *
+from utils.data_iter import MetaIndex
+from utils.schema_linker import *
 
 
-    def _add_one(self, example: Text2SQLExample, inputs: Dict, outputs: Dict) -> None:
-        def _get_concept(concept_type, index) -> Concept:
-            if concept_type == SQLTokenType.Column.string:
-                return example.schema.columns[index]
-            if concept_type == SQLTokenType.Table.string:
-                return example.schema.tables[index]
-            if concept_type == SQLTokenType.Value.string:
-                return example.matched_values[index]
-            # if concept_type == SQLTokenType.Function.string:
-            #     column_idx, agg_idx = index // len(Aggregation), index % len(Aggregation)
-            #     return DependentConcept(base_concept=example.schema.columns[column_idx], name=str(Aggregation(agg_idx)))
-            # if concept_type == SQLTokenType.Operator.string:
-            #     value_idx, op_idx = index // len(ComparisonOperator), index % len(ComparisonOperator)
-            #     return DependentConcept(base_concept=example.matched_values[value_idx], name=str(ComparisonOperator(op_idx)))
-            if concept_type == SQLTokenType.Keyword.string:
-                return Keyword(keyword=All_Agg_Op_Keywords[index].upper())
-            raise NotImplementedError(concept_type)
+def evaluate_linking(gold_align_labels: List[AlignmentLabel], pred_align_labels: List[AlignmentLabel],
+                     enable_eval_types: List[SQLTokenType]):
+    assert len(gold_align_labels) == len(pred_align_labels)
+    eval_result = {}
+    for eval_type in enable_eval_types:
+        eval_result[eval_type] = defaultdict(int)
+        for gold_label, pred_label in zip(gold_align_labels, pred_align_labels):
+            if gold_label.align_type == eval_type:
+                if gold_label == pred_label:
+                    eval_result[eval_type]['tp'] += 1
+                else:
+                    eval_result[eval_type]['fn'] += 1
 
-        def tensor_to_list(data):
-            ans = [num.item() for num in data]
-            return ans
-        
-        def get_question_label_logs(example: Text2SQLExample, gold_labels: List[int], pred_labels: List[int], is_correct: bool):
-            question_text = example.question.text
-            tokens = example.question.tokens
+            if pred_label.align_type == eval_type:
+                if gold_label != pred_label:
+                    eval_result[eval_type]['fp'] += 1
 
-            gold_labels = [QuestionLabel.get_abbr_by_value(tag) for tag in gold_labels]
-            pred_labels = [QuestionLabel.get_abbr_by_value(tag) for tag in pred_labels]
-
-            label_logs = []
-
-            label_logs += ['\nQuestion: {}\n'.format(question_text)]
-            label_logs += ['Dataset: {}; Schema: {}\n'.format(example.dataset, example.schema.to_string())]
-            label_logs += ['SQL: {}\n'.format(str(example.sql))]
-            
-            gold_strs = ['{}/{: <3}'.format(token.token, tag) for (token, tag) in zip(tokens, gold_labels)]
-            pred_strs = ['{}/{: <3}'.format(token.token, tag) for (token, tag) in zip(tokens, pred_labels)]
-            label_logs += ['Gold: {}\n'.format(' '.join(gold_strs))]
-            label_logs += ['Pred: {}\n'.format(' '.join(pred_strs))]
-            label_logs += ['Sequence Label : {}\n\n'.format(is_correct)]
-
-            return label_logs
-        
-        question_length = len(example.question.tokens)
-        inputs, outputs = self.post_process_inputs_and_outputs(example, inputs, outputs)
-
-        log_start_idx = len(self.logs)
-        self.logs += ['Question: {}\n'.format(example.question.text)]
-        self.logs += ['Dataset: {}; Schema: {}\n'.format(example.dataset, example.schema.to_string())]
-        self.logs += ['SQL: {}\n'.format(str(example.sql))]
-
-        input_tokens = self.dataset.get_example_by_id(inputs['id'].item())['input_tokens']
-        self.logs += ['Input Tokens: {}\n'.format(" ".join([x for x in input_tokens]))]
-        concept_types = inputs['concept_labels'].keys()
-        cp_results = {}
-
-        if example.dataset not in self.dataset_statistics:
-            self.dataset_statistics[example.dataset] = defaultdict(int)
-        
-        self.dataset_statistics[example.dataset]['total_count'] += 1
-
-        if 'question_label_scores' in outputs:
-            # pick valid part
-            gold_labels = inputs['question_labels'][:question_length]
-            pred_labels = torch.argmax(outputs['question_label_scores'], dim=-1)[:question_length]
-            
-            is_correct = bool(gold_labels.equal(pred_labels)) if len(gold_labels) > 0 else True
-            self.statistics['Question Sequence True'] += int(is_correct)
-            self.statistics['Question Sequence All'] += 1
-
-            # log question labeling result
-            question_label_logs = get_question_label_logs(example, gold_labels, pred_labels, is_correct)
-            self.logs.extend(question_label_logs)
+    return eval_result
 
 
-            for label in QuestionLabel.get_all_labels():
-                label_value = label.value
-                label_type = QuestionLabel.get_abbr_by_value(label_value)
-                # calculate every question label type
+def get_precision_recall_and_f1(eval_result: Dict) -> Dict:
+    metrics = {}
+    for eval_type in eval_result:
+        precision = eval_result[eval_type]['tp'] / (eval_result[eval_type]['tp'] + eval_result[eval_type]['fp']) if (
+                                                                                                                                eval_result[
+                                                                                                                                    eval_type][
+                                                                                                                                    'tp'] +
+                                                                                                                                eval_result[
+                                                                                                                                    eval_type][
+                                                                                                                                    'fp']) > 0 else 0
+        recall = eval_result[eval_type]['tp'] / (eval_result[eval_type]['tp'] + eval_result[eval_type]['fn']) if (
+                                                                                                                             eval_result[
+                                                                                                                                 eval_type][
+                                                                                                                                 'tp'] +
+                                                                                                                             eval_result[
+                                                                                                                                 eval_type][
+                                                                                                                                 'fn']) > 0 else 0
+        f1 = 2 * precision * recall / (precision + recall) if precision + recall > 0 else 0
+        metrics[eval_type] = {'P': precision, 'R': recall, 'F1': f1}
+    return metrics
 
-                pred_true_list = pred_labels.eq(gold_labels)
-                this_label_pos = gold_labels.eq(label_value)
 
-                if any(this_label_pos):
-                    key_true = f'{label_type} tag True'
-                    key_all = f'{label_type} tag All'
+def get_spider_alignments_from_labeling(nl_alignments: List[Dict], question: Utterance, schema: SpiderSchema) -> List[
+    AlignmentLabel]:
+    assert len(question.tokens) == len(nl_alignments)
+    align_labels = []
+    for q_idx in range(len(nl_alignments)):
+        align_obj = nl_alignments[q_idx]
+        if align_obj is None:
+            align_labels.append(AlignmentLabel(question.tokens[q_idx], SQLTokenType.null, None, 1.0))
+        elif align_obj['type'] == 'tbl':
+            align_labels.append(AlignmentLabel(token=question.tokens[q_idx], align_type=SQLTokenType.table,
+                                               align_value=schema.table_names_original[align_obj['id']].lower(),
+                                               confidence=1.0))
+        elif align_obj['type'] == 'col':
+            col_full_name = schema.get_column_full_name(align_obj['id'])
+            align_labels.append(
+                AlignmentLabel(token=question.tokens[q_idx], align_type=SQLTokenType.column, align_value=col_full_name,
+                               confidence=1.0))
+        elif align_obj['type'] == 'val':
+            col_full_name = schema.get_column_full_name(align_obj['id'])
+            align_labels.append(AlignmentLabel(token=question.tokens[q_idx], align_type=SQLTokenType.value,
+                                               align_value="VAL_{}".format(col_full_name), confidence=1.0))
+        else:
+            raise NotImplementedError()
 
-                    self.statistics[key_true] += sum(pred_true_list & this_label_pos).item()
-                    self.statistics[key_all] += sum(this_label_pos).item()
+    return align_labels
 
-                    self.dataset_statistics[example.dataset][key_true] += sum(pred_true_list & this_label_pos).item()
-                    self.dataset_statistics[example.dataset][key_all] += sum(this_label_pos).item()
 
-        for concept_type in concept_types:
-            gold_labels = inputs['concept_labels'][concept_type]
-            pred_labels = (outputs['concept_scores'][concept_type] >= 0.5).to(torch.long)
-            is_correct = bool(gold_labels.equal(pred_labels)) if len(gold_labels) > 0 else True
-            self.statistics["{} CP True".format(str(concept_type))] += int(is_correct)
-            self.statistics["{} CP All".format(str(concept_type))] += 1
-            cp_results[concept_type] = is_correct
-            self.dataset_statistics[example.dataset]["{} CP True".format(str(concept_type))] += int(is_correct)
-            self.dataset_statistics[example.dataset]["{} CP All".format(str(concept_type))] += 1
+def get_spider_alignments_from_prediction(alignment_weights: torch.Tensor, question: Utterance, schema: SpiderSchema,
+                                          values: List[ValueMatch], meta_index: MetaIndex, threshold: float = 0.1) -> \
+List[AlignmentLabel]:
+    alignment_weights[meta_index.num_tables] = 0.0  # Set column * to 0
+    alignment_weights = alignment_weights.transpose(0, 1)
+    assert len(alignment_weights) == len(question.tokens)
+    align_labels = []
+    for q_idx in range(len(alignment_weights)):
+        max_idx = torch.argmax(alignment_weights[q_idx], dim=-1).item()
+        confidence = alignment_weights[q_idx, max_idx]
+        if confidence < threshold:
+            align_label = AlignmentLabel(question.tokens[q_idx], SQLTokenType.null, None, 1 - confidence)
+            align_labels.append(align_label)
+            continue
 
-            for i in range(len(gold_labels)):
-                if gold_labels[i] == 0 and pred_labels[i] == 0:
+        if max_idx < meta_index.num_tables:
+            align_labels.append(
+                AlignmentLabel(question.tokens[q_idx], SQLTokenType.table, schema.table_names_original[max_idx].lower(),
+                               confidence))
+        elif max_idx < meta_index.num_tables + meta_index.num_columns:
+            align_labels.append(AlignmentLabel(question.tokens[q_idx], SQLTokenType.column,
+                                               schema.get_column_full_name(max_idx - meta_index.num_tables),
+                                               confidence))
+        elif max_idx < meta_index.num_tables + meta_index.num_columns + meta_index.num_values:
+            value_idx = max_idx - meta_index.num_tables - meta_index.num_columns
+            align_labels.append(
+                AlignmentLabel(question.tokens[q_idx], SQLTokenType.value, 'VAL_{}'.format(values[value_idx].column),
+                               confidence))
+        else:
+            raise NotImplementedError()
+
+    return align_labels
+
+
+def post_process_alignment_labels(pred_align_labels: List[AlignmentLabel], gold_align_labels: List[AlignmentLabel]):
+    new_pred_align_labels = []
+    for i, (pred_align_label, gold_align_label) in enumerate(zip(pred_align_labels, gold_align_labels)):
+        if gold_align_label.align_type == SQLTokenType.value and pred_align_label.align_type in [SQLTokenType.column,
+                                                                                                 SQLTokenType.table]:
+            new_label = AlignmentLabel(pred_align_label.token, align_type=SQLTokenType.null, align_value=None,
+                                       confidence=pred_align_label.confidence)
+            new_pred_align_labels += [new_label]
+            continue
+
+        if gold_align_label.align_type == SQLTokenType.null and pred_align_label.token.token.lower() in ['with', 'any',
+                                                                                                         'without']:
+            new_label = AlignmentLabel(pred_align_label.token, align_type=SQLTokenType.null, align_value=None,
+                                       confidence=pred_align_label.confidence)
+            new_pred_align_labels += [new_label]
+            continue
+
+        if gold_align_label.align_type == SQLTokenType.null and pred_align_label.align_type == SQLTokenType.column and is_adjective(
+                pred_align_label.token.token.lower()):
+            new_label = AlignmentLabel(pred_align_label.token, align_type=SQLTokenType.null, align_value=None,
+                                       confidence=pred_align_label.confidence)
+            new_pred_align_labels += [new_label]
+            continue
+
+        new_pred_align_labels.append(pred_align_label)
+
+    return new_pred_align_labels
+
+
+def get_wtq_alignments_from_labeling(nl_alignments: List[Dict], question: Utterance, schema: WTQSchema) -> List[
+    AlignmentLabel]:
+    assert len(question.tokens) == len(nl_alignments)
+    align_labels = []
+    for q_idx in range(len(question.tokens)):
+        align_obj = nl_alignments[q_idx]
+        if align_obj[0] == 'None':
+            align_labels += [AlignmentLabel(question.tokens[q_idx], SQLTokenType.null, None, 1.0)]
+        elif align_obj[0] == 'Keyword':
+            align_labels += [AlignmentLabel(question.tokens[q_idx], SQLTokenType.keyword, align_obj[1][0], 1.0)]
+        elif align_obj[0] == 'Column':
+            col_id = schema.internal_name_to_id[align_obj[1]]
+            align_labels += [AlignmentLabel(question.tokens[q_idx], SQLTokenType.column,
+                                            schema.column_headers[schema.internal_to_header[col_id]], 1.0)]
+        elif align_obj[0] == 'Literal':
+            align_labels += [AlignmentLabel(question.tokens[q_idx], SQLTokenType.value, None, 1.0)]
+        else:
+            raise NotImplementedError("not supported alignment type: {}".format(align_obj))
+
+    return align_labels
+
+
+def get_wtq_alignments_from_prediction(alignment_weights: torch.Tensor, question: Utterance, schema: WTQSchema,
+                                       meta_index: MetaIndex, threshold: float = 0.1) -> List[AlignmentLabel]:
+    alignment_weights = alignment_weights.transpose(0, 1)
+    assert len(alignment_weights) == len(question.tokens)
+    align_labels = []
+    for q_idx in range(len(alignment_weights)):
+        max_idx = torch.argmax(alignment_weights[q_idx], dim=-1)
+        confidence = alignment_weights[q_idx, max_idx]
+        if confidence < threshold:
+            align_label = AlignmentLabel(question.tokens[q_idx], SQLTokenType.null, None, 1 - confidence)
+            align_labels.append(align_label)
+            continue
+
+        assert max_idx < meta_index.num_columns
+        align_label = AlignmentLabel(question.tokens[q_idx], SQLTokenType.column, schema.column_headers[max_idx],
+                                     confidence)
+        align_labels.append(align_label)
+
+    return align_labels
+
+
+@dataclass
+class SpiderCase:
+    schema: SpiderSchema
+    question: Utterance
+    goal_sql: SQLExpression
+    enc_input_tokens: List[str]
+    correct_dict: Dict[str, bool]
+
+    identification_dict: Dict[str, Any]
+    alignment_dict: Dict[str, torch.Tensor]
+    gold_alignments: List[AlignmentLabel]
+    pred_alignments: List[AlignmentLabel]
+    metrics: Dict[str, Dict[str, float]]
+
+    values: List[ValueMatch]
+
+    def to_string(self):
+        out_strs = []
+        tokens = [token.token for token in self.question.tokens]
+        out_strs.append(
+            "Q: {}, Table = {}, Column = {}, Value = {}, All = {}".format(self.question.text, self.correct_dict['tbl'],
+                                                                          self.correct_dict['col'],
+                                                                          self.correct_dict['val'],
+                                                                          self.correct_dict['all']))
+        out_strs.append("Input tokens: {}".format(" ".join(self.enc_input_tokens)))
+        out_strs.append(self.schema.to_string('\n'))
+
+        out_strs.append("Gold SQL: {}".format(self.goal_sql.sql))
+
+        if 'tbl' in self.identification_dict:
+            for i, (tbl_id, gold_label, pred_label, pred_score) in enumerate(self.identification_dict['tbl']):
+                tbl_name = self.schema.table_names_original[tbl_id]
+                if gold_label == 0 and pred_label == 0:
                     continue
-                concept = _get_concept(concept_type, i)
-                self.logs.append("{}: {}, Gold = {}; Pred = {}/{:.4f}, Correct = {}\n".format(
-                    str(concept_type), concept.identifier, gold_labels[i].item(), pred_labels[i].item(), outputs['concept_scores'][concept_type][i].item(), gold_labels[i].item() == pred_labels[i].item()))
+                out_strs.append(
+                    "T {}: gold = {}, pred = {} / {:.3f}, Correct = {}".format(tbl_name, gold_label, pred_label,
+                                                                               pred_score, gold_label == pred_label))
+                if 'tbl' in self.alignment_dict:
+                    align_vector = self.alignment_dict['tbl'][i]
+                    assert len(align_vector) == len(tokens)
+                    align_strs = ["{}/{:.3f}".format(token, weight.item()) for token, weight in
+                                  zip(tokens, align_vector)]
+                    out_strs += ["Alignment: {}".format(" ".join(align_strs))]
 
-                grounding_vector = outputs['grounding_scores'][concept_type][i].cpu().tolist()
-                grounding_strs = ["{}/{:.3f}".format(token, g_score) for g_score, token in zip(grounding_vector, example.question.text_tokens)]
-                self.logs.append("Grounding: {}\n".format(" ".join(grounding_strs)))
+        if 'col' in self.identification_dict:
+            for i, (col_id, gold_label, pred_label, pred_score) in enumerate(self.identification_dict['col']):
+                if gold_label == 0 and pred_label == 0:
+                    continue
+                col_name = self.schema.get_column_full_name(col_id)
+                out_strs.append(
+                    "C {}: gold = {}, pred = {} / {:.3f}, Correct = {}".format(col_name, gold_label, pred_label,
+                                                                               pred_score, gold_label == pred_label))
+                if 'col' in self.alignment_dict:
+                    align_vector = self.alignment_dict['col'][i]
+                    assert len(align_vector) == len(tokens)
+                    align_strs = ["{}/{:.3f}".format(token, weight.item()) for token, weight in
+                                  zip(tokens, align_vector)]
+                    out_strs += ["Alignment: {}".format(" ".join(align_strs))]
 
-        self.logs.append("Concept: {}\n".format("; ".join(["{} = {}".format(str(key), bool(val)) for key, val in cp_results.items()])))
-        self.logs.append("\n")
+        if 'val' in self.identification_dict:
+            for i, (val_id, gold_label, pred_label, pred_score) in enumerate(self.identification_dict['val']):
+                if gold_label == 0 and pred_label == 0:
+                    continue
+                col_name = self.values[val_id].column
+                val_str = "{}[{}:{}]".format(self.values[i].value, self.values[i].start, self.values[i].end)
+                out_strs.append(
+                    "V {}_{}: gold = {}, pred = {} / {:.3f}, Correct = {}".format(col_name, val_str, gold_label,
+                                                                                  pred_label, pred_score,
+                                                                                  gold_label == pred_label))
+                if 'val' in self.alignment_dict:
+                    align_vector = self.alignment_dict['val'][i]
+                    assert len(align_vector) == len(tokens)
+                    align_strs = ["{}/{:.3f}".format(token, weight.item()) for token, weight in
+                                  zip(tokens, align_vector)]
+                    out_strs += ["Alignment: {}".format(" ".join(align_strs))]
 
-        self.dataset_logs[example.dataset] += self.logs[log_start_idx:]
+        out_strs.append('Gold Align: {}'.format(" ".join([str(align_label) for align_label in self.gold_alignments])))
+        out_strs.append('Pred Align: {}'.format(" ".join([str(align_label) for align_label in self.pred_alignments])))
+        for align_type in [SQLTokenType.table, SQLTokenType.column]:
+            out_strs.append(
+                "{} P = {:.3f}, R = {:.3f}, F1 = {:.3f}".format(str(align_type), self.metrics[align_type]['P'],
+                                                                self.metrics[align_type]['R'],
+                                                                self.metrics[align_type]['F1']))
+        return '\n'.join(out_strs)
 
-    def get_metrics(self, log_saved_file: str=None) -> Dict:
+
+class SpiderEvaluator:
+    def __init__(self) -> None:
+        self.statistics = defaultdict(int)
+        self.cases: List[SpiderCase] = []
+        self.align_results = {SQLTokenType.table: defaultdict(int), SQLTokenType.column: defaultdict(int),
+                              SQLTokenType.value: defaultdict(int)}
+
+    def add_batch(self, inputs, outputs):
+        batch_size = len(inputs['input_token_ids'])
+        self.statistics['total_count'] += batch_size
+        self.statistics['total_loss'] += outputs['loss'].item() * batch_size
+
+        for i in range(batch_size):
+            example = inputs['example'][i]
+            question: Utterance = Utterance.from_json(example['question'])
+            meta_index: MetaIndex = inputs['meta_index'][i]
+            schema: SpiderSchema = SpiderSchema.from_json(example['schema'])
+            gold_sql: SQLExpression = SQLExpression.from_json(example['sql'])
+            values: List[ValueMatch] = [ValueMatch.from_json(x) for x in example['values']]
+
+            gold_tbl_labels = inputs['table_labels'][i]
+            pred_tbl_labels = torch.argmax(outputs['table_logits'][i], dim=-1)
+            pred_tbl_scores = torch.softmax(outputs['table_logits'][i], dim=-1)
+            tbl_correct = pred_tbl_labels.equal(gold_tbl_labels)
+            tbl_identify_results = []
+            for j in range(len(gold_tbl_labels)):
+                tbl_identify_results += [(j, gold_tbl_labels[j].item(), pred_tbl_labels[j].item(),
+                                          pred_tbl_scores[j, pred_tbl_labels[j]].item())]
+
+            gold_col_labels = inputs['column_labels'][i]
+            pred_col_labels = torch.argmax(outputs['column_logits'][i], dim=-1)
+            pred_col_scores = torch.softmax(outputs['column_logits'][i], dim=-1)
+            col_correct = pred_col_labels.equal(gold_col_labels)
+            col_identify_results = []
+            for j in range(len(gold_col_labels)):
+                col_identify_results += [(j, gold_col_labels[j].item(), pred_col_labels[j].item(),
+                                          pred_col_scores[j, pred_col_labels[j]].item())]
+
+            val_correct = True
+            gold_val_labels = inputs['value_labels'][i]
+            val_identify_results = []
+            if len(gold_val_labels) > 0:
+                pred_val_labels = torch.argmax(outputs['value_logits'][i], dim=-1)
+                pred_val_scores = torch.softmax(outputs['value_logits'][i], dim=-1)
+                val_correct = pred_val_labels.equal(gold_val_labels)
+                for j in range(len(gold_val_labels)):
+                    val_identify_results += [(j, gold_val_labels[j].item(), pred_val_labels[j].item(),
+                                              pred_val_scores[j, pred_val_labels[j]].item())]
+
+            align_weights = {}
+            if 'alignment_weights' in outputs:
+                tbl_align_weights, col_align_weights, val_align_weights = meta_index.split(
+                    outputs['alignment_weights'][i], dim=0)
+                align_weights['tbl'] = tbl_align_weights
+                align_weights['col'] = col_align_weights
+                align_weights['val'] = val_align_weights
+
+            gold_align_labels = get_spider_alignments_from_labeling(example['align_labels'], question, schema)
+            # pred_align_labels = get_spider_alignments_from_prediction(outputs['alignment_weights'][i], question, schema, values, meta_index, threshold=0.15)
+            # pred_align_labels = post_process_alignment_labels(pred_align_labels, gold_align_labels)
+
+            identify_logits = {SQLTokenType.table: outputs['table_logits'][i],
+                               SQLTokenType.column: outputs['column_logits'][i],
+                               SQLTokenType.value: outputs['value_logits'][i]}
+            align_weights2 = {SQLTokenType.table: align_weights['tbl'], SQLTokenType.column: align_weights['col'],
+                              SQLTokenType.value: align_weights['val']}
+            pred_align_labels = greedy_link_spider(identify_logits, align_weights2, question, schema, values,
+                                                   threshold=0.3)
+
+            align_result = evaluate_linking(gold_align_labels, pred_align_labels,
+                                            [SQLTokenType.table, SQLTokenType.column, SQLTokenType.value])
+            metrics = get_precision_recall_and_f1(align_result)
+            for align_type in align_result:
+                for key in align_result[align_type]:
+                    self.align_results[align_type][key] += align_result[align_type][key]
+
+            eval_case = SpiderCase(
+                schema=schema,
+                question=question,
+                goal_sql=gold_sql,
+                enc_input_tokens=inputs['input_tokens'][i],
+                correct_dict={'tbl': tbl_correct, 'col': col_correct, 'val': val_correct,
+                              'all': tbl_correct & col_correct},
+                identification_dict={'tbl': tbl_identify_results, 'col': col_identify_results,
+                                     'val': val_identify_results},
+                alignment_dict=align_weights,
+                gold_alignments=gold_align_labels,
+                pred_alignments=pred_align_labels,
+                metrics=metrics,
+                values=values)
+
+            self.cases += [eval_case]
+            self.statistics['tbl_correct'] += tbl_correct
+            self.statistics['col_correct'] += col_correct
+            self.statistics['val_correct'] += val_correct
+            self.statistics['overall_correct'] += tbl_correct & col_correct  # & val_correct
+
+    def get_metrics(self, saved_file: str = None):
         metrics = OrderedDict()
         total_count = self.statistics['total_count']
-        metrics['loss'] = self.statistics['loss'] / total_count
-        metrics['cp_loss'] = self.statistics['cp_loss'] / total_count
-        if 'grounding_loss' in self.statistics:
-            metrics['grounding_loss'] = self.statistics['grounding_loss'] / total_count
-        if 'sequence_labeling_loss' in self.statistics:
-            metrics['sequence_labeling_loss'] = self.statistics['sequence_labeling_loss'] / total_count
+        metrics['avg loss'] = self.statistics['total_loss'] / total_count
+        metrics['table accuracy'] = self.statistics['tbl_correct'] / total_count
+        metrics['column accuracy'] = self.statistics['col_correct'] / total_count
+        metrics['value accuracy'] = self.statistics['val_correct'] / total_count
+        metrics['overall accuracy'] = self.statistics['overall_correct'] / total_count
 
-        for label in QuestionLabel.get_all_labels():
-            label_value = label.value
-            label_type = QuestionLabel.get_abbr_by_value(label_value)
+        align_metrics = get_precision_recall_and_f1(self.align_results)
+        align_f1_string = ["acc_{:.3f}".format(metrics['overall accuracy'])]
+        total_f1 = 0
+        for align_type in self.align_results:
+            total_f1 += align_metrics[align_type]['F1']
+            metrics[str(align_type)] = " P = {:.3f}, R = {:.3f}, F1 = {:.3f}".format(align_metrics[align_type]['P'],
+                                                                                     align_metrics[align_type]['R'],
+                                                                                     align_metrics[align_type]['F1'])
+            align_f1_string += ["{}_{:.3f}".format(align_type.abbr, align_metrics[align_type]['F1'])]
+        align_f1_string = ".".join(align_f1_string)
 
-            key_true = f'{label_type} tag True'
-            key_all = f'{label_type} tag All'
+        metrics['average F1'] = total_f1 / len(self.align_results)
 
-            if key_true in self.statistics:
-                key_tag_accuracy = f'[{label_type}] accuracy'
-                metrics[key_tag_accuracy] = self.statistics[key_true] / self.statistics[key_all]
-
-            if len(self.dataset_statistics) > 1:
-                for dataset in self.dataset_statistics.keys():
-                    statistics = self.dataset_statistics[dataset]
-                    if key_true in statistics:
-                        accuracy = statistics[key_true] / statistics[key_all]
-                        key_dataset_tag_accuracy = f'[{label_type}] {dataset} accuracy'
-                        metrics[key_dataset_tag_accuracy] = accuracy
-        
-        for concept_type in [SQLTokenType.Keyword.string, SQLTokenType.Column.string, SQLTokenType.Value.string]:
-            if '{} CP True'.format(str(concept_type)) in self.statistics:
-                metrics['{} accuracy'.format(str(concept_type))] = self.statistics['{} CP True'.format(str(concept_type))] / self.statistics['{} CP All'.format(str(concept_type))]
-
-            if len(self.dataset_statistics) > 1:
-                for dataset in self.dataset_statistics.keys():
-                    statistics = self.dataset_statistics[dataset]
-                    if '{} CP True'.format(str(concept_type)) in statistics:
-                        accuracy = statistics['{} CP True'.format(str(concept_type))] / statistics['{} CP All'.format(str(concept_type))]
-                        metrics['{} {} accuracy'.format(str(concept_type), dataset)] = accuracy
-
-        if log_saved_file is not None:
-            with open(log_saved_file, 'w', encoding='utf-8') as fw:
-                for key, val in metrics.items():
-                    fw.write("{}\t{:.4f}\n".format(key, val))
-                fw.write('\n')
-                fw.writelines(self.logs)
-
-            if len(self.dataset_statistics) > 1:
-                for dataset in self.dataset_statistics.keys():
-                    with open(log_saved_file.replace(".txt", ".{}.txt".format(dataset)), 'w', encoding='utf-8') as fw:
-                        for key, val in metrics.items():
-                            if key.startswith(dataset):
-                                fw.write("{}\t{:.4f}\n".format(key, val))
-                        fw.write('\n')
-                        fw.writelines(self.dataset_logs[dataset])
-
+        if saved_file is not None:
+            with open(saved_file.replace(".txt", ".{}.txt".format(align_f1_string)), 'w', encoding='utf-8') as fw:
+                for case in self.cases:
+                    fw.write(case.to_string() + '\n\n')
         return metrics
 
+
+@dataclass
+class WTQCase:
+    schema: WTQSchema
+    gold_sql: SQLExpression
+    pred_sql: SQLExpression
+    question: Utterance
+    enc_input_tokens: List[str]
+    correct_dict: Dict[str, bool]
+
+    identification_dict: Dict[str, Any]
+    alignment_dict: Dict[str, torch.Tensor]
+    gold_alignments: List[AlignmentLabel]
+    pred_alignments: List[AlignmentLabel]
+    metrics: Dict[str, Dict[str, float]]
+
+    def to_string(self):
+        out_strs = []
+        tokens = [token.token for token in self.question.tokens]
+        sql_correct = self.pred_sql is not None and self.pred_sql == self.gold_sql
+        out_strs.append("Q: {}, Column = {}, All = {}, SQL = {}".format(self.question.text, self.correct_dict['col'],
+                                                                        self.correct_dict['all'], sql_correct))
+        out_strs.append("Gold SQL: {}".format(self.gold_sql.sql))
+        if self.pred_sql is not None:
+            out_strs.append("Pred SQL: {}".format(self.pred_sql.sql))
+
+        out_strs.append("Encode Tokens: {}".format(" ".join(self.enc_input_tokens)))
+        out_strs.append(self.schema.to_string())
+
+        for i, (col_id, gold_label, pred_label, pred_score) in enumerate(self.identification_dict['col']):
+            if gold_label == 0 and pred_label == 0:
+                continue
+            out_strs.append(
+                "{}: gold = {}, pred = {} / {:.3f}, Correct = {}".format(col_id, gold_label, pred_label, pred_score,
+                                                                         gold_label == pred_label))
+            if 'col' in self.alignment_dict:
+                align_vector = self.alignment_dict['col'][i]
+                assert len(align_vector) == len(tokens)
+                align_strs = ["{}/{:.3f}".format(token, weight.item()) for token, weight in zip(tokens, align_vector)]
+                out_strs += ["Alignment: {}".format(" ".join(align_strs))]
+
+        out_strs.append('Gold Align: {}'.format(" ".join([str(align_label) for align_label in self.gold_alignments])))
+        out_strs.append('Pred Align: {}'.format(" ".join([str(align_label) for align_label in self.pred_alignments])))
+        for align_type in [SQLTokenType.column]:
+            out_strs.append(
+                "{} P = {:.3f}, R = {:.3f}, F1 = {:.3f}".format(str(align_type), self.metrics[align_type]['P'],
+                                                                self.metrics[align_type]['R'],
+                                                                self.metrics[align_type]['F1']))
+
+        return '\n'.join(out_strs)
+
+
+class WTQEvaluator:
+    def __init__(self) -> None:
+        self.statistics = defaultdict(int)
+        self.cases: List[WTQCase] = []
+        self.align_results = {SQLTokenType.column: defaultdict(int)}
+
+    def add_batch(self, inputs, outputs):
+        batch_size = len(inputs['input_token_ids'])
+        self.statistics['total_count'] += batch_size
+        self.statistics['total_loss'] += outputs['loss'].item() * batch_size
+
+        for i in range(batch_size):
+            example = inputs['example'][i]
+            gold_sql: SQLExpression = SQLExpression.from_json(example['sql'])
+            question: Utterance = Utterance.from_json(example['question'])
+            meta_index: MetaIndex = inputs['meta_index'][i]
+            schema: WTQSchema = WTQSchema.from_json(example['schema'])
+
+            gold_col_labels = inputs['column_labels'][i]
+            pred_col_labels = torch.argmax(outputs['column_logits'][i], dim=-1)
+            pred_col_scores = torch.softmax(outputs['column_logits'][i], dim=-1)
+            col_correct = pred_col_labels.equal(gold_col_labels)
+
+            col_identify_results = []
+            for j in range(len(gold_col_labels)):
+                col_name = schema.column_headers[j]
+                col_identify_results += [(col_name, gold_col_labels[j].item(), pred_col_labels[j].item(),
+                                          pred_col_scores[j, pred_col_labels[j]].item())]
+
+            align_weights = {}
+            if 'alignment_weights' in outputs:
+                col_align_weights = outputs['alignment_weights'][i]
+                align_weights['col'] = col_align_weights
+
+            gold_align_labels = get_wtq_alignments_from_labeling(example['align_labels'], question, schema)
+            pred_align_labels = get_wtq_alignments_from_prediction(outputs['alignment_weights'][i], question, schema,
+                                                                   meta_index, threshold=0.15)
+            align_result = evaluate_linking(gold_align_labels, pred_align_labels, [SQLTokenType.column])
+
+            metrics = get_precision_recall_and_f1(align_result)
+            for align_type in align_result:
+                for key in align_result[align_type]:
+                    self.align_results[align_type][key] += align_result[align_type][key]
+
+            pred_sql: SQLExpression = None
+            if 'hypotheses' in outputs:
+                hypothesis: SQLTokenHypothesis = outputs['hypotheses'][i]
+                pred_sql = hypothesis.to_sql()
+
+            sql_correct = pred_sql is not None and pred_sql == gold_sql
+
+            eval_case = WTQCase(
+                schema=schema,
+                gold_sql=gold_sql,
+                pred_sql=pred_sql,
+                question=Utterance.from_json(example['question']),
+                enc_input_tokens=inputs['input_tokens'][i],
+                correct_dict={'col': col_correct, 'all': col_correct},
+                identification_dict={'col': col_identify_results},
+                alignment_dict=align_weights,
+                gold_alignments=gold_align_labels,
+                pred_alignments=pred_align_labels,
+                metrics=metrics)
+
+            self.cases += [eval_case]
+            self.statistics['col_correct'] += col_correct
+            self.statistics['overall_correct'] += col_correct
+            self.statistics['LF_correct'] += sql_correct
+
+    def get_metrics(self, saved_file: str = None):
+        metrics = OrderedDict()
+        total_count = self.statistics['total_count']
+        metrics['Average loss'] = self.statistics['total_loss'] / total_count
+        metrics['Column accuracy'] = self.statistics['col_correct'] / total_count
+        metrics['overall accuracy'] = self.statistics['overall_correct'] / total_count
+        metrics['SQL accuracy'] = self.statistics['LF_correct'] / total_count
+        align_metrics = get_precision_recall_and_f1(self.align_results)
+        for align_type in self.align_results:
+            metrics[str(align_type)] = " P = {:.3f}, R = {:.3f}, F1 = {:.3f}".format(align_metrics[align_type]['P'],
+                                                                                     align_metrics[align_type]['R'],
+                                                                                     align_metrics[align_type]['F1'])
+
+        if saved_file is not None:
+            with open(saved_file, 'w', encoding='utf-8') as fw:
+                fw.write('{}\n\n'.format("\n".join(
+                    [f"{k} = {v:.4f}" if isinstance(v, float) else "{} = {}".format(k, str(v)) for k, v in
+                     metrics.items()])))
+                for case in self.cases:
+                    fw.write(case.to_string() + '\n\n')
+        return metrics

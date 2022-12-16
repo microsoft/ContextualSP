@@ -1,24 +1,31 @@
 # README
 
-This code is still incomplete. We will actively update it when the code is totally ready.
+The official code of paper [Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](https://aclanthology.org/2021.findings-acl.100.pdf).
 
-# Environment Setup
+# Install Dependencies
 
-```
-conda create -n grounding python=3.7  -y
-conda activate grounding
-conda install pytorch==1.7.1 cudatoolkit=10.1 -c pytorch
-pip install -r  requirements.txt
-```
+Please first install [PyTorch](https://pytorch.org/), and then install all the dependencies by running:
 
-# Training
-
-```shell
-python train.py -exp_id _experiment_ -datasets wikisql_label -use_wb -threads 16 -plm bert-base-uncased -model UniG -bs 25 -ls 0.05 -out_dir grounding
+```bash
+pip install -r requirements.txt
 ```
 
-# Inference
+# Train Grounding Model
 
-```shell
-python infer.py -ckpt  checkpoint/xxx.pt  -gpu
-```
+## Train Grounding Model on Spider
+
+Please run the script `train_spider_ground.sh` to train the grounding model on Spider dataset.
+
+## Train Grounding Model on WTQ
+
+Please run the script `train_wtq_ground.sh` to train the grounding model on WTQ dataset.
+
+# Evaluate Grounding Model
+
+## Evaluate Grounding Model on Spider
+
+Please run the script `eval_spider_ground.sh` to evaluate the grounding model on Spider dataset. Note that you should replace the model checkpoint `checkpoints/spider_grounding_model/model.pt` with yours.
+
+## Evaluate Grounding Model on WTQ
+
+Please run the script `eval_wtq_ground.sh` to evaluate the grounding model on WTQ dataset.  Note that you should replace the model checkpoint `checkpoints/wtq_grounding_model/model.pt` with yours.
