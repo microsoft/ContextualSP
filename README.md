@@ -39,6 +39,9 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 > **[Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation](robustness_of_text_to_sql)**
 > Xinyu Pi*, Bing Wang*, Yan Gao, Jiaqi Guo, Zhoujun Li, Jian-Guang Lou, ACL 2022.
 
+> **[Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](awakening_latent_grounding)**
+> Qian Liu*, Dejian Yang*, Jiaqi Guo, Bin Zhou, Jian-Guang Lou, ACL 2021 Findings.
+> 
 ### Compositional Generalization
 
 > **[Learning Algebraic Recombination for Compositional Generalization](https://github.com/thousfeet/LEAR)**

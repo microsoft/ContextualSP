@@ -33,8 +33,7 @@ class WTQAlignmentModel(nn.Module):
         batched_question_outputs, batched_entity_outputs = [], []
         for batch_idx in range(len(bert_outputs)):
             meta_index: MetaIndex = inputs['meta_index'][batch_idx]
-            question_outputs = bert_outputs[batch_idx][
-                meta_index.question_encode_indices + [meta_index.question_sep_index]]
+            question_outputs = bert_outputs[batch_idx][1: meta_index.question_sep_index + 1]
             batched_question_outputs += [question_outputs[:-1]]
 
             col_outputs = bert_outputs[batch_idx][meta_index.col_encode_indices]
@@ -94,7 +93,8 @@ class WTQAlignmentModel(nn.Module):
         total_alignment_loss = 0
         for batch_idx in range(len(col_logits)):
             meta_index: MetaIndex = inputs['meta_index'][batch_idx]
-            question_length = meta_index.num_question_tokens
+            # question_length = meta_index.num_question_tokens
+            question_length = meta_index.question_sep_index - 1
             col_labels = inputs['column_labels'][batch_idx]
 
             with torch.no_grad():
@@ -157,13 +157,13 @@ class WTQAlignmentModel(nn.Module):
                                    masking_scores: Dict[str, torch.Tensor],
                                    masking_spans: List[Tuple[int, int]],
                                    meta_index: MetaIndex,
-                                   default_weight: float = 0.01,
+                                   default_weight: float = 0.1,
                                    ):
-
+        num_question_subword = meta_index.question_sep_index - 1
         masking_rewards = {}
         for e_type in ['col']:
             e_labels, e_base_scores, e_masking_scores = labels[e_type], base_scores[e_type], masking_scores[e_type]
-            reward = torch.zeros((len(e_labels), meta_index.num_question_tokens), device=e_labels.device)
+            reward = torch.zeros((len(e_labels), num_question_subword), device=e_labels.device)
             for idx in range(len(e_labels)):
                 label = e_labels[idx].item()
                 if label == 0:
@@ -175,7 +175,7 @@ class WTQAlignmentModel(nn.Module):
                     for j in range(start, end + 1):
                         ngram_rewards[j].append(score_diff)
 
-                for q_idx in range(meta_index.num_question_tokens):
+                for q_idx in range(num_question_subword):
                     reward[idx, q_idx] = sum(ngram_rewards[q_idx]) / len(
                         ngram_rewards[q_idx]) if q_idx in ngram_rewards else 0.0
 

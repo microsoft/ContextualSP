@@ -5,12 +5,16 @@ import torch.nn.functional as F
 from typing import Tuple
 from utils import *
 
+
 def get_bert_hidden_size(bert_version: str) -> int:
-    if bert_version in ['bert-base-uncased', 'bert-base-chinese', 'bert-base-multilingual-cased', 'hfl/chinese-bert-wwm', 'hfl/chinese-bert-wwm-ext', 'hfl/chinese-roberta-wwm-ext']:
+    if bert_version in ['bert-base-uncased', 'bert-base-chinese', 'bert-base-multilingual-cased',
+                        'hfl/chinese-bert-wwm', 'hfl/chinese-bert-wwm-ext', 'hfl/chinese-roberta-wwm-ext']:
         return 768
-    if bert_version in ['bert-large-cased', 'bert-large-uncased', 'bert-large-uncased-whole-word-masking', 'hfl/chinese-roberta-wwm-ext-large']:
+    if bert_version in ['bert-large-cased', 'bert-large-uncased', 'bert-large-uncased-whole-word-masking',
+                        'hfl/chinese-roberta-wwm-ext-large']:
         return 1024
     raise NotImplementedError(f"not supported bert version: {bert_version}")
+
 
 class AttentivePointer(nn.Module):
     def __init__(self, hidden_size: int):
@@ -23,24 +27,26 @@ class AttentivePointer(nn.Module):
 
         self.linear_out = nn.Sequential(nn.Linear(2 * hidden_size, hidden_size), nn.LayerNorm(hidden_size))
 
-    def forward(self, query: torch.Tensor, key: torch.Tensor, value: torch.Tensor, mask: torch.BoolTensor = None) -> Tuple[torch.Tensor, torch.Tensor]:
+    def forward(self, query: torch.Tensor, key: torch.Tensor, value: torch.Tensor, mask: torch.BoolTensor = None) -> \
+    Tuple[torch.Tensor, torch.Tensor]:
         query = self.linear_query(query)
         key = self.linear_key(key)
         value = self.linear_value(value)
-        
+
         attn_logits = torch.matmul(query, key.transpose(-2, -1))
         attn_logits /= math.sqrt(self.hidden_size)
 
         if mask is not None:
             attn_logits.masked_fill_(mask == 0, float('-inf'))
-        
+
         # [batch_size, query_length, key_length]
         attn_weights = F.softmax(attn_logits, dim=-1)
 
         attn_outputs = torch.matmul(attn_weights, value)
         attn_outputs = self.linear_out(torch.cat((attn_outputs, query), dim=-1))
-        
+
         return attn_outputs, attn_weights
+
 
 class LabelSmoothingLoss(nn.Module):
     def __init__(self, label_smoothing):

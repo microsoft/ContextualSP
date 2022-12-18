@@ -7,6 +7,26 @@ from dataclasses import dataclass
 from utils.data_types import *
 from utils.data_iter import MetaIndex
 from utils.schema_linker import *
+from fuzzywuzzy import fuzz
+import os
+
+
+def reduce_alignment_matrix(alignment_matrix: torch.Tensor, mappings: List[int], max_length: int) -> torch.Tensor:
+    new_alignment_matrix = torch.zeros((alignment_matrix.size(0), max_length), device=alignment_matrix.device)
+    for i in range(alignment_matrix.size(0)):
+        for j in range(alignment_matrix.size(1)):
+            new_alignment_matrix[i][mappings[j]] += alignment_matrix[i][j]
+    return new_alignment_matrix
+
+
+def reduce_alignment_matrix_question_first(alignment_matrix: torch.Tensor, mappings: List[int],
+                                           max_length: int) -> torch.Tensor:
+    assert len(alignment_matrix) >= max_length
+    new_alignment_matrix = torch.zeros((max_length, alignment_matrix.size(1)), device=alignment_matrix.device)
+    for i in range(alignment_matrix.size(0)):
+        for j in range(alignment_matrix.size(1)):
+            new_alignment_matrix[mappings[i]][j] += alignment_matrix[i][j] / mappings.count(mappings[i])
+    return new_alignment_matrix
 
 
 def evaluate_linking(gold_align_labels: List[AlignmentLabel], pred_align_labels: List[AlignmentLabel],
@@ -141,8 +161,7 @@ def post_process_alignment_labels(pred_align_labels: List[AlignmentLabel], gold_
     return new_pred_align_labels
 
 
-def get_wtq_alignments_from_labeling(nl_alignments: List[Dict], question: Utterance, schema: WTQSchema) -> List[
-    AlignmentLabel]:
+def get_wtq_alignments_from_labeling(nl_alignments: List[Dict], question: Utterance, schema: WTQSchema) -> List[AlignmentLabel]:
     assert len(question.tokens) == len(nl_alignments)
     align_labels = []
     for q_idx in range(len(question.tokens)):
@@ -164,10 +183,16 @@ def get_wtq_alignments_from_labeling(nl_alignments: List[Dict], question: Uttera
 
 
 def get_wtq_alignments_from_prediction(alignment_weights: torch.Tensor, question: Utterance, schema: WTQSchema,
-                                       meta_index: MetaIndex, threshold: float = 0.1) -> List[AlignmentLabel]:
-    alignment_weights = alignment_weights.transpose(0, 1)
+                                       meta_index: MetaIndex, threshold: float = 0.1, question_first=False) -> List[AlignmentLabel]:
+    if question_first:
+        alignment_weights = reduce_alignment_matrix_question_first(alignment_weights, question.get_piece2token(),
+                                                                   len(question.tokens))
+    else:
+        alignment_weights = reduce_alignment_matrix(alignment_weights, question.get_piece2token(),
+                                                    len(question.tokens)).transpose(0, 1)
     assert len(alignment_weights) == len(question.tokens)
     align_labels = []
+    align_span = []
     for q_idx in range(len(alignment_weights)):
         max_idx = torch.argmax(alignment_weights[q_idx], dim=-1)
         confidence = alignment_weights[q_idx, max_idx]
@@ -177,11 +202,75 @@ def get_wtq_alignments_from_prediction(alignment_weights: torch.Tensor, question
             continue
 
         assert max_idx < meta_index.num_columns
-        align_label = AlignmentLabel(question.tokens[q_idx], SQLTokenType.column, schema.column_headers[max_idx],
+        col_idx = meta_index.lookup_entity_id('col', int(max_idx))
+        align_label = AlignmentLabel(question.tokens[q_idx], SQLTokenType.column, schema.column_headers[col_idx],
                                      confidence)
         align_labels.append(align_label)
+    i = 0
+    while i < len(align_labels):
+        if align_labels[i].align_type == SQLTokenType.column:
+            j = i + 1
+            while j < len(align_labels):
+                if align_labels[j].align_value == align_labels[i].align_value and \
+                        align_labels[j].align_type == SQLTokenType.column:
+                    j += 1
+                else:
+                    break
+            align_span.append((i, j))
+            i = j
+            continue
+        else:
+            i += 1
+
+    table_id = schema.table_id
+
+    # load table from the same directory
+    data_dir = os.getenv("PT_DATA_DIR", default="data/squall")
+    table_content = json.load(open("{}/json/{}.json".format(data_dir, table_id), 'r'))
+    all_values = []
+    for internal_columns in table_content['contents']:
+        for column in internal_columns:
+            all_values += column['data']
+    for span in align_span:
+        find = 0
+        for _label in align_labels[span[0]: span[1]]:
+            if _label.align_value != align_labels[span[0]].align_value:
+                find = 1
+                break
+        if find == 1:
+            continue
+        span_strs = [(span[0], span[1], " ".join([x.token.token for x in align_labels[span[0]: span[1]]]))]
+        if span[0] - 1 >= 0:
+            span_strs.append(
+                (span[0] - 1, span[1], " ".join([x.token.token for x in align_labels[span[0] - 1: span[1]]])))
+        if span[0] - 2 >= 0:
+            span_strs.append(
+                (span[0] - 2, span[1], " ".join([x.token.token for x in align_labels[span[0] - 2: span[1]]])))
+        if span[1] + 1 < len(question.tokens):
+            span_strs.append(
+                (span[0], span[1] + 1, " ".join([x.token.token for x in align_labels[span[0]: span[1] + 1]])))
+        if span[1] + 2 < len(question.tokens):
+            span_strs.append(
+                (span[0], span[1] + 2, " ".join([x.token.token for x in align_labels[span[0]: span[1] + 2]])))
+
+        for value in all_values:
+            if not isinstance(value, str):
+                continue
+            for sp1, sp2, span_str in span_strs:
+                if value is not None and \
+                        (fuzz.ratio(value.lower(), span_str.lower()) > 80):
+                    if value.lower() in table_content['headers']:
+                        continue
+                    for label in align_labels[span[0]:span[1]]:
+                        label.align_type = SQLTokenType.null
+                    break
+        for sp1, sp2, span_str in span_strs:
+            if span_str in table_content['headers'][2:]:
+                for idx in range(sp1, sp2):
+                    align_labels[idx] = AlignmentLabel(question.tokens[idx], SQLTokenType.column, span_str, 1)
 
     return align_labels
+
 
 
 @dataclass
@@ -413,7 +502,7 @@ class WTQCase:
 
     def to_string(self):
         out_strs = []
-        tokens = [token.token for token in self.question.tokens]
+        tokens = self.question.get_piece2token()
         sql_correct = self.pred_sql is not None and self.pred_sql == self.gold_sql
         out_strs.append("Q: {}, Column = {}, All = {}, SQL = {}".format(self.question.text, self.correct_dict['col'],
                                                                         self.correct_dict['all'], sql_correct))
@@ -430,11 +519,11 @@ class WTQCase:
             out_strs.append(
                 "{}: gold = {}, pred = {} / {:.3f}, Correct = {}".format(col_id, gold_label, pred_label, pred_score,
                                                                          gold_label == pred_label))
-            if 'col' in self.alignment_dict:
-                align_vector = self.alignment_dict['col'][i]
-                assert len(align_vector) == len(tokens)
-                align_strs = ["{}/{:.3f}".format(token, weight.item()) for token, weight in zip(tokens, align_vector)]
-                out_strs += ["Alignment: {}".format(" ".join(align_strs))]
+            # if 'col' in self.alignment_dict:
+            #     align_vector = self.alignment_dict['col'][i]
+            #     assert len(align_vector) == len(tokens), print(align_vector.shape, tokens)
+            #     align_strs = ["{}/{:.3f}".format(token, weight.item()) for token, weight in zip(tokens, align_vector)]
+            #     out_strs += ["Alignment: {}".format(" ".join(align_strs))]
 
         out_strs.append('Gold Align: {}'.format(" ".join([str(align_label) for align_label in self.gold_alignments])))
         out_strs.append('Pred Align: {}'.format(" ".join([str(align_label) for align_label in self.pred_alignments])))

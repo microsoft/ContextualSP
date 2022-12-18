@@ -90,7 +90,7 @@ class SpiderAlignmentModel(nn.Module):
         assert len(col_labels) == len(col_logits)
 
         total_loss = 0
-        criterion = LabelSmoothingLoss(0.05)  # if inputs['label_smoothing'] else nn.CrossEntropyLoss()
+        criterion = LabelSmoothingLoss(0.05) if inputs['label_smoothing'] else nn.CrossEntropyLoss()
         for batch_idx in range(len(tbl_labels)):
             total_loss += criterion(tbl_logits[batch_idx], tbl_labels[batch_idx])
             total_loss += criterion(col_logits[batch_idx], col_labels[batch_idx])

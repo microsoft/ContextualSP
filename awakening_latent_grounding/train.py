@@ -12,6 +12,9 @@ from dataclasses import dataclass, field
 @dataclass
 class TrainingArgs:
     learning_rate: float = field(default=3e-5, metadata={"help": "The initial learning rate for Adam."})
+    non_bert_learning_rate: float = field(default=1e-3,
+                                          metadata={"help": "The initial learning rate for non-BERT parameters."})
+
     weight_decay: float = field(default=0.0, metadata={"help": "Weight decay if we apply some."})
     adam_epsilon: float = field(default=1e-8, metadata={"help": "Epsilon for Adam optimizer."})
     max_grad_norm: float = field(default=1.0, metadata={"help": "Max gradient norm."})
@@ -23,6 +26,7 @@ class TrainingArgs:
     eval_batch_size: int = field(default=32, metadata={"help": "Evaluation batch size"})
     num_train_epochs: int = field(default=10, metadata={"help": "Training epochs"})
     max_encode_length: int = field(default=512)
+    warmup_steps: int = field(default=0, metadata={"help": "Warmup steps"})
 
     alw_func: str = field(default='const_0.0')
 
@@ -159,7 +163,17 @@ class Trainer:
                                                                                     "")) if self.args.checkpoint is not None else 0
         start_epoch = global_step // len(train_iter)
 
-        optimizer = AdamW(self.model.parameters(), lr=self.args.learning_rate, eps=self.args.adam_epsilon)
+        params = []
+        params_bert = []
+        for name, param in self.model.named_parameters():
+            if param.requires_grad:
+                if 'bert' in name:
+                    params_bert.append(param)
+                else:
+                    params.append(param)
+        optimizer = AdamW([{'params': params_bert},
+                           {'params': params, 'lr': 1e-3}],
+                          lr=self.args.learning_rate, eps=self.args.adam_epsilon)
 
         if self.args.fp16:
             try:
@@ -170,7 +184,7 @@ class Trainer:
             self.logger.info("Enable fp16 optimization ...")
             self.model, optimizer = amp.initialize(self.model, optimizer, opt_level="O2")
 
-        scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=2000,
+        scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=args.warmup_steps,
                                                     num_training_steps=num_train_steps)
 
         self.model.train()

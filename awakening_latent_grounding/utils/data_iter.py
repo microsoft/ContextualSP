@@ -128,6 +128,16 @@ class MetaIndex:
     def split(self, outputs, dim=0):
         return torch.split(outputs, [self.num_tables, self.num_columns, self.num_values], dim=dim)
 
+    def lookup_entity_id(self, e_type: str, type_encode_idx: int) -> int:
+        count = 0
+        for t, e_idx, _, _ in self.entity_spans:
+            if t != e_type:
+                continue
+            if count == type_encode_idx:
+                return e_idx
+            count += 1
+        raise ValueError("Index {} of range for type {}".format(type_encode_idx, e_type))
+
 
 class WTQDataset(Dataset):
     def __init__(self, examples: List[Dict], tokenizer: BertTokenizer, device: torch.device, max_enc_length: int,
@@ -194,9 +204,10 @@ class WTQDataset(Dataset):
         meta_index = MetaIndex(question_spans=question_spans, entity_spans=entity_spans, column2table_indices=None)
         column_labels = [0 for _ in entity_spans]
         assert len(entity_spans) == len(schema.column_headers)
-        for col_name in example['identify_labels'][str(SQLTokenType.column)]:
-            col_id = schema.column_header_to_id[col_name]
-            column_labels[col_id] = 1
+        if 'identify_labels' in example:
+            for col_name in example['identify_labels'][str(SQLTokenType.column)]:
+                col_id = schema.column_header_to_id[col_name]
+                column_labels[col_id] = 1
 
         return {
             'input_token_ids': torch.tensor(input_token_ids, dtype=torch.long, device=self.device),
@@ -426,7 +437,7 @@ def tensor_collate_fn(inputs: List[Dict], is_training: bool) -> Dict:
     return collated
 
 
-def load_wtq_data_iterator(paths: List[str], tokenizer: BertTokenizer, batch_size: int, device: torch.device,
+def load_wtq_data_iterator(paths, tokenizer: BertTokenizer, batch_size: int, device: torch.device,
                            bucket: bool, shuffle: bool, max_enc_length: int, sampling_size: int = None) -> DataLoader:
     all_examples = []
     if isinstance(paths, list):

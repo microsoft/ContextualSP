@@ -7,7 +7,7 @@ from models import *
 from utils import *
 
 
-def evaluate_squall(model: nn.Module, data_iter: DataLoader, enable_types: List[SQLToken], threshold: float):
+def evaluate_squall(model: nn.Module, data_iter: DataLoader, enable_types: List[SQLTokenType], threshold: float):
     eval_results, eval_logs = {}, []
     for eval_type in enable_types:
         eval_results[eval_type] = defaultdict(int)
@@ -254,13 +254,12 @@ def load_model_and_data_iter(args):
 def parse_args():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('-ckpt', '--checkpoint',
-                        default='checkpoints/spider_grounding_model/model.pt')
-    parser.add_argument('-data', '--data_path', default='data/wtq_grounding/dev')
+    parser.add_argument('-ckpt', '--checkpoint')
+    parser.add_argument('-data', '--data_path')
     parser.add_argument('-dump_all', '--dump_all', action='store_true')
     parser.add_argument('-gpu', '--device', default='cuda:0' if torch.cuda.is_available() else 'cpu')
     parser.add_argument('-with_gold_sql', '--with_gold_sql', action='store_true')
-    parser.add_argument('-threshold', '--threshold', default=0.4, type=float)
+    parser.add_argument('-threshold', '--threshold', type=float)
     args = parser.parse_args()
     return args
 
