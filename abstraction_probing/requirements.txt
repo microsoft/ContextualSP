@@ -1,4 +1,4 @@
-torch == 1.7.0+cu101
+torch == 1.13.1
 numpy
 transformers == 4.6.0
 nltk
