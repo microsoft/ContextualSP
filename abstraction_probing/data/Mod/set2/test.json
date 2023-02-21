@@ -1,0 +1,1000 @@
+{"input": "Form one: The baby on a tray in the house screamed .", "output": "SCREAM ( ON ( BABY , IN ( TRAY , HOUSE ) ) , NONE , NONE )"}
+{"input": "Form one: The spokesman in the house served Emma the rose .", "output": "SERVE ( IN ( SPOKESMAN , HOUSE ) , ROSE , EMMA )"}
+{"input": "Form one: A donkey in the room sold Ella a donut .", "output": "SELL ( IN ( DONKEY , ROOM ) , DONUT , ELLA )"}
+{"input": "Form one: A cat in the house was offered the cake by the boy beside a table .", "output": "OFFER ( BESIDE ( BOY , TABLE ) , CAKE , IN ( CAT , HOUSE ) )"}
+{"input": "Form one: The donut on the mound was slid by a child on the computer .", "output": "SLIDE ( ON ( CHILD , COMPUTER ) , ON ( DONUT , MOUND ) , NONE )"}
+{"input": "Form one: The dog in a bakery in the bag sneezed .", "output": "SNEEZE ( IN ( DOG , IN ( BAKERY , BAG ) ) , NONE , NONE )"}
+{"input": "Form one: A girl on the stool on the table drew a frog .", "output": "DRAW ( ON ( GIRL , ON ( STOOL , TABLE ) ) , FROG , NONE )"}
+{"input": "Form one: A donut on a table grew .", "output": "GROW ( NONE , ON ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: The cake in the house was painted .", "output": "PAINT ( NONE , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: The sailor in a house lended a biscuit on a table to a goose .", "output": "LEND ( IN ( SAILOR , HOUSE ) , ON ( BISCUIT , TABLE ) , GOOSE )"}
+{"input": "Form one: A visitor in the pile rolled a resident .", "output": "ROLL ( IN ( VISITOR , PILE ) , RESIDENT , NONE )"}
+{"input": "Form one: The girl in the vehicle needed to walk .", "output": "NEED ( IN ( GIRL , VEHICLE ) , NONE , NONE ) XCOMP WALK ( IN ( GIRL , VEHICLE ) , NONE , NONE )"}
+{"input": "Form one: A girl in the house slept .", "output": "SLEEP ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The girl beside a table was given a box .", "output": "GIVE ( NONE , BOX , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: A girl on the stage was sold a cake .", "output": "SELL ( NONE , CAKE , ON ( GIRL , STAGE ) )"}
+{"input": "Form one: The cat beside the table was rented the donut .", "output": "RENT ( NONE , DONUT , BESIDE ( CAT , TABLE ) )"}
+{"input": "Form one: A donut on the bed rolled .", "output": "ROLL ( NONE , ON ( DONUT , BED ) , NONE )"}
+{"input": "Form one: A bear in the car froze the key on the table .", "output": "FREEZE ( IN ( BEAR , CAR ) , ON ( KEY , TABLE ) , NONE )"}
+{"input": "Form one: A cookie in the house rolled .", "output": "ROLL ( NONE , IN ( COOKIE , HOUSE ) , NONE )"}
+{"input": "Form one: A girl in a can preferred to eat .", "output": "PREFER ( IN ( GIRL , CAN ) , NONE , NONE ) XCOMP EAT ( IN ( GIRL , CAN ) , NONE , NONE )"}
+{"input": "Form one: A baby beside the bed in the tent investigated .", "output": "INVESTIGATE ( BESIDE ( BABY , IN ( BED , TENT ) ) , NONE , NONE )"}
+{"input": "Form one: A tool in a room was rolled .", "output": "ROLL ( NONE , IN ( TOOL , ROOM ) , NONE )"}
+{"input": "Form one: The girl beside the bed lended the manager the leaf .", "output": "LEND ( BESIDE ( GIRL , BED ) , LEAF , MANAGER )"}
+{"input": "Form one: A girl in a bush said that the boy in a glass painted .", "output": "SAY ( IN ( GIRL , BUSH ) , NONE , NONE ) CCOMP PAINT ( IN ( BOY , GLASS ) , NONE , NONE )"}
+{"input": "Form one: The cake in a glass was painted by a girl beside the table .", "output": "PAINT ( BESIDE ( GIRL , TABLE ) , IN ( CAKE , GLASS ) , NONE )"}
+{"input": "Form one: A mouse beside the table ate .", "output": "EAT ( BESIDE ( MOUSE , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A goose in a spaceship gasped .", "output": "GASP ( IN ( GOOSE , SPACESHIP ) , NONE , NONE )"}
+{"input": "Form one: The baby beside a valve painted the cake .", "output": "PAINT ( BESIDE ( BABY , VALVE ) , CAKE , NONE )"}
+{"input": "Form one: A chicken beside a cabinet believed that the girl on the bed slept .", "output": "BELIEVE ( BESIDE ( CHICKEN , CABINET ) , NONE , NONE ) CCOMP SLEEP ( ON ( GIRL , BED ) , NONE , NONE )"}
+{"input": "Form one: A baby on a truck slept .", "output": "SLEEP ( ON ( BABY , TRUCK ) , NONE , NONE )"}
+{"input": "Form one: A girl in the house wanted to clean .", "output": "WANT ( IN ( GIRL , HOUSE ) , NONE , NONE ) XCOMP CLEAN ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The box on the corpse was handed to Liam .", "output": "HAND ( NONE , ON ( BOX , CORPSE ) , LIAM )"}
+{"input": "Form one: The raisin in a vehicle was rolled .", "output": "ROLL ( NONE , IN ( RAISIN , VEHICLE ) , NONE )"}
+{"input": "Form one: The girl beside a table painted Scarlett .", "output": "PAINT ( BESIDE ( GIRL , TABLE ) , SCARLETT , NONE )"}
+{"input": "Form one: A cat beside the pepper loved Victoria .", "output": "LOVE ( BESIDE ( CAT , PEPPER ) , VICTORIA , NONE )"}
+{"input": "Form one: A girl in a hole slept .", "output": "SLEEP ( IN ( GIRL , HOLE ) , NONE , NONE )"}
+{"input": "Form one: The champion beside the bed liked that the dog in a house found the raisin .", "output": "LIKE ( BESIDE ( CHAMPION , BED ) , NONE , NONE ) CCOMP FIND ( IN ( DOG , HOUSE ) , RAISIN , NONE )"}
+{"input": "Form one: The mouse on the stool cleaned Emma .", "output": "CLEAN ( ON ( MOUSE , STOOL ) , EMMA , NONE )"}
+{"input": "Form one: The duck beside the table beside the worm rolled .", "output": "ROLL ( BESIDE ( DUCK , BESIDE ( TABLE , WORM ) ) , NONE , NONE )"}
+{"input": "Form one: A boy on a tree lended the block to Emma .", "output": "LEND ( ON ( BOY , TREE ) , BLOCK , EMMA )"}
+{"input": "Form one: A melon on the table beside a house was helped .", "output": "HELP ( NONE , ON ( MELON , BESIDE ( TABLE , HOUSE ) ) , NONE )"}
+{"input": "Form one: A cat beside a tree intended to walk .", "output": "INTEND ( BESIDE ( CAT , TREE ) , NONE , NONE ) XCOMP WALK ( BESIDE ( CAT , TREE ) , NONE , NONE )"}
+{"input": "Form one: A baby in a garden called the raisin .", "output": "CALL ( IN ( BABY , GARDEN ) , RAISIN , NONE )"}
+{"input": "Form one: The boy on the stage preferred to smirk .", "output": "PREFER ( ON ( BOY , STAGE ) , NONE , NONE ) XCOMP SMIRK ( ON ( BOY , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The cookie on the bed was liked .", "output": "LIKE ( NONE , ON ( COOKIE , BED ) , NONE )"}
+{"input": "Form one: The cake beside a stage was liked by the baby beside a road .", "output": "LIKE ( BESIDE ( BABY , ROAD ) , BESIDE ( CAKE , STAGE ) , NONE )"}
+{"input": "Form one: A teacher on the table was lended the box beside the bed .", "output": "LEND ( NONE , BESIDE ( BOX , BED ) , ON ( TEACHER , TABLE ) )"}
+{"input": "Form one: A girl on a table offered a donut to Olivia .", "output": "OFFER ( ON ( GIRL , TABLE ) , DONUT , OLIVIA )"}
+{"input": "Form one: The girl beside a table rolled .", "output": "ROLL ( BESIDE ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The boy in the garden was given a cake .", "output": "GIVE ( NONE , CAKE , IN ( BOY , GARDEN ) )"}
+{"input": "Form one: A girl in the house knew a cake .", "output": "KNOW ( IN ( GIRL , HOUSE ) , CAKE , NONE )"}
+{"input": "Form one: A cookie on the leaf was rolled .", "output": "ROLL ( NONE , ON ( COOKIE , LEAF ) , NONE )"}
+{"input": "Form one: The girl in the closet intended to cook .", "output": "INTEND ( IN ( GIRL , CLOSET ) , NONE , NONE ) XCOMP COOK ( IN ( GIRL , CLOSET ) , NONE , NONE )"}
+{"input": "Form one: The boy beside the surgeon hoped to sketch .", "output": "HOPE ( BESIDE ( BOY , SURGEON ) , NONE , NONE ) XCOMP SKETCH ( BESIDE ( BOY , SURGEON ) , NONE , NONE )"}
+{"input": "Form one: The captain on the desk in the room nursed .", "output": "NURSE ( ON ( CAPTAIN , IN ( DESK , ROOM ) ) , NONE , NONE )"}
+{"input": "Form one: A cake on a surface floated .", "output": "FLOAT ( NONE , ON ( CAKE , SURFACE ) , NONE )"}
+{"input": "Form one: The bean beside the bed was shortened by a citizen beside the table .", "output": "SHORTEN ( BESIDE ( CITIZEN , TABLE ) , BESIDE ( BEAN , BED ) , NONE )"}
+{"input": "Form one: The drink beside a road was admired .", "output": "ADMIRE ( NONE , BESIDE ( DRINK , ROAD ) , NONE )"}
+{"input": "Form one: A girl beside the bed said that the bird beside the chair gave the cake to a boy .", "output": "SAY ( BESIDE ( GIRL , BED ) , NONE , NONE ) CCOMP GIVE ( BESIDE ( BIRD , CHAIR ) , CAKE , BOY )"}
+{"input": "Form one: The child in a drawer gave Amelia a box beside the machine .", "output": "GIVE ( IN ( CHILD , DRAWER ) , BESIDE ( BOX , MACHINE ) , AMELIA )"}
+{"input": "Form one: The basket on the keyboard was eaten .", "output": "EAT ( NONE , ON ( BASKET , KEYBOARD ) , NONE )"}
+{"input": "Form one: The girl on the stage enlarged a cake on the cookie .", "output": "ENLARGE ( ON ( GIRL , STAGE ) , ON ( CAKE , COOKIE ) , NONE )"}
+{"input": "Form one: The researcher in a room froze .", "output": "FREEZE ( IN ( RESEARCHER , ROOM ) , NONE , NONE )"}
+{"input": "Form one: A cat beside the rod on the chessboard was fed the box .", "output": "FEED ( NONE , BOX , BESIDE ( CAT , ON ( ROD , CHESSBOARD ) ) )"}
+{"input": "Form one: A boy beside the road was given a box in the hole .", "output": "GIVE ( NONE , IN ( BOX , HOLE ) , BESIDE ( BOY , ROAD ) )"}
+{"input": "Form one: The professor beside a table appreciated the key in a room .", "output": "APPRECIATE ( BESIDE ( PROFESSOR , TABLE ) , IN ( KEY , ROOM ) , NONE )"}
+{"input": "Form one: The cat beside the table wanted to sleep .", "output": "WANT ( BESIDE ( CAT , TABLE ) , NONE , NONE ) XCOMP SLEEP ( BESIDE ( CAT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The donut on a table was pierced .", "output": "PIERCE ( NONE , ON ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: A monkey on the table liked that the donut in a bush was given to the teacher .", "output": "LIKE ( ON ( MONKEY , TABLE ) , NONE , NONE ) CCOMP GIVE ( NONE , IN ( DONUT , BUSH ) , TEACHER )"}
+{"input": "Form one: The dog in a bun was handed the cake .", "output": "HAND ( NONE , CAKE , IN ( DOG , BUN ) )"}
+{"input": "Form one: A cat on a bag cleaned a chemical in a house .", "output": "CLEAN ( ON ( CAT , BAG ) , IN ( CHEMICAL , HOUSE ) , NONE )"}
+{"input": "Form one: The boy in the house appreciated that a pumpkin beside the table slid .", "output": "APPRECIATE ( IN ( BOY , HOUSE ) , NONE , NONE ) CCOMP SLIDE ( NONE , BESIDE ( PUMPKIN , TABLE ) , NONE )"}
+{"input": "Form one: A frog beside the table cried .", "output": "CRY ( BESIDE ( FROG , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The potato beside the lamp was helped .", "output": "HELP ( NONE , BESIDE ( POTATO , LAMP ) , NONE )"}
+{"input": "Form one: A boy on the bed sketched .", "output": "SKETCH ( ON ( BOY , BED ) , NONE , NONE )"}
+{"input": "Form one: A dog in a cylinder declared that the cake on a surface was appreciated .", "output": "DECLARE ( IN ( DOG , CYLINDER ) , NONE , NONE ) CCOMP APPRECIATE ( NONE , ON ( CAKE , SURFACE ) , NONE )"}
+{"input": "Form one: The boy on the table disintegrated .", "output": "DISINTEGRATE ( ON ( BOY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The president on a table was given a melon beside a lemon .", "output": "GIVE ( NONE , BESIDE ( MELON , LEMON ) , ON ( PRESIDENT , TABLE ) )"}
+{"input": "Form one: The wolf on a computer was handed a bat by the girl beside the monkey .", "output": "HAND ( BESIDE ( GIRL , MONKEY ) , BAT , ON ( WOLF , COMPUTER ) )"}
+{"input": "Form one: A cake beside the table was rolled .", "output": "ROLL ( NONE , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: A girl beside a rock passed Dylan a pen on a box .", "output": "PASS ( BESIDE ( GIRL , ROCK ) , ON ( PEN , BOX ) , DYLAN )"}
+{"input": "Form one: A driver beside the bed smiled .", "output": "SMILE ( BESIDE ( DRIVER , BED ) , NONE , NONE )"}
+{"input": "Form one: A scientist on the desk admired the cake beside the chair .", "output": "ADMIRE ( ON ( SCIENTIST , DESK ) , BESIDE ( CAKE , CHAIR ) , NONE )"}
+{"input": "Form one: The cake on a stage was floated .", "output": "FLOAT ( NONE , ON ( CAKE , STAGE ) , NONE )"}
+{"input": "Form one: A cat on a chair stabbed a cake .", "output": "STAB ( ON ( CAT , CHAIR ) , CAKE , NONE )"}
+{"input": "Form one: The lamb beside a toy ran .", "output": "RUN ( BESIDE ( LAMB , TOY ) , NONE , NONE )"}
+{"input": "Form one: A bear beside a chair napped .", "output": "NAP ( BESIDE ( BEAR , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: A horse on the cake investigated the melon on a box .", "output": "INVESTIGATE ( ON ( HORSE , CAKE ) , ON ( MELON , BOX ) , NONE )"}
+{"input": "Form one: The visitor in a garden was passed the donut on a table .", "output": "PASS ( NONE , ON ( DONUT , TABLE ) , IN ( VISITOR , GARDEN ) )"}
+{"input": "Form one: A donut beside a stage was rolled by a cat in a house .", "output": "ROLL ( IN ( CAT , HOUSE ) , BESIDE ( DONUT , STAGE ) , NONE )"}
+{"input": "Form one: The girl on a tree wished to run .", "output": "WISH ( ON ( GIRL , TREE ) , NONE , NONE ) XCOMP RUN ( ON ( GIRL , TREE ) , NONE , NONE )"}
+{"input": "Form one: The baby on the chair was fed the cake in the cot .", "output": "FEED ( NONE , IN ( CAKE , COT ) , ON ( BABY , CHAIR ) )"}
+{"input": "Form one: The researcher in a room ate the baby .", "output": "EAT ( IN ( RESEARCHER , ROOM ) , BABY , NONE )"}
+{"input": "Form one: The cat in a house dusted .", "output": "DUST ( IN ( CAT , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A girl in the bakery preferred to read .", "output": "PREFER ( IN ( GIRL , BAKERY ) , NONE , NONE ) XCOMP READ ( IN ( GIRL , BAKERY ) , NONE , NONE )"}
+{"input": "Form one: A child on a tray wanted to hunt .", "output": "WANT ( ON ( CHILD , TRAY ) , NONE , NONE ) XCOMP HUNT ( ON ( CHILD , TRAY ) , NONE , NONE )"}
+{"input": "Form one: A lion in the hole was given a rose by the girl in a car .", "output": "GIVE ( IN ( GIRL , CAR ) , ROSE , IN ( LION , HOLE ) )"}
+{"input": "Form one: A citizen in a house rolled .", "output": "ROLL ( IN ( CITIZEN , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The girl on the platter noticed that the politician beside a stage gave the frog a cake .", "output": "NOTICE ( ON ( GIRL , PLATTER ) , NONE , NONE ) CCOMP GIVE ( BESIDE ( POLITICIAN , STAGE ) , CAKE , FROG )"}
+{"input": "Form one: A cat beside a stage discovered a ball .", "output": "DISCOVER ( BESIDE ( CAT , STAGE ) , BALL , NONE )"}
+{"input": "Form one: A girl in the house ate .", "output": "EAT ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The ring on the table was given to a baby by the girl on the bed .", "output": "GIVE ( ON ( GIRL , BED ) , ON ( RING , TABLE ) , BABY )"}
+{"input": "Form one: The cake in a cup was helped .", "output": "HELP ( NONE , IN ( CAKE , CUP ) , NONE )"}
+{"input": "Form one: A girl in a garden was served the doll by the bunny on the pedestal .", "output": "SERVE ( ON ( BUNNY , PEDESTAL ) , DOLL , IN ( GIRL , GARDEN ) )"}
+{"input": "Form one: The girl in a bathtub was given a cake in the house .", "output": "GIVE ( NONE , IN ( CAKE , HOUSE ) , IN ( GIRL , BATHTUB ) )"}
+{"input": "Form one: A girl in a cage knew .", "output": "KNOW ( IN ( GIRL , CAGE ) , NONE , NONE )"}
+{"input": "Form one: The child in a pyramid observed .", "output": "OBSERVE ( IN ( CHILD , PYRAMID ) , NONE , NONE )"}
+{"input": "Form one: A king on a table tolerated that a balloon beside the bear was liked .", "output": "TOLERATE ( ON ( KING , TABLE ) , NONE , NONE ) CCOMP LIKE ( NONE , BESIDE ( BALLOON , BEAR ) , NONE )"}
+{"input": "Form one: The princess beside a machine was given the balloon beside a headmaster .", "output": "GIVE ( NONE , BESIDE ( BALLOON , HEADMASTER ) , BESIDE ( PRINCESS , MACHINE ) )"}
+{"input": "Form one: A frog in the bunker helped a cake .", "output": "HELP ( IN ( FROG , BUNKER ) , CAKE , NONE )"}
+{"input": "Form one: A pony on a TV was slipped a drink by the boy in the room .", "output": "SLIP ( IN ( BOY , ROOM ) , DRINK , ON ( PONY , TV ) )"}
+{"input": "Form one: The professor on a table was given a donut in a glass .", "output": "GIVE ( NONE , IN ( DONUT , GLASS ) , ON ( PROFESSOR , TABLE ) )"}
+{"input": "Form one: A child beside a bed was wired a weapon .", "output": "WIRE ( NONE , WEAPON , BESIDE ( CHILD , BED ) )"}
+{"input": "Form one: The monster beside a road smiled .", "output": "SMILE ( BESIDE ( MONSTER , ROAD ) , NONE , NONE )"}
+{"input": "Form one: A girl beside the bike in the house burned the donut .", "output": "BURN ( BESIDE ( GIRL , IN ( BIKE , HOUSE ) ) , DONUT , NONE )"}
+{"input": "Form one: A raisin beside a vehicle rolled .", "output": "ROLL ( NONE , BESIDE ( RAISIN , VEHICLE ) , NONE )"}
+{"input": "Form one: The girl in the garden slid the cake .", "output": "SLIDE ( IN ( GIRL , GARDEN ) , CAKE , NONE )"}
+{"input": "Form one: A ball on the stage was slid by a princess on a corpse .", "output": "SLIDE ( ON ( PRINCESS , CORPSE ) , ON ( BALL , STAGE ) , NONE )"}
+{"input": "Form one: The cat beside a trainee hoped that a bucket on the tree was eaten .", "output": "HOPE ( BESIDE ( CAT , TRAINEE ) , NONE , NONE ) CCOMP EAT ( NONE , ON ( BUCKET , TREE ) , NONE )"}
+{"input": "Form one: The girl on the blanket was slipped the cake .", "output": "SLIP ( NONE , CAKE , ON ( GIRL , BLANKET ) )"}
+{"input": "Form one: A doll on a table was eaten .", "output": "EAT ( NONE , ON ( DOLL , TABLE ) , NONE )"}
+{"input": "Form one: A plate on a chair was eaten by the customer beside the book .", "output": "EAT ( BESIDE ( CUSTOMER , BOOK ) , ON ( PLATE , CHAIR ) , NONE )"}
+{"input": "Form one: The girl beside the table dusted the baby .", "output": "DUST ( BESIDE ( GIRL , TABLE ) , BABY , NONE )"}
+{"input": "Form one: The mother on a table was sent the spoon .", "output": "SEND ( NONE , SPOON , ON ( MOTHER , TABLE ) )"}
+{"input": "Form one: The girl in the house liked a cake beside a bed .", "output": "LIKE ( IN ( GIRL , HOUSE ) , BESIDE ( CAKE , BED ) , NONE )"}
+{"input": "Form one: The cookie in a storage was offered to Aiden by the baby beside the stage .", "output": "OFFER ( BESIDE ( BABY , STAGE ) , IN ( COOKIE , STORAGE ) , AIDEN )"}
+{"input": "Form one: A student on a tree sneezed .", "output": "SNEEZE ( ON ( STUDENT , TREE ) , NONE , NONE )"}
+{"input": "Form one: A turkey beside a log was given the crayon on the table .", "output": "GIVE ( NONE , ON ( CRAYON , TABLE ) , BESIDE ( TURKEY , LOG ) )"}
+{"input": "Form one: A frog in the house was wired a cake by a baby beside the chair .", "output": "WIRE ( BESIDE ( BABY , CHAIR ) , CAKE , IN ( FROG , HOUSE ) )"}
+{"input": "Form one: A rose on a stage was helped .", "output": "HELP ( NONE , ON ( ROSE , STAGE ) , NONE )"}
+{"input": "Form one: A girl on a train was given a cake .", "output": "GIVE ( NONE , CAKE , ON ( GIRL , TRAIN ) )"}
+{"input": "Form one: A girl on the table liked that the sailor in the house froze .", "output": "LIKE ( ON ( GIRL , TABLE ) , NONE , NONE ) CCOMP FREEZE ( IN ( SAILOR , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The wolf in the box noticed that a donkey on the table was given a balloon .", "output": "NOTICE ( IN ( WOLF , BOX ) , NONE , NONE ) CCOMP GIVE ( NONE , BALLOON , ON ( DONKEY , TABLE ) )"}
+{"input": "Form one: The girl on a plate liked that a boy beside the bag split .", "output": "LIKE ( ON ( GIRL , PLATE ) , NONE , NONE ) CCOMP SPLIT ( BESIDE ( BOY , BAG ) , NONE , NONE )"}
+{"input": "Form one: A girl in a car ate .", "output": "EAT ( IN ( GIRL , CAR ) , NONE , NONE )"}
+{"input": "Form one: The mouse on the seat liked that the cup beside the table was valued .", "output": "LIKE ( ON ( MOUSE , SEAT ) , NONE , NONE ) CCOMP VALUE ( NONE , BESIDE ( CUP , TABLE ) , NONE )"}
+{"input": "Form one: A girl in a room preferred to walk .", "output": "PREFER ( IN ( GIRL , ROOM ) , NONE , NONE ) XCOMP WALK ( IN ( GIRL , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The donut in a house was eaten by the girl in a soup .", "output": "EAT ( IN ( GIRL , SOUP ) , IN ( DONUT , HOUSE ) , NONE )"}
+{"input": "Form one: A girl in the house forwarded Victoria a gumball in the shoe .", "output": "FORWARD ( IN ( GIRL , HOUSE ) , IN ( GUMBALL , SHOE ) , VICTORIA )"}
+{"input": "Form one: The drink on the pillow was burned .", "output": "BURN ( NONE , ON ( DRINK , PILLOW ) , NONE )"}
+{"input": "Form one: The girl on a bed slid .", "output": "SLIDE ( ON ( GIRL , BED ) , NONE , NONE )"}
+{"input": "Form one: A prisoner in the pool was forwarded the donut .", "output": "FORWARD ( NONE , DONUT , IN ( PRISONER , POOL ) )"}
+{"input": "Form one: The cake in the trap was thrown by the girl on the bike .", "output": "THROW ( ON ( GIRL , BIKE ) , IN ( CAKE , TRAP ) , NONE )"}
+{"input": "Form one: A boy in the trailer poked the girl beside a table .", "output": "POKE ( IN ( BOY , TRAILER ) , BESIDE ( GIRL , TABLE ) , NONE )"}
+{"input": "Form one: The girl on the surface ate Michael .", "output": "EAT ( ON ( GIRL , SURFACE ) , MICHAEL , NONE )"}
+{"input": "Form one: The champion beside a table liked a cake on the computer .", "output": "LIKE ( BESIDE ( CHAMPION , TABLE ) , ON ( CAKE , COMPUTER ) , NONE )"}
+{"input": "Form one: The girl on the sock was lended the sandwich .", "output": "LEND ( NONE , SANDWICH , ON ( GIRL , SOCK ) )"}
+{"input": "Form one: The dog beside the keyboard on a table called .", "output": "CALL ( BESIDE ( DOG , ON ( KEYBOARD , TABLE ) ) , NONE , NONE )"}
+{"input": "Form one: The boy in the vase sent the cake on a table to a cat .", "output": "SEND ( IN ( BOY , VASE ) , ON ( CAKE , TABLE ) , CAT )"}
+{"input": "Form one: The puppy on the seat poked the boy .", "output": "POKE ( ON ( PUPPY , SEAT ) , BOY , NONE )"}
+{"input": "Form one: The girl on the table preferred to walk .", "output": "PREFER ( ON ( GIRL , TABLE ) , NONE , NONE ) XCOMP WALK ( ON ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A pumpkin beside a house beside the dragon was painted .", "output": "PAINT ( NONE , BESIDE ( PUMPKIN , BESIDE ( HOUSE , DRAGON ) ) , NONE )"}
+{"input": "Form one: The drink in the house was adored .", "output": "ADORE ( NONE , IN ( DRINK , HOUSE ) , NONE )"}
+{"input": "Form one: The child on the pad ate the cat .", "output": "EAT ( ON ( CHILD , PAD ) , CAT , NONE )"}
+{"input": "Form one: A student in a pot liked the girl on a chair .", "output": "LIKE ( IN ( STUDENT , POT ) , ON ( GIRL , CHAIR ) , NONE )"}
+{"input": "Form one: A cat on a sofa slept .", "output": "SLEEP ( ON ( CAT , SOFA ) , NONE , NONE )"}
+{"input": "Form one: A baby on the chair saw the bear .", "output": "SEE ( ON ( BABY , CHAIR ) , BEAR , NONE )"}
+{"input": "Form one: A teacher in a glass was slipped a cookie on a stage .", "output": "SLIP ( NONE , ON ( COOKIE , STAGE ) , IN ( TEACHER , GLASS ) )"}
+{"input": "Form one: A bear in the hole was given a cake on a rock .", "output": "GIVE ( NONE , ON ( CAKE , ROCK ) , IN ( BEAR , HOLE ) )"}
+{"input": "Form one: A cat on the computer noticed that the teacher beside the book valued the boy .", "output": "NOTICE ( ON ( CAT , COMPUTER ) , NONE , NONE ) CCOMP VALUE ( BESIDE ( TEACHER , BOOK ) , BOY , NONE )"}
+{"input": "Form one: A girl in a house wished to run .", "output": "WISH ( IN ( GIRL , HOUSE ) , NONE , NONE ) XCOMP RUN ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A teacher beside the table burned the producer on the road .", "output": "BURN ( BESIDE ( TEACHER , TABLE ) , ON ( PRODUCER , ROAD ) , NONE )"}
+{"input": "Form one: A giraffe in the bag was given a donut .", "output": "GIVE ( NONE , DONUT , IN ( GIRAFFE , BAG ) )"}
+{"input": "Form one: A strawberry beside a machine was thrown by a lion on a box .", "output": "THROW ( ON ( LION , BOX ) , BESIDE ( STRAWBERRY , MACHINE ) , NONE )"}
+{"input": "Form one: A boy beside a book was lended a cake by a producer in a house .", "output": "LEND ( IN ( PRODUCER , HOUSE ) , CAKE , BESIDE ( BOY , BOOK ) )"}
+{"input": "Form one: The girl on the table was lended a brick .", "output": "LEND ( NONE , BRICK , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: The wolf in the house offered the donut on the dish to Sophia .", "output": "OFFER ( IN ( WOLF , HOUSE ) , ON ( DONUT , DISH ) , SOPHIA )"}
+{"input": "Form one: The frog on a mattress ate the radio on the bike .", "output": "EAT ( ON ( FROG , MATTRESS ) , ON ( RADIO , BIKE ) , NONE )"}
+{"input": "Form one: A girl in a house was passed a weapon .", "output": "PASS ( NONE , WEAPON , IN ( GIRL , HOUSE ) )"}
+{"input": "Form one: A horse in the van ate .", "output": "EAT ( IN ( HORSE , VAN ) , NONE , NONE )"}
+{"input": "Form one: A hero in the house yearned to run .", "output": "YEARN ( IN ( HERO , HOUSE ) , NONE , NONE ) XCOMP RUN ( IN ( HERO , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A girl on a boat cooked .", "output": "COOK ( ON ( GIRL , BOAT ) , NONE , NONE )"}
+{"input": "Form one: The boy in a can slid Emma .", "output": "SLIDE ( IN ( BOY , CAN ) , EMMA , NONE )"}
+{"input": "Form one: The penguin in the drawer rolled the donut beside the computer .", "output": "ROLL ( IN ( PENGUIN , DRAWER ) , BESIDE ( DONUT , COMPUTER ) , NONE )"}
+{"input": "Form one: The cat beside the table painted .", "output": "PAINT ( BESIDE ( CAT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A girl on the rug itched to smirk .", "output": "ITCH ( ON ( GIRL , RUG ) , NONE , NONE ) XCOMP SMIRK ( ON ( GIRL , RUG ) , NONE , NONE )"}
+{"input": "Form one: A girl on the table helped Emma .", "output": "HELP ( ON ( GIRL , TABLE ) , EMMA , NONE )"}
+{"input": "Form one: A purse beside a monk was adored by a tiger beside the painting .", "output": "ADORE ( BESIDE ( TIGER , PAINTING ) , BESIDE ( PURSE , MONK ) , NONE )"}
+{"input": "Form one: A balloon on a stage was eaten .", "output": "EAT ( NONE , ON ( BALLOON , STAGE ) , NONE )"}
+{"input": "Form one: The butterfly on a stage rolled .", "output": "ROLL ( ON ( BUTTERFLY , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The girl on a branch floated .", "output": "FLOAT ( ON ( GIRL , BRANCH ) , NONE , NONE )"}
+{"input": "Form one: A cake beside the stage rolled .", "output": "ROLL ( NONE , BESIDE ( CAKE , STAGE ) , NONE )"}
+{"input": "Form one: The customer in a house yearned to run .", "output": "YEARN ( IN ( CUSTOMER , HOUSE ) , NONE , NONE ) XCOMP RUN ( IN ( CUSTOMER , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The girl on the table was given a cake .", "output": "GIVE ( NONE , CAKE , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: A deer beside the house slept .", "output": "SLEEP ( BESIDE ( DEER , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A cat on the table wished that a boy beside the road posted the glue to a girl .", "output": "WISH ( ON ( CAT , TABLE ) , NONE , NONE ) CCOMP POST ( BESIDE ( BOY , ROAD ) , GLUE , GIRL )"}
+{"input": "Form one: A dog beside the seat screamed .", "output": "SCREAM ( BESIDE ( DOG , SEAT ) , NONE , NONE )"}
+{"input": "Form one: The frog on a cot dusted a cookie .", "output": "DUST ( ON ( FROG , COT ) , COOKIE , NONE )"}
+{"input": "Form one: The cat in a house adored the donut on a stage .", "output": "ADORE ( IN ( CAT , HOUSE ) , ON ( DONUT , STAGE ) , NONE )"}
+{"input": "Form one: The baby on the desk was given the melon by the boy beside the car .", "output": "GIVE ( BESIDE ( BOY , CAR ) , MELON , ON ( BABY , DESK ) )"}
+{"input": "Form one: The guy beside the table nursed .", "output": "NURSE ( BESIDE ( GUY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The manager in the glass wanted to sleep .", "output": "WANT ( IN ( MANAGER , GLASS ) , NONE , NONE ) XCOMP SLEEP ( IN ( MANAGER , GLASS ) , NONE , NONE )"}
+{"input": "Form one: A cat on a table liked the cake .", "output": "LIKE ( ON ( CAT , TABLE ) , CAKE , NONE )"}
+{"input": "Form one: The politician beside the book cried .", "output": "CRY ( BESIDE ( POLITICIAN , BOOK ) , NONE , NONE )"}
+{"input": "Form one: The prince in the house wanted to walk .", "output": "WANT ( IN ( PRINCE , HOUSE ) , NONE , NONE ) XCOMP WALK ( IN ( PRINCE , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A boy in a house hunted .", "output": "HUNT ( IN ( BOY , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A girl on the surface screamed .", "output": "SCREAM ( ON ( GIRL , SURFACE ) , NONE , NONE )"}
+{"input": "Form one: The cake on the stage was grown .", "output": "GROW ( NONE , ON ( CAKE , STAGE ) , NONE )"}
+{"input": "Form one: The penguin in the box liked that a girl on a table smiled .", "output": "LIKE ( IN ( PENGUIN , BOX ) , NONE , NONE ) CCOMP SMILE ( ON ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A pig on the stage missed Liam .", "output": "MISS ( ON ( PIG , STAGE ) , LIAM , NONE )"}
+{"input": "Form one: A cat beside the machine touched Olivia .", "output": "TOUCH ( BESIDE ( CAT , MACHINE ) , OLIVIA , NONE )"}
+{"input": "Form one: A cat beside a table wanted to sleep .", "output": "WANT ( BESIDE ( CAT , TABLE ) , NONE , NONE ) XCOMP SLEEP ( BESIDE ( CAT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A boy beside a stage slid the drink .", "output": "SLIDE ( BESIDE ( BOY , STAGE ) , DRINK , NONE )"}
+{"input": "Form one: A box in a house was packed .", "output": "PACK ( NONE , IN ( BOX , HOUSE ) , NONE )"}
+{"input": "Form one: A girl in a house ate Emma .", "output": "EAT ( IN ( GIRL , HOUSE ) , EMMA , NONE )"}
+{"input": "Form one: A girl on the stage rolled a bee .", "output": "ROLL ( ON ( GIRL , STAGE ) , BEE , NONE )"}
+{"input": "Form one: The teacher on the table rolled .", "output": "ROLL ( ON ( TEACHER , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The cake in a garden was tolerated by the girl in a house .", "output": "TOLERATE ( IN ( GIRL , HOUSE ) , IN ( CAKE , GARDEN ) , NONE )"}
+{"input": "Form one: A girl on the table noticed .", "output": "NOTICE ( ON ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The dog on the platter beside a stage slept .", "output": "SLEEP ( ON ( DOG , BESIDE ( PLATTER , STAGE ) ) , NONE , NONE )"}
+{"input": "Form one: The frog in a room juggled .", "output": "JUGGLE ( IN ( FROG , ROOM ) , NONE , NONE )"}
+{"input": "Form one: A girl in the box was given the hat on a table .", "output": "GIVE ( NONE , ON ( HAT , TABLE ) , IN ( GIRL , BOX ) )"}
+{"input": "Form one: A cake on the bench was eaten .", "output": "EAT ( NONE , ON ( CAKE , BENCH ) , NONE )"}
+{"input": "Form one: A cake beside the valve was eaten .", "output": "EAT ( NONE , BESIDE ( CAKE , VALVE ) , NONE )"}
+{"input": "Form one: A scientist on a plate in a pod discovered Emma .", "output": "DISCOVER ( ON ( SCIENTIST , IN ( PLATE , POD ) ) , EMMA , NONE )"}
+{"input": "Form one: The girl beside a chair planned to sleep .", "output": "PLAN ( BESIDE ( GIRL , CHAIR ) , NONE , NONE ) XCOMP SLEEP ( BESIDE ( GIRL , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The donut beside the toy was held .", "output": "HOLD ( NONE , BESIDE ( DONUT , TOY ) , NONE )"}
+{"input": "Form one: The girl beside a table slept .", "output": "SLEEP ( BESIDE ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The director on a table was given a cake .", "output": "GIVE ( NONE , CAKE , ON ( DIRECTOR , TABLE ) )"}
+{"input": "Form one: A mouse in a cage liked that the cat on the table wanted to sneeze .", "output": "LIKE ( IN ( MOUSE , CAGE ) , NONE , NONE ) CCOMP WANT ( ON ( CAT , TABLE ) , NONE , NONE ) XCOMP SNEEZE ( ON ( CAT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The girl in a shoe froze .", "output": "FREEZE ( IN ( GIRL , SHOE ) , NONE , NONE )"}
+{"input": "Form one: The baby in a cup was sold the ball .", "output": "SELL ( NONE , BALL , IN ( BABY , CUP ) )"}
+{"input": "Form one: A cake in the condo was frozen by the boy in a room .", "output": "FREEZE ( IN ( BOY , ROOM ) , IN ( CAKE , CONDO ) , NONE )"}
+{"input": "Form one: The boy in a house preferred to paint .", "output": "PREFER ( IN ( BOY , HOUSE ) , NONE , NONE ) XCOMP PAINT ( IN ( BOY , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The horse on the stack loaned the lollipop on a table to Isaac .", "output": "LOAN ( ON ( HORSE , STACK ) , ON ( LOLLIPOP , TABLE ) , ISAAC )"}
+{"input": "Form one: The cat on the table awarded a cake on the stand to Oliver .", "output": "AWARD ( ON ( CAT , TABLE ) , ON ( CAKE , STAND ) , OLIVER )"}
+{"input": "Form one: The cake beside a trophy shortened .", "output": "SHORTEN ( NONE , BESIDE ( CAKE , TROPHY ) , NONE )"}
+{"input": "Form one: A cookie beside a book was brought to Emma by the girl in a nest .", "output": "BRING ( IN ( GIRL , NEST ) , BESIDE ( COOKIE , BOOK ) , EMMA )"}
+{"input": "Form one: A crayon on a table was valued by the sheep in the bush .", "output": "VALUE ( IN ( SHEEP , BUSH ) , ON ( CRAYON , TABLE ) , NONE )"}
+{"input": "Form one: The cat in a house studied a boy .", "output": "STUDY ( IN ( CAT , HOUSE ) , BOY , NONE )"}
+{"input": "Form one: The teacher on the table gave Liam a cake on the tripod .", "output": "GIVE ( ON ( TEACHER , TABLE ) , ON ( CAKE , TRIPOD ) , LIAM )"}
+{"input": "Form one: The customer beside a computer in the tin intended to walk .", "output": "INTEND ( BESIDE ( CUSTOMER , IN ( COMPUTER , TIN ) ) , NONE , NONE ) XCOMP WALK ( BESIDE ( CUSTOMER , IN ( COMPUTER , TIN ) ) , NONE , NONE )"}
+{"input": "Form one: A girl on a rock smiled .", "output": "SMILE ( ON ( GIRL , ROCK ) , NONE , NONE )"}
+{"input": "Form one: The deer in a house hunted a melon .", "output": "HUNT ( IN ( DEER , HOUSE ) , MELON , NONE )"}
+{"input": "Form one: A mouse beside a table liked a chicken .", "output": "LIKE ( BESIDE ( MOUSE , TABLE ) , CHICKEN , NONE )"}
+{"input": "Form one: The girl in the vehicle was rented a cake by the champion on a table .", "output": "RENT ( ON ( CHAMPION , TABLE ) , CAKE , IN ( GIRL , VEHICLE ) )"}
+{"input": "Form one: A present beside the table was dusted .", "output": "DUST ( NONE , BESIDE ( PRESENT , TABLE ) , NONE )"}
+{"input": "Form one: A cake in a cot was found .", "output": "FIND ( NONE , IN ( CAKE , COT ) , NONE )"}
+{"input": "Form one: The cake on a corpse was shortened .", "output": "SHORTEN ( NONE , ON ( CAKE , CORPSE ) , NONE )"}
+{"input": "Form one: The monkey on the leaflet was given a doll in the room .", "output": "GIVE ( NONE , IN ( DOLL , ROOM ) , ON ( MONKEY , LEAFLET ) )"}
+{"input": "Form one: The teacher beside a machine liked that the dog beside a barrel cried .", "output": "LIKE ( BESIDE ( TEACHER , MACHINE ) , NONE , NONE ) CCOMP CRY ( BESIDE ( DOG , BARREL ) , NONE , NONE )"}
+{"input": "Form one: A dog on a table passed the donut to the girl .", "output": "PASS ( ON ( DOG , TABLE ) , DONUT , GIRL )"}
+{"input": "Form one: A girl on the box was lended the balloon beside a table .", "output": "LEND ( NONE , BESIDE ( BALLOON , TABLE ) , ON ( GIRL , BOX ) )"}
+{"input": "Form one: The mouse beside the log ate .", "output": "EAT ( BESIDE ( MOUSE , LOG ) , NONE , NONE )"}
+{"input": "Form one: A coach beside a painting was sold the cake by a girl beside the chair .", "output": "SELL ( BESIDE ( GIRL , CHAIR ) , CAKE , BESIDE ( COACH , PAINTING ) )"}
+{"input": "Form one: The boy beside a cabinet danced .", "output": "DANCE ( BESIDE ( BOY , CABINET ) , NONE , NONE )"}
+{"input": "Form one: The girl beside the tree was sent a donut by the butterfly in a box .", "output": "SEND ( IN ( BUTTERFLY , BOX ) , DONUT , BESIDE ( GIRL , TREE ) )"}
+{"input": "Form one: A cat beside the table froze a baby .", "output": "FREEZE ( BESIDE ( CAT , TABLE ) , BABY , NONE )"}
+{"input": "Form one: A girl on a stage respected that the consumer on a bible offered the pancake to a teacher .", "output": "RESPECT ( ON ( GIRL , STAGE ) , NONE , NONE ) CCOMP OFFER ( ON ( CONSUMER , BIBLE ) , PANCAKE , TEACHER )"}
+{"input": "Form one: The dog beside the lion said that a girl beside the seat rolled Mia .", "output": "SAY ( BESIDE ( DOG , LION ) , NONE , NONE ) CCOMP ROLL ( BESIDE ( GIRL , SEAT ) , MIA , NONE )"}
+{"input": "Form one: A book in the room was rolled .", "output": "ROLL ( NONE , IN ( BOOK , ROOM ) , NONE )"}
+{"input": "Form one: The girl beside the stage found the banana in a bucket .", "output": "FIND ( BESIDE ( GIRL , STAGE ) , IN ( BANANA , BUCKET ) , NONE )"}
+{"input": "Form one: The box beside a shoe was given to Ava .", "output": "GIVE ( NONE , BESIDE ( BOX , SHOE ) , AVA )"}
+{"input": "Form one: The cake on the box was sketched by the dog beside the surgeon .", "output": "SKETCH ( BESIDE ( DOG , SURGEON ) , ON ( CAKE , BOX ) , NONE )"}
+{"input": "Form one: A boy beside a car lended the donut to Scarlett .", "output": "LEND ( BESIDE ( BOY , CAR ) , DONUT , SCARLETT )"}
+{"input": "Form one: The dog on the bed liked Isabella .", "output": "LIKE ( ON ( DOG , BED ) , ISABELLA , NONE )"}
+{"input": "Form one: The girl beside the sword liked that a donut on a table was drawn .", "output": "LIKE ( BESIDE ( GIRL , SWORD ) , NONE , NONE ) CCOMP DRAW ( NONE , ON ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: A bat in a hole was eaten .", "output": "EAT ( NONE , IN ( BAT , HOLE ) , NONE )"}
+{"input": "Form one: The pretzel on the stool floated .", "output": "FLOAT ( NONE , ON ( PRETZEL , STOOL ) , NONE )"}
+{"input": "Form one: The fish beside the seat offered the hamburger beside a key to a frog .", "output": "OFFER ( BESIDE ( FISH , SEAT ) , BESIDE ( HAMBURGER , KEY ) , FROG )"}
+{"input": "Form one: A girl in a car disintegrated .", "output": "DISINTEGRATE ( IN ( GIRL , CAR ) , NONE , NONE )"}
+{"input": "Form one: A boy beside a stage rolled the cake .", "output": "ROLL ( BESIDE ( BOY , STAGE ) , CAKE , NONE )"}
+{"input": "Form one: A girl on the stage preferred to sleep .", "output": "PREFER ( ON ( GIRL , STAGE ) , NONE , NONE ) XCOMP SLEEP ( ON ( GIRL , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The cake beside the table was helped by a girl beside a pepper .", "output": "HELP ( BESIDE ( GIRL , PEPPER ) , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The boy on the corpse hoped that a pumpkin on a road was eaten .", "output": "HOPE ( ON ( BOY , CORPSE ) , NONE , NONE ) CCOMP EAT ( NONE , ON ( PUMPKIN , ROAD ) , NONE )"}
+{"input": "Form one: The teacher on the box wished to walk .", "output": "WISH ( ON ( TEACHER , BOX ) , NONE , NONE ) XCOMP WALK ( ON ( TEACHER , BOX ) , NONE , NONE )"}
+{"input": "Form one: A child on the table lended a cake to the doctor .", "output": "LEND ( ON ( CHILD , TABLE ) , CAKE , DOCTOR )"}
+{"input": "Form one: A girl on a bed was returned a cake in a vehicle .", "output": "RETURN ( NONE , IN ( CAKE , VEHICLE ) , ON ( GIRL , BED ) )"}
+{"input": "Form one: The cake beside the flower was rolled by the cat on the boat .", "output": "ROLL ( ON ( CAT , BOAT ) , BESIDE ( CAKE , FLOWER ) , NONE )"}
+{"input": "Form one: A melon on the cookie was floated by a girl in a room .", "output": "FLOAT ( IN ( GIRL , ROOM ) , ON ( MELON , COOKIE ) , NONE )"}
+{"input": "Form one: A teacher in the shoe rolled a girl on a stage .", "output": "ROLL ( IN ( TEACHER , SHOE ) , ON ( GIRL , STAGE ) , NONE )"}
+{"input": "Form one: A servant in a car rolled a box .", "output": "ROLL ( IN ( SERVANT , CAR ) , BOX , NONE )"}
+{"input": "Form one: A banana beside the table was painted by a girl on a stage .", "output": "PAINT ( ON ( GIRL , STAGE ) , BESIDE ( BANANA , TABLE ) , NONE )"}
+{"input": "Form one: The frog on the table gave a cake beside the bottle to James .", "output": "GIVE ( ON ( FROG , TABLE ) , BESIDE ( CAKE , BOTTLE ) , JAMES )"}
+{"input": "Form one: A dog beside a table was given the bowl by a boy beside a piano .", "output": "GIVE ( BESIDE ( BOY , PIANO ) , BOWL , BESIDE ( DOG , TABLE ) )"}
+{"input": "Form one: A sweetcorn on the stage was rolled by the boy beside a sink .", "output": "ROLL ( BESIDE ( BOY , SINK ) , ON ( SWEETCORN , STAGE ) , NONE )"}
+{"input": "Form one: A girl on a table froze a box .", "output": "FREEZE ( ON ( GIRL , TABLE ) , BOX , NONE )"}
+{"input": "Form one: A pickle on the table was burned .", "output": "BURN ( NONE , ON ( PICKLE , TABLE ) , NONE )"}
+{"input": "Form one: A child in the house on a rock wanted to dust .", "output": "WANT ( IN ( CHILD , ON ( HOUSE , ROCK ) ) , NONE , NONE ) XCOMP DUST ( IN ( CHILD , ON ( HOUSE , ROCK ) ) , NONE , NONE )"}
+{"input": "Form one: The deer in the cup liked that a cake on a road was given to a customer .", "output": "LIKE ( IN ( DEER , CUP ) , NONE , NONE ) CCOMP GIVE ( NONE , ON ( CAKE , ROAD ) , CUSTOMER )"}
+{"input": "Form one: The boy in the house was given a donut beside the bike .", "output": "GIVE ( NONE , BESIDE ( DONUT , BIKE ) , IN ( BOY , HOUSE ) )"}
+{"input": "Form one: The girl in a cup rolled the cookie .", "output": "ROLL ( IN ( GIRL , CUP ) , COOKIE , NONE )"}
+{"input": "Form one: A bunny beside a house was lended a donut beside a machine .", "output": "LEND ( NONE , BESIDE ( DONUT , MACHINE ) , BESIDE ( BUNNY , HOUSE ) )"}
+{"input": "Form one: The cake on the bed was rolled by the girl in a tin .", "output": "ROLL ( IN ( GIRL , TIN ) , ON ( CAKE , BED ) , NONE )"}
+{"input": "Form one: A lawyer in the room wished to sneeze .", "output": "WISH ( IN ( LAWYER , ROOM ) , NONE , NONE ) XCOMP SNEEZE ( IN ( LAWYER , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The weapon on the table was cooked by the mouse in the shoe .", "output": "COOK ( IN ( MOUSE , SHOE ) , ON ( WEAPON , TABLE ) , NONE )"}
+{"input": "Form one: The cake on a road was liked .", "output": "LIKE ( NONE , ON ( CAKE , ROAD ) , NONE )"}
+{"input": "Form one: The mouse in a hole froze Emma .", "output": "FREEZE ( IN ( MOUSE , HOLE ) , EMMA , NONE )"}
+{"input": "Form one: The girl on a bench rolled Emma .", "output": "ROLL ( ON ( GIRL , BENCH ) , EMMA , NONE )"}
+{"input": "Form one: A cat on the tripod declared that a bear on the piano rolled Emma .", "output": "DECLARE ( ON ( CAT , TRIPOD ) , NONE , NONE ) CCOMP ROLL ( ON ( BEAR , PIANO ) , EMMA , NONE )"}
+{"input": "Form one: The crayon in a box was burned by a producer in a glass .", "output": "BURN ( IN ( PRODUCER , GLASS ) , IN ( CRAYON , BOX ) , NONE )"}
+{"input": "Form one: A baby in a cup was posted a pumpkin by a cat in the car .", "output": "POST ( IN ( CAT , CAR ) , PUMPKIN , IN ( BABY , CUP ) )"}
+{"input": "Form one: The frog beside the corpse disintegrated a cake in a house .", "output": "DISINTEGRATE ( BESIDE ( FROG , CORPSE ) , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: A bee beside a table ate .", "output": "EAT ( BESIDE ( BEE , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A boy on a plate sketched a chicken .", "output": "SKETCH ( ON ( BOY , PLATE ) , CHICKEN , NONE )"}
+{"input": "Form one: A pony on the chair liked a girl .", "output": "LIKE ( ON ( PONY , CHAIR ) , GIRL , NONE )"}
+{"input": "Form one: A girl beside a table hoped that the captain on the boulder investigated .", "output": "HOPE ( BESIDE ( GIRL , TABLE ) , NONE , NONE ) CCOMP INVESTIGATE ( ON ( CAPTAIN , BOULDER ) , NONE , NONE )"}
+{"input": "Form one: A boy in the house lended the mouse the cake beside a seat .", "output": "LEND ( IN ( BOY , HOUSE ) , BESIDE ( CAKE , SEAT ) , MOUSE )"}
+{"input": "Form one: A bat in the closet was eaten by a boy beside the stage .", "output": "EAT ( BESIDE ( BOY , STAGE ) , IN ( BAT , CLOSET ) , NONE )"}
+{"input": "Form one: A teacher on a corpse was lended the cake .", "output": "LEND ( NONE , CAKE , ON ( TEACHER , CORPSE ) )"}
+{"input": "Form one: The balloon beside the chair was rolled by a girl beside a flower .", "output": "ROLL ( BESIDE ( GIRL , FLOWER ) , BESIDE ( BALLOON , CHAIR ) , NONE )"}
+{"input": "Form one: The duke in a house ate .", "output": "EAT ( IN ( DUKE , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The boy on the plaque was rented the plant .", "output": "RENT ( NONE , PLANT , ON ( BOY , PLAQUE ) )"}
+{"input": "Form one: The donut beside a bed was sketched by the girl beside a boat .", "output": "SKETCH ( BESIDE ( GIRL , BOAT ) , BESIDE ( DONUT , BED ) , NONE )"}
+{"input": "Form one: The cake beside the stage was appreciated .", "output": "APPRECIATE ( NONE , BESIDE ( CAKE , STAGE ) , NONE )"}
+{"input": "Form one: A cow beside the cup was lended a drink by the girl on the tray .", "output": "LEND ( ON ( GIRL , TRAY ) , DRINK , BESIDE ( COW , CUP ) )"}
+{"input": "Form one: A boy on the tree beside a statue was given a cake .", "output": "GIVE ( NONE , CAKE , ON ( BOY , BESIDE ( TREE , STATUE ) ) )"}
+{"input": "Form one: The director on a bed on the machine lended a farmer the sandwich .", "output": "LEND ( ON ( DIRECTOR , ON ( BED , MACHINE ) ) , SANDWICH , FARMER )"}
+{"input": "Form one: The box in the car was given to a boy by the chicken beside a desk .", "output": "GIVE ( BESIDE ( CHICKEN , DESK ) , IN ( BOX , CAR ) , BOY )"}
+{"input": "Form one: A cat beside the table was passed a sweetcorn by the teacher in a garden .", "output": "PASS ( IN ( TEACHER , GARDEN ) , SWEETCORN , BESIDE ( CAT , TABLE ) )"}
+{"input": "Form one: A boy on a table noticed that a visitor in a castle slept .", "output": "NOTICE ( ON ( BOY , TABLE ) , NONE , NONE ) CCOMP SLEEP ( IN ( VISITOR , CASTLE ) , NONE , NONE )"}
+{"input": "Form one: A donut in a room was rented to a boy by the butterfly beside a toy .", "output": "RENT ( BESIDE ( BUTTERFLY , TOY ) , IN ( DONUT , ROOM ) , BOY )"}
+{"input": "Form one: The frog in a house slept .", "output": "SLEEP ( IN ( FROG , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A cake in a garden was rolled by a girl beside a seat .", "output": "ROLL ( BESIDE ( GIRL , SEAT ) , IN ( CAKE , GARDEN ) , NONE )"}
+{"input": "Form one: The dog on the stage ate the boy on a seat .", "output": "EAT ( ON ( DOG , STAGE ) , ON ( BOY , SEAT ) , NONE )"}
+{"input": "Form one: A fish on the rag was mailed a cookie .", "output": "MAIL ( NONE , COOKIE , ON ( FISH , RAG ) )"}
+{"input": "Form one: The baby on the bed was sold a present .", "output": "SELL ( NONE , PRESENT , ON ( BABY , BED ) )"}
+{"input": "Form one: The girl beside the table was sent the cookie by a cow in the car .", "output": "SEND ( IN ( COW , CAR ) , COOKIE , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: A girl on a cloth liked that a father in the bucket ate .", "output": "LIKE ( ON ( GIRL , CLOTH ) , NONE , NONE ) CCOMP EAT ( IN ( FATHER , BUCKET ) , NONE , NONE )"}
+{"input": "Form one: A poet beside a bed liked to walk .", "output": "LIKE ( BESIDE ( POET , BED ) , NONE , NONE ) XCOMP WALK ( BESIDE ( POET , BED ) , NONE , NONE )"}
+{"input": "Form one: The donut in a house was frozen by the chicken on the table .", "output": "FREEZE ( ON ( CHICKEN , TABLE ) , IN ( DONUT , HOUSE ) , NONE )"}
+{"input": "Form one: A cat beside a road slid .", "output": "SLIDE ( BESIDE ( CAT , ROAD ) , NONE , NONE )"}
+{"input": "Form one: A donut on the chair was sold to Benjamin by a dog in a box .", "output": "SELL ( IN ( DOG , BOX ) , ON ( DONUT , CHAIR ) , BENJAMIN )"}
+{"input": "Form one: A girl in a teapot rolled .", "output": "ROLL ( IN ( GIRL , TEAPOT ) , NONE , NONE )"}
+{"input": "Form one: The boy in the house liked that a chicken in a room liked the cookie .", "output": "LIKE ( IN ( BOY , HOUSE ) , NONE , NONE ) CCOMP LIKE ( IN ( CHICKEN , ROOM ) , COOKIE , NONE )"}
+{"input": "Form one: The cookie beside the painting rolled .", "output": "ROLL ( NONE , BESIDE ( COOKIE , PAINTING ) , NONE )"}
+{"input": "Form one: A cat on the bed lended the cake to Emma .", "output": "LEND ( ON ( CAT , BED ) , CAKE , EMMA )"}
+{"input": "Form one: A cake on the sheet was passed to a dog by the wolf in the garden .", "output": "PASS ( IN ( WOLF , GARDEN ) , ON ( CAKE , SHEET ) , DOG )"}
+{"input": "Form one: The banana in a vehicle was helped .", "output": "HELP ( NONE , IN ( BANANA , VEHICLE ) , NONE )"}
+{"input": "Form one: The chief in a house rolled the cake .", "output": "ROLL ( IN ( CHIEF , HOUSE ) , CAKE , NONE )"}
+{"input": "Form one: A cat on a seat in a house broke Chloe .", "output": "BREAK ( ON ( CAT , IN ( SEAT , HOUSE ) ) , CHLOE , NONE )"}
+{"input": "Form one: A boy in the house ate .", "output": "EAT ( IN ( BOY , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The boy on a box needed to eat .", "output": "NEED ( ON ( BOY , BOX ) , NONE , NONE ) XCOMP EAT ( ON ( BOY , BOX ) , NONE , NONE )"}
+{"input": "Form one: A dealer on the tree gave a crayon to Liam .", "output": "GIVE ( ON ( DEALER , TREE ) , CRAYON , LIAM )"}
+{"input": "Form one: A teacher beside a table in a house rolled Joseph .", "output": "ROLL ( BESIDE ( TEACHER , IN ( TABLE , HOUSE ) ) , JOSEPH , NONE )"}
+{"input": "Form one: The jacket beside a seat was rolled .", "output": "ROLL ( NONE , BESIDE ( JACKET , SEAT ) , NONE )"}
+{"input": "Form one: The cat beside the table was passed a cake by the girl on the chair .", "output": "PASS ( ON ( GIRL , CHAIR ) , CAKE , BESIDE ( CAT , TABLE ) )"}
+{"input": "Form one: A box beside a table was pierced by a girl in a tin .", "output": "PIERCE ( IN ( GIRL , TIN ) , BESIDE ( BOX , TABLE ) , NONE )"}
+{"input": "Form one: The sweetcorn in a well was touched .", "output": "TOUCH ( NONE , IN ( SWEETCORN , WELL ) , NONE )"}
+{"input": "Form one: The driver in the trap was lended the pancake .", "output": "LEND ( NONE , PANCAKE , IN ( DRIVER , TRAP ) )"}
+{"input": "Form one: A cake in a room shortened .", "output": "SHORTEN ( NONE , IN ( CAKE , ROOM ) , NONE )"}
+{"input": "Form one: The customer on a table was lended the cake .", "output": "LEND ( NONE , CAKE , ON ( CUSTOMER , TABLE ) )"}
+{"input": "Form one: The girl beside a table liked that a cake in the haystack was grown .", "output": "LIKE ( BESIDE ( GIRL , TABLE ) , NONE , NONE ) CCOMP GROW ( NONE , IN ( CAKE , HAYSTACK ) , NONE )"}
+{"input": "Form one: A donut on the hanger froze .", "output": "FREEZE ( NONE , ON ( DONUT , HANGER ) , NONE )"}
+{"input": "Form one: A cat in the car in a bun attempted to smirk .", "output": "ATTEMPT ( IN ( CAT , IN ( CAR , BUN ) ) , NONE , NONE ) XCOMP SMIRK ( IN ( CAT , IN ( CAR , BUN ) ) , NONE , NONE )"}
+{"input": "Form one: The baby in the house promised the donut to the cat .", "output": "PROMISE ( IN ( BABY , HOUSE ) , DONUT , CAT )"}
+{"input": "Form one: The frog beside the stage poked the box .", "output": "POKE ( BESIDE ( FROG , STAGE ) , BOX , NONE )"}
+{"input": "Form one: A rose on the table was lended to the girl .", "output": "LEND ( NONE , ON ( ROSE , TABLE ) , GIRL )"}
+{"input": "Form one: A cat beside a table was sold the donut by a girl in the house .", "output": "SELL ( IN ( GIRL , HOUSE ) , DONUT , BESIDE ( CAT , TABLE ) )"}
+{"input": "Form one: A raisin on a chair was given to Noah .", "output": "GIVE ( NONE , ON ( RAISIN , CHAIR ) , NOAH )"}
+{"input": "Form one: The boy in a house was served a cake by the girl on a bed .", "output": "SERVE ( ON ( GIRL , BED ) , CAKE , IN ( BOY , HOUSE ) )"}
+{"input": "Form one: The dog in a garden ate .", "output": "EAT ( IN ( DOG , GARDEN ) , NONE , NONE )"}
+{"input": "Form one: A bird on a train liked a cake beside a box .", "output": "LIKE ( ON ( BIRD , TRAIN ) , BESIDE ( CAKE , BOX ) , NONE )"}
+{"input": "Form one: The book beside a bed was loved .", "output": "LOVE ( NONE , BESIDE ( BOOK , BED ) , NONE )"}
+{"input": "Form one: The dog beside the table cried .", "output": "CRY ( BESIDE ( DOG , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The donut beside a house was given to a horse by a girl on the table .", "output": "GIVE ( ON ( GIRL , TABLE ) , BESIDE ( DONUT , HOUSE ) , HORSE )"}
+{"input": "Form one: A boy in a room hunted .", "output": "HUNT ( IN ( BOY , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The cake in the house was frozen by a cat beside a TV .", "output": "FREEZE ( BESIDE ( CAT , TV ) , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: A cat on the stool wished that the drink in the car rolled .", "output": "WISH ( ON ( CAT , STOOL ) , NONE , NONE ) CCOMP ROLL ( NONE , IN ( DRINK , CAR ) , NONE )"}
+{"input": "Form one: The girl on a booklet walked .", "output": "WALK ( ON ( GIRL , BOOKLET ) , NONE , NONE )"}
+{"input": "Form one: The cat on a boat gave the box on a table to a boy .", "output": "GIVE ( ON ( CAT , BOAT ) , ON ( BOX , TABLE ) , BOY )"}
+{"input": "Form one: The penguin beside the bed was fed a rose beside a statue .", "output": "FEED ( NONE , BESIDE ( ROSE , STATUE ) , BESIDE ( PENGUIN , BED ) )"}
+{"input": "Form one: The buyer beside a table was awarded a block .", "output": "AWARD ( NONE , BLOCK , BESIDE ( BUYER , TABLE ) )"}
+{"input": "Form one: The cake on a ball was inflated by the kid beside the boat .", "output": "INFLATE ( BESIDE ( KID , BOAT ) , ON ( CAKE , BALL ) , NONE )"}
+{"input": "Form one: The driver in a cabinet intended to walk .", "output": "INTEND ( IN ( DRIVER , CABINET ) , NONE , NONE ) XCOMP WALK ( IN ( DRIVER , CABINET ) , NONE , NONE )"}
+{"input": "Form one: The girl beside the bed snapped the key .", "output": "SNAP ( BESIDE ( GIRL , BED ) , KEY , NONE )"}
+{"input": "Form one: The donut beside a table rolled .", "output": "ROLL ( NONE , BESIDE ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: A dog in the house liked a cake .", "output": "LIKE ( IN ( DOG , HOUSE ) , CAKE , NONE )"}
+{"input": "Form one: The frog in a house thought that a teacher beside a baron gave a cake to a girl .", "output": "THINK ( IN ( FROG , HOUSE ) , NONE , NONE ) CCOMP GIVE ( BESIDE ( TEACHER , BARON ) , CAKE , GIRL )"}
+{"input": "Form one: A coach on the table talked .", "output": "TALK ( ON ( COACH , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The cake beside a corpse rolled .", "output": "ROLL ( NONE , BESIDE ( CAKE , CORPSE ) , NONE )"}
+{"input": "Form one: The girl beside the table tolerated that the professor beside the stage was rented a cake .", "output": "TOLERATE ( BESIDE ( GIRL , TABLE ) , NONE , NONE ) CCOMP RENT ( NONE , CAKE , BESIDE ( PROFESSOR , STAGE ) )"}
+{"input": "Form one: The cake on a bed was rolled .", "output": "ROLL ( NONE , ON ( CAKE , BED ) , NONE )"}
+{"input": "Form one: The dog in the vessel was given a cup by a horse on a table .", "output": "GIVE ( ON ( HORSE , TABLE ) , CUP , IN ( DOG , VESSEL ) )"}
+{"input": "Form one: A girl on the bed shortened the cake .", "output": "SHORTEN ( ON ( GIRL , BED ) , CAKE , NONE )"}
+{"input": "Form one: A girl in a room sent a frog a cake beside the pillar .", "output": "SEND ( IN ( GIRL , ROOM ) , BESIDE ( CAKE , PILLAR ) , FROG )"}
+{"input": "Form one: The girl on a tree offered the boy the banana beside a table .", "output": "OFFER ( ON ( GIRL , TREE ) , BESIDE ( BANANA , TABLE ) , BOY )"}
+{"input": "Form one: A squirrel on a computer drew .", "output": "DRAW ( ON ( SQUIRREL , COMPUTER ) , NONE , NONE )"}
+{"input": "Form one: A cake beside the table rolled .", "output": "ROLL ( NONE , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: A baby in a room ate .", "output": "EAT ( IN ( BABY , ROOM ) , NONE , NONE )"}
+{"input": "Form one: A chicken in a shoe tolerated that a girl beside the stage liked a cat .", "output": "TOLERATE ( IN ( CHICKEN , SHOE ) , NONE , NONE ) CCOMP LIKE ( BESIDE ( GIRL , STAGE ) , CAT , NONE )"}
+{"input": "Form one: The girl on the table was loaned the cookie .", "output": "LOAN ( NONE , COOKIE , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: A box beside the truck was respected .", "output": "RESPECT ( NONE , BESIDE ( BOX , TRUCK ) , NONE )"}
+{"input": "Form one: A girl in the hole noticed that the boy beside the book saw Sophia .", "output": "NOTICE ( IN ( GIRL , HOLE ) , NONE , NONE ) CCOMP SEE ( BESIDE ( BOY , BOOK ) , SOPHIA , NONE )"}
+{"input": "Form one: A boy in the sink slid the drink .", "output": "SLIDE ( IN ( BOY , SINK ) , DRINK , NONE )"}
+{"input": "Form one: The boy on the table was passed the cookie .", "output": "PASS ( NONE , COOKIE , ON ( BOY , TABLE ) )"}
+{"input": "Form one: A girl in the car itched to run .", "output": "ITCH ( IN ( GIRL , CAR ) , NONE , NONE ) XCOMP RUN ( IN ( GIRL , CAR ) , NONE , NONE )"}
+{"input": "Form one: The horse on a bed slept .", "output": "SLEEP ( ON ( HORSE , BED ) , NONE , NONE )"}
+{"input": "Form one: The girl on the table was given the cake .", "output": "GIVE ( NONE , CAKE , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: The donut beside a bat was eaten by a citizen on a turntable .", "output": "EAT ( ON ( CITIZEN , TURNTABLE ) , BESIDE ( DONUT , BAT ) , NONE )"}
+{"input": "Form one: The girl beside a tree ate a pancake .", "output": "EAT ( BESIDE ( GIRL , TREE ) , PANCAKE , NONE )"}
+{"input": "Form one: The prince in a bin smiled .", "output": "SMILE ( IN ( PRINCE , BIN ) , NONE , NONE )"}
+{"input": "Form one: A cat in a bin disintegrated the bee .", "output": "DISINTEGRATE ( IN ( CAT , BIN ) , BEE , NONE )"}
+{"input": "Form one: A cat in a bag found a book in the well .", "output": "FIND ( IN ( CAT , BAG ) , IN ( BOOK , WELL ) , NONE )"}
+{"input": "Form one: A pretzel on a seat was seen .", "output": "SEE ( NONE , ON ( PRETZEL , SEAT ) , NONE )"}
+{"input": "Form one: The rose in a house was lended to the girl by the dog beside a sailor .", "output": "LEND ( BESIDE ( DOG , SAILOR ) , IN ( ROSE , HOUSE ) , GIRL )"}
+{"input": "Form one: The citizen on a stage rolled Nathan .", "output": "ROLL ( ON ( CITIZEN , STAGE ) , NATHAN , NONE )"}
+{"input": "Form one: The girl beside a stage lended the cake in the house to Liam .", "output": "LEND ( BESIDE ( GIRL , STAGE ) , IN ( CAKE , HOUSE ) , LIAM )"}
+{"input": "Form one: The girl beside the tree in the bookstore slept .", "output": "SLEEP ( BESIDE ( GIRL , IN ( TREE , BOOKSTORE ) ) , NONE , NONE )"}
+{"input": "Form one: A girl beside a nest liked that the pickle on a book doubled .", "output": "LIKE ( BESIDE ( GIRL , NEST ) , NONE , NONE ) CCOMP DOUBLE ( NONE , ON ( PICKLE , BOOK ) , NONE )"}
+{"input": "Form one: The crocodile beside a table liked that a plant on the tiger was fed to Liam .", "output": "LIKE ( BESIDE ( CROCODILE , TABLE ) , NONE , NONE ) CCOMP FEED ( NONE , ON ( PLANT , TIGER ) , LIAM )"}
+{"input": "Form one: The dog in the box admired that a girl on the bench liked a teacher .", "output": "ADMIRE ( IN ( DOG , BOX ) , NONE , NONE ) CCOMP LIKE ( ON ( GIRL , BENCH ) , TEACHER , NONE )"}
+{"input": "Form one: A duck on the train rolled the sailor .", "output": "ROLL ( ON ( DUCK , TRAIN ) , SAILOR , NONE )"}
+{"input": "Form one: A cake in a coffin was loved by the girl on a stool .", "output": "LOVE ( ON ( GIRL , STOOL ) , IN ( CAKE , COFFIN ) , NONE )"}
+{"input": "Form one: A cat beside a bed intended to paint .", "output": "INTEND ( BESIDE ( CAT , BED ) , NONE , NONE ) XCOMP PAINT ( BESIDE ( CAT , BED ) , NONE , NONE )"}
+{"input": "Form one: The child in the house beside the desk saw .", "output": "SEE ( IN ( CHILD , BESIDE ( HOUSE , DESK ) ) , NONE , NONE )"}
+{"input": "Form one: The donut beside a table was liked .", "output": "LIKE ( NONE , BESIDE ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: A bear on the seat discovered a boy beside a stage .", "output": "DISCOVER ( ON ( BEAR , SEAT ) , BESIDE ( BOY , STAGE ) , NONE )"}
+{"input": "Form one: A donut in the glass was sold to the director by the teacher beside the stage .", "output": "SELL ( BESIDE ( TEACHER , STAGE ) , IN ( DONUT , GLASS ) , DIRECTOR )"}
+{"input": "Form one: A cat on the bed decomposed the cake in the cylinder .", "output": "DECOMPOSE ( ON ( CAT , BED ) , IN ( CAKE , CYLINDER ) , NONE )"}
+{"input": "Form one: A girl on a table was offered a cookie .", "output": "OFFER ( NONE , COOKIE , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: A girl on the stage rolled .", "output": "ROLL ( ON ( GIRL , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The donut beside a barrel was rolled .", "output": "ROLL ( NONE , BESIDE ( DONUT , BARREL ) , NONE )"}
+{"input": "Form one: A guard in a car liked that a box in a cage was grown .", "output": "LIKE ( IN ( GUARD , CAR ) , NONE , NONE ) CCOMP GROW ( NONE , IN ( BOX , CAGE ) , NONE )"}
+{"input": "Form one: The girl on the table liked a boy .", "output": "LIKE ( ON ( GIRL , TABLE ) , BOY , NONE )"}
+{"input": "Form one: A girl in the vase was passed the radio by the duck on a boulder .", "output": "PASS ( ON ( DUCK , BOULDER ) , RADIO , IN ( GIRL , VASE ) )"}
+{"input": "Form one: A zebra in a house examined .", "output": "EXAMINE ( IN ( ZEBRA , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The politician in the envelope fed a sandwich to a lawyer .", "output": "FEED ( IN ( POLITICIAN , ENVELOPE ) , SANDWICH , LAWYER )"}
+{"input": "Form one: The monkey beside the table was brought the mandarin .", "output": "BRING ( NONE , MANDARIN , BESIDE ( MONKEY , TABLE ) )"}
+{"input": "Form one: A girl beside a boat drew a soap .", "output": "DRAW ( BESIDE ( GIRL , BOAT ) , SOAP , NONE )"}
+{"input": "Form one: The turkey in the storage held a cake beside a table .", "output": "HOLD ( IN ( TURKEY , STORAGE ) , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The drink on the stage was awarded to a girl by the baby beside the dragon .", "output": "AWARD ( BESIDE ( BABY , DRAGON ) , ON ( DRINK , STAGE ) , GIRL )"}
+{"input": "Form one: A cat on a surface hunted .", "output": "HUNT ( ON ( CAT , SURFACE ) , NONE , NONE )"}
+{"input": "Form one: A boy on a table was handed the cookie .", "output": "HAND ( NONE , COOKIE , ON ( BOY , TABLE ) )"}
+{"input": "Form one: A girl on a chair lended the cake to Scarlett .", "output": "LEND ( ON ( GIRL , CHAIR ) , CAKE , SCARLETT )"}
+{"input": "Form one: The girl in a box liked the donut beside a stage .", "output": "LIKE ( IN ( GIRL , BOX ) , BESIDE ( DONUT , STAGE ) , NONE )"}
+{"input": "Form one: A creature beside the car said that a cow beside the rod ate the cake .", "output": "SAY ( BESIDE ( CREATURE , CAR ) , NONE , NONE ) CCOMP EAT ( BESIDE ( COW , ROD ) , CAKE , NONE )"}
+{"input": "Form one: A researcher in the garden painted .", "output": "PAINT ( IN ( RESEARCHER , GARDEN ) , NONE , NONE )"}
+{"input": "Form one: The frog on a bed gave Olivia the cookie .", "output": "GIVE ( ON ( FROG , BED ) , COOKIE , OLIVIA )"}
+{"input": "Form one: The cake in a garden rolled .", "output": "ROLL ( NONE , IN ( CAKE , GARDEN ) , NONE )"}
+{"input": "Form one: A girl in the bottle reddened a donut beside the chair .", "output": "REDDEN ( IN ( GIRL , BOTTLE ) , BESIDE ( DONUT , CHAIR ) , NONE )"}
+{"input": "Form one: The teacher in the trap slept .", "output": "SLEEP ( IN ( TEACHER , TRAP ) , NONE , NONE )"}
+{"input": "Form one: A liver beside the table was eaten .", "output": "EAT ( NONE , BESIDE ( LIVER , TABLE ) , NONE )"}
+{"input": "Form one: A child in a room on a stage smiled .", "output": "SMILE ( IN ( CHILD , ON ( ROOM , STAGE ) ) , NONE , NONE )"}
+{"input": "Form one: A cake in a house was tossed .", "output": "TOSS ( NONE , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: A frog beside a stage floated a cake in the house .", "output": "FLOAT ( BESIDE ( FROG , STAGE ) , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: The teacher on a towel noticed that the girl on a piano floated a bird .", "output": "NOTICE ( ON ( TEACHER , TOWEL ) , NONE , NONE ) CCOMP FLOAT ( ON ( GIRL , PIANO ) , BIRD , NONE )"}
+{"input": "Form one: A girl beside a book hoped that the cat in a shoe giggled .", "output": "HOPE ( BESIDE ( GIRL , BOOK ) , NONE , NONE ) CCOMP GIGGLE ( IN ( CAT , SHOE ) , NONE , NONE )"}
+{"input": "Form one: A horse on a stage liked James .", "output": "LIKE ( ON ( HORSE , STAGE ) , JAMES , NONE )"}
+{"input": "Form one: A governor on a surface was sold the muffin by the girl in the vehicle .", "output": "SELL ( IN ( GIRL , VEHICLE ) , MUFFIN , ON ( GOVERNOR , SURFACE ) )"}
+{"input": "Form one: The boy beside a stage supported that the baby in a box tried to walk .", "output": "SUPPORT ( BESIDE ( BOY , STAGE ) , NONE , NONE ) CCOMP TRY ( IN ( BABY , BOX ) , NONE , NONE ) XCOMP WALK ( IN ( BABY , BOX ) , NONE , NONE )"}
+{"input": "Form one: The pretzel beside a piano was respected by the boy in the house .", "output": "RESPECT ( IN ( BOY , HOUSE ) , BESIDE ( PRETZEL , PIANO ) , NONE )"}
+{"input": "Form one: A sailor in the house helped a ball .", "output": "HELP ( IN ( SAILOR , HOUSE ) , BALL , NONE )"}
+{"input": "Form one: The newspaper beside a table was loved by a father beside the stage .", "output": "LOVE ( BESIDE ( FATHER , STAGE ) , BESIDE ( NEWSPAPER , TABLE ) , NONE )"}
+{"input": "Form one: A mouse beside a table dusted .", "output": "DUST ( BESIDE ( MOUSE , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The girl in the stadium wanted to walk .", "output": "WANT ( IN ( GIRL , STADIUM ) , NONE , NONE ) XCOMP WALK ( IN ( GIRL , STADIUM ) , NONE , NONE )"}
+{"input": "Form one: The mouse on a stage rolled the box .", "output": "ROLL ( ON ( MOUSE , STAGE ) , BOX , NONE )"}
+{"input": "Form one: The girl on the table was given the box .", "output": "GIVE ( NONE , BOX , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: The cake beside the table froze .", "output": "FREEZE ( NONE , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: A boy on the bed tolerated that a cookie in a house was rolled .", "output": "TOLERATE ( ON ( BOY , BED ) , NONE , NONE ) CCOMP ROLL ( NONE , IN ( COOKIE , HOUSE ) , NONE )"}
+{"input": "Form one: The chicken on the table poked the child in a cup .", "output": "POKE ( ON ( CHICKEN , TABLE ) , IN ( CHILD , CUP ) , NONE )"}
+{"input": "Form one: The girl on a carpet was given a cookie .", "output": "GIVE ( NONE , COOKIE , ON ( GIRL , CARPET ) )"}
+{"input": "Form one: The visitor beside a cylinder broke Liam .", "output": "BREAK ( BESIDE ( VISITOR , CYLINDER ) , LIAM , NONE )"}
+{"input": "Form one: A child beside the table rolled the student in the tin .", "output": "ROLL ( BESIDE ( CHILD , TABLE ) , IN ( STUDENT , TIN ) , NONE )"}
+{"input": "Form one: A girl on the desk cooked .", "output": "COOK ( ON ( GIRL , DESK ) , NONE , NONE )"}
+{"input": "Form one: The dog beside the computer liked to hunt .", "output": "LIKE ( BESIDE ( DOG , COMPUTER ) , NONE , NONE ) XCOMP HUNT ( BESIDE ( DOG , COMPUTER ) , NONE , NONE )"}
+{"input": "Form one: The cat on the podium in a bun preferred to run .", "output": "PREFER ( ON ( CAT , IN ( PODIUM , BUN ) ) , NONE , NONE ) XCOMP RUN ( ON ( CAT , IN ( PODIUM , BUN ) ) , NONE , NONE )"}
+{"input": "Form one: A girl on the corpse in a glass admired a teacher .", "output": "ADMIRE ( ON ( GIRL , IN ( CORPSE , GLASS ) ) , TEACHER , NONE )"}
+{"input": "Form one: A pretzel on the table was frozen by the girl on the dish .", "output": "FREEZE ( ON ( GIRL , DISH ) , ON ( PRETZEL , TABLE ) , NONE )"}
+{"input": "Form one: The cake beside the table was poked by a dog in the box .", "output": "POKE ( IN ( DOG , BOX ) , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The lion on a road liked that a cake beside a bag was helped .", "output": "LIKE ( ON ( LION , ROAD ) , NONE , NONE ) CCOMP HELP ( NONE , BESIDE ( CAKE , BAG ) , NONE )"}
+{"input": "Form one: A cake on the table was rolled .", "output": "ROLL ( NONE , ON ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: A girl in a envelope sold Liam the cake beside the computer .", "output": "SELL ( IN ( GIRL , ENVELOPE ) , BESIDE ( CAKE , COMPUTER ) , LIAM )"}
+{"input": "Form one: The frog beside a doll slept .", "output": "SLEEP ( BESIDE ( FROG , DOLL ) , NONE , NONE )"}
+{"input": "Form one: The driver on a bed was brought a sandwich in the house .", "output": "BRING ( NONE , IN ( SANDWICH , HOUSE ) , ON ( DRIVER , BED ) )"}
+{"input": "Form one: The cake beside the bed was rolled .", "output": "ROLL ( NONE , BESIDE ( CAKE , BED ) , NONE )"}
+{"input": "Form one: A governor on the surface beside a log helped the baby .", "output": "HELP ( ON ( GOVERNOR , BESIDE ( SURFACE , LOG ) ) , BABY , NONE )"}
+{"input": "Form one: A child in a hammock was brought a nail .", "output": "BRING ( NONE , NAIL , IN ( CHILD , HAMMOCK ) )"}
+{"input": "Form one: A chalk in the cup rolled .", "output": "ROLL ( NONE , IN ( CHALK , CUP ) , NONE )"}
+{"input": "Form one: The girl in the house was mailed a cake by the child on a table .", "output": "MAIL ( ON ( CHILD , TABLE ) , CAKE , IN ( GIRL , HOUSE ) )"}
+{"input": "Form one: A cookie on a stage was poked .", "output": "POKE ( NONE , ON ( COOKIE , STAGE ) , NONE )"}
+{"input": "Form one: A donut beside a book was liked by a boy on the leaf .", "output": "LIKE ( ON ( BOY , LEAF ) , BESIDE ( DONUT , BOOK ) , NONE )"}
+{"input": "Form one: A girl beside the table gave a mouse a mirror in the saucepan .", "output": "GIVE ( BESIDE ( GIRL , TABLE ) , IN ( MIRROR , SAUCEPAN ) , MOUSE )"}
+{"input": "Form one: The boy beside a book wanted to sleep .", "output": "WANT ( BESIDE ( BOY , BOOK ) , NONE , NONE ) XCOMP SLEEP ( BESIDE ( BOY , BOOK ) , NONE , NONE )"}
+{"input": "Form one: A cat in the car brought the chalk to a boy .", "output": "BRING ( IN ( CAT , CAR ) , CHALK , BOY )"}
+{"input": "Form one: The dog beside a trainee hoped that a prince on the book was sold the cookie .", "output": "HOPE ( BESIDE ( DOG , TRAINEE ) , NONE , NONE ) CCOMP SELL ( NONE , COOKIE , ON ( PRINCE , BOOK ) )"}
+{"input": "Form one: The monkey on the futon gave the cat a pretzel .", "output": "GIVE ( ON ( MONKEY , FUTON ) , PRETZEL , CAT )"}
+{"input": "Form one: A boy in the haystack slept .", "output": "SLEEP ( IN ( BOY , HAYSTACK ) , NONE , NONE )"}
+{"input": "Form one: A dog on the stage snored .", "output": "SNORE ( ON ( DOG , STAGE ) , NONE , NONE )"}
+{"input": "Form one: A butterfly in the car burned .", "output": "BURN ( IN ( BUTTERFLY , CAR ) , NONE , NONE )"}
+{"input": "Form one: The king beside the rod was offered the shell .", "output": "OFFER ( NONE , SHELL , BESIDE ( KING , ROD ) )"}
+{"input": "Form one: A dog in the wardrobe smiled .", "output": "SMILE ( IN ( DOG , WARDROBE ) , NONE , NONE )"}
+{"input": "Form one: A block beside a table was liked by the cat beside the machine .", "output": "LIKE ( BESIDE ( CAT , MACHINE ) , BESIDE ( BLOCK , TABLE ) , NONE )"}
+{"input": "Form one: The zebra beside a speaker shortened .", "output": "SHORTEN ( BESIDE ( ZEBRA , SPEAKER ) , NONE , NONE )"}
+{"input": "Form one: A president on the platter said that a donut beside a chair grew .", "output": "SAY ( ON ( PRESIDENT , PLATTER ) , NONE , NONE ) CCOMP GROW ( NONE , BESIDE ( DONUT , CHAIR ) , NONE )"}
+{"input": "Form one: A girl beside a vehicle rolled a game on a stool .", "output": "ROLL ( BESIDE ( GIRL , VEHICLE ) , ON ( GAME , STOOL ) , NONE )"}
+{"input": "Form one: The girl on the stool cooked .", "output": "COOK ( ON ( GIRL , STOOL ) , NONE , NONE )"}
+{"input": "Form one: A girl on the table ate the ball in a cafe .", "output": "EAT ( ON ( GIRL , TABLE ) , IN ( BALL , CAFE ) , NONE )"}
+{"input": "Form one: A boy on a dog was offered a pumpkin .", "output": "OFFER ( NONE , PUMPKIN , ON ( BOY , DOG ) )"}
+{"input": "Form one: The friend in a house beside a stage needed to sneeze .", "output": "NEED ( IN ( FRIEND , BESIDE ( HOUSE , STAGE ) ) , NONE , NONE ) XCOMP SNEEZE ( IN ( FRIEND , BESIDE ( HOUSE , STAGE ) ) , NONE , NONE )"}
+{"input": "Form one: A donut in a bathtub in the soup was given to Olivia .", "output": "GIVE ( NONE , IN ( DONUT , IN ( BATHTUB , SOUP ) ) , OLIVIA )"}
+{"input": "Form one: The cat in a container rolled .", "output": "ROLL ( IN ( CAT , CONTAINER ) , NONE , NONE )"}
+{"input": "Form one: The present beside a stage was rolled .", "output": "ROLL ( NONE , BESIDE ( PRESENT , STAGE ) , NONE )"}
+{"input": "Form one: A boy on a chair was sold a cake in the car .", "output": "SELL ( NONE , IN ( CAKE , CAR ) , ON ( BOY , CHAIR ) )"}
+{"input": "Form one: The prisoner in the room examined .", "output": "EXAMINE ( IN ( PRISONER , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The drink on a table was lended to a baby by a cat on the futon .", "output": "LEND ( ON ( CAT , FUTON ) , ON ( DRINK , TABLE ) , BABY )"}
+{"input": "Form one: A mouse on the leaflet enlarged the professor .", "output": "ENLARGE ( ON ( MOUSE , LEAFLET ) , PROFESSOR , NONE )"}
+{"input": "Form one: The girl beside a table was forwarded a leaf .", "output": "FORWARD ( NONE , LEAF , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: The girl beside a table drew .", "output": "DRAW ( BESIDE ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The bird in a box was awarded a ball by the girl beside the machine .", "output": "AWARD ( BESIDE ( GIRL , MACHINE ) , BALL , IN ( BIRD , BOX ) )"}
+{"input": "Form one: The fish on the tree shortened .", "output": "SHORTEN ( ON ( FISH , TREE ) , NONE , NONE )"}
+{"input": "Form one: A producer on a table was given the pumpkin beside a cabinet .", "output": "GIVE ( NONE , BESIDE ( PUMPKIN , CABINET ) , ON ( PRODUCER , TABLE ) )"}
+{"input": "Form one: The tourist beside a table froze .", "output": "FREEZE ( BESIDE ( TOURIST , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A block beside the table beside the boat was eaten .", "output": "EAT ( NONE , BESIDE ( BLOCK , BESIDE ( TABLE , BOAT ) ) , NONE )"}
+{"input": "Form one: The girl in the taxi slept .", "output": "SLEEP ( IN ( GIRL , TAXI ) , NONE , NONE )"}
+{"input": "Form one: The beer beside the table was painted .", "output": "PAINT ( NONE , BESIDE ( BEER , TABLE ) , NONE )"}
+{"input": "Form one: A boy beside the seat drew .", "output": "DRAW ( BESIDE ( BOY , SEAT ) , NONE , NONE )"}
+{"input": "Form one: The duck beside a table was served the flag .", "output": "SERVE ( NONE , FLAG , BESIDE ( DUCK , TABLE ) )"}
+{"input": "Form one: The donut on the box was eaten by the girl on a table .", "output": "EAT ( ON ( GIRL , TABLE ) , ON ( DONUT , BOX ) , NONE )"}
+{"input": "Form one: The girl on a speaker rolled .", "output": "ROLL ( ON ( GIRL , SPEAKER ) , NONE , NONE )"}
+{"input": "Form one: The girl on the computer liked Noah .", "output": "LIKE ( ON ( GIRL , COMPUTER ) , NOAH , NONE )"}
+{"input": "Form one: A child on a table gave Scarlett a balloon beside a lemon .", "output": "GIVE ( ON ( CHILD , TABLE ) , BESIDE ( BALLOON , LEMON ) , SCARLETT )"}
+{"input": "Form one: The cat beside a stage ate the girl .", "output": "EAT ( BESIDE ( CAT , STAGE ) , GIRL , NONE )"}
+{"input": "Form one: The boy on the speaker preferred to giggle .", "output": "PREFER ( ON ( BOY , SPEAKER ) , NONE , NONE ) XCOMP GIGGLE ( ON ( BOY , SPEAKER ) , NONE , NONE )"}
+{"input": "Form one: A boy on the stage observed the donut .", "output": "OBSERVE ( ON ( BOY , STAGE ) , DONUT , NONE )"}
+{"input": "Form one: The melon in a house doubled .", "output": "DOUBLE ( NONE , IN ( MELON , HOUSE ) , NONE )"}
+{"input": "Form one: The cake on a surface was mailed to James .", "output": "MAIL ( NONE , ON ( CAKE , SURFACE ) , JAMES )"}
+{"input": "Form one: A bunny on the box lended a girl a rose .", "output": "LEND ( ON ( BUNNY , BOX ) , ROSE , GIRL )"}
+{"input": "Form one: The coach in a house painted .", "output": "PAINT ( IN ( COACH , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A sheep beside the giant loved to sleep .", "output": "LOVE ( BESIDE ( SHEEP , GIANT ) , NONE , NONE ) XCOMP SLEEP ( BESIDE ( SHEEP , GIANT ) , NONE , NONE )"}
+{"input": "Form one: A donkey on the table attempted to read .", "output": "ATTEMPT ( ON ( DONKEY , TABLE ) , NONE , NONE ) XCOMP READ ( ON ( DONKEY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The dealer in the house wanted to walk .", "output": "WANT ( IN ( DEALER , HOUSE ) , NONE , NONE ) XCOMP WALK ( IN ( DEALER , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A baby on the table observed .", "output": "OBSERVE ( ON ( BABY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A cake on a bed was drawn .", "output": "DRAW ( NONE , ON ( CAKE , BED ) , NONE )"}
+{"input": "Form one: A banana on a bed was held by a baby in the box .", "output": "HOLD ( IN ( BABY , BOX ) , ON ( BANANA , BED ) , NONE )"}
+{"input": "Form one: A cake on a rock was noticed .", "output": "NOTICE ( NONE , ON ( CAKE , ROCK ) , NONE )"}
+{"input": "Form one: The moose beside a table liked that a ball beside a stage was wired to Ellie .", "output": "LIKE ( BESIDE ( MOOSE , TABLE ) , NONE , NONE ) CCOMP WIRE ( NONE , BESIDE ( BALL , STAGE ) , ELLIE )"}
+{"input": "Form one: A girl in the trunk ate .", "output": "EAT ( IN ( GIRL , TRUNK ) , NONE , NONE )"}
+{"input": "Form one: A girl on a table froze a dog in a box .", "output": "FREEZE ( ON ( GIRL , TABLE ) , IN ( DOG , BOX ) , NONE )"}
+{"input": "Form one: The boy beside the chair liked that a cat in a vehicle was given a cake .", "output": "LIKE ( BESIDE ( BOY , CHAIR ) , NONE , NONE ) CCOMP GIVE ( NONE , CAKE , IN ( CAT , VEHICLE ) )"}
+{"input": "Form one: The girl in a backyard liked Emma .", "output": "LIKE ( IN ( GIRL , BACKYARD ) , EMMA , NONE )"}
+{"input": "Form one: The girl beside a toy beside the table was lended a cookie .", "output": "LEND ( NONE , COOKIE , BESIDE ( GIRL , BESIDE ( TOY , TABLE ) ) )"}
+{"input": "Form one: A patient in the house in a cup wanted to nap .", "output": "WANT ( IN ( PATIENT , IN ( HOUSE , CUP ) ) , NONE , NONE ) XCOMP NAP ( IN ( PATIENT , IN ( HOUSE , CUP ) ) , NONE , NONE )"}
+{"input": "Form one: A cat on the corpse was offered a pretzel .", "output": "OFFER ( NONE , PRETZEL , ON ( CAT , CORPSE ) )"}
+{"input": "Form one: A duck on the chair was given the present by the boy beside a road .", "output": "GIVE ( BESIDE ( BOY , ROAD ) , PRESENT , ON ( DUCK , CHAIR ) )"}
+{"input": "Form one: A dog in a pile was passed the cake beside the stage .", "output": "PASS ( NONE , BESIDE ( CAKE , STAGE ) , IN ( DOG , PILE ) )"}
+{"input": "Form one: The mouse in the sink ate .", "output": "EAT ( IN ( MOUSE , SINK ) , NONE , NONE )"}
+{"input": "Form one: A boy on the stage nursed a cookie .", "output": "NURSE ( ON ( BOY , STAGE ) , COOKIE , NONE )"}
+{"input": "Form one: The monster beside the book rolled .", "output": "ROLL ( BESIDE ( MONSTER , BOOK ) , NONE , NONE )"}
+{"input": "Form one: A girl on a table ate .", "output": "EAT ( ON ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The boy in the box wanted to walk .", "output": "WANT ( IN ( BOY , BOX ) , NONE , NONE ) XCOMP WALK ( IN ( BOY , BOX ) , NONE , NONE )"}
+{"input": "Form one: A teacher beside the table wanted to eat .", "output": "WANT ( BESIDE ( TEACHER , TABLE ) , NONE , NONE ) XCOMP EAT ( BESIDE ( TEACHER , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A bird in the house shortened the horse .", "output": "SHORTEN ( IN ( BIRD , HOUSE ) , HORSE , NONE )"}
+{"input": "Form one: A bunny on the tree drew .", "output": "DRAW ( ON ( BUNNY , TREE ) , NONE , NONE )"}
+{"input": "Form one: The hero on the stage was fed the clock beside the bottle .", "output": "FEED ( NONE , BESIDE ( CLOCK , BOTTLE ) , ON ( HERO , STAGE ) )"}
+{"input": "Form one: A chicken beside a bed snapped .", "output": "SNAP ( BESIDE ( CHICKEN , BED ) , NONE , NONE )"}
+{"input": "Form one: The girl on the dish liked that a box beside the bike was broken .", "output": "LIKE ( ON ( GIRL , DISH ) , NONE , NONE ) CCOMP BREAK ( NONE , BESIDE ( BOX , BIKE ) , NONE )"}
+{"input": "Form one: The dog on a chair ate a jigsaw on the paper .", "output": "EAT ( ON ( DOG , CHAIR ) , ON ( JIGSAW , PAPER ) , NONE )"}
+{"input": "Form one: The dog on a deck wished that a girl on a bed sketched Emma .", "output": "WISH ( ON ( DOG , DECK ) , NONE , NONE ) CCOMP SKETCH ( ON ( GIRL , BED ) , EMMA , NONE )"}
+{"input": "Form one: A cloud beside the stage was frozen .", "output": "FREEZE ( NONE , BESIDE ( CLOUD , STAGE ) , NONE )"}
+{"input": "Form one: A girl on a table smiled .", "output": "SMILE ( ON ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The boy beside a yacht cleaned .", "output": "CLEAN ( BESIDE ( BOY , YACHT ) , NONE , NONE )"}
+{"input": "Form one: The girl beside the bike was served a jacket by the servant on a seat .", "output": "SERVE ( ON ( SERVANT , SEAT ) , JACKET , BESIDE ( GIRL , BIKE ) )"}
+{"input": "Form one: A deer beside the table gave Emma a sweetcorn in the garden .", "output": "GIVE ( BESIDE ( DEER , TABLE ) , IN ( SWEETCORN , GARDEN ) , EMMA )"}
+{"input": "Form one: A girl in a vase was lended a cookie .", "output": "LEND ( NONE , COOKIE , IN ( GIRL , VASE ) )"}
+{"input": "Form one: A tiger on a bible slept .", "output": "SLEEP ( ON ( TIGER , BIBLE ) , NONE , NONE )"}
+{"input": "Form one: A consumer on the table slid .", "output": "SLIDE ( ON ( CONSUMER , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The donut on the seat was eaten .", "output": "EAT ( NONE , ON ( DONUT , SEAT ) , NONE )"}
+{"input": "Form one: The cake in the house was posted to Emma .", "output": "POST ( NONE , IN ( CAKE , HOUSE ) , EMMA )"}
+{"input": "Form one: The horse in the house on the table was given a raisin .", "output": "GIVE ( NONE , RAISIN , IN ( HORSE , ON ( HOUSE , TABLE ) ) )"}
+{"input": "Form one: The donut in a room was reddened .", "output": "REDDEN ( NONE , IN ( DONUT , ROOM ) , NONE )"}
+{"input": "Form one: The dog on a table helped Addison .", "output": "HELP ( ON ( DOG , TABLE ) , ADDISON , NONE )"}
+{"input": "Form one: The bee on the stage gave Ella a ball .", "output": "GIVE ( ON ( BEE , STAGE ) , BALL , ELLA )"}
+{"input": "Form one: The boy in a house changed Emma .", "output": "CHANGE ( IN ( BOY , HOUSE ) , EMMA , NONE )"}
+{"input": "Form one: The girl beside the road cried .", "output": "CRY ( BESIDE ( GIRL , ROAD ) , NONE , NONE )"}
+{"input": "Form one: The cake beside the table was loved by the politician in the room .", "output": "LOVE ( IN ( POLITICIAN , ROOM ) , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The jar beside a road was given to Liam .", "output": "GIVE ( NONE , BESIDE ( JAR , ROAD ) , LIAM )"}
+{"input": "Form one: A girl on the tray imagined that the student beside a wolf tossed the donut .", "output": "IMAGINE ( ON ( GIRL , TRAY ) , NONE , NONE ) CCOMP TOSS ( BESIDE ( STUDENT , WOLF ) , DONUT , NONE )"}
+{"input": "Form one: The cake in a house was eaten .", "output": "EAT ( NONE , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: A girl beside a table was lended the cake .", "output": "LEND ( NONE , CAKE , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: A drink on a boat was nursed by a girl in a bag .", "output": "NURSE ( IN ( GIRL , BAG ) , ON ( DRINK , BOAT ) , NONE )"}
+{"input": "Form one: A child on a desk preferred to hunt .", "output": "PREFER ( ON ( CHILD , DESK ) , NONE , NONE ) XCOMP HUNT ( ON ( CHILD , DESK ) , NONE , NONE )"}
+{"input": "Form one: A cat in a house painted .", "output": "PAINT ( IN ( CAT , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A cake beside the desk rolled .", "output": "ROLL ( NONE , BESIDE ( CAKE , DESK ) , NONE )"}
+{"input": "Form one: A giraffe in the container rolled .", "output": "ROLL ( IN ( GIRAFFE , CONTAINER ) , NONE , NONE )"}
+{"input": "Form one: A boy on a bed intended to run .", "output": "INTEND ( ON ( BOY , BED ) , NONE , NONE ) XCOMP RUN ( ON ( BOY , BED ) , NONE , NONE )"}
+{"input": "Form one: A researcher on the table liked Liam .", "output": "LIKE ( ON ( RESEARCHER , TABLE ) , LIAM , NONE )"}
+{"input": "Form one: The bat beside a bag was rolled by a bunny on the table .", "output": "ROLL ( ON ( BUNNY , TABLE ) , BESIDE ( BAT , BAG ) , NONE )"}
+{"input": "Form one: The lamb beside the glass cooked a cookie .", "output": "COOK ( BESIDE ( LAMB , GLASS ) , COOKIE , NONE )"}
+{"input": "Form one: The boy on a table called .", "output": "CALL ( ON ( BOY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A ball in a house changed .", "output": "CHANGE ( NONE , IN ( BALL , HOUSE ) , NONE )"}
+{"input": "Form one: A chicken on the road beside the bed was given the box .", "output": "GIVE ( NONE , BOX , ON ( CHICKEN , BESIDE ( ROAD , BED ) ) )"}
+{"input": "Form one: The hen on the stage packed .", "output": "PACK ( ON ( HEN , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The girl in the house loved a clock .", "output": "LOVE ( IN ( GIRL , HOUSE ) , CLOCK , NONE )"}
+{"input": "Form one: The dog beside the stage grew .", "output": "GROW ( BESIDE ( DOG , STAGE ) , NONE , NONE )"}
+{"input": "Form one: A child beside a stage gave Emma a donut beside the house .", "output": "GIVE ( BESIDE ( CHILD , STAGE ) , BESIDE ( DONUT , HOUSE ) , EMMA )"}
+{"input": "Form one: The can beside the car was floated .", "output": "FLOAT ( NONE , BESIDE ( CAN , CAR ) , NONE )"}
+{"input": "Form one: A guy in a house reddened .", "output": "REDDEN ( IN ( GUY , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The girl on a box was offered the crayon .", "output": "OFFER ( NONE , CRAYON , ON ( GIRL , BOX ) )"}
+{"input": "Form one: A boy in the garden intended to walk .", "output": "INTEND ( IN ( BOY , GARDEN ) , NONE , NONE ) XCOMP WALK ( IN ( BOY , GARDEN ) , NONE , NONE )"}
+{"input": "Form one: A dog in a house was lended a cake by the monkey beside the book .", "output": "LEND ( BESIDE ( MONKEY , BOOK ) , CAKE , IN ( DOG , HOUSE ) )"}
+{"input": "Form one: A bee on a stage froze the cake .", "output": "FREEZE ( ON ( BEE , STAGE ) , CAKE , NONE )"}
+{"input": "Form one: A producer in the car wanted to walk .", "output": "WANT ( IN ( PRODUCER , CAR ) , NONE , NONE ) XCOMP WALK ( IN ( PRODUCER , CAR ) , NONE , NONE )"}
+{"input": "Form one: A servant in a car heard .", "output": "HEAR ( IN ( SERVANT , CAR ) , NONE , NONE )"}
+{"input": "Form one: A ball in the house was frozen by a frog on the computer .", "output": "FREEZE ( ON ( FROG , COMPUTER ) , IN ( BALL , HOUSE ) , NONE )"}
+{"input": "Form one: A donut on a table was loaned to the writer .", "output": "LOAN ( NONE , ON ( DONUT , TABLE ) , WRITER )"}
+{"input": "Form one: The cat on a bible ate the donut .", "output": "EAT ( ON ( CAT , BIBLE ) , DONUT , NONE )"}
+{"input": "Form one: A poet in a can rolled .", "output": "ROLL ( IN ( POET , CAN ) , NONE , NONE )"}
+{"input": "Form one: A professor beside the bed smiled .", "output": "SMILE ( BESIDE ( PROFESSOR , BED ) , NONE , NONE )"}
+{"input": "Form one: A cake in a cupboard was frozen .", "output": "FREEZE ( NONE , IN ( CAKE , CUPBOARD ) , NONE )"}
+{"input": "Form one: A consumer beside a table was given a cake beside a stage .", "output": "GIVE ( NONE , BESIDE ( CAKE , STAGE ) , BESIDE ( CONSUMER , TABLE ) )"}
+{"input": "Form one: The boy in the cage liked that a citizen on the sheet froze .", "output": "LIKE ( IN ( BOY , CAGE ) , NONE , NONE ) CCOMP FREEZE ( ON ( CITIZEN , SHEET ) , NONE , NONE )"}
+{"input": "Form one: The biscuit beside the duck was liked .", "output": "LIKE ( NONE , BESIDE ( BISCUIT , DUCK ) , NONE )"}
+{"input": "Form one: The donut on the ladder was painted by a princess on a table .", "output": "PAINT ( ON ( PRINCESS , TABLE ) , ON ( DONUT , LADDER ) , NONE )"}
+{"input": "Form one: The chicken on a road gave the cake to Emma .", "output": "GIVE ( ON ( CHICKEN , ROAD ) , CAKE , EMMA )"}
+{"input": "Form one: A melon on a table was given to Olivia by a girl in a swamp .", "output": "GIVE ( IN ( GIRL , SWAMP ) , ON ( MELON , TABLE ) , OLIVIA )"}
+{"input": "Form one: The moose on the computer liked James .", "output": "LIKE ( ON ( MOOSE , COMPUTER ) , JAMES , NONE )"}
+{"input": "Form one: A donut in a car was appreciated .", "output": "APPRECIATE ( NONE , IN ( DONUT , CAR ) , NONE )"}
+{"input": "Form one: The girl in a house believed that a donkey beside the chair slept .", "output": "BELIEVE ( IN ( GIRL , HOUSE ) , NONE , NONE ) CCOMP SLEEP ( BESIDE ( DONKEY , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The tenant beside a table painted .", "output": "PAINT ( BESIDE ( TENANT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A dog on a plate was given a cake in the house .", "output": "GIVE ( NONE , IN ( CAKE , HOUSE ) , ON ( DOG , PLATE ) )"}
+{"input": "Form one: A boy on a table drew a baby .", "output": "DRAW ( ON ( BOY , TABLE ) , BABY , NONE )"}
+{"input": "Form one: A producer on the brick lended a basket to Emma .", "output": "LEND ( ON ( PRODUCER , BRICK ) , BASKET , EMMA )"}
+{"input": "Form one: A chicken beside the machine said that the cat on the chair drew .", "output": "SAY ( BESIDE ( CHICKEN , MACHINE ) , NONE , NONE ) CCOMP DRAW ( ON ( CAT , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The driver beside a chair was passed a cake beside a stage .", "output": "PASS ( NONE , BESIDE ( CAKE , STAGE ) , BESIDE ( DRIVER , CHAIR ) )"}
+{"input": "Form one: The cookie beside a table was shortened .", "output": "SHORTEN ( NONE , BESIDE ( COOKIE , TABLE ) , NONE )"}
+{"input": "Form one: The cat on the canvas gave the glue beside a table to a girl .", "output": "GIVE ( ON ( CAT , CANVAS ) , BESIDE ( GLUE , TABLE ) , GIRL )"}
+{"input": "Form one: The teacher in a well liked Isabella .", "output": "LIKE ( IN ( TEACHER , WELL ) , ISABELLA , NONE )"}
+{"input": "Form one: The teacher in the cart cooked Emma .", "output": "COOK ( IN ( TEACHER , CART ) , EMMA , NONE )"}
+{"input": "Form one: The cat in a parcel was lended the cake beside a table .", "output": "LEND ( NONE , BESIDE ( CAKE , TABLE ) , IN ( CAT , PARCEL ) )"}
+{"input": "Form one: A girl beside the table saw the cat in a car .", "output": "SEE ( BESIDE ( GIRL , TABLE ) , IN ( CAT , CAR ) , NONE )"}
+{"input": "Form one: The teacher in a house awarded a cookie beside a seat to the bee .", "output": "AWARD ( IN ( TEACHER , HOUSE ) , BESIDE ( COOKIE , SEAT ) , BEE )"}
+{"input": "Form one: A customer on a table gave Ava a donut .", "output": "GIVE ( ON ( CUSTOMER , TABLE ) , DONUT , AVA )"}
+{"input": "Form one: The cat beside a bed rolled the donut .", "output": "ROLL ( BESIDE ( CAT , BED ) , DONUT , NONE )"}
+{"input": "Form one: The cat on the stage mailed a bat to Violet .", "output": "MAIL ( ON ( CAT , STAGE ) , BAT , VIOLET )"}
+{"input": "Form one: The cake in a vehicle was heard by a cat beside the log .", "output": "HEAR ( BESIDE ( CAT , LOG ) , IN ( CAKE , VEHICLE ) , NONE )"}
+{"input": "Form one: The dog on a table was posted the strawberry on the stage .", "output": "POST ( NONE , ON ( STRAWBERRY , STAGE ) , ON ( DOG , TABLE ) )"}
+{"input": "Form one: A cake on the table was rolled by a dog beside the box .", "output": "ROLL ( BESIDE ( DOG , BOX ) , ON ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The cat on the tabletop sold the princess a cake beside a monkey .", "output": "SELL ( ON ( CAT , TABLETOP ) , BESIDE ( CAKE , MONKEY ) , PRINCESS )"}
+{"input": "Form one: A girl beside a sword ate a fruit in the house .", "output": "EAT ( BESIDE ( GIRL , SWORD ) , IN ( FRUIT , HOUSE ) , NONE )"}
+{"input": "Form one: The girl beside a table was passed the cookie on a bed .", "output": "PASS ( NONE , ON ( COOKIE , BED ) , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: A pen beside the chair was offered to Emma .", "output": "OFFER ( NONE , BESIDE ( PEN , CHAIR ) , EMMA )"}
+{"input": "Form one: The girl beside the stage planned to sketch .", "output": "PLAN ( BESIDE ( GIRL , STAGE ) , NONE , NONE ) XCOMP SKETCH ( BESIDE ( GIRL , STAGE ) , NONE , NONE )"}
+{"input": "Form one: A crocodile on the dish liked that a squirrel in the house painted .", "output": "LIKE ( ON ( CROCODILE , DISH ) , NONE , NONE ) CCOMP PAINT ( IN ( SQUIRREL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The raisin beside the baron was eaten by the chicken beside a cup .", "output": "EAT ( BESIDE ( CHICKEN , CUP ) , BESIDE ( RAISIN , BARON ) , NONE )"}
+{"input": "Form one: A cat in the blender ate .", "output": "EAT ( IN ( CAT , BLENDER ) , NONE , NONE )"}
+{"input": "Form one: The girl beside a table wired Emma a box .", "output": "WIRE ( BESIDE ( GIRL , TABLE ) , BOX , EMMA )"}
+{"input": "Form one: The citizen beside the duck adored the drink .", "output": "ADORE ( BESIDE ( CITIZEN , DUCK ) , DRINK , NONE )"}
+{"input": "Form one: A girl on the table broke .", "output": "BREAK ( ON ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A girl in a basket cooked .", "output": "COOK ( IN ( GIRL , BASKET ) , NONE , NONE )"}
+{"input": "Form one: A cookie in a cafe decomposed .", "output": "DECOMPOSE ( NONE , IN ( COOKIE , CAFE ) , NONE )"}
+{"input": "Form one: The sandwich on the table in a house crumpled .", "output": "CRUMPLE ( NONE , ON ( SANDWICH , IN ( TABLE , HOUSE ) ) , NONE )"}
+{"input": "Form one: A pumpkin on the stage was shortened .", "output": "SHORTEN ( NONE , ON ( PUMPKIN , STAGE ) , NONE )"}
+{"input": "Form one: The girl on a stool attempted to sleep .", "output": "ATTEMPT ( ON ( GIRL , STOOL ) , NONE , NONE ) XCOMP SLEEP ( ON ( GIRL , STOOL ) , NONE , NONE )"}
+{"input": "Form one: The cake on the bench was missed by a president in a box .", "output": "MISS ( IN ( PRESIDENT , BOX ) , ON ( CAKE , BENCH ) , NONE )"}
+{"input": "Form one: The boy beside a table was rented the cake by a girl on the tree .", "output": "RENT ( ON ( GIRL , TREE ) , CAKE , BESIDE ( BOY , TABLE ) )"}
+{"input": "Form one: A drink in the house was liked by a lion in a box .", "output": "LIKE ( IN ( LION , BOX ) , IN ( DRINK , HOUSE ) , NONE )"}
+{"input": "Form one: A cat on a table floated a donut .", "output": "FLOAT ( ON ( CAT , TABLE ) , DONUT , NONE )"}
+{"input": "Form one: A girl on a tree wanted to sleep .", "output": "WANT ( ON ( GIRL , TREE ) , NONE , NONE ) XCOMP SLEEP ( ON ( GIRL , TREE ) , NONE , NONE )"}
+{"input": "Form one: A girl on the rock walked .", "output": "WALK ( ON ( GIRL , ROCK ) , NONE , NONE )"}
+{"input": "Form one: A mouse in a container drew .", "output": "DRAW ( IN ( MOUSE , CONTAINER ) , NONE , NONE )"}
+{"input": "Form one: The girl in the house beside a cage dusted a ball .", "output": "DUST ( IN ( GIRL , BESIDE ( HOUSE , CAGE ) ) , BALL , NONE )"}
+{"input": "Form one: The boy beside a bed gave Audrey a cake on the pedestal .", "output": "GIVE ( BESIDE ( BOY , BED ) , ON ( CAKE , PEDESTAL ) , AUDREY )"}
+{"input": "Form one: The bear beside the seat was served a donut on the hanger .", "output": "SERVE ( NONE , ON ( DONUT , HANGER ) , BESIDE ( BEAR , SEAT ) )"}
+{"input": "Form one: The girl on a table liked a journalist on a stage .", "output": "LIKE ( ON ( GIRL , TABLE ) , ON ( JOURNALIST , STAGE ) , NONE )"}
+{"input": "Form one: A girl beside a bed sold a rose to Emma .", "output": "SELL ( BESIDE ( GIRL , BED ) , ROSE , EMMA )"}
+{"input": "Form one: The cookie on a table was eaten by a girl beside the road .", "output": "EAT ( BESIDE ( GIRL , ROAD ) , ON ( COOKIE , TABLE ) , NONE )"}
+{"input": "Form one: A jigsaw on a sheet was rolled .", "output": "ROLL ( NONE , ON ( JIGSAW , SHEET ) , NONE )"}
+{"input": "Form one: A dog beside a table burned a drink .", "output": "BURN ( BESIDE ( DOG , TABLE ) , DRINK , NONE )"}
+{"input": "Form one: A lamb on a tray dreamed that a box on the stage split .", "output": "DREAM ( ON ( LAMB , TRAY ) , NONE , NONE ) CCOMP SPLIT ( NONE , ON ( BOX , STAGE ) , NONE )"}
+{"input": "Form one: A girl on the stage gave the monster a rose .", "output": "GIVE ( ON ( GIRL , STAGE ) , ROSE , MONSTER )"}
+{"input": "Form one: A ball on a stage was rolled .", "output": "ROLL ( NONE , ON ( BALL , STAGE ) , NONE )"}
+{"input": "Form one: The girl on the plate drew .", "output": "DRAW ( ON ( GIRL , PLATE ) , NONE , NONE )"}
+{"input": "Form one: The pig on the stage touched a dog .", "output": "TOUCH ( ON ( PIG , STAGE ) , DOG , NONE )"}
+{"input": "Form one: A girl in the room cried .", "output": "CRY ( IN ( GIRL , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The fly beside the bed meant that the girl on the stool slept .", "output": "MEAN ( BESIDE ( FLY , BED ) , NONE , NONE ) CCOMP SLEEP ( ON ( GIRL , STOOL ) , NONE , NONE )"}
+{"input": "Form one: A cat beside a table said that the monkey beside a chair rolled .", "output": "SAY ( BESIDE ( CAT , TABLE ) , NONE , NONE ) CCOMP ROLL ( BESIDE ( MONKEY , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: A frog beside a table was given a box .", "output": "GIVE ( NONE , BOX , BESIDE ( FROG , TABLE ) )"}
+{"input": "Form one: The mouse in the crate liked a professor on the road .", "output": "LIKE ( IN ( MOUSE , CRATE ) , ON ( PROFESSOR , ROAD ) , NONE )"}
+{"input": "Form one: The cookie beside a bed was disintegrated by a father in the cupboard .", "output": "DISINTEGRATE ( IN ( FATHER , CUPBOARD ) , BESIDE ( COOKIE , BED ) , NONE )"}
+{"input": "Form one: A creature in a house beside the book slept .", "output": "SLEEP ( IN ( CREATURE , BESIDE ( HOUSE , BOOK ) ) , NONE , NONE )"}
+{"input": "Form one: A politician on a futon liked the bat .", "output": "LIKE ( ON ( POLITICIAN , FUTON ) , BAT , NONE )"}
+{"input": "Form one: A penguin beside a stage wanted to hunt .", "output": "WANT ( BESIDE ( PENGUIN , STAGE ) , NONE , NONE ) XCOMP HUNT ( BESIDE ( PENGUIN , STAGE ) , NONE , NONE )"}
+{"input": "Form one: A cake beside a crystal was helped .", "output": "HELP ( NONE , BESIDE ( CAKE , CRYSTAL ) , NONE )"}
+{"input": "Form one: A girl on the leaflet shortened .", "output": "SHORTEN ( ON ( GIRL , LEAFLET ) , NONE , NONE )"}
+{"input": "Form one: The cake in a basin was cleaned by a boy in the cabinet .", "output": "CLEAN ( IN ( BOY , CABINET ) , IN ( CAKE , BASIN ) , NONE )"}
+{"input": "Form one: A banana in a vase was loaned to Emma .", "output": "LOAN ( NONE , IN ( BANANA , VASE ) , EMMA )"}
+{"input": "Form one: The doctor in the house painted .", "output": "PAINT ( IN ( DOCTOR , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A chicken on the bed ate Ava .", "output": "EAT ( ON ( CHICKEN , BED ) , AVA , NONE )"}
+{"input": "Form one: The girl beside the chair smiled .", "output": "SMILE ( BESIDE ( GIRL , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: A duck in the house liked Emma .", "output": "LIKE ( IN ( DUCK , HOUSE ) , EMMA , NONE )"}
+{"input": "Form one: A raisin beside the table was liked .", "output": "LIKE ( NONE , BESIDE ( RAISIN , TABLE ) , NONE )"}
+{"input": "Form one: The girl beside a table in a car gave the brush to Emma .", "output": "GIVE ( BESIDE ( GIRL , IN ( TABLE , CAR ) ) , BRUSH , EMMA )"}
+{"input": "Form one: The girl in a house scoffed .", "output": "SCOFF ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The donut beside the table was liked by the boy in a garden .", "output": "LIKE ( IN ( BOY , GARDEN ) , BESIDE ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: The girl on a tray served the cat a cake .", "output": "SERVE ( ON ( GIRL , TRAY ) , CAKE , CAT )"}
+{"input": "Form one: A cake on a branch was sold to Emma .", "output": "SELL ( NONE , ON ( CAKE , BRANCH ) , EMMA )"}
+{"input": "Form one: The citizen on a bed was given the cake on the tree .", "output": "GIVE ( NONE , ON ( CAKE , TREE ) , ON ( CITIZEN , BED ) )"}
+{"input": "Form one: A girl in the car was wired a box on a bed .", "output": "WIRE ( NONE , ON ( BOX , BED ) , IN ( GIRL , CAR ) )"}
+{"input": "Form one: The girl beside the table was given the bucket .", "output": "GIVE ( NONE , BUCKET , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: A student beside a broker liked that the child on the table smiled .", "output": "LIKE ( BESIDE ( STUDENT , BROKER ) , NONE , NONE ) CCOMP SMILE ( ON ( CHILD , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A doctor beside the stage grew a box beside the table .", "output": "GROW ( BESIDE ( DOCTOR , STAGE ) , BESIDE ( BOX , TABLE ) , NONE )"}
+{"input": "Form one: The sailor in a house wanted to run .", "output": "WANT ( IN ( SAILOR , HOUSE ) , NONE , NONE ) XCOMP RUN ( IN ( SAILOR , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A girl in a cup sketched Ethan .", "output": "SKETCH ( IN ( GIRL , CUP ) , ETHAN , NONE )"}
+{"input": "Form one: The girl in the room shortened .", "output": "SHORTEN ( IN ( GIRL , ROOM ) , NONE , NONE )"}
+{"input": "Form one: A puppy in the car juggled .", "output": "JUGGLE ( IN ( PUPPY , CAR ) , NONE , NONE )"}
+{"input": "Form one: The girl in the garden liked that the bear in the house preferred to jog .", "output": "LIKE ( IN ( GIRL , GARDEN ) , NONE , NONE ) CCOMP PREFER ( IN ( BEAR , HOUSE ) , NONE , NONE ) XCOMP JOG ( IN ( BEAR , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A boy in a vessel on the bed sold Liam a present .", "output": "SELL ( IN ( BOY , ON ( VESSEL , BED ) ) , PRESENT , LIAM )"}
+{"input": "Form one: The girl beside a computer wanted to nap .", "output": "WANT ( BESIDE ( GIRL , COMPUTER ) , NONE , NONE ) XCOMP NAP ( BESIDE ( GIRL , COMPUTER ) , NONE , NONE )"}
+{"input": "Form one: The cookie on a table was rolled .", "output": "ROLL ( NONE , ON ( COOKIE , TABLE ) , NONE )"}
+{"input": "Form one: A boy beside a chair was given the raisin in a house .", "output": "GIVE ( NONE , IN ( RAISIN , HOUSE ) , BESIDE ( BOY , CHAIR ) )"}
+{"input": "Form one: The cat in a garden wanted to jog .", "output": "WANT ( IN ( CAT , GARDEN ) , NONE , NONE ) XCOMP JOG ( IN ( CAT , GARDEN ) , NONE , NONE )"}
+{"input": "Form one: The teacher in a house dusted .", "output": "DUST ( IN ( TEACHER , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A girl on a stand cleaned .", "output": "CLEAN ( ON ( GIRL , STAND ) , NONE , NONE )"}
+{"input": "Form one: A donut on the table was hunted by the mouse beside a bench .", "output": "HUNT ( BESIDE ( MOUSE , BENCH ) , ON ( DONUT , TABLE ) , NONE )"}
+{"input": "Form one: A girl in the garden enlarged .", "output": "ENLARGE ( IN ( GIRL , GARDEN ) , NONE , NONE )"}
+{"input": "Form one: A dog beside the table wanted to cook .", "output": "WANT ( BESIDE ( DOG , TABLE ) , NONE , NONE ) XCOMP COOK ( BESIDE ( DOG , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The girl on the stage in a cot reddened .", "output": "REDDEN ( ON ( GIRL , IN ( STAGE , COT ) ) , NONE , NONE )"}
+{"input": "Form one: A girl in the car liked a bottle in the house .", "output": "LIKE ( IN ( GIRL , CAR ) , IN ( BOTTLE , HOUSE ) , NONE )"}
+{"input": "Form one: The girl in a cot needed to run .", "output": "NEED ( IN ( GIRL , COT ) , NONE , NONE ) XCOMP RUN ( IN ( GIRL , COT ) , NONE , NONE )"}
+{"input": "Form one: The bear on the table sold Noah the shoe .", "output": "SELL ( ON ( BEAR , TABLE ) , SHOE , NOAH )"}
+{"input": "Form one: The boy on the paper fed a cake to Michael .", "output": "FEED ( ON ( BOY , PAPER ) , CAKE , MICHAEL )"}
+{"input": "Form one: A teacher in a jar found Scarlett .", "output": "FIND ( IN ( TEACHER , JAR ) , SCARLETT , NONE )"}
+{"input": "Form one: A boy beside a road in a bunker juggled .", "output": "JUGGLE ( BESIDE ( BOY , IN ( ROAD , BUNKER ) ) , NONE , NONE )"}
+{"input": "Form one: The chicken in a house decomposed a cake .", "output": "DECOMPOSE ( IN ( CHICKEN , HOUSE ) , CAKE , NONE )"}
+{"input": "Form one: The teacher on a table was sent the coin .", "output": "SEND ( NONE , COIN , ON ( TEACHER , TABLE ) )"}
+{"input": "Form one: A girl beside a bed was rented a cake .", "output": "RENT ( NONE , CAKE , BESIDE ( GIRL , BED ) )"}
+{"input": "Form one: A girl in a house sold the cake beside the stage to Emma .", "output": "SELL ( IN ( GIRL , HOUSE ) , BESIDE ( CAKE , STAGE ) , EMMA )"}
+{"input": "Form one: The judge beside the table painted .", "output": "PAINT ( BESIDE ( JUDGE , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The girl on the bike froze .", "output": "FREEZE ( ON ( GIRL , BIKE ) , NONE , NONE )"}
+{"input": "Form one: A cake in the house was sketched .", "output": "SKETCH ( NONE , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: The resident on a computer gave a cake beside a helicopter to the girl .", "output": "GIVE ( ON ( RESIDENT , COMPUTER ) , BESIDE ( CAKE , HELICOPTER ) , GIRL )"}
+{"input": "Form one: The balloon in a tub was frozen .", "output": "FREEZE ( NONE , IN ( BALLOON , TUB ) , NONE )"}
+{"input": "Form one: A girl in the hammock brought a child the cake .", "output": "BRING ( IN ( GIRL , HAMMOCK ) , CAKE , CHILD )"}
+{"input": "Form one: The horse on a computer loved to walk .", "output": "LOVE ( ON ( HORSE , COMPUTER ) , NONE , NONE ) XCOMP WALK ( ON ( HORSE , COMPUTER ) , NONE , NONE )"}
+{"input": "Form one: A rose beside a table was eaten by a king in the house .", "output": "EAT ( IN ( KING , HOUSE ) , BESIDE ( ROSE , TABLE ) , NONE )"}
+{"input": "Form one: A girl in the swamp painted the glue .", "output": "PAINT ( IN ( GIRL , SWAMP ) , GLUE , NONE )"}
+{"input": "Form one: The cookie in a house was mailed to a girl by the cat on the futon .", "output": "MAIL ( ON ( CAT , FUTON ) , IN ( COOKIE , HOUSE ) , GIRL )"}
+{"input": "Form one: The beer beside a baron in the vehicle was given to the girl .", "output": "GIVE ( NONE , BESIDE ( BEER , IN ( BARON , VEHICLE ) ) , GIRL )"}
+{"input": "Form one: The bat beside a table was lended to a giraffe .", "output": "LEND ( NONE , BESIDE ( BAT , TABLE ) , GIRAFFE )"}
+{"input": "Form one: A banana in the room beside a stage was poked .", "output": "POKE ( NONE , IN ( BANANA , BESIDE ( ROOM , STAGE ) ) , NONE )"}
+{"input": "Form one: The dog in a hole painted .", "output": "PAINT ( IN ( DOG , HOLE ) , NONE , NONE )"}
+{"input": "Form one: The boy on a chair was sold a ball on the table .", "output": "SELL ( NONE , ON ( BALL , TABLE ) , ON ( BOY , CHAIR ) )"}
+{"input": "Form one: A girl beside a shoe hoped that a boy on the stage changed Emma .", "output": "HOPE ( BESIDE ( GIRL , SHOE ) , NONE , NONE ) CCOMP CHANGE ( ON ( BOY , STAGE ) , EMMA , NONE )"}
+{"input": "Form one: The girl in a glass served the boy a balloon .", "output": "SERVE ( IN ( GIRL , GLASS ) , BALLOON , BOY )"}
+{"input": "Form one: A girl in the house gave the host a bat beside the pepper .", "output": "GIVE ( IN ( GIRL , HOUSE ) , BESIDE ( BAT , PEPPER ) , HOST )"}
+{"input": "Form one: A bottle in the house was nursed .", "output": "NURSE ( NONE , IN ( BOTTLE , HOUSE ) , NONE )"}
+{"input": "Form one: The patient beside a chair gave a glue to the dog .", "output": "GIVE ( BESIDE ( PATIENT , CHAIR ) , GLUE , DOG )"}
+{"input": "Form one: The boy beside the machine in a house reddened .", "output": "REDDEN ( BESIDE ( BOY , IN ( MACHINE , HOUSE ) ) , NONE , NONE )"}
+{"input": "Form one: A girl in a container gave the brush in the cart to a duke .", "output": "GIVE ( IN ( GIRL , CONTAINER ) , IN ( BRUSH , CART ) , DUKE )"}
+{"input": "Form one: The dog on a table snored .", "output": "SNORE ( ON ( DOG , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A bat in a shoe was given to Theodore .", "output": "GIVE ( NONE , IN ( BAT , SHOE ) , THEODORE )"}
+{"input": "Form one: The frog in the cot needed to sleep .", "output": "NEED ( IN ( FROG , COT ) , NONE , NONE ) XCOMP SLEEP ( IN ( FROG , COT ) , NONE , NONE )"}
+{"input": "Form one: The dog beside a stage gave the radio to Sophia .", "output": "GIVE ( BESIDE ( DOG , STAGE ) , RADIO , SOPHIA )"}
+{"input": "Form one: The donut on the stage on a table rolled .", "output": "ROLL ( NONE , ON ( DONUT , ON ( STAGE , TABLE ) ) , NONE )"}
+{"input": "Form one: The teacher in the penthouse was given a cookie beside the table .", "output": "GIVE ( NONE , BESIDE ( COOKIE , TABLE ) , IN ( TEACHER , PENTHOUSE ) )"}
+{"input": "Form one: A child on the table helped a chalk .", "output": "HELP ( ON ( CHILD , TABLE ) , CHALK , NONE )"}
+{"input": "Form one: A giraffe on the surface liked that the child on the bible froze a block .", "output": "LIKE ( ON ( GIRAFFE , SURFACE ) , NONE , NONE ) CCOMP FREEZE ( ON ( CHILD , BIBLE ) , BLOCK , NONE )"}
+{"input": "Form one: The girl beside the table rolled the cake beside the tree .", "output": "ROLL ( BESIDE ( GIRL , TABLE ) , BESIDE ( CAKE , TREE ) , NONE )"}
+{"input": "Form one: A cake in the house was liked .", "output": "LIKE ( NONE , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: A cake on the speaker was nursed by the girl on the stage .", "output": "NURSE ( ON ( GIRL , STAGE ) , ON ( CAKE , SPEAKER ) , NONE )"}
+{"input": "Form one: A cake in the swamp was called by the baby in a house .", "output": "CALL ( IN ( BABY , HOUSE ) , IN ( CAKE , SWAMP ) , NONE )"}
+{"input": "Form one: A bat in a blender burned .", "output": "BURN ( NONE , IN ( BAT , BLENDER ) , NONE )"}
+{"input": "Form one: A girl in a jeep was given a box .", "output": "GIVE ( NONE , BOX , IN ( GIRL , JEEP ) )"}
+{"input": "Form one: A dog on a bag rolled Olivia .", "output": "ROLL ( ON ( DOG , BAG ) , OLIVIA , NONE )"}
+{"input": "Form one: A girl on the surface cried .", "output": "CRY ( ON ( GIRL , SURFACE ) , NONE , NONE )"}
+{"input": "Form one: A girl in a house on a pillow froze .", "output": "FREEZE ( IN ( GIRL , ON ( HOUSE , PILLOW ) ) , NONE , NONE )"}
+{"input": "Form one: A frog in a bag sketched .", "output": "SKETCH ( IN ( FROG , BAG ) , NONE , NONE )"}
+{"input": "Form one: A bunny beside a chair loaned a cake to Emma .", "output": "LOAN ( BESIDE ( BUNNY , CHAIR ) , CAKE , EMMA )"}
+{"input": "Form one: A president on the surface investigated .", "output": "INVESTIGATE ( ON ( PRESIDENT , SURFACE ) , NONE , NONE )"}
+{"input": "Form one: A girl in a room rolled .", "output": "ROLL ( IN ( GIRL , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The boy beside the whale slept .", "output": "SLEEP ( BESIDE ( BOY , WHALE ) , NONE , NONE )"}
+{"input": "Form one: The creature on a deck said that the mouse in a house floated a cake .", "output": "SAY ( ON ( CREATURE , DECK ) , NONE , NONE ) CCOMP FLOAT ( IN ( MOUSE , HOUSE ) , CAKE , NONE )"}
+{"input": "Form one: A girl beside the table packed a cake .", "output": "PACK ( BESIDE ( GIRL , TABLE ) , CAKE , NONE )"}
+{"input": "Form one: The donut beside a book was rolled by the girl in a envelope .", "output": "ROLL ( IN ( GIRL , ENVELOPE ) , BESIDE ( DONUT , BOOK ) , NONE )"}
+{"input": "Form one: A boy on the table hated to walk .", "output": "HATE ( ON ( BOY , TABLE ) , NONE , NONE ) XCOMP WALK ( ON ( BOY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A girl on the platter was promised the donut in a box .", "output": "PROMISE ( NONE , IN ( DONUT , BOX ) , ON ( GIRL , PLATTER ) )"}
+{"input": "Form one: The boy on the table laughed .", "output": "LAUGH ( ON ( BOY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The boy in a house froze the sailor in a can .", "output": "FREEZE ( IN ( BOY , HOUSE ) , IN ( SAILOR , CAN ) , NONE )"}
+{"input": "Form one: The girl beside a table rented Camila the cake beside the bed .", "output": "RENT ( BESIDE ( GIRL , TABLE ) , BESIDE ( CAKE , BED ) , CAMILA )"}
+{"input": "Form one: A creature in the house drew .", "output": "DRAW ( IN ( CREATURE , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The consumer on the bed gave Evelyn a molecule beside the duck .", "output": "GIVE ( ON ( CONSUMER , BED ) , BESIDE ( MOLECULE , DUCK ) , EVELYN )"}
+{"input": "Form one: The jigsaw in a house was promised to Emma .", "output": "PROMISE ( NONE , IN ( JIGSAW , HOUSE ) , EMMA )"}
+{"input": "Form one: The girl in a box was given a cake .", "output": "GIVE ( NONE , CAKE , IN ( GIRL , BOX ) )"}
+{"input": "Form one: The lion beside a piano gave the girl the donut .", "output": "GIVE ( BESIDE ( LION , PIANO ) , DONUT , GIRL )"}
+{"input": "Form one: The student in the house was lended a drink on a table .", "output": "LEND ( NONE , ON ( DRINK , TABLE ) , IN ( STUDENT , HOUSE ) )"}
+{"input": "Form one: A cake beside the table was painted .", "output": "PAINT ( NONE , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: A girl on the panel drew .", "output": "DRAW ( ON ( GIRL , PANEL ) , NONE , NONE )"}
+{"input": "Form one: A horse in the house was given the hammer beside a bed .", "output": "GIVE ( NONE , BESIDE ( HAMMER , BED ) , IN ( HORSE , HOUSE ) )"}
+{"input": "Form one: The box in the van was grown by the girl beside the table .", "output": "GROW ( BESIDE ( GIRL , TABLE ) , IN ( BOX , VAN ) , NONE )"}
+{"input": "Form one: A dog beside a table tossed the cake .", "output": "TOSS ( BESIDE ( DOG , TABLE ) , CAKE , NONE )"}
+{"input": "Form one: The boy in the room improved a pumpkin .", "output": "IMPROVE ( IN ( BOY , ROOM ) , PUMPKIN , NONE )"}
+{"input": "Form one: The cake in the glass in a container was lended to Emma .", "output": "LEND ( NONE , IN ( CAKE , IN ( GLASS , CONTAINER ) ) , EMMA )"}
+{"input": "Form one: The journalist beside the tree in the cupboard was fed a cake .", "output": "FEED ( NONE , CAKE , BESIDE ( JOURNALIST , IN ( TREE , CUPBOARD ) ) )"}
+{"input": "Form one: A monster on a cat was sent the cake beside the table .", "output": "SEND ( NONE , BESIDE ( CAKE , TABLE ) , ON ( MONSTER , CAT ) )"}
+{"input": "Form one: The lion in the cart tolerated that a plate beside a stage was pierced .", "output": "TOLERATE ( IN ( LION , CART ) , NONE , NONE ) CCOMP PIERCE ( NONE , BESIDE ( PLATE , STAGE ) , NONE )"}
+{"input": "Form one: A boy beside a chair laughed .", "output": "LAUGH ( BESIDE ( BOY , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: A girl on a table was given a cake .", "output": "GIVE ( NONE , CAKE , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: The teacher in the envelope gave the raisin to the monster .", "output": "GIVE ( IN ( TEACHER , ENVELOPE ) , RAISIN , MONSTER )"}
+{"input": "Form one: The duck on a boat was given a cake in the room .", "output": "GIVE ( NONE , IN ( CAKE , ROOM ) , ON ( DUCK , BOAT ) )"}
+{"input": "Form one: A child on the bed poked a brush in the car .", "output": "POKE ( ON ( CHILD , BED ) , IN ( BRUSH , CAR ) , NONE )"}
+{"input": "Form one: A cake in the room was eaten by the girl beside the table .", "output": "EAT ( BESIDE ( GIRL , TABLE ) , IN ( CAKE , ROOM ) , NONE )"}
+{"input": "Form one: A manager in the train helped Emma .", "output": "HELP ( IN ( MANAGER , TRAIN ) , EMMA , NONE )"}
+{"input": "Form one: A king on the chair helped a journalist .", "output": "HELP ( ON ( KING , CHAIR ) , JOURNALIST , NONE )"}
+{"input": "Form one: The turkey in a car rolled Emma .", "output": "ROLL ( IN ( TURKEY , CAR ) , EMMA , NONE )"}
+{"input": "Form one: A girl in a box lended the cookie to a goose .", "output": "LEND ( IN ( GIRL , BOX ) , COOKIE , GOOSE )"}
+{"input": "Form one: The professor on the surface was given the donut .", "output": "GIVE ( NONE , DONUT , ON ( PROFESSOR , SURFACE ) )"}
+{"input": "Form one: A donut on the stage enlarged .", "output": "ENLARGE ( NONE , ON ( DONUT , STAGE ) , NONE )"}
+{"input": "Form one: The girl in the cart drew Emma .", "output": "DRAW ( IN ( GIRL , CART ) , EMMA , NONE )"}
+{"input": "Form one: A cake on a bed was sold to the boy .", "output": "SELL ( NONE , ON ( CAKE , BED ) , BOY )"}
+{"input": "Form one: A girl beside the bed was loaned the cookie .", "output": "LOAN ( NONE , COOKIE , BESIDE ( GIRL , BED ) )"}
+{"input": "Form one: A kitty beside the worm reddened Emma .", "output": "REDDEN ( BESIDE ( KITTY , WORM ) , EMMA , NONE )"}
+{"input": "Form one: The child beside a chair ate the rose beside a shoe .", "output": "EAT ( BESIDE ( CHILD , CHAIR ) , BESIDE ( ROSE , SHOE ) , NONE )"}
+{"input": "Form one: A pupil in a bucket was offered the bowl on a table .", "output": "OFFER ( NONE , ON ( BOWL , TABLE ) , IN ( PUPIL , BUCKET ) )"}
+{"input": "Form one: A girl on a train examined Liam .", "output": "EXAMINE ( ON ( GIRL , TRAIN ) , LIAM , NONE )"}
+{"input": "Form one: The cat in the house shortened the cake .", "output": "SHORTEN ( IN ( CAT , HOUSE ) , CAKE , NONE )"}
+{"input": "Form one: The bear beside the machine needed to eat .", "output": "NEED ( BESIDE ( BEAR , MACHINE ) , NONE , NONE ) XCOMP EAT ( BESIDE ( BEAR , MACHINE ) , NONE , NONE )"}
+{"input": "Form one: The girl in a trap knew .", "output": "KNOW ( IN ( GIRL , TRAP ) , NONE , NONE )"}
+{"input": "Form one: The child on a table burned the pizza beside a stage .", "output": "BURN ( ON ( CHILD , TABLE ) , BESIDE ( PIZZA , STAGE ) , NONE )"}
+{"input": "Form one: A donut beside the rock split .", "output": "SPLIT ( NONE , BESIDE ( DONUT , ROCK ) , NONE )"}
+{"input": "Form one: The girl on a stage was sold the rose .", "output": "SELL ( NONE , ROSE , ON ( GIRL , STAGE ) )"}
+{"input": "Form one: A girl on a surface sketched .", "output": "SKETCH ( ON ( GIRL , SURFACE ) , NONE , NONE )"}
+{"input": "Form one: The boy beside a table liked Sophia .", "output": "LIKE ( BESIDE ( BOY , TABLE ) , SOPHIA , NONE )"}
+{"input": "Form one: A cat on the truck liked that the girl beside the sink shortened .", "output": "LIKE ( ON ( CAT , TRUCK ) , NONE , NONE ) CCOMP SHORTEN ( BESIDE ( GIRL , SINK ) , NONE , NONE )"}
+{"input": "Form one: The boy on the bed changed a hamburger .", "output": "CHANGE ( ON ( BOY , BED ) , HAMBURGER , NONE )"}
+{"input": "Form one: A drink in the house was rolled by a cat on the boat .", "output": "ROLL ( ON ( CAT , BOAT ) , IN ( DRINK , HOUSE ) , NONE )"}
+{"input": "Form one: The pancake beside the stage was lended to a boy by a pig on a tree .", "output": "LEND ( ON ( PIG , TREE ) , BESIDE ( PANCAKE , STAGE ) , BOY )"}
+{"input": "Form one: The boy beside a table cooked the girl .", "output": "COOK ( BESIDE ( BOY , TABLE ) , GIRL , NONE )"}
+{"input": "Form one: The girl beside a table was given the donut .", "output": "GIVE ( NONE , DONUT , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: The girl beside a house liked that a cat on a table slept .", "output": "LIKE ( BESIDE ( GIRL , HOUSE ) , NONE , NONE ) CCOMP SLEEP ( ON ( CAT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The baby in a room burned .", "output": "BURN ( IN ( BABY , ROOM ) , NONE , NONE )"}
+{"input": "Form one: The baby on a corpse was lended a donut by the girl on the stage .", "output": "LEND ( ON ( GIRL , STAGE ) , DONUT , ON ( BABY , CORPSE ) )"}
+{"input": "Form one: The cookie beside a book was reddened by the guy in a bottle .", "output": "REDDEN ( IN ( GUY , BOTTLE ) , BESIDE ( COOKIE , BOOK ) , NONE )"}
+{"input": "Form one: A cake in the house was rolled .", "output": "ROLL ( NONE , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: The boy on a stage was given a box by the bird on a table .", "output": "GIVE ( ON ( BIRD , TABLE ) , BOX , ON ( BOY , STAGE ) )"}
+{"input": "Form one: The girl in a house ate .", "output": "EAT ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The donut beside the table was given to Emma .", "output": "GIVE ( NONE , BESIDE ( DONUT , TABLE ) , EMMA )"}
+{"input": "Form one: The cake beside the tree in a bag was tolerated .", "output": "TOLERATE ( NONE , BESIDE ( CAKE , IN ( TREE , BAG ) ) , NONE )"}
+{"input": "Form one: The dog beside the stage painted Emily .", "output": "PAINT ( BESIDE ( DOG , STAGE ) , EMILY , NONE )"}
+{"input": "Form one: The cake beside a chair was posted to Elizabeth by the boy in the bun .", "output": "POST ( IN ( BOY , BUN ) , BESIDE ( CAKE , CHAIR ) , ELIZABETH )"}
+{"input": "Form one: A bird on the bed slid the girl .", "output": "SLIDE ( ON ( BIRD , BED ) , GIRL , NONE )"}
+{"input": "Form one: A child on the piano wanted to eat .", "output": "WANT ( ON ( CHILD , PIANO ) , NONE , NONE ) XCOMP EAT ( ON ( CHILD , PIANO ) , NONE , NONE )"}
+{"input": "Form one: A toothbrush beside a table was appreciated .", "output": "APPRECIATE ( NONE , BESIDE ( TOOTHBRUSH , TABLE ) , NONE )"}
+{"input": "Form one: A mouse in the room expected that a dog on a cupboard screamed .", "output": "EXPECT ( IN ( MOUSE , ROOM ) , NONE , NONE ) CCOMP SCREAM ( ON ( DOG , CUPBOARD ) , NONE , NONE )"}
+{"input": "Form one: The cat beside a table was handed a cake .", "output": "HAND ( NONE , CAKE , BESIDE ( CAT , TABLE ) )"}
+{"input": "Form one: The dog on a table scoffed .", "output": "SCOFF ( ON ( DOG , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A boy in a car liked the donut .", "output": "LIKE ( IN ( BOY , CAR ) , DONUT , NONE )"}
+{"input": "Form one: The bunny beside the stage in the room loved to run .", "output": "LOVE ( BESIDE ( BUNNY , IN ( STAGE , ROOM ) ) , NONE , NONE ) XCOMP RUN ( BESIDE ( BUNNY , IN ( STAGE , ROOM ) ) , NONE , NONE )"}
+{"input": "Form one: A donut on the glacier was inflated by the lion on the table .", "output": "INFLATE ( ON ( LION , TABLE ) , ON ( DONUT , GLACIER ) , NONE )"}
+{"input": "Form one: A girl beside the tree meant to walk .", "output": "MEAN ( BESIDE ( GIRL , TREE ) , NONE , NONE ) XCOMP WALK ( BESIDE ( GIRL , TREE ) , NONE , NONE )"}
+{"input": "Form one: The donut in the room was doubled .", "output": "DOUBLE ( NONE , IN ( DONUT , ROOM ) , NONE )"}
+{"input": "Form one: The ball on the table was rolled by the boy on a bed .", "output": "ROLL ( ON ( BOY , BED ) , ON ( BALL , TABLE ) , NONE )"}
+{"input": "Form one: The cake beside a table was hunted .", "output": "HUNT ( NONE , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The chicken on a table rented the bean on the log to a girl .", "output": "RENT ( ON ( CHICKEN , TABLE ) , ON ( BEAN , LOG ) , GIRL )"}
+{"input": "Form one: The girl on the seat thought that the boy beside the sphere ate .", "output": "THINK ( ON ( GIRL , SEAT ) , NONE , NONE ) CCOMP EAT ( BESIDE ( BOY , SPHERE ) , NONE , NONE )"}
+{"input": "Form one: The girl in the room was given the pen by the frog beside the table .", "output": "GIVE ( BESIDE ( FROG , TABLE ) , PEN , IN ( GIRL , ROOM ) )"}
+{"input": "Form one: A boy on a bed sent the cat a donut .", "output": "SEND ( ON ( BOY , BED ) , DONUT , CAT )"}
+{"input": "Form one: A book on a stage was loaned to the boy .", "output": "LOAN ( NONE , ON ( BOOK , STAGE ) , BOY )"}
+{"input": "Form one: The mother in the garden was returned a donut by the dealer beside the bed .", "output": "RETURN ( BESIDE ( DEALER , BED ) , DONUT , IN ( MOTHER , GARDEN ) )"}
+{"input": "Form one: A cake in the house was lended to Noah by a girl beside a bin .", "output": "LEND ( BESIDE ( GIRL , BIN ) , IN ( CAKE , HOUSE ) , NOAH )"}
+{"input": "Form one: A pony on a crack fed the guitar beside a broker to the sailor .", "output": "FEED ( ON ( PONY , CRACK ) , BESIDE ( GUITAR , BROKER ) , SAILOR )"}
+{"input": "Form one: A teacher on the table cried .", "output": "CRY ( ON ( TEACHER , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A teacher beside a table danced .", "output": "DANCE ( BESIDE ( TEACHER , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A friend beside the table ate .", "output": "EAT ( BESIDE ( FRIEND , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A chemical in a house was appreciated by the girl in the vehicle .", "output": "APPRECIATE ( IN ( GIRL , VEHICLE ) , IN ( CHEMICAL , HOUSE ) , NONE )"}
+{"input": "Form one: A boy on the surface gave the girl a bell .", "output": "GIVE ( ON ( BOY , SURFACE ) , BELL , GIRL )"}
+{"input": "Form one: The girl on a crack rolled .", "output": "ROLL ( ON ( GIRL , CRACK ) , NONE , NONE )"}
+{"input": "Form one: The cake beside a cat was stabbed .", "output": "STAB ( NONE , BESIDE ( CAKE , CAT ) , NONE )"}
+{"input": "Form one: A girl on a bed wanted to walk .", "output": "WANT ( ON ( GIRL , BED ) , NONE , NONE ) XCOMP WALK ( ON ( GIRL , BED ) , NONE , NONE )"}
+{"input": "Form one: A donut beside the tree was liked .", "output": "LIKE ( NONE , BESIDE ( DONUT , TREE ) , NONE )"}
+{"input": "Form one: The girl in the tin fed the cake beside a clock to Liam .", "output": "FEED ( IN ( GIRL , TIN ) , BESIDE ( CAKE , CLOCK ) , LIAM )"}
+{"input": "Form one: The kid on a trampoline slept .", "output": "SLEEP ( ON ( KID , TRAMPOLINE ) , NONE , NONE )"}
+{"input": "Form one: The balloon beside a machine was seen by a girl beside the table .", "output": "SEE ( BESIDE ( GIRL , TABLE ) , BESIDE ( BALLOON , MACHINE ) , NONE )"}
+{"input": "Form one: A poet on a stool was passed a donut beside the table .", "output": "PASS ( NONE , BESIDE ( DONUT , TABLE ) , ON ( POET , STOOL ) )"}
+{"input": "Form one: A boy on the stool studied Emma .", "output": "STUDY ( ON ( BOY , STOOL ) , EMMA , NONE )"}
+{"input": "Form one: The dog in a hole hoped that a bunny beside the torch sneezed .", "output": "HOPE ( IN ( DOG , HOLE ) , NONE , NONE ) CCOMP SNEEZE ( BESIDE ( BUNNY , TORCH ) , NONE , NONE )"}
+{"input": "Form one: The cake beside the cabinet was drawn .", "output": "DRAW ( NONE , BESIDE ( CAKE , CABINET ) , NONE )"}
+{"input": "Form one: A boy on a bed liked Liam .", "output": "LIKE ( ON ( BOY , BED ) , LIAM , NONE )"}
+{"input": "Form one: The monkey in the garden was given the cracker by a teacher in the house .", "output": "GIVE ( IN ( TEACHER , HOUSE ) , CRACKER , IN ( MONKEY , GARDEN ) )"}
+{"input": "Form one: The girl beside a bed crumpled the goose in the basin .", "output": "CRUMPLE ( BESIDE ( GIRL , BED ) , IN ( GOOSE , BASIN ) , NONE )"}
+{"input": "Form one: A cake on a table was passed to Emma .", "output": "PASS ( NONE , ON ( CAKE , TABLE ) , EMMA )"}
+{"input": "Form one: A guest beside a bed was given a cake .", "output": "GIVE ( NONE , CAKE , BESIDE ( GUEST , BED ) )"}
+{"input": "Form one: A bird on the road was fed the donut on a stage .", "output": "FEED ( NONE , ON ( DONUT , STAGE ) , ON ( BIRD , ROAD ) )"}
+{"input": "Form one: The boy on the stage offered the girl a cookie .", "output": "OFFER ( ON ( BOY , STAGE ) , COOKIE , GIRL )"}
+{"input": "Form one: A boy beside a table beside the house passed the strawberry to the giraffe .", "output": "PASS ( BESIDE ( BOY , BESIDE ( TABLE , HOUSE ) ) , STRAWBERRY , GIRAFFE )"}
+{"input": "Form one: A child in a car smiled .", "output": "SMILE ( IN ( CHILD , CAR ) , NONE , NONE )"}
+{"input": "Form one: The girl in the tub lended Emma the cake .", "output": "LEND ( IN ( GIRL , TUB ) , CAKE , EMMA )"}
+{"input": "Form one: The girl on a table ate Emma .", "output": "EAT ( ON ( GIRL , TABLE ) , EMMA , NONE )"}
+{"input": "Form one: A princess on a TV respected that a girl on the table was given a donut .", "output": "RESPECT ( ON ( PRINCESS , TV ) , NONE , NONE ) CCOMP GIVE ( NONE , DONUT , ON ( GIRL , TABLE ) )"}
+{"input": "Form one: A cookie beside the table was liked .", "output": "LIKE ( NONE , BESIDE ( COOKIE , TABLE ) , NONE )"}
+{"input": "Form one: The hero beside a stage was given the donut .", "output": "GIVE ( NONE , DONUT , BESIDE ( HERO , STAGE ) )"}
+{"input": "Form one: The girl in the house grew the boy .", "output": "GROW ( IN ( GIRL , HOUSE ) , BOY , NONE )"}
+{"input": "Form one: The cake in the house was poked by a puppy on the table .", "output": "POKE ( ON ( PUPPY , TABLE ) , IN ( CAKE , HOUSE ) , NONE )"}
+{"input": "Form one: The donut in the nest was served to the girl by a boy beside the seat .", "output": "SERVE ( BESIDE ( BOY , SEAT ) , IN ( DONUT , NEST ) , GIRL )"}
+{"input": "Form one: A frog beside the table painted Emma .", "output": "PAINT ( BESIDE ( FROG , TABLE ) , EMMA , NONE )"}
+{"input": "Form one: A teacher on the shelf returned the bell to Emma .", "output": "RETURN ( ON ( TEACHER , SHELF ) , BELL , EMMA )"}
+{"input": "Form one: A girl on a train burned a weapon in the envelope .", "output": "BURN ( ON ( GIRL , TRAIN ) , IN ( WEAPON , ENVELOPE ) , NONE )"}
+{"input": "Form one: A teacher on a stage served a cake to a driver .", "output": "SERVE ( ON ( TEACHER , STAGE ) , CAKE , DRIVER )"}
+{"input": "Form one: A basket in a garden floated .", "output": "FLOAT ( NONE , IN ( BASKET , GARDEN ) , NONE )"}
+{"input": "Form one: A boy in a tomb was served a box .", "output": "SERVE ( NONE , BOX , IN ( BOY , TOMB ) )"}
+{"input": "Form one: A fly on the stage split .", "output": "SPLIT ( ON ( FLY , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The girl on the table collapsed the rose on the trampoline .", "output": "COLLAPSE ( ON ( GIRL , TABLE ) , ON ( ROSE , TRAMPOLINE ) , NONE )"}
+{"input": "Form one: A donut beside the bag was shortened by the zebra beside the stage .", "output": "SHORTEN ( BESIDE ( ZEBRA , STAGE ) , BESIDE ( DONUT , BAG ) , NONE )"}
+{"input": "Form one: A drink beside the table was eaten .", "output": "EAT ( NONE , BESIDE ( DRINK , TABLE ) , NONE )"}
+{"input": "Form one: The cake in the room was seen .", "output": "SEE ( NONE , IN ( CAKE , ROOM ) , NONE )"}
+{"input": "Form one: A dog beside a chair said that a melon on the bed was liked .", "output": "SAY ( BESIDE ( DOG , CHAIR ) , NONE , NONE ) CCOMP LIKE ( NONE , ON ( MELON , BED ) , NONE )"}
+{"input": "Form one: The girl on the stage wanted to walk .", "output": "WANT ( ON ( GIRL , STAGE ) , NONE , NONE ) XCOMP WALK ( ON ( GIRL , STAGE ) , NONE , NONE )"}
+{"input": "Form one: A baby in the car offered a cake on a bible to Charlotte .", "output": "OFFER ( IN ( BABY , CAR ) , ON ( CAKE , BIBLE ) , CHARLOTTE )"}
+{"input": "Form one: A baby beside a stage beside a toy wanted to nap .", "output": "WANT ( BESIDE ( BABY , BESIDE ( STAGE , TOY ) ) , NONE , NONE ) XCOMP NAP ( BESIDE ( BABY , BESIDE ( STAGE , TOY ) ) , NONE , NONE )"}
+{"input": "Form one: A girl beside a stage cooked a cake in the shoe .", "output": "COOK ( BESIDE ( GIRL , STAGE ) , IN ( CAKE , SHOE ) , NONE )"}
+{"input": "Form one: The lion beside a stage beside the bench gave a girl the pillow .", "output": "GIVE ( BESIDE ( LION , BESIDE ( STAGE , BENCH ) ) , PILLOW , GIRL )"}
+{"input": "Form one: A game on a stage was given to Emma .", "output": "GIVE ( NONE , ON ( GAME , STAGE ) , EMMA )"}
+{"input": "Form one: The girl on the ladder was offered a cake .", "output": "OFFER ( NONE , CAKE , ON ( GIRL , LADDER ) )"}
+{"input": "Form one: The frog on a stage packed .", "output": "PACK ( ON ( FROG , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The mouse on a table gave the donut in the nest to a cat .", "output": "GIVE ( ON ( MOUSE , TABLE ) , IN ( DONUT , NEST ) , CAT )"}
+{"input": "Form one: The child in the cup liked that a cake on a table was seen .", "output": "LIKE ( IN ( CHILD , CUP ) , NONE , NONE ) CCOMP SEE ( NONE , ON ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The girl beside a chair drew Grace .", "output": "DRAW ( BESIDE ( GIRL , CHAIR ) , GRACE , NONE )"}
+{"input": "Form one: A girl on the chair slept .", "output": "SLEEP ( ON ( GIRL , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The girl beside the table drew .", "output": "DRAW ( BESIDE ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The cake in the room was given to Liam .", "output": "GIVE ( NONE , IN ( CAKE , ROOM ) , LIAM )"}
+{"input": "Form one: A boy on the plate jogged .", "output": "JOG ( ON ( BOY , PLATE ) , NONE , NONE )"}
+{"input": "Form one: A boy beside a broker lended Emma the melon on the plate .", "output": "LEND ( BESIDE ( BOY , BROKER ) , ON ( MELON , PLATE ) , EMMA )"}
+{"input": "Form one: The cat beside the table threw the potato .", "output": "THROW ( BESIDE ( CAT , TABLE ) , POTATO , NONE )"}
+{"input": "Form one: The kitty beside the bed froze .", "output": "FREEZE ( BESIDE ( KITTY , BED ) , NONE , NONE )"}
+{"input": "Form one: A cat on a table wanted to walk .", "output": "WANT ( ON ( CAT , TABLE ) , NONE , NONE ) XCOMP WALK ( ON ( CAT , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The flag beside the glass was missed .", "output": "MISS ( NONE , BESIDE ( FLAG , GLASS ) , NONE )"}
+{"input": "Form one: The boy beside the road dusted Charlotte .", "output": "DUST ( BESIDE ( BOY , ROAD ) , CHARLOTTE , NONE )"}
+{"input": "Form one: The cookie on the chair was eaten .", "output": "EAT ( NONE , ON ( COOKIE , CHAIR ) , NONE )"}
+{"input": "Form one: A moose on the bed wanted to giggle .", "output": "WANT ( ON ( MOOSE , BED ) , NONE , NONE ) XCOMP GIGGLE ( ON ( MOOSE , BED ) , NONE , NONE )"}
+{"input": "Form one: The monkey beside a stage was given a donut beside the table .", "output": "GIVE ( NONE , BESIDE ( DONUT , TABLE ) , BESIDE ( MONKEY , STAGE ) )"}
+{"input": "Form one: The bee in a house rolled .", "output": "ROLL ( IN ( BEE , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A block beside the rock in the cup was admired .", "output": "ADMIRE ( NONE , BESIDE ( BLOCK , IN ( ROCK , CUP ) ) , NONE )"}
+{"input": "Form one: The girl in a haystack gave a chalk to the spokesman .", "output": "GIVE ( IN ( GIRL , HAYSTACK ) , CHALK , SPOKESMAN )"}
+{"input": "Form one: A queen on a device screamed .", "output": "SCREAM ( ON ( QUEEN , DEVICE ) , NONE , NONE )"}
+{"input": "Form one: A giraffe on a table rolled the yogurt beside the cup .", "output": "ROLL ( ON ( GIRAFFE , TABLE ) , BESIDE ( YOGURT , CUP ) , NONE )"}
+{"input": "Form one: A girl in the house was lended a fig on the box .", "output": "LEND ( NONE , ON ( FIG , BOX ) , IN ( GIRL , HOUSE ) )"}
+{"input": "Form one: A boy on a table liked that the girl beside a book attempted to talk .", "output": "LIKE ( ON ( BOY , TABLE ) , NONE , NONE ) CCOMP ATTEMPT ( BESIDE ( GIRL , BOOK ) , NONE , NONE ) XCOMP TALK ( BESIDE ( GIRL , BOOK ) , NONE , NONE )"}
+{"input": "Form one: A buyer beside the table rolled the cake in the backpack .", "output": "ROLL ( BESIDE ( BUYER , TABLE ) , IN ( CAKE , BACKPACK ) , NONE )"}
+{"input": "Form one: A donut on a table was given to Brooklyn by the chicken in the room .", "output": "GIVE ( IN ( CHICKEN , ROOM ) , ON ( DONUT , TABLE ) , BROOKLYN )"}
+{"input": "Form one: The donut on the stage was liked .", "output": "LIKE ( NONE , ON ( DONUT , STAGE ) , NONE )"}
+{"input": "Form one: A fish on a leaflet loaned the cat the donut beside the stage .", "output": "LOAN ( ON ( FISH , LEAFLET ) , BESIDE ( DONUT , STAGE ) , CAT )"}
+{"input": "Form one: The scarf on a table was floated by the sailor in the hammock .", "output": "FLOAT ( IN ( SAILOR , HAMMOCK ) , ON ( SCARF , TABLE ) , NONE )"}
+{"input": "Form one: A cake in the tin was offered to Noah .", "output": "OFFER ( NONE , IN ( CAKE , TIN ) , NOAH )"}
+{"input": "Form one: The girl in a box inflated .", "output": "INFLATE ( IN ( GIRL , BOX ) , NONE , NONE )"}
+{"input": "Form one: The cake on the desk was rented to Luna .", "output": "RENT ( NONE , ON ( CAKE , DESK ) , LUNA )"}
+{"input": "Form one: The book in the house was liked by the girl on a stool .", "output": "LIKE ( ON ( GIRL , STOOL ) , IN ( BOOK , HOUSE ) , NONE )"}
+{"input": "Form one: The boy in a bush liked Ryan .", "output": "LIKE ( IN ( BOY , BUSH ) , RYAN , NONE )"}
+{"input": "Form one: The frog in the room was brought a box .", "output": "BRING ( NONE , BOX , IN ( FROG , ROOM ) )"}
+{"input": "Form one: The shell beside the cylinder was liked .", "output": "LIKE ( NONE , BESIDE ( SHELL , CYLINDER ) , NONE )"}
+{"input": "Form one: The cake in the trailer was passed to the chicken by a dog beside a tent .", "output": "PASS ( BESIDE ( DOG , TENT ) , IN ( CAKE , TRAILER ) , CHICKEN )"}
+{"input": "Form one: The pig on a stage admired that a balloon on the road was helped .", "output": "ADMIRE ( ON ( PIG , STAGE ) , NONE , NONE ) CCOMP HELP ( NONE , ON ( BALLOON , ROAD ) , NONE )"}
+{"input": "Form one: The tenant beside the stage in the house lended the cat the chalk .", "output": "LEND ( BESIDE ( TENANT , IN ( STAGE , HOUSE ) ) , CHALK , CAT )"}
+{"input": "Form one: A cake on a box was respected by the boy in a bottle .", "output": "RESPECT ( IN ( BOY , BOTTLE ) , ON ( CAKE , BOX ) , NONE )"}
+{"input": "Form one: The monkey beside a seat lended the crayon to Emma .", "output": "LEND ( BESIDE ( MONKEY , SEAT ) , CRAYON , EMMA )"}
+{"input": "Form one: The lion beside a stage ate .", "output": "EAT ( BESIDE ( LION , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The cat beside a machine tossed a cake .", "output": "TOSS ( BESIDE ( CAT , MACHINE ) , CAKE , NONE )"}
+{"input": "Form one: A donut on the TV was disintegrated by a crocodile beside a book .", "output": "DISINTEGRATE ( BESIDE ( CROCODILE , BOOK ) , ON ( DONUT , TV ) , NONE )"}
+{"input": "Form one: A priest on the box admired a cake on the table .", "output": "ADMIRE ( ON ( PRIEST , BOX ) , ON ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The cake on the table was returned to the frog .", "output": "RETURN ( NONE , ON ( CAKE , TABLE ) , FROG )"}
+{"input": "Form one: The cake beside the table was liked .", "output": "LIKE ( NONE , BESIDE ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: The child beside the chair slept .", "output": "SLEEP ( BESIDE ( CHILD , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The donkey on a table believed that a chicken in the house nursed .", "output": "BELIEVE ( ON ( DONKEY , TABLE ) , NONE , NONE ) CCOMP NURSE ( IN ( CHICKEN , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: The girl in a house beside a table collapsed a child .", "output": "COLLAPSE ( IN ( GIRL , BESIDE ( HOUSE , TABLE ) ) , CHILD , NONE )"}
+{"input": "Form one: A girl on a stool observed .", "output": "OBSERVE ( ON ( GIRL , STOOL ) , NONE , NONE )"}
+{"input": "Form one: The teacher on a table was sold a cake .", "output": "SELL ( NONE , CAKE , ON ( TEACHER , TABLE ) )"}
+{"input": "Form one: A baby on a chair was served a cake .", "output": "SERVE ( NONE , CAKE , ON ( BABY , CHAIR ) )"}
+{"input": "Form one: The mouse beside a bed was lended a muffin .", "output": "LEND ( NONE , MUFFIN , BESIDE ( MOUSE , BED ) )"}
+{"input": "Form one: A girl in the room shortened .", "output": "SHORTEN ( IN ( GIRL , ROOM ) , NONE , NONE )"}
+{"input": "Form one: A lion in a haystack crumpled .", "output": "CRUMPLE ( IN ( LION , HAYSTACK ) , NONE , NONE )"}
+{"input": "Form one: The penguin on a table decomposed .", "output": "DECOMPOSE ( ON ( PENGUIN , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The duck on a rock hoped to run .", "output": "HOPE ( ON ( DUCK , ROCK ) , NONE , NONE ) XCOMP RUN ( ON ( DUCK , ROCK ) , NONE , NONE )"}
+{"input": "Form one: A dog on the table loved Sophia .", "output": "LOVE ( ON ( DOG , TABLE ) , SOPHIA , NONE )"}
+{"input": "Form one: A chicken in a car served a cat a box in the bun .", "output": "SERVE ( IN ( CHICKEN , CAR ) , IN ( BOX , BUN ) , CAT )"}
+{"input": "Form one: A boy beside the chair sneezed .", "output": "SNEEZE ( BESIDE ( BOY , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The president beside a bed painted a cake .", "output": "PAINT ( BESIDE ( PRESIDENT , BED ) , CAKE , NONE )"}
+{"input": "Form one: A girl on the dog handed a cat the raisin on a table .", "output": "HAND ( ON ( GIRL , DOG ) , ON ( RAISIN , TABLE ) , CAT )"}
+{"input": "Form one: The girl in the vehicle was given the donut .", "output": "GIVE ( NONE , DONUT , IN ( GIRL , VEHICLE ) )"}
+{"input": "Form one: The boy on a towel gave the frog the cake on a booklet .", "output": "GIVE ( ON ( BOY , TOWEL ) , ON ( CAKE , BOOKLET ) , FROG )"}
+{"input": "Form one: The cat beside the stool gave a cake in a cup to a customer .", "output": "GIVE ( BESIDE ( CAT , STOOL ) , IN ( CAKE , CUP ) , CUSTOMER )"}
+{"input": "Form one: A guitar on the cat was dusted by a boy on a vessel .", "output": "DUST ( ON ( BOY , VESSEL ) , ON ( GUITAR , CAT ) , NONE )"}
+{"input": "Form one: A girl in a house preferred to sneeze .", "output": "PREFER ( IN ( GIRL , HOUSE ) , NONE , NONE ) XCOMP SNEEZE ( IN ( GIRL , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A cow in the puddle slept .", "output": "SLEEP ( IN ( COW , PUDDLE ) , NONE , NONE )"}
+{"input": "Form one: A girl beside the table on a stage stuttered .", "output": "STUTTER ( BESIDE ( GIRL , ON ( TABLE , STAGE ) ) , NONE , NONE )"}
+{"input": "Form one: A director in a house walked .", "output": "WALK ( IN ( DIRECTOR , HOUSE ) , NONE , NONE )"}
+{"input": "Form one: A girl in a storage was sold the bottle .", "output": "SELL ( NONE , BOTTLE , IN ( GIRL , STORAGE ) )"}
+{"input": "Form one: The cat beside a surgeon liked Claire .", "output": "LIKE ( BESIDE ( CAT , SURGEON ) , CLAIRE , NONE )"}
+{"input": "Form one: The raisin beside the table was valued by a bear beside a stage .", "output": "VALUE ( BESIDE ( BEAR , STAGE ) , BESIDE ( RAISIN , TABLE ) , NONE )"}
+{"input": "Form one: The cake on the table burned .", "output": "BURN ( NONE , ON ( CAKE , TABLE ) , NONE )"}
+{"input": "Form one: A cat beside the monkey beside the duck was lended the donut .", "output": "LEND ( NONE , DONUT , BESIDE ( CAT , BESIDE ( MONKEY , DUCK ) ) )"}
+{"input": "Form one: A donut on a chair was handed to Liam by the girl beside a road .", "output": "HAND ( BESIDE ( GIRL , ROAD ) , ON ( DONUT , CHAIR ) , LIAM )"}
+{"input": "Form one: A host beside a table smiled .", "output": "SMILE ( BESIDE ( HOST , TABLE ) , NONE , NONE )"}
+{"input": "Form one: A boy in a cot was given a nail .", "output": "GIVE ( NONE , NAIL , IN ( BOY , COT ) )"}
+{"input": "Form one: A baby on a table burned .", "output": "BURN ( ON ( BABY , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The resident in a house was lended the game beside the stage .", "output": "LEND ( NONE , BESIDE ( GAME , STAGE ) , IN ( RESIDENT , HOUSE ) )"}
+{"input": "Form one: The frog beside a table appreciated that a bee in the room wanted to run .", "output": "APPRECIATE ( BESIDE ( FROG , TABLE ) , NONE , NONE ) CCOMP WANT ( IN ( BEE , ROOM ) , NONE , NONE ) XCOMP RUN ( IN ( BEE , ROOM ) , NONE , NONE )"}
+{"input": "Form one: A frog on the table changed Emma .", "output": "CHANGE ( ON ( FROG , TABLE ) , EMMA , NONE )"}
+{"input": "Form one: The girl beside a table ate .", "output": "EAT ( BESIDE ( GIRL , TABLE ) , NONE , NONE )"}
+{"input": "Form one: The cat on the hanger rented the box to a child .", "output": "RENT ( ON ( CAT , HANGER ) , BOX , CHILD )"}
+{"input": "Form one: A muffin in the mug was liked by a boy on a bed .", "output": "LIKE ( ON ( BOY , BED ) , IN ( MUFFIN , MUG ) , NONE )"}
+{"input": "Form one: The chief beside the skull rolled Grace .", "output": "ROLL ( BESIDE ( CHIEF , SKULL ) , GRACE , NONE )"}
+{"input": "Form one: A squirrel in a house beside the table tolerated Liam .", "output": "TOLERATE ( IN ( SQUIRREL , BESIDE ( HOUSE , TABLE ) ) , LIAM , NONE )"}
+{"input": "Form one: The cake beside a bed was liked by the bird in the glass .", "output": "LIKE ( IN ( BIRD , GLASS ) , BESIDE ( CAKE , BED ) , NONE )"}
+{"input": "Form one: The boy beside a chair danced .", "output": "DANCE ( BESIDE ( BOY , CHAIR ) , NONE , NONE )"}
+{"input": "Form one: The girl beside the stage preferred to nap .", "output": "PREFER ( BESIDE ( GIRL , STAGE ) , NONE , NONE ) XCOMP NAP ( BESIDE ( GIRL , STAGE ) , NONE , NONE )"}
+{"input": "Form one: The pencil in a pot was sold to Emma by a frog on the table .", "output": "SELL ( ON ( FROG , TABLE ) , IN ( PENCIL , POT ) , EMMA )"}
+{"input": "Form one: The bird in the cup ate .", "output": "EAT ( IN ( BIRD , CUP ) , NONE , NONE )"}
+{"input": "Form one: The donut on a bed was liked by the girl on a table .", "output": "LIKE ( ON ( GIRL , TABLE ) , ON ( DONUT , BED ) , NONE )"}
+{"input": "Form one: A girl beside the table was lended the cake by a manager beside the whale .", "output": "LEND ( BESIDE ( MANAGER , WHALE ) , CAKE , BESIDE ( GIRL , TABLE ) )"}
+{"input": "Form one: The baby on the stage gave the girl a cake .", "output": "GIVE ( ON ( BABY , STAGE ) , CAKE , GIRL )"}
+{"input": "Form one: The balloon on the rock was rolled by the baby beside a giant .", "output": "ROLL ( BESIDE ( BABY , GIANT ) , ON ( BALLOON , ROCK ) , NONE )"}

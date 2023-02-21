@@ -1,0 +1,7 @@
+torch == 1.7.0+cu101
+numpy
+transformers == 4.6.0
+nltk
+datasets
+rouge-score
+sentencepiece
