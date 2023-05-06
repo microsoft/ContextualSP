@@ -10,6 +10,19 @@ Please first install [PyTorch](https://pytorch.org/), and then install all the d
 pip install -r requirements.txt
 ```
 
+Please remember to unzip the `json.zip` in the `data/wtq_grounding` folder. And the file structure should be like:
+
+```bash
+data/wtq_grounding
+├── json
+│   ├── 202.json
+│   ├── 203.json
+│   ├── ...
+├── dev.json
+├── test.json
+└── ...
+```
+
 # Train Grounding Model
 
 ## Train Grounding Model on Spider
@@ -26,7 +39,7 @@ Please run the script `train_wtq_ground.sh` to train the grounding model on WTQ 
 
 Please run the script `eval_spider_ground.sh` to evaluate the grounding model on Spider dataset. Note that you should replace the model checkpoint `checkpoints/spider_grounding_model/model.pt` with yours.
 
-We also provide pre-trained model weights at [here](), which reports the performance as below:
+You should get the following results after following the training script:
 
 ```bash
 avg loss = 0.2189                                                                                                 
