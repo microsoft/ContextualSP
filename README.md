@@ -48,7 +48,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 > Xinyu Pi*, Bing Wang*, Yan Gao, Jiaqi Guo, Zhoujun Li, Jian-Guang Lou, ACL 2022.
 
 > **[Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](awakening_latent_grounding)**
-> Qian Liu*, Dejian Yang*, Jiaqi Guo, Bin Zhou, Jian-Guang Lou, ACL 2021 Findings.
+> Qian Liu*, Dejian Yang*, Jiahui Zhang*, Jiaqi Guo, Bin Zhou, Jian-Guang Lou, ACL 2021 Findings.
 > 
 ### Compositional Generalization
 
