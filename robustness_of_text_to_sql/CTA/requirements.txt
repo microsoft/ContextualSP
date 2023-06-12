@@ -41,7 +41,7 @@ torch-geometric==2.0.3
 torch-sparse==0.6.12
 torch-struct==0.5
 tqdm==4.62.3
-transformers==4.15.0
+transformers==4.30.0
 typer==0.4.0
 typing_extensions==4.0.1
 wasabi==0.9.0
