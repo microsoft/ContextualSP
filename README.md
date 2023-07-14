@@ -10,6 +10,7 @@ This repo hosts multiple open-source codes of the [Microsoft Research Asia DKI G
 - October, 2022: our paper [Towards Knowledge-Intensive Text-to-SQL Semantic Parsing with Formulaic Knowledge](https://arxiv.org/abs/2301.01067) was accepted by EMNLP 2022.
 - October, 2022: our paper [Reasoning Like Program Executors](https://arxiv.org/abs/2201.11473) was accepted by EMNLP 2022.
 - October, 2022: our paper [LEMON: Language-Based Environment Manipulation via Execution-guided Pre-training](https://arxiv.org/abs/2201.08081) was accepted by EMNLP 2022 Findings.
+- October, 2022: our paper [AdapterShare: Task Correlation Modeling with Adapter Differentiation](https://aclanthology.org/2022.emnlp-main.728.pdf) was accepted by EMNLP 2022.
 - Septempter, 2022: our paper [LogiGAN: Learning Logical Reasoning via Adversarial Pre-training](https://arxiv.org/abs/2205.08794) was accepted by NeurIPS 2022.
 - March, 2022: Our paper [Towards Robustness of Text-to-SQL Models Against Natural and Realistic Adversarial Table Perturbation](https://aclanthology.org/2022.acl-long.142.pdf) was accepted by ACL 2022.
 - August, 2021: Our paper [Awakening Latent Grounding from Pretrained Language Models for Semantic Parsing](https://aclanthology.org/2021.findings-acl.100.pdf) was accepted by ACL 2021 Findings.

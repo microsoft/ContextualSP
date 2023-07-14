@@ -1,0 +1,33 @@
+description: Adapter Differentiation for MT-NLU Job on AMLK8s
+
+target:
+  service: amlk8s
+  # run "amlt target list amlk8s" to list the names of available AMLK8s targets
+  name: itpeusp100cl
+  vc: resrchvc
+
+environment:
+  image: python:3.6
+  registry: docker.io # any public registry can be specified here
+  setup:
+    - pip install -r requirements.txt
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR
+
+# data:
+#   data upload is not required for this example
+
+# list of jobs to run, we run 1 jobs in this example
+jobs:
+- name: mtnlu-diff
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_diff_train.sh -tr mnli,cola,qnli,qqp,rte,sst,stsb,wnli -te mnli_matched,cola,qnli,qqp,rte,sst,stsb,wnli -ls 1000 -ss 2000  > /mnt/chenzhi/LOGS/mtnlu_diff_mid0_ite90.log

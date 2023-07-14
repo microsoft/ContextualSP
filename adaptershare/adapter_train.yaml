@@ -1,0 +1,116 @@
+description: Adapter MT-NLU Job on AMLK8s
+
+target:
+  service: amlk8s
+  # run "amlt target list amlk8s" to list the names of available AMLK8s targets
+  name: itpeusp100cl
+  vc: resrchvc
+
+environment:
+  image: python:3.6
+  registry: docker.io # any public registry can be specified here
+  setup:
+    - pip install -r requirements.txt
+
+code:
+  # local directory of the code. this will be uploaded to the server.
+  # $CONFIG_DIR is expanded to the directory of this config file
+  local_dir: $CONFIG_DIR
+
+jobs:
+- name: mtnlu-mnli
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr mnli -te mnli_matched,mnli_mismatched -ls 1000 -ss 5000  > LOGS/mtnlu_mnli.log
+
+- name: mtnlu-cola
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr cola -te cola -ls 100 -ss 500  > LOGS/mtnlu_cola.log
+
+
+- name: mtnlu-qnli
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr qnli -te qnli -ls 500 -ss 1000  > LOGS/mtnlu_qnli.log
+
+
+- name: mtnlu-qqp
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr qqp -te qqp -ls 1000 -ss 5000  > LOGS/mtnlu_qqp.log
+
+
+- name: mtnlu-rte
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr rte -te rte -ls 100 -ss 100  > LOGS/mtnlu_rte.log
+
+
+- name: mtnlu-sst
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr sst -te sst -ls 1000 -ss 2000  > LOGS/mtnlu_sst.log
+
+
+- name: mtnlu-stsb
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr stsb -te stsb -ls 100 -ss 200  > LOGS/mtnlu_stsb.log
+
+
+- name: mtnlu-wnli
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr wnli -te wnli -ls 50 -ss 100  > LOGS/mtnlu_wnli.log
+
+
+- name: mtnlu-unified
+  sku: G1
+  command:
+  - sudo apt-get install git -y
+  - sudo git clone https://github.com/WowCZ/adapter-transformers.git
+  - cd adapter-transformers
+  - pip install .
+  - cd ..
+  - sh scripts/adapter_train.sh -tr mnli,cola,qnli,qqp,rte,sst,stsb,wnli -te mnli_matched,mnli_mismatched,cola,qnli,qqp,rte,sst,stsb,wnli -ls 1000 -ss 2000  > LOGS/mtnlu_unified.log

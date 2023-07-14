@@ -1,0 +1,112 @@
+cola:
+  data_format: PremiseOnly
+  dropout_p: 0.05
+  enable_san: false
+  metric_meta:
+  - ACC
+  - MCC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+mnli:
+  data_format: PremiseAndOneHypothesis
+  dropout_p: 0.1
+  enable_san: false 
+  labels:
+  - contradiction
+  - neutral
+  - entailment
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 3
+  split_names:
+  - train
+  - matched_dev
+  - mismatched_dev
+  - matched_test
+  - mismatched_test
+  task_type: Classification
+mrpc:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false 
+  metric_meta:
+  - ACC
+  - F1
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+qnli:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false 
+  labels:
+  - not_entailment
+  - entailment
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+qqp:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false 
+  metric_meta:
+  - ACC
+  - F1
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+rte:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false
+  labels:
+  - not_entailment
+  - entailment
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+sst:
+  data_format: PremiseOnly
+  enable_san: false
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
+stsb:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false
+  metric_meta:
+  - Pearson
+  - Spearman
+  n_class: 1
+  loss: MseCriterion
+  kd_loss: MseCriterion
+  adv_loss: MseCriterion
+  task_type: Regression
+wnli:
+  data_format: PremiseAndOneHypothesis
+  enable_san: false 
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  adv_loss: SymKlCriterion
+  n_class: 2
+  task_type: Classification
