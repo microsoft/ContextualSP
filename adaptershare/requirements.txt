@@ -14,4 +14,4 @@ tensorboard
 future
 apex
 seqeval==0.0.12
-transformers==4.6.0
+transformers==4.30.0
